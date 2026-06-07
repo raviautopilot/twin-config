@@ -1,0 +1,1149 @@
+basePath: /api/v1
+definitions:
+  handlers.SummaryResponse:
+    properties:
+      counts:
+        additionalProperties:
+          format: int64
+          type: integer
+        type: object
+      metrics:
+        additionalProperties: true
+        type: object
+      status:
+        type: string
+      timestamp:
+        type: string
+    type: object
+  models.CfgAttributeKey:
+    properties:
+      attribute_key:
+        type: string
+      event_type_code:
+        type: string
+      is_required:
+        type: integer
+    type: object
+  models.CfgDimension:
+    properties:
+      description:
+        type: string
+      dimension_code:
+        type: string
+      unit_code:
+        type: string
+    type: object
+  models.CfgEventType:
+    properties:
+      display_name:
+        type: string
+      event_type_code:
+        type: string
+      module_code:
+        type: string
+    type: object
+  models.CfgModule:
+    properties:
+      created_at:
+        type: string
+      module_id:
+        type: string
+      module_name:
+        type: string
+      notes:
+        type: string
+      updated_at:
+        type: string
+    type: object
+  models.CfgType:
+    properties:
+      config_type:
+        type: string
+      created_at:
+        type: string
+      metadata_schema: {}
+      module_id:
+        type: string
+      notes:
+        type: string
+      type_id:
+        type: integer
+      updated_at:
+        type: string
+    type: object
+  models.EventDetail:
+    properties:
+      attribute_key:
+        type: string
+      attribute_val:
+        type: string
+      event_id:
+        type: string
+    type: object
+  models.TwinEvent:
+    properties:
+      created_at:
+        type: string
+      event_id:
+        type: string
+      event_type_code:
+        type: string
+      occurred_at:
+        type: string
+    type: object
+  models.TwinImpact:
+    properties:
+      dimension_code:
+        type: string
+      event_id:
+        type: string
+      impact_id:
+        type: string
+      target_entity:
+        type: string
+      value:
+        type: number
+    type: object
+host: localhost:8080
+info:
+  contact:
+    name: PLOS Support
+  description: Configuration Management & Auditing Engine API for Personal Life Operating
+    System (PLOS).
+  title: Digital Twin Config Engine API
+  version: "1.0"
+paths:
+  /cfg/attribute-keys:
+    get:
+      description: Get a list of all PLOS event property validation keys
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/models.CfgAttributeKey'
+            type: array
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: List all attribute keys
+      tags:
+      - attribute-keys
+    post:
+      consumes:
+      - application/json
+      description: Create a new validation property key for event types
+      parameters:
+      - description: Attribute Key details
+        in: body
+        name: attribute_key
+        required: true
+        schema:
+          $ref: '#/definitions/models.CfgAttributeKey'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/models.CfgAttributeKey'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Create a new attribute key
+      tags:
+      - attribute-keys
+  /cfg/attribute-keys/{code}/{key}:
+    delete:
+      description: Delete a validation key by event code and key name
+      parameters:
+      - description: Event Type Code
+        in: path
+        name: code
+        required: true
+        type: string
+      - description: Attribute Key
+        in: path
+        name: key
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Delete an attribute key
+      tags:
+      - attribute-keys
+    put:
+      consumes:
+      - application/json
+      description: Update a validation key by event code and key name
+      parameters:
+      - description: Event Type Code
+        in: path
+        name: code
+        required: true
+        type: string
+      - description: Attribute Key
+        in: path
+        name: key
+        required: true
+        type: string
+      - description: Attribute Key details
+        in: body
+        name: attribute_key
+        required: true
+        schema:
+          $ref: '#/definitions/models.CfgAttributeKey'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.CfgAttributeKey'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Update an existing attribute key
+      tags:
+      - attribute-keys
+  /cfg/dimensions:
+    get:
+      description: Get a list of all PLOS unit dimensions
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/models.CfgDimension'
+            type: array
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: List all dimensions
+      tags:
+      - dimensions
+    post:
+      consumes:
+      - application/json
+      description: Create a new measurement context dimension
+      parameters:
+      - description: Dimension details
+        in: body
+        name: dimension
+        required: true
+        schema:
+          $ref: '#/definitions/models.CfgDimension'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/models.CfgDimension'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Create a new dimension
+      tags:
+      - dimensions
+  /cfg/dimensions/{id}:
+    delete:
+      description: Delete a measurement dimension by code
+      parameters:
+      - description: Dimension Code
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Delete a dimension
+      tags:
+      - dimensions
+    put:
+      consumes:
+      - application/json
+      description: Update a measurement dimension by code
+      parameters:
+      - description: Dimension Code
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Dimension details
+        in: body
+        name: dimension
+        required: true
+        schema:
+          $ref: '#/definitions/models.CfgDimension'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.CfgDimension'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Update an existing dimension
+      tags:
+      - dimensions
+  /cfg/event-types:
+    get:
+      description: Get a list of all PLOS event categories
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/models.CfgEventType'
+            type: array
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: List all event types
+      tags:
+      - event-types
+    post:
+      consumes:
+      - application/json
+      description: Create a new event classification category
+      parameters:
+      - description: Event Type details
+        in: body
+        name: event_type
+        required: true
+        schema:
+          $ref: '#/definitions/models.CfgEventType'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/models.CfgEventType'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Create a new event type
+      tags:
+      - event-types
+  /cfg/event-types/{id}:
+    delete:
+      description: Delete an event category by code
+      parameters:
+      - description: Event Type Code
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Delete an event type
+      tags:
+      - event-types
+    put:
+      consumes:
+      - application/json
+      description: Update an event category by code
+      parameters:
+      - description: Event Type Code
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Event Type details
+        in: body
+        name: event_type
+        required: true
+        schema:
+          $ref: '#/definitions/models.CfgEventType'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.CfgEventType'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Update an existing event type
+      tags:
+      - event-types
+  /cfg/modules:
+    get:
+      description: Get a list of all PLOS configuration modules
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/models.CfgModule'
+            type: array
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: List all modules
+      tags:
+      - modules
+    post:
+      consumes:
+      - application/json
+      description: Create a new configuration module
+      parameters:
+      - description: Module details
+        in: body
+        name: module
+        required: true
+        schema:
+          $ref: '#/definitions/models.CfgModule'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/models.CfgModule'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Create a new module
+      tags:
+      - modules
+  /cfg/modules/{id}:
+    delete:
+      description: Delete a configuration module by ID
+      parameters:
+      - description: Module ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Delete a module
+      tags:
+      - modules
+    put:
+      consumes:
+      - application/json
+      description: Update a configuration module by ID
+      parameters:
+      - description: Module ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Module details
+        in: body
+        name: module
+        required: true
+        schema:
+          $ref: '#/definitions/models.CfgModule'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.CfgModule'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Update an existing module
+      tags:
+      - modules
+  /cfg/types:
+    get:
+      description: Get a list of all entity templates
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/models.CfgType'
+            type: array
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: List all entity types
+      tags:
+      - types
+    post:
+      consumes:
+      - application/json
+      description: Create a new entity configuration template
+      parameters:
+      - description: Type details
+        in: body
+        name: type
+        required: true
+        schema:
+          $ref: '#/definitions/models.CfgType'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/models.CfgType'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Create a new entity type
+      tags:
+      - types
+  /cfg/types/{id}:
+    delete:
+      description: Delete an entity template by ID
+      parameters:
+      - description: Type ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Delete an entity type
+      tags:
+      - types
+    put:
+      consumes:
+      - application/json
+      description: Update an entity template by ID
+      parameters:
+      - description: Type ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Type details
+        in: body
+        name: type
+        required: true
+        schema:
+          $ref: '#/definitions/models.CfgType'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.CfgType'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Update an existing entity type
+      tags:
+      - types
+  /summary:
+    get:
+      description: Retrieve count aggregates across the 9 database tables
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handlers.SummaryResponse'
+      summary: Get twin summary statistics
+      tags:
+      - summary
+  /twin/event-details:
+    get:
+      description: Get a list of all logged event metadata attributes
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/models.EventDetail'
+            type: array
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: List all event details
+      tags:
+      - event-details
+    post:
+      consumes:
+      - application/json
+      description: Add metadata property attributes to a logged event
+      parameters:
+      - description: Event Detail details
+        in: body
+        name: detail
+        required: true
+        schema:
+          $ref: '#/definitions/models.EventDetail'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/models.EventDetail'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Create a new event detail
+      tags:
+      - event-details
+  /twin/event-details/{id}/{key}:
+    delete:
+      description: Delete event metadata by event ID and attribute key name
+      parameters:
+      - description: Event ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Attribute Key
+        in: path
+        name: key
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Delete an event detail
+      tags:
+      - event-details
+    put:
+      consumes:
+      - application/json
+      description: Update event metadata by event ID and attribute key name
+      parameters:
+      - description: Event ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Attribute Key
+        in: path
+        name: key
+        required: true
+        type: string
+      - description: Event Detail details
+        in: body
+        name: detail
+        required: true
+        schema:
+          $ref: '#/definitions/models.EventDetail'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.EventDetail'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Update an existing event detail
+      tags:
+      - event-details
+  /twin/events:
+    get:
+      description: Get a list of all logged twin events
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/models.TwinEvent'
+            type: array
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: List all events
+      tags:
+      - events
+    post:
+      consumes:
+      - application/json
+      description: Log a new twin event entry in the ledger
+      parameters:
+      - description: Event details
+        in: body
+        name: event
+        required: true
+        schema:
+          $ref: '#/definitions/models.TwinEvent'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/models.TwinEvent'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Create a new event
+      tags:
+      - events
+  /twin/events/{id}:
+    delete:
+      description: Delete a ledger event by ID (cascade impacts and details)
+      parameters:
+      - description: Event ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Delete an event
+      tags:
+      - events
+    put:
+      consumes:
+      - application/json
+      description: Update a ledger event by ID
+      parameters:
+      - description: Event ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Event details
+        in: body
+        name: event
+        required: true
+        schema:
+          $ref: '#/definitions/models.TwinEvent'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.TwinEvent'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Update an existing event
+      tags:
+      - events
+  /twin/impacts:
+    get:
+      description: Get a list of all logged twin impacts
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/models.TwinImpact'
+            type: array
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: List all impacts
+      tags:
+      - impacts
+    post:
+      consumes:
+      - application/json
+      description: Create a new ledger impact adjustment
+      parameters:
+      - description: Impact details
+        in: body
+        name: impact
+        required: true
+        schema:
+          $ref: '#/definitions/models.TwinImpact'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/models.TwinImpact'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Create a new impact
+      tags:
+      - impacts
+  /twin/impacts/{id}:
+    delete:
+      description: Delete a ledger impact by ID
+      parameters:
+      - description: Impact ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Delete an impact
+      tags:
+      - impacts
+    put:
+      consumes:
+      - application/json
+      description: Update a ledger impact by ID
+      parameters:
+      - description: Impact ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Impact details
+        in: body
+        name: impact
+        required: true
+        schema:
+          $ref: '#/definitions/models.TwinImpact'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.TwinImpact'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Update an existing impact
+      tags:
+      - impacts
+swagger: "2.0"

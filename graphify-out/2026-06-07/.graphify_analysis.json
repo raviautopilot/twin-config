@@ -120,15 +120,6 @@
       "readme_twin_config"
     ],
     "8": [
-      "backend_internal_models_models_go",
-      "models_associatedworkflows",
-      "models_contact",
-      "models_contactdetails",
-      "models_financialentity",
-      "models_metaconfig",
-      "models_metaconfig_tablename"
-    ],
-    "9": [
       "backend_internal_config_logger_go",
       "config_gormzaplogger",
       "config_gormzaplogger_error",
@@ -137,50 +128,65 @@
       "config_gormzaplogger_trace",
       "config_gormzaplogger_warn"
     ],
+    "9": [
+      "backend_internal_models_models_go",
+      "models_associatedworkflows",
+      "models_contact",
+      "models_contactdetails",
+      "models_financialentity",
+      "models_metaconfig",
+      "models_metaconfig_tablename"
+    ],
     "10": [
+      "usage_backend",
+      "usage_digital_twin",
+      "usage_frontend",
+      "usage_postgresql"
+    ],
+    "11": [
       "frontend_tsconfig_files",
       "frontend_tsconfig_json",
       "frontend_tsconfig_references"
     ],
-    "11": [
+    "12": [
       "docker_setup_sh",
       "home_ubuntu_code_github_raviautopilot_twin_config_docker_setup_sh__entry"
     ],
-    "12": [
+    "13": [
       "index_html_root",
       "main_tsx"
-    ],
-    "13": [
-      "readme_eslint",
-      "readme_typescript"
     ],
     "14": [
       "readme_react",
       "readme_vite"
     ],
     "15": [
+      "readme_eslint",
+      "readme_typescript"
+    ],
+    "16": [
       "home_ubuntu_code_github_raviautopilot_twin_config_volume_wipe_sh__entry",
       "volume_wipe_sh"
     ],
-    "16": [
+    "17": [
       "frontend_vite_config_ts"
     ],
-    "17": [
+    "18": [
       "frontend_eslint_config_js"
     ],
-    "18": [
+    "19": [
       "favicon_svg"
     ],
-    "19": [
+    "20": [
       "icons_svg"
     ],
-    "20": [
+    "21": [
       "hero_png"
     ],
-    "21": [
+    "22": [
       "vite_svg"
     ],
-    "22": [
+    "23": [
       "react_svg"
     ]
   },
@@ -193,10 +199,10 @@
     "5": 0.28888888888888886,
     "6": 0.2222222222222222,
     "7": 0.2857142857142857,
-    "8": 0.2857142857142857,
-    "9": 0.38095238095238093,
-    "10": 0.6666666666666666,
-    "11": 1.0,
+    "8": 0.38095238095238093,
+    "9": 0.2857142857142857,
+    "10": 0.5,
+    "11": 0.6666666666666666,
     "12": 1.0,
     "13": 1.0,
     "14": 1.0,
@@ -207,7 +213,8 @@
     "19": 1.0,
     "20": 1.0,
     "21": 1.0,
-    "22": 1.0
+    "22": 1.0,
+    "23": 1.0
   },
   "gods": [
     {
@@ -319,7 +326,7 @@
     }
   ],
   "tokens": {
-    "input": 0,
-    "output": 0
+    "input": 511,
+    "output": 402
   }
 }
