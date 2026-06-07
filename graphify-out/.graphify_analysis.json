@@ -1,0 +1,62 @@
+{
+  "communities": {
+    "0": [
+      "docker_compose_db",
+      "docker_compose_digital_twin",
+      "docker_compose_pgdata",
+      "readme_twin_config"
+    ],
+    "1": [
+      "home_ubuntu_code_github_raviautopilot_twin_config_manage_sh__entry",
+      "manage_sh"
+    ]
+  },
+  "cohesion": {
+    "0": 0.5,
+    "1": 1.0
+  },
+  "gods": [
+    {
+      "id": "docker_compose_db",
+      "label": "db service",
+      "degree": 3
+    },
+    {
+      "id": "home_ubuntu_code_github_raviautopilot_twin_config_manage_sh__entry",
+      "label": "manage.sh script",
+      "degree": 1
+    },
+    {
+      "id": "readme_twin_config",
+      "label": "Twin Config",
+      "degree": 1
+    },
+    {
+      "id": "docker_compose_digital_twin",
+      "label": "digital_twin database",
+      "degree": 1
+    },
+    {
+      "id": "docker_compose_pgdata",
+      "label": "pgdata volume",
+      "degree": 1
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Twin Config",
+      "target": "db service",
+      "source_files": [
+        "README.md",
+        "docker-compose.yml"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories"
+    }
+  ],
+  "tokens": {
+    "input": 481,
+    "output": 420
+  }
+}

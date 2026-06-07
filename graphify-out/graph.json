@@ -1,0 +1,129 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "manage.sh",
+      "file_type": "code",
+      "source_file": "manage.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "id": "manage_sh",
+      "community": 1,
+      "norm_label": "manage.sh"
+    },
+    {
+      "label": "manage.sh script",
+      "file_type": "code",
+      "source_file": "manage.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "id": "home_ubuntu_code_github_raviautopilot_twin_config_manage_sh__entry",
+      "community": 1,
+      "norm_label": "manage.sh script"
+    },
+    {
+      "label": "Twin Config",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_twin_config",
+      "community": 0,
+      "norm_label": "twin config"
+    },
+    {
+      "label": "db service",
+      "file_type": "code",
+      "source_file": "docker-compose.yml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docker_compose_db",
+      "community": 0,
+      "norm_label": "db service"
+    },
+    {
+      "label": "digital_twin database",
+      "file_type": "concept",
+      "source_file": "docker-compose.yml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docker_compose_digital_twin",
+      "community": 0,
+      "norm_label": "digital_twin database"
+    },
+    {
+      "label": "pgdata volume",
+      "file_type": "code",
+      "source_file": "docker-compose.yml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docker_compose_pgdata",
+      "community": 0,
+      "norm_label": "pgdata volume"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "manage.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "manage_sh",
+      "target": "home_ubuntu_code_github_raviautopilot_twin_config_manage_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "readme_twin_config",
+      "target": "docker_compose_db"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docker-compose.yml",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docker_compose_db",
+      "target": "docker_compose_digital_twin"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docker-compose.yml",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docker_compose_db",
+      "target": "docker_compose_pgdata"
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "b7e164b3c7b95e37e3c698f9171db1f8bbd3c688"
+}
