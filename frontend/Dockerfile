@@ -22,6 +22,9 @@ FROM nginx:alpine
 # Vite outputs to 'dist' directory by default
 COPY --from=builder /app/dist /usr/share/nginx/html
 
+# Copy the nginx configuration
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
 # Expose port 80
 EXPOSE 80
 
