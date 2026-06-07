@@ -1311,9 +1311,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "docker_compose_backend",
       "community": 7,
-      "norm_label": "backend service"
+      "norm_label": "backend service",
+      "id": "docker_compose_backend"
     },
     {
       "label": "Frontend Service",
@@ -1324,9 +1324,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "docker_compose_frontend",
       "community": 7,
-      "norm_label": "frontend service"
+      "norm_label": "frontend service",
+      "id": "docker_compose_frontend"
     }
   ],
   "links": [
@@ -2125,7 +2125,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/cmd/main.go",
-      "source_location": "L120",
+      "source_location": "L134",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "backend_cmd_main_go",
@@ -2145,7 +2145,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/cmd/main.go",
-      "source_location": "L161",
+      "source_location": "L175",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "backend_cmd_main_go",
@@ -2155,7 +2155,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/cmd/main.go",
-      "source_location": "L137",
+      "source_location": "L151",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "backend_cmd_main_go",
@@ -2166,7 +2166,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/cmd/main.go",
-      "source_location": "L75",
+      "source_location": "L89",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "cmd_main_main",
@@ -2177,7 +2177,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/cmd/main.go",
-      "source_location": "L64",
+      "source_location": "L78",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "cmd_main_main",
@@ -2188,7 +2188,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/cmd/main.go",
-      "source_location": "L71",
+      "source_location": "L85",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "cmd_main_main",
@@ -2561,5 +2561,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "588e4b9754df6d6f6253b00310f30507a0ee3e30"
+  "built_at_commit": "181d9917b9e0a972c92c906f8db7ab36deded97b"
 }

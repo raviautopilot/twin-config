@@ -110,6 +110,16 @@
       "src_app_summarydata"
     ],
     "7": [
+      "concept_digital_twin_db",
+      "docker_compose_backend",
+      "docker_compose_db",
+      "docker_compose_digital_twin",
+      "docker_compose_frontend",
+      "docker_compose_pgdata",
+      "dockerfile_twin_config",
+      "readme_twin_config"
+    ],
+    "8": [
       "backend_internal_models_models_go",
       "models_associatedworkflows",
       "models_contact",
@@ -118,7 +128,7 @@
       "models_metaconfig",
       "models_metaconfig_tablename"
     ],
-    "8": [
+    "9": [
       "backend_internal_config_logger_go",
       "config_gormzaplogger",
       "config_gormzaplogger_error",
@@ -126,14 +136,6 @@
       "config_gormzaplogger_logmode",
       "config_gormzaplogger_trace",
       "config_gormzaplogger_warn"
-    ],
-    "9": [
-      "concept_digital_twin_db",
-      "docker_compose_db",
-      "docker_compose_digital_twin",
-      "docker_compose_pgdata",
-      "dockerfile_twin_config",
-      "readme_twin_config"
     ],
     "10": [
       "frontend_tsconfig_files",
@@ -190,9 +192,9 @@
     "4": 0.18181818181818182,
     "5": 0.28888888888888886,
     "6": 0.2222222222222222,
-    "7": 0.2857142857142857,
-    "8": 0.38095238095238093,
-    "9": 0.3333333333333333,
+    "7": 0.25,
+    "8": 0.2857142857142857,
+    "9": 0.38095238095238093,
     "10": 0.6666666666666666,
     "11": 1.0,
     "12": 1.0,
@@ -224,6 +226,11 @@
       "degree": 8
     },
     {
+      "id": "docker_compose_db",
+      "label": "db service",
+      "degree": 6
+    },
+    {
       "id": "cmd_main_main",
       "label": "main()",
       "degree": 6
@@ -232,11 +239,6 @@
       "id": "config_gormzaplogger",
       "label": "GormZapLogger",
       "degree": 6
-    },
-    {
-      "id": "docker_compose_db",
-      "label": "db service",
-      "degree": 5
     },
     {
       "id": "frontend_package_scripts",
@@ -261,17 +263,6 @@
   ],
   "surprises": [
     {
-      "source": "db service",
-      "target": "Digital Twin Database",
-      "source_files": [
-        "docker-compose.yml",
-        "docker/docker-compose.yml"
-      ],
-      "confidence": "INFERRED",
-      "relation": "conceptually_related_to",
-      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `Digital Twin Database` unexpectedly reaches hub `db service`"
-    },
-    {
       "source": "Twin Config",
       "target": "db service",
       "source_files": [
@@ -281,6 +272,28 @@
       "confidence": "EXTRACTED",
       "relation": "references",
       "why": "connects across different repos/directories; peripheral node `Twin Config` unexpectedly reaches hub `db service`"
+    },
+    {
+      "source": "Backend Service",
+      "target": "db service",
+      "source_files": [
+        "docker/docker-compose.yml",
+        "docker-compose.yml"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; peripheral node `Backend Service` unexpectedly reaches hub `db service`"
+    },
+    {
+      "source": "db service",
+      "target": "Digital Twin Database",
+      "source_files": [
+        "docker-compose.yml",
+        "docker/docker-compose.yml"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "implements",
+      "why": "connects across different repos/directories; peripheral node `Digital Twin Database` unexpectedly reaches hub `db service`"
     },
     {
       "source": "main()",
@@ -303,21 +316,10 @@
       "confidence": "INFERRED",
       "relation": "implements",
       "why": "inferred connection - not explicitly stated in source; crosses file types (doc \u2194 code)"
-    },
-    {
-      "source": "main()",
-      "target": "LoadConfig()",
-      "source_files": [
-        "backend/cmd/main.go",
-        "backend/internal/config/config.go"
-      ],
-      "confidence": "INFERRED",
-      "relation": "calls",
-      "why": "inferred connection - not explicitly stated in source"
     }
   ],
   "tokens": {
-    "input": 0,
-    "output": 0
+    "input": 621,
+    "output": 624
   }
 }
