@@ -5,12 +5,12 @@
 COMMAND=$1
 COMPOSE_FILE="docker-compose.yml"
 
-# You can pass an optional service name (db, backend, frontend)
+# You can pass an optional service name (db, brahma, frontend)
 SERVICE=$2
 
 case "$COMMAND" in
     start)
-        echo "Starting the full stack (db, backend, frontend)..."
+        echo "Starting the full stack (db, brahma, frontend)..."
         docker compose -f $COMPOSE_FILE up -d $SERVICE
 
         # Generate usage.md
@@ -26,10 +26,10 @@ This document provides details on how to access and use the deployed application
 *   **URL**: [http://localhost:3000](http://localhost:3000)
 *   **Description**: The main web interface for the application.
 
-### Backend
+### Brahma (Configuration Service)
 
 *   **URL**: [http://localhost:8080](http://localhost:8080)
-*   **Description**: The backend API server. You can use this for direct API calls or for debugging.
+*   **Description**: The backend API server responsible for configuration. You can use this for direct API calls or for debugging.
 
 ### Database (PostgreSQL)
 
@@ -65,6 +65,6 @@ EOF
         ;;
     *)
         echo "Usage: $0 {start|stop|status|delete|logs|build} [service_name]"
-        echo "Service names: db, backend, frontend"
+        echo "Service names: db, brahma, frontend"
         exit 1
 esac
