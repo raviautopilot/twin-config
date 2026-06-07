@@ -129,16 +129,16 @@ INSERT INTO cfg_modules (module_id, module_name, notes) VALUES
 
 -- Seed cfg_type with explicit sub-structures and extensible JSONB metadata schemas
 INSERT INTO cfg_type (module_id, config_type, metadata_schema, notes) VALUES
-('FIN', 'BankAccount', '{"allowed_currencies": ["USD", "INR", "EUR"], "require_routing": true}', 'Savings, Current, and Investment liquid cash holdings.'),
-('FIN', 'CreditCardAccount', '{"limit_alert_threshold_pct": 80}', 'Credit accounts tracking limits, billing cycles, and utilization rates.'),
-('FIN', 'FixedDeposit', '{"compounding_frequencies": ["Monthly", "Quarterly", "Maturity"]}', 'Fixed deposit records tracking principal, interest rate tiers, and maturity execution tasks.'),
-('FIN', 'PersonalLoan', '{"amortization": "Simple Interest"}', 'Tracks loans issued out or debt capital obligations taken from counter-parties.'),
+('FIN', 'BANK_ACCOUNT', '{"allowed_currencies": ["USD", "INR", "EUR"], "require_routing": true}', 'Savings, Current, and Investment liquid cash holdings.'),
+('FIN', 'CREDIT_CARD_ACCOUNT', '{"limit_alert_threshold_pct": 80}', 'Credit accounts tracking limits, billing cycles, and utilization rates.'),
+('FIN', 'FIXED_DEPOSIT', '{"compounding_frequencies": ["Monthly", "Quarterly", "Maturity"]}', 'Fixed deposit records tracking principal, interest rate tiers, and maturity execution tasks.'),
+('FIN', 'PERSONAL_LOAN', '{"amortization": "Simple Interest"}', 'Tracks loans issued out or debt capital obligations taken from counter-parties.'),
 
-('GOV', 'NationalIdentity', '{"requires_expiry": false, "encrypted_vault_reference": true}', 'National structural identifiers including PAN, [Aadhaar Omitted], and Social Security records.'),
-('GOV', 'TravelDocument', '{"requires_visa_tracking": true, "expiry_warning_days": 180}', 'Passports, Visas, and global border clearance records.'),
-('GOV', 'LicenceAndPermit', '{"renewal_recurring_months": 12}', 'Driver licences, vehicle registrations, and professional regulatory certifications.'),
+('GOV', 'NATIONAL_IDENTITY', '{"requires_expiry": false, "encrypted_vault_reference": true}', 'National structural identifiers including PAN, [Aadhaar Omitted], and Social Security records.'),
+('GOV', 'TRAVEL_DOCUMENT', '{"requires_visa_tracking": true, "expiry_warning_days": 180}', 'Passports, Visas, and global border clearance records.'),
+('GOV', 'LICENCE_AND_PERMIT', '{"renewal_recurring_months": 12}', 'Driver licences, vehicle registrations, and professional regulatory certifications.'),
 
-('PROD', 'KanbanWorkspace', '{"max_swimlanes": 10, "enable_dependencies": true}', 'Custom parameters initializing project workspaces and flow frameworks.'),
-('RECO', 'PersonalContact', '{"interaction_cadence_days": 90}', 'Categorization fields for core CRM entities spanning tenants, borrowers, and immediate family.');
+('PROD', 'KANBAN_WORKSPACE', '{"max_swimlanes": 10, "enable_dependencies": true}', 'Custom parameters initializing project workspaces and flow frameworks.'),
+('RECO', 'PERSONAL_CONTACT', '{"interaction_cadence_days": 90}', 'Categorization fields for core CRM entities spanning tenants, borrowers, and immediate family.');
 
 COMMIT;
