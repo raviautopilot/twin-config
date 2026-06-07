@@ -117,7 +117,8 @@ export default function App() {
 
   // Database Data States
   const [modules, setModules] = useState<CfgModule[]>([]);
-  const [types, setTypes] = useState<CfgType[]>([]);
+  const [groupedTypes, setGroupedTypes] = useState<Record<string, CfgType[]>>({});
+  const [activeTypeTab, setActiveTypeTab] = useState<string>('');
   const [eventTypes, setEventTypes] = useState<CfgEventType[]>([]);
   const [dimensions, setDimensions] = useState<CfgDimension[]>([]);
   const [attributeKeys, setAttributeKeys] = useState<CfgAttributeKey[]>([]);
@@ -199,7 +200,16 @@ export default function App() {
 
         setSummary(await summaryRes.json());
         setModules(await modulesRes.json());
-        setTypes(await typesRes.json());
+        const fetchedTypes = await typesRes.json();
+        const groups: Record<string, CfgType[]> = {};
+        fetchedTypes.forEach((t: CfgType) => {
+          const prefix = t.module_id;
+          if (!groups[prefix]) {
+            groups[prefix] = [];
+          }
+          groups[prefix].push(t);
+        });
+        setGroupedTypes(groups);
         setEventTypes(await eventTypesRes.json());
         setDimensions(await dimensionsRes.json());
         setAttributeKeys(await attributeKeysRes.json());
@@ -448,54 +458,109 @@ export default function App() {
         );
       }
       case 'cfg_type': {
-        const filtered = types.filter(
-          t =>
-            t.config_type.toLowerCase().includes(searchQuery.toLowerCase()) ||
-            t.module_id.toLowerCase().includes(searchQuery.toLowerCase()) ||
-            (t.notes && t.notes.toLowerCase().includes(searchQuery.toLowerCase()))
-        );
+        // Filter the grouped results based on the search query
+        const filteredGroups: Record<string, CfgType[]> = {};
+        let totalFilteredCount = 0;
+
+        Object.entries(groupedTypes).forEach(([moduleId, moduleTypes]) => {
+          const matchingTypes = moduleTypes.filter(
+            t =>
+              t.config_type.toLowerCase().includes(searchQuery.toLowerCase()) ||
+              t.module_id.toLowerCase().includes(searchQuery.toLowerCase()) ||
+              (t.notes && t.notes.toLowerCase().includes(searchQuery.toLowerCase()))
+          );
+          if (matchingTypes.length > 0) {
+            filteredGroups[moduleId] = matchingTypes;
+            totalFilteredCount += matchingTypes.length;
+          }
+        });
+
+        const groupKeys = Object.keys(filteredGroups);
+
+        if (totalFilteredCount === 0) {
+          return (
+            <div className="text-center p-8 text-slate-500 border border-slate-800 rounded-lg bg-slate-900/5">
+              No entity templates found matching your search.
+            </div>
+          );
+        }
+
+        // If the current active tab is not in the group keys, default to the first one
+        const activeTabId = groupKeys.includes(activeTypeTab) ? activeTypeTab : (groupKeys[0] || '');
+
         return (
-          <div className="overflow-x-auto">
-            <table className="w-full text-left border-collapse text-sm">
-              <thead>
-                <tr className="border-b border-slate-800 text-slate-400 font-semibold bg-slate-900/50">
-                  <th className="p-4">Type ID</th>
-                  <th className="p-4">Module</th>
-                  <th className="p-4">Config Type</th>
-                  <th className="p-4">Notes</th>
-                  <th className="p-4">Metadata Schema</th>
-                  <th className="p-4 text-right">Actions</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-800">
-                {filtered.map(t => (
-                  <tr key={t.type_id} className="hover:bg-slate-900/30 transition">
-                    <td className="p-4 font-mono text-slate-400">{t.type_id}</td>
-                    <td className="p-4"><span className="px-2 py-0.5 rounded text-xs font-mono font-bold bg-teal-950 text-teal-300 border border-teal-800">{t.module_id}</span></td>
-                    <td className="p-4 font-medium text-slate-200">{t.config_type}</td>
-                    <td className="p-4 text-slate-400 max-w-xs truncate">{t.notes || '—'}</td>
-                    <td className="p-4 font-mono text-xs">
-                      <pre className="p-2 bg-slate-950 text-emerald-400 rounded max-w-xs overflow-auto max-h-24">
-                        {JSON.stringify(t.metadata_schema, null, 2)}
-                      </pre>
-                    </td>
-                    <td className="p-4 text-right space-x-2">
-                      <button onClick={() => openEditModal('cfg_type', t)} className="p-1.5 hover:text-teal-400 transition" title="Edit">
-                        <Edit2 className="w-4 h-4" />
-                      </button>
-                      <button onClick={() => handleDelete('cfg_type', t)} className="p-1.5 hover:text-rose-400 transition" title="Delete">
-                        <Trash2 className="w-4 h-4" />
-                      </button>
-                    </td>
-                  </tr>
-                ))}
-                {filtered.length === 0 && (
-                  <tr>
-                    <td colSpan={6} className="p-8 text-center text-slate-500">No entity templates found matching your search.</td>
-                  </tr>
-                )}
-              </tbody>
-            </table>
+          <div className="space-y-6">
+            {/* Tab Navigation Bar */}
+            <div className="border-b border-slate-850 flex flex-wrap gap-1 bg-slate-950/20 p-1 rounded-t-lg">
+              {groupKeys.map(moduleId => {
+                const module = modules.find(m => m.module_id === moduleId);
+                const groupName = module ? module.module_name : moduleId;
+                const count = filteredGroups[moduleId].length;
+                const isActive = activeTabId === moduleId;
+
+                return (
+                  <button
+                    key={moduleId}
+                    onClick={() => setActiveTypeTab(moduleId)}
+                    className={`px-4 py-2.5 text-sm font-medium transition-all relative rounded-t-md flex items-center space-x-2 border-b-2 -mb-[1px] ${
+                      isActive
+                        ? 'border-teal-500 text-teal-400 bg-slate-900/40 font-semibold'
+                        : 'border-transparent text-slate-400 hover:text-slate-200 hover:bg-slate-905/10'
+                    }`}
+                  >
+                    <span>{groupName}</span>
+                    <span className={`px-1.5 py-0.5 rounded-full text-xs font-mono font-bold ${
+                      isActive
+                        ? 'bg-teal-950 text-teal-300 border border-teal-800'
+                        : 'bg-slate-950 text-slate-400 border border-slate-800'
+                    }`}>
+                      {count}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* Active Tab Table Content */}
+            {activeTabId && (
+              <div className="border border-slate-800 rounded-lg overflow-hidden bg-slate-900/10">
+                <div className="overflow-x-auto">
+                  <table className="w-full text-left border-collapse text-sm">
+                    <thead>
+                      <tr className="border-b border-slate-800 text-slate-400 font-semibold bg-slate-950/20">
+                        <th className="p-4 pl-6">Type ID</th>
+                        <th className="p-4">Config Type</th>
+                        <th className="p-4">Notes</th>
+                        <th className="p-4">Metadata Schema</th>
+                        <th className="p-4 text-right pr-6">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-slate-800">
+                      {filteredGroups[activeTabId].map(t => (
+                        <tr key={t.type_id} className="hover:bg-slate-900/30 transition">
+                          <td className="p-4 pl-6 font-mono text-slate-400">{t.type_id}</td>
+                          <td className="p-4 font-medium text-slate-200">{t.config_type}</td>
+                          <td className="p-4 text-slate-400 max-w-xs truncate">{t.notes || '—'}</td>
+                          <td className="p-4 font-mono text-xs">
+                            <pre className="p-2 bg-slate-950 text-emerald-400 rounded max-w-xs overflow-auto max-h-24">
+                              {JSON.stringify(t.metadata_schema, null, 2)}
+                            </pre>
+                          </td>
+                          <td className="p-4 text-right pr-6 space-x-2">
+                            <button onClick={() => openEditModal('cfg_type', t)} className="p-1.5 hover:text-teal-400 transition" title="Edit">
+                              <Edit2 className="w-4 h-4" />
+                            </button>
+                            <button onClick={() => handleDelete('cfg_type', t)} className="p-1.5 hover:text-rose-400 transition" title="Delete">
+                              <Trash2 className="w-4 h-4" />
+                            </button>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
           </div>
         );
       }
