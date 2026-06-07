@@ -1344,7 +1344,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "docker/docker-compose.yml",
+      "source_file": "docker-compose.yml",
       "source_location": null,
       "weight": 1.0,
       "source": "docker_compose_backend",
@@ -1389,6 +1389,16 @@
       "weight": 1.0,
       "source": "docker_compose_db",
       "target": "dockerfile_twin_config"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docker-compose.yml",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docker_compose_backend",
+      "target": "docker_compose_digital_twin"
     },
     {
       "relation": "contains",
@@ -2553,7 +2563,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "docker/docker-compose.yml",
+      "source_file": "docker-compose.yml",
       "source_location": null,
       "weight": 1.0,
       "source": "docker_compose_frontend",
@@ -2561,5 +2571,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "181d9917b9e0a972c92c906f8db7ab36deded97b"
+  "built_at_commit": "a2ba657338c9a4b574c3624f0651a6db95bfdcaf"
 }
