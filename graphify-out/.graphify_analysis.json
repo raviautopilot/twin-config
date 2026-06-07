@@ -1,9 +1,11 @@
 {
   "communities": {
     "0": [
+      "concept_digital_twin_db",
       "docker_compose_db",
       "docker_compose_digital_twin",
       "docker_compose_pgdata",
+      "dockerfile_twin_config",
       "readme_twin_config"
     ],
     "1": [
@@ -16,7 +18,7 @@
     ]
   },
   "cohesion": {
-    "0": 0.5,
+    "0": 0.3333333333333333,
     "1": 1.0,
     "2": 1.0
   },
@@ -24,7 +26,7 @@
     {
       "id": "docker_compose_db",
       "label": "db service",
-      "degree": 3
+      "degree": 5
     },
     {
       "id": "home_ubuntu_code_github_raviautopilot_twin_config_manage_sh__entry",
@@ -50,9 +52,25 @@
       "id": "home_ubuntu_code_github_raviautopilot_twin_config_volume_wipe_sh__entry",
       "label": "volume-wipe.sh script",
       "degree": 1
+    },
+    {
+      "id": "concept_digital_twin_db",
+      "label": "Digital Twin Database",
+      "degree": 1
     }
   ],
   "surprises": [
+    {
+      "source": "db service",
+      "target": "Digital Twin Database",
+      "source_files": [
+        "docker-compose.yml",
+        "docker/docker-compose.yml"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `Digital Twin Database` unexpectedly reaches hub `db service`"
+    },
     {
       "source": "Twin Config",
       "target": "db service",
@@ -62,11 +80,11 @@
       ],
       "confidence": "EXTRACTED",
       "relation": "references",
-      "why": "connects across different repos/directories"
+      "why": "connects across different repos/directories; peripheral node `Twin Config` unexpectedly reaches hub `db service`"
     }
   ],
   "tokens": {
-    "input": 0,
-    "output": 0
+    "input": 436,
+    "output": 443
   }
 }

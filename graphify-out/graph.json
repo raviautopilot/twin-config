@@ -90,9 +90,9 @@
         "language": "bash",
         "kind": "file"
       },
-      "id": "volume_wipe_sh",
       "community": 2,
-      "norm_label": "volume-wipe.sh"
+      "norm_label": "volume-wipe.sh",
+      "id": "volume_wipe_sh"
     },
     {
       "label": "volume-wipe.sh script",
@@ -103,9 +103,35 @@
         "language": "bash",
         "kind": "bash_entrypoint"
       },
-      "id": "home_ubuntu_code_github_raviautopilot_twin_config_volume_wipe_sh__entry",
       "community": 2,
-      "norm_label": "volume-wipe.sh script"
+      "norm_label": "volume-wipe.sh script",
+      "id": "home_ubuntu_code_github_raviautopilot_twin_config_volume_wipe_sh__entry"
+    },
+    {
+      "label": "Twin Config Dockerfile",
+      "file_type": "code",
+      "source_file": "docker/Dockerfile",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "dockerfile_twin_config",
+      "community": 0,
+      "norm_label": "twin config dockerfile"
+    },
+    {
+      "label": "Digital Twin Database",
+      "file_type": "concept",
+      "source_file": "docker/docker-compose.yml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_digital_twin_db",
+      "community": 0,
+      "norm_label": "digital twin database"
     }
   ],
   "links": [
@@ -130,6 +156,16 @@
       "target": "docker_compose_db"
     },
     {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "docker/docker-compose.yml",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docker_compose_db",
+      "target": "concept_digital_twin_db"
+    },
+    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -143,11 +179,21 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "docker-compose.yml",
+      "source_file": "docker/docker-compose.yml",
       "source_location": null,
       "weight": 1.0,
       "source": "docker_compose_db",
       "target": "docker_compose_pgdata"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docker/docker-compose.yml",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docker_compose_db",
+      "target": "dockerfile_twin_config"
     },
     {
       "relation": "contains",
@@ -155,11 +201,11 @@
       "source_file": "volume-wipe.sh",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "volume_wipe_sh",
-      "target": "home_ubuntu_code_github_raviautopilot_twin_config_volume_wipe_sh__entry",
-      "confidence_score": 1.0
+      "target": "home_ubuntu_code_github_raviautopilot_twin_config_volume_wipe_sh__entry"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "74a0356c64a90078ac6de6969ecbda1585bb96e8"
+  "built_at_commit": "ee30b2292f02b13888d5d6f8366ac427941a6deb"
 }

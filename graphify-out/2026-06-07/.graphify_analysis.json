@@ -9,11 +9,16 @@
     "1": [
       "home_ubuntu_code_github_raviautopilot_twin_config_manage_sh__entry",
       "manage_sh"
+    ],
+    "2": [
+      "home_ubuntu_code_github_raviautopilot_twin_config_volume_wipe_sh__entry",
+      "volume_wipe_sh"
     ]
   },
   "cohesion": {
     "0": 0.5,
-    "1": 1.0
+    "1": 1.0,
+    "2": 1.0
   },
   "gods": [
     {
@@ -40,6 +45,11 @@
       "id": "docker_compose_pgdata",
       "label": "pgdata volume",
       "degree": 1
+    },
+    {
+      "id": "home_ubuntu_code_github_raviautopilot_twin_config_volume_wipe_sh__entry",
+      "label": "volume-wipe.sh script",
+      "degree": 1
     }
   ],
   "surprises": [
@@ -56,7 +66,7 @@
     }
   ],
   "tokens": {
-    "input": 481,
-    "output": 420
+    "input": 0,
+    "output": 0
   }
 }
