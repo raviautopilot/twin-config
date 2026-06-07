@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# manage.sh for twin-config
+# docker-setup.sh for twin-config
 
 COMMAND=$1
 COMPOSE_FILE="docker/docker-compose.yml"

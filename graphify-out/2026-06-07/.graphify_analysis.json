@@ -1,6 +1,133 @@
 {
   "communities": {
     "0": [
+      "frontend_tsconfig_app_compileroptions",
+      "frontend_tsconfig_app_compileroptions_allowimportingtsextensions",
+      "frontend_tsconfig_app_compileroptions_erasablesyntaxonly",
+      "frontend_tsconfig_app_compileroptions_jsx",
+      "frontend_tsconfig_app_compileroptions_lib",
+      "frontend_tsconfig_app_compileroptions_module",
+      "frontend_tsconfig_app_compileroptions_moduledetection",
+      "frontend_tsconfig_app_compileroptions_moduleresolution",
+      "frontend_tsconfig_app_compileroptions_noemit",
+      "frontend_tsconfig_app_compileroptions_nofallthroughcasesinswitch",
+      "frontend_tsconfig_app_compileroptions_nounusedlocals",
+      "frontend_tsconfig_app_compileroptions_nounusedparameters",
+      "frontend_tsconfig_app_compileroptions_skiplibcheck",
+      "frontend_tsconfig_app_compileroptions_target",
+      "frontend_tsconfig_app_compileroptions_tsbuildinfofile",
+      "frontend_tsconfig_app_compileroptions_types",
+      "frontend_tsconfig_app_compileroptions_verbatimmodulesyntax",
+      "frontend_tsconfig_app_include",
+      "frontend_tsconfig_app_json"
+    ],
+    "1": [
+      "frontend_tsconfig_node_compileroptions",
+      "frontend_tsconfig_node_compileroptions_allowimportingtsextensions",
+      "frontend_tsconfig_node_compileroptions_erasablesyntaxonly",
+      "frontend_tsconfig_node_compileroptions_lib",
+      "frontend_tsconfig_node_compileroptions_module",
+      "frontend_tsconfig_node_compileroptions_moduledetection",
+      "frontend_tsconfig_node_compileroptions_moduleresolution",
+      "frontend_tsconfig_node_compileroptions_noemit",
+      "frontend_tsconfig_node_compileroptions_nofallthroughcasesinswitch",
+      "frontend_tsconfig_node_compileroptions_nounusedlocals",
+      "frontend_tsconfig_node_compileroptions_nounusedparameters",
+      "frontend_tsconfig_node_compileroptions_skiplibcheck",
+      "frontend_tsconfig_node_compileroptions_target",
+      "frontend_tsconfig_node_compileroptions_tsbuildinfofile",
+      "frontend_tsconfig_node_compileroptions_types",
+      "frontend_tsconfig_node_compileroptions_verbatimmodulesyntax",
+      "frontend_tsconfig_node_include",
+      "frontend_tsconfig_node_json"
+    ],
+    "2": [
+      "frontend_package_devdependencies",
+      "frontend_package_devdependencies_eslint",
+      "frontend_package_devdependencies_eslint_js",
+      "frontend_package_devdependencies_eslint_plugin_react_hooks",
+      "frontend_package_devdependencies_eslint_plugin_react_refresh",
+      "frontend_package_devdependencies_globals",
+      "frontend_package_devdependencies_tailwindcss",
+      "frontend_package_devdependencies_tailwindcss_vite",
+      "frontend_package_devdependencies_types_node",
+      "frontend_package_devdependencies_types_react",
+      "frontend_package_devdependencies_typescript",
+      "frontend_package_devdependencies_typescript_eslint",
+      "frontend_package_devdependencies_vite",
+      "frontend_package_devdependencies_vitejs_plugin_react"
+    ],
+    "3": [
+      "frontend_package_dependencies",
+      "frontend_package_dependencies_lucide_react",
+      "frontend_package_dependencies_react",
+      "frontend_package_dependencies_react_dom",
+      "frontend_package_json",
+      "frontend_package_name",
+      "frontend_package_private",
+      "frontend_package_scripts",
+      "frontend_package_scripts_build",
+      "frontend_package_scripts_dev",
+      "frontend_package_scripts_lint",
+      "frontend_package_scripts_preview",
+      "frontend_package_type",
+      "frontend_package_version"
+    ],
+    "4": [
+      "backend_internal_handlers_handlers_go",
+      "handlers_handler",
+      "handlers_handler_createcontact",
+      "handlers_handler_createfinancial",
+      "handlers_handler_createmetaconfig",
+      "handlers_handler_getcontacts",
+      "handlers_handler_getfinancials",
+      "handlers_handler_getmetaconfigs",
+      "handlers_handler_getsummary",
+      "handlers_handlers_newhandler",
+      "handlers_summaryresponse"
+    ],
+    "5": [
+      "backend_cmd_main_go",
+      "backend_internal_config_config_go",
+      "cmd_main_corsmiddleware",
+      "cmd_main_main",
+      "cmd_main_seedinitialdataifempty",
+      "cmd_main_zaprequestlogger",
+      "config_config",
+      "config_config_getdsn",
+      "config_config_getenv",
+      "config_config_loadconfig"
+    ],
+    "6": [
+      "frontend_src_app_tsx",
+      "frontend_src_main_tsx",
+      "src_app_app",
+      "src_app_associatedworkflows",
+      "src_app_contact",
+      "src_app_contactdetails",
+      "src_app_financialentity",
+      "src_app_metaconfig",
+      "src_app_summarydata"
+    ],
+    "7": [
+      "backend_internal_models_models_go",
+      "models_associatedworkflows",
+      "models_contact",
+      "models_contactdetails",
+      "models_financialentity",
+      "models_metaconfig",
+      "models_metaconfig_tablename"
+    ],
+    "8": [
+      "backend_internal_config_logger_go",
+      "config_gormzaplogger",
+      "config_gormzaplogger_error",
+      "config_gormzaplogger_info",
+      "config_gormzaplogger_logmode",
+      "config_gormzaplogger_trace",
+      "config_gormzaplogger_warn"
+    ],
+    "9": [
       "concept_digital_twin_db",
       "docker_compose_db",
       "docker_compose_digital_twin",
@@ -8,55 +135,128 @@
       "dockerfile_twin_config",
       "readme_twin_config"
     ],
-    "1": [
+    "10": [
+      "frontend_tsconfig_files",
+      "frontend_tsconfig_json",
+      "frontend_tsconfig_references"
+    ],
+    "11": [
+      "index_html_root",
+      "main_tsx"
+    ],
+    "12": [
       "home_ubuntu_code_github_raviautopilot_twin_config_manage_sh__entry",
       "manage_sh"
     ],
-    "2": [
+    "13": [
+      "readme_eslint",
+      "readme_typescript"
+    ],
+    "14": [
+      "readme_react",
+      "readme_vite"
+    ],
+    "15": [
       "home_ubuntu_code_github_raviautopilot_twin_config_volume_wipe_sh__entry",
       "volume_wipe_sh"
+    ],
+    "16": [
+      "frontend_vite_config_ts"
+    ],
+    "17": [
+      "frontend_eslint_config_js"
+    ],
+    "18": [
+      "favicon_svg"
+    ],
+    "19": [
+      "icons_svg"
+    ],
+    "20": [
+      "hero_png"
+    ],
+    "21": [
+      "vite_svg"
+    ],
+    "22": [
+      "react_svg"
     ]
   },
   "cohesion": {
-    "0": 0.3333333333333333,
-    "1": 1.0,
-    "2": 1.0
+    "0": 0.10526315789473684,
+    "1": 0.1111111111111111,
+    "2": 0.14285714285714285,
+    "3": 0.14285714285714285,
+    "4": 0.18181818181818182,
+    "5": 0.28888888888888886,
+    "6": 0.2222222222222222,
+    "7": 0.2857142857142857,
+    "8": 0.38095238095238093,
+    "9": 0.3333333333333333,
+    "10": 0.6666666666666666,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0
   },
   "gods": [
+    {
+      "id": "frontend_tsconfig_app_compileroptions",
+      "label": "compilerOptions",
+      "degree": 17
+    },
+    {
+      "id": "frontend_tsconfig_node_compileroptions",
+      "label": "compilerOptions",
+      "degree": 16
+    },
+    {
+      "id": "handlers_handler",
+      "label": "Handler",
+      "degree": 8
+    },
+    {
+      "id": "cmd_main_main",
+      "label": "main()",
+      "degree": 6
+    },
+    {
+      "id": "config_gormzaplogger",
+      "label": "GormZapLogger",
+      "degree": 6
+    },
     {
       "id": "docker_compose_db",
       "label": "db service",
       "degree": 5
     },
     {
-      "id": "home_ubuntu_code_github_raviautopilot_twin_config_manage_sh__entry",
-      "label": "manage.sh script",
-      "degree": 1
+      "id": "frontend_package_scripts",
+      "label": "scripts",
+      "degree": 5
     },
     {
-      "id": "readme_twin_config",
-      "label": "Twin Config",
-      "degree": 1
+      "id": "config_config_loadconfig",
+      "label": "LoadConfig()",
+      "degree": 3
     },
     {
-      "id": "docker_compose_digital_twin",
-      "label": "digital_twin database",
-      "degree": 1
+      "id": "cmd_main_corsmiddleware",
+      "label": "CORSMiddleware()",
+      "degree": 2
     },
     {
-      "id": "docker_compose_pgdata",
-      "label": "pgdata volume",
-      "degree": 1
-    },
-    {
-      "id": "home_ubuntu_code_github_raviautopilot_twin_config_volume_wipe_sh__entry",
-      "label": "volume-wipe.sh script",
-      "degree": 1
-    },
-    {
-      "id": "concept_digital_twin_db",
-      "label": "Digital Twin Database",
-      "degree": 1
+      "id": "cmd_main_zaprequestlogger",
+      "label": "ZapRequestLogger()",
+      "degree": 2
     }
   ],
   "surprises": [
@@ -81,10 +281,43 @@
       "confidence": "EXTRACTED",
       "relation": "references",
       "why": "connects across different repos/directories; peripheral node `Twin Config` unexpectedly reaches hub `db service`"
+    },
+    {
+      "source": "main()",
+      "target": "NewHandler()",
+      "source_files": [
+        "backend/cmd/main.go",
+        "backend/internal/handlers/handlers.go"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities; peripheral node `NewHandler()` unexpectedly reaches hub `main()`"
+    },
+    {
+      "source": "Main Entry Point",
+      "target": "Root Div",
+      "source_files": [
+        "frontend/src/main.tsx",
+        "frontend/index.html"
+      ],
+      "confidence": "INFERRED",
+      "relation": "implements",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc \u2194 code)"
+    },
+    {
+      "source": "main()",
+      "target": "LoadConfig()",
+      "source_files": [
+        "backend/cmd/main.go",
+        "backend/internal/config/config.go"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source"
     }
   ],
   "tokens": {
-    "input": 436,
-    "output": 443
+    "input": 27744,
+    "output": 1516
   }
 }
