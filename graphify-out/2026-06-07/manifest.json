@@ -5,18 +5,13 @@
     "semantic_hash": "c6f02da4f15fb58d39d03058e9825fc2"
   },
   "/home/ubuntu/code/github/raviautopilot/twin-config/config.sql": {
-    "mtime": 1780841123.5312886,
-    "ast_hash": "f98734c95bfd34804b84410d7f6d2e00",
-    "semantic_hash": "f98734c95bfd34804b84410d7f6d2e00"
+    "mtime": 1780840395.727189,
+    "ast_hash": "741521b7d719359c58c27b4b04cf3099",
+    "semantic_hash": "741521b7d719359c58c27b4b04cf3099"
   },
   "/home/ubuntu/code/github/raviautopilot/twin-config/init_twin.sql": {
     "mtime": 1780840395.727189,
     "ast_hash": "3c908515dcf826ecf8780554c0e1262c",
     "semantic_hash": "3c908515dcf826ecf8780554c0e1262c"
-  },
-  "/home/ubuntu/code/github/raviautopilot/twin-config/volume-wipe.sh": {
-    "mtime": 1780841328.3261876,
-    "ast_hash": "c06adced8e80f9a9d7d1bfbefc08df24",
-    "semantic_hash": "c06adced8e80f9a9d7d1bfbefc08df24"
   }
 }
