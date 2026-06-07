@@ -12,9 +12,9 @@
         "language": "bash",
         "kind": "file"
       },
+      "id": "manage_sh",
       "community": 1,
-      "norm_label": "manage.sh",
-      "id": "manage_sh"
+      "norm_label": "manage.sh"
     },
     {
       "label": "manage.sh script",
@@ -25,9 +25,9 @@
         "language": "bash",
         "kind": "bash_entrypoint"
       },
+      "id": "home_ubuntu_code_github_raviautopilot_twin_config_manage_sh__entry",
       "community": 1,
-      "norm_label": "manage.sh script",
-      "id": "home_ubuntu_code_github_raviautopilot_twin_config_manage_sh__entry"
+      "norm_label": "manage.sh script"
     },
     {
       "label": "Twin Config",
@@ -38,9 +38,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "readme_twin_config",
       "community": 0,
-      "norm_label": "twin config",
-      "id": "readme_twin_config"
+      "norm_label": "twin config"
     },
     {
       "label": "db service",
@@ -51,9 +51,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "docker_compose_db",
       "community": 0,
-      "norm_label": "db service",
-      "id": "docker_compose_db"
+      "norm_label": "db service"
     },
     {
       "label": "digital_twin database",
@@ -64,9 +64,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "docker_compose_digital_twin",
       "community": 0,
-      "norm_label": "digital_twin database",
-      "id": "docker_compose_digital_twin"
+      "norm_label": "digital_twin database"
     },
     {
       "label": "pgdata volume",
@@ -77,35 +77,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "docker_compose_pgdata",
       "community": 0,
-      "norm_label": "pgdata volume",
-      "id": "docker_compose_pgdata"
-    },
-    {
-      "label": "volume-wipe.sh",
-      "file_type": "code",
-      "source_file": "volume-wipe.sh",
-      "source_location": "L1",
-      "metadata": {
-        "language": "bash",
-        "kind": "file"
-      },
-      "id": "volume_wipe_sh",
-      "community": 2,
-      "norm_label": "volume-wipe.sh"
-    },
-    {
-      "label": "volume-wipe.sh script",
-      "file_type": "code",
-      "source_file": "volume-wipe.sh",
-      "source_location": "L1",
-      "metadata": {
-        "language": "bash",
-        "kind": "bash_entrypoint"
-      },
-      "id": "home_ubuntu_code_github_raviautopilot_twin_config_volume_wipe_sh__entry",
-      "community": 2,
-      "norm_label": "volume-wipe.sh script"
+      "norm_label": "pgdata volume"
     }
   ],
   "links": [
@@ -115,9 +89,9 @@
       "source_file": "manage.sh",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "manage_sh",
-      "target": "home_ubuntu_code_github_raviautopilot_twin_config_manage_sh__entry"
+      "target": "home_ubuntu_code_github_raviautopilot_twin_config_manage_sh__entry",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -148,18 +122,8 @@
       "weight": 1.0,
       "source": "docker_compose_db",
       "target": "docker_compose_pgdata"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "volume-wipe.sh",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "volume_wipe_sh",
-      "target": "home_ubuntu_code_github_raviautopilot_twin_config_volume_wipe_sh__entry",
-      "confidence_score": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "74a0356c64a90078ac6de6969ecbda1585bb96e8"
+  "built_at_commit": "b7e164b3c7b95e37e3c698f9171db1f8bbd3c688"
 }
