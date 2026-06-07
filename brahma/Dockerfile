@@ -21,10 +21,10 @@ FROM alpine:latest
 WORKDIR /root/
 
 # Copy the pre-built binary file from the previous stage
-COPY --from=builder /app/backend-app .
+COPY --from=builder /app/brahma-app .
 
 # Expose port (adjust as necessary)
 EXPOSE 8080
 
 # Command to run the executable
-CMD ["./backend-app"]
+CMD ["./brahma-app"]

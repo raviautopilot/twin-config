@@ -13,5 +13,5 @@ ENV POSTGRES_DB=digital_twin
 ENV POSTGRES_USER=twin_user
 ENV POSTGRES_PASSWORD=twin_pass
 
-# Configure default terminal access path to open directly into your twin database
+# Configure default terminal access path to open directly into your twin kaalam
 CMD ["postgres"]

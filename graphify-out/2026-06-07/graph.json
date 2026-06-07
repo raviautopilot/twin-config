@@ -12,7 +12,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 10,
       "norm_label": "twin config",
       "id": "readme_twin_config"
     },
@@ -25,7 +25,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 10,
       "norm_label": "db service",
       "id": "docker_compose_db"
     },
@@ -38,7 +38,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 10,
       "norm_label": "digital_twin database",
       "id": "docker_compose_digital_twin"
     },
@@ -51,7 +51,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 10,
       "norm_label": "pgdata volume",
       "id": "docker_compose_pgdata"
     },
@@ -64,7 +64,7 @@
         "language": "bash",
         "kind": "file"
       },
-      "community": 16,
+      "community": 20,
       "norm_label": "volume-wipe.sh",
       "id": "volume_wipe_sh"
     },
@@ -77,7 +77,7 @@
         "language": "bash",
         "kind": "bash_entrypoint"
       },
-      "community": 16,
+      "community": 20,
       "norm_label": "volume-wipe.sh script",
       "id": "home_ubuntu_code_github_raviautopilot_twin_config_volume_wipe_sh__entry"
     },
@@ -90,7 +90,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 10,
       "norm_label": "twin config dockerfile",
       "id": "dockerfile_twin_config"
     },
@@ -103,7 +103,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 10,
       "norm_label": "digital twin database",
       "id": "concept_digital_twin_db"
     },
@@ -112,7 +112,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.node.json",
       "source_location": "L1",
-      "community": 1,
+      "community": 3,
       "norm_label": "tsconfig.node.json",
       "id": "frontend_tsconfig_node_json"
     },
@@ -121,7 +121,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.node.json",
       "source_location": "L2",
-      "community": 1,
+      "community": 3,
       "norm_label": "compileroptions",
       "id": "frontend_tsconfig_node_compileroptions"
     },
@@ -130,7 +130,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.node.json",
       "source_location": "L3",
-      "community": 1,
+      "community": 3,
       "norm_label": "tsbuildinfofile",
       "id": "frontend_tsconfig_node_compileroptions_tsbuildinfofile"
     },
@@ -139,7 +139,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.node.json",
       "source_location": "L4",
-      "community": 1,
+      "community": 3,
       "norm_label": "target",
       "id": "frontend_tsconfig_node_compileroptions_target"
     },
@@ -148,7 +148,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.node.json",
       "source_location": "L5",
-      "community": 1,
+      "community": 3,
       "norm_label": "lib",
       "id": "frontend_tsconfig_node_compileroptions_lib"
     },
@@ -157,7 +157,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.node.json",
       "source_location": "L6",
-      "community": 1,
+      "community": 3,
       "norm_label": "module",
       "id": "frontend_tsconfig_node_compileroptions_module"
     },
@@ -166,7 +166,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.node.json",
       "source_location": "L7",
-      "community": 1,
+      "community": 3,
       "norm_label": "types",
       "id": "frontend_tsconfig_node_compileroptions_types"
     },
@@ -175,7 +175,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.node.json",
       "source_location": "L8",
-      "community": 1,
+      "community": 3,
       "norm_label": "skiplibcheck",
       "id": "frontend_tsconfig_node_compileroptions_skiplibcheck"
     },
@@ -184,7 +184,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.node.json",
       "source_location": "L11",
-      "community": 1,
+      "community": 3,
       "norm_label": "moduleresolution",
       "id": "frontend_tsconfig_node_compileroptions_moduleresolution"
     },
@@ -193,7 +193,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.node.json",
       "source_location": "L12",
-      "community": 1,
+      "community": 3,
       "norm_label": "allowimportingtsextensions",
       "id": "frontend_tsconfig_node_compileroptions_allowimportingtsextensions"
     },
@@ -202,7 +202,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.node.json",
       "source_location": "L13",
-      "community": 1,
+      "community": 3,
       "norm_label": "verbatimmodulesyntax",
       "id": "frontend_tsconfig_node_compileroptions_verbatimmodulesyntax"
     },
@@ -211,7 +211,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.node.json",
       "source_location": "L14",
-      "community": 1,
+      "community": 3,
       "norm_label": "moduledetection",
       "id": "frontend_tsconfig_node_compileroptions_moduledetection"
     },
@@ -220,7 +220,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.node.json",
       "source_location": "L15",
-      "community": 1,
+      "community": 3,
       "norm_label": "noemit",
       "id": "frontend_tsconfig_node_compileroptions_noemit"
     },
@@ -229,7 +229,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.node.json",
       "source_location": "L18",
-      "community": 1,
+      "community": 3,
       "norm_label": "nounusedlocals",
       "id": "frontend_tsconfig_node_compileroptions_nounusedlocals"
     },
@@ -238,7 +238,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.node.json",
       "source_location": "L19",
-      "community": 1,
+      "community": 3,
       "norm_label": "nounusedparameters",
       "id": "frontend_tsconfig_node_compileroptions_nounusedparameters"
     },
@@ -247,7 +247,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.node.json",
       "source_location": "L20",
-      "community": 1,
+      "community": 3,
       "norm_label": "erasablesyntaxonly",
       "id": "frontend_tsconfig_node_compileroptions_erasablesyntaxonly"
     },
@@ -256,7 +256,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.node.json",
       "source_location": "L21",
-      "community": 1,
+      "community": 3,
       "norm_label": "nofallthroughcasesinswitch",
       "id": "frontend_tsconfig_node_compileroptions_nofallthroughcasesinswitch"
     },
@@ -265,7 +265,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.node.json",
       "source_location": "L23",
-      "community": 1,
+      "community": 3,
       "norm_label": "include",
       "id": "frontend_tsconfig_node_include"
     },
@@ -274,7 +274,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.app.json",
       "source_location": "L1",
-      "community": 0,
+      "community": 2,
       "norm_label": "tsconfig.app.json",
       "id": "frontend_tsconfig_app_json"
     },
@@ -283,7 +283,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.app.json",
       "source_location": "L2",
-      "community": 0,
+      "community": 2,
       "norm_label": "compileroptions",
       "id": "frontend_tsconfig_app_compileroptions"
     },
@@ -292,7 +292,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.app.json",
       "source_location": "L3",
-      "community": 0,
+      "community": 2,
       "norm_label": "tsbuildinfofile",
       "id": "frontend_tsconfig_app_compileroptions_tsbuildinfofile"
     },
@@ -301,7 +301,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.app.json",
       "source_location": "L4",
-      "community": 0,
+      "community": 2,
       "norm_label": "target",
       "id": "frontend_tsconfig_app_compileroptions_target"
     },
@@ -310,7 +310,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.app.json",
       "source_location": "L5",
-      "community": 0,
+      "community": 2,
       "norm_label": "lib",
       "id": "frontend_tsconfig_app_compileroptions_lib"
     },
@@ -319,7 +319,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.app.json",
       "source_location": "L6",
-      "community": 0,
+      "community": 2,
       "norm_label": "module",
       "id": "frontend_tsconfig_app_compileroptions_module"
     },
@@ -328,7 +328,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.app.json",
       "source_location": "L7",
-      "community": 0,
+      "community": 2,
       "norm_label": "types",
       "id": "frontend_tsconfig_app_compileroptions_types"
     },
@@ -337,7 +337,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.app.json",
       "source_location": "L8",
-      "community": 0,
+      "community": 2,
       "norm_label": "skiplibcheck",
       "id": "frontend_tsconfig_app_compileroptions_skiplibcheck"
     },
@@ -346,7 +346,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.app.json",
       "source_location": "L11",
-      "community": 0,
+      "community": 2,
       "norm_label": "moduleresolution",
       "id": "frontend_tsconfig_app_compileroptions_moduleresolution"
     },
@@ -355,7 +355,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.app.json",
       "source_location": "L12",
-      "community": 0,
+      "community": 2,
       "norm_label": "allowimportingtsextensions",
       "id": "frontend_tsconfig_app_compileroptions_allowimportingtsextensions"
     },
@@ -364,7 +364,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.app.json",
       "source_location": "L13",
-      "community": 0,
+      "community": 2,
       "norm_label": "verbatimmodulesyntax",
       "id": "frontend_tsconfig_app_compileroptions_verbatimmodulesyntax"
     },
@@ -373,7 +373,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.app.json",
       "source_location": "L14",
-      "community": 0,
+      "community": 2,
       "norm_label": "moduledetection",
       "id": "frontend_tsconfig_app_compileroptions_moduledetection"
     },
@@ -382,7 +382,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.app.json",
       "source_location": "L15",
-      "community": 0,
+      "community": 2,
       "norm_label": "noemit",
       "id": "frontend_tsconfig_app_compileroptions_noemit"
     },
@@ -391,7 +391,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.app.json",
       "source_location": "L16",
-      "community": 0,
+      "community": 2,
       "norm_label": "jsx",
       "id": "frontend_tsconfig_app_compileroptions_jsx"
     },
@@ -400,7 +400,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.app.json",
       "source_location": "L19",
-      "community": 0,
+      "community": 2,
       "norm_label": "nounusedlocals",
       "id": "frontend_tsconfig_app_compileroptions_nounusedlocals"
     },
@@ -409,7 +409,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.app.json",
       "source_location": "L20",
-      "community": 0,
+      "community": 2,
       "norm_label": "nounusedparameters",
       "id": "frontend_tsconfig_app_compileroptions_nounusedparameters"
     },
@@ -418,7 +418,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.app.json",
       "source_location": "L21",
-      "community": 0,
+      "community": 2,
       "norm_label": "erasablesyntaxonly",
       "id": "frontend_tsconfig_app_compileroptions_erasablesyntaxonly"
     },
@@ -427,7 +427,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.app.json",
       "source_location": "L22",
-      "community": 0,
+      "community": 2,
       "norm_label": "nofallthroughcasesinswitch",
       "id": "frontend_tsconfig_app_compileroptions_nofallthroughcasesinswitch"
     },
@@ -436,7 +436,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.app.json",
       "source_location": "L24",
-      "community": 0,
+      "community": 2,
       "norm_label": "include",
       "id": "frontend_tsconfig_app_include"
     },
@@ -445,7 +445,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L1",
-      "community": 3,
+      "community": 6,
       "norm_label": "package.json",
       "id": "frontend_package_json"
     },
@@ -454,7 +454,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L2",
-      "community": 3,
+      "community": 6,
       "norm_label": "name",
       "id": "frontend_package_name"
     },
@@ -463,7 +463,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L3",
-      "community": 3,
+      "community": 6,
       "norm_label": "private",
       "id": "frontend_package_private"
     },
@@ -472,7 +472,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L4",
-      "community": 3,
+      "community": 6,
       "norm_label": "version",
       "id": "frontend_package_version"
     },
@@ -481,7 +481,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L5",
-      "community": 3,
+      "community": 6,
       "norm_label": "type",
       "id": "frontend_package_type"
     },
@@ -490,7 +490,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L6",
-      "community": 3,
+      "community": 6,
       "norm_label": "scripts",
       "id": "frontend_package_scripts"
     },
@@ -499,7 +499,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L7",
-      "community": 3,
+      "community": 6,
       "norm_label": "dev",
       "id": "frontend_package_scripts_dev"
     },
@@ -508,7 +508,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L8",
-      "community": 3,
+      "community": 6,
       "norm_label": "build",
       "id": "frontend_package_scripts_build"
     },
@@ -517,7 +517,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L9",
-      "community": 3,
+      "community": 6,
       "norm_label": "lint",
       "id": "frontend_package_scripts_lint"
     },
@@ -526,7 +526,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L10",
-      "community": 3,
+      "community": 6,
       "norm_label": "preview",
       "id": "frontend_package_scripts_preview"
     },
@@ -535,7 +535,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L12",
-      "community": 3,
+      "community": 6,
       "norm_label": "dependencies",
       "id": "frontend_package_dependencies"
     },
@@ -544,7 +544,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L13",
-      "community": 3,
+      "community": 6,
       "norm_label": "lucide-react",
       "id": "frontend_package_dependencies_lucide_react"
     },
@@ -553,7 +553,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L14",
-      "community": 3,
+      "community": 6,
       "norm_label": "react",
       "id": "frontend_package_dependencies_react"
     },
@@ -562,7 +562,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L15",
-      "community": 3,
+      "community": 6,
       "norm_label": "react-dom",
       "id": "frontend_package_dependencies_react_dom"
     },
@@ -571,7 +571,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L17",
-      "community": 2,
+      "community": 5,
       "norm_label": "devdependencies",
       "id": "frontend_package_devdependencies"
     },
@@ -580,7 +580,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L18",
-      "community": 2,
+      "community": 5,
       "norm_label": "@eslint/js",
       "id": "frontend_package_devdependencies_eslint_js"
     },
@@ -589,7 +589,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L19",
-      "community": 2,
+      "community": 5,
       "norm_label": "@tailwindcss/vite",
       "id": "frontend_package_devdependencies_tailwindcss_vite"
     },
@@ -598,7 +598,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L20",
-      "community": 2,
+      "community": 5,
       "norm_label": "@types/node",
       "id": "frontend_package_devdependencies_types_node"
     },
@@ -607,7 +607,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L21",
-      "community": 2,
+      "community": 5,
       "norm_label": "@types/react",
       "id": "frontend_package_devdependencies_types_react"
     },
@@ -616,7 +616,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L23",
-      "community": 2,
+      "community": 5,
       "norm_label": "@vitejs/plugin-react",
       "id": "frontend_package_devdependencies_vitejs_plugin_react"
     },
@@ -625,7 +625,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L24",
-      "community": 2,
+      "community": 5,
       "norm_label": "eslint",
       "id": "frontend_package_devdependencies_eslint"
     },
@@ -634,7 +634,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L25",
-      "community": 2,
+      "community": 5,
       "norm_label": "eslint-plugin-react-hooks",
       "id": "frontend_package_devdependencies_eslint_plugin_react_hooks"
     },
@@ -643,7 +643,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L26",
-      "community": 2,
+      "community": 5,
       "norm_label": "eslint-plugin-react-refresh",
       "id": "frontend_package_devdependencies_eslint_plugin_react_refresh"
     },
@@ -652,7 +652,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L27",
-      "community": 2,
+      "community": 5,
       "norm_label": "globals",
       "id": "frontend_package_devdependencies_globals"
     },
@@ -661,7 +661,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L28",
-      "community": 2,
+      "community": 5,
       "norm_label": "tailwindcss",
       "id": "frontend_package_devdependencies_tailwindcss"
     },
@@ -670,7 +670,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L29",
-      "community": 2,
+      "community": 5,
       "norm_label": "typescript",
       "id": "frontend_package_devdependencies_typescript"
     },
@@ -679,7 +679,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L30",
-      "community": 2,
+      "community": 5,
       "norm_label": "typescript-eslint",
       "id": "frontend_package_devdependencies_typescript_eslint"
     },
@@ -688,7 +688,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L31",
-      "community": 2,
+      "community": 5,
       "norm_label": "vite",
       "id": "frontend_package_devdependencies_vite"
     },
@@ -697,7 +697,7 @@
       "file_type": "code",
       "source_file": "frontend/vite.config.ts",
       "source_location": "L1",
-      "community": 17,
+      "community": 24,
       "norm_label": "vite.config.ts",
       "id": "frontend_vite_config_ts"
     },
@@ -706,7 +706,7 @@
       "file_type": "code",
       "source_file": "frontend/eslint.config.js",
       "source_location": "L1",
-      "community": 18,
+      "community": 25,
       "norm_label": "eslint.config.js",
       "id": "frontend_eslint_config_js"
     },
@@ -715,7 +715,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.json",
       "source_location": "L1",
-      "community": 11,
+      "community": 16,
       "norm_label": "tsconfig.json",
       "id": "frontend_tsconfig_json"
     },
@@ -724,7 +724,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.json",
       "source_location": "L2",
-      "community": 11,
+      "community": 16,
       "norm_label": "files",
       "id": "frontend_tsconfig_files"
     },
@@ -733,7 +733,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.json",
       "source_location": "L3",
-      "community": 11,
+      "community": 16,
       "norm_label": "references",
       "id": "frontend_tsconfig_references"
     },
@@ -742,7 +742,7 @@
       "file_type": "code",
       "source_file": "frontend/src/App.tsx",
       "source_location": "L1",
-      "community": 6,
+      "community": 4,
       "norm_label": "app.tsx",
       "id": "frontend_src_app_tsx"
     },
@@ -751,7 +751,7 @@
       "file_type": "code",
       "source_file": "frontend/src/App.tsx",
       "source_location": "L24",
-      "community": 6,
+      "community": 4,
       "norm_label": "contactdetails",
       "id": "src_app_contactdetails"
     },
@@ -760,7 +760,7 @@
       "file_type": "code",
       "source_file": "frontend/src/App.tsx",
       "source_location": "L31",
-      "community": 6,
+      "community": 4,
       "norm_label": "contact",
       "id": "src_app_contact"
     },
@@ -769,7 +769,7 @@
       "file_type": "code",
       "source_file": "frontend/src/App.tsx",
       "source_location": "L40",
-      "community": 6,
+      "community": 4,
       "norm_label": "associatedworkflows",
       "id": "src_app_associatedworkflows"
     },
@@ -778,7 +778,7 @@
       "file_type": "code",
       "source_file": "frontend/src/App.tsx",
       "source_location": "L46",
-      "community": 6,
+      "community": 4,
       "norm_label": "financialentity",
       "id": "src_app_financialentity"
     },
@@ -787,7 +787,7 @@
       "file_type": "code",
       "source_file": "frontend/src/App.tsx",
       "source_location": "L55",
-      "community": 6,
+      "community": 4,
       "norm_label": "metaconfig",
       "id": "src_app_metaconfig"
     },
@@ -796,7 +796,7 @@
       "file_type": "code",
       "source_file": "frontend/src/App.tsx",
       "source_location": "L62",
-      "community": 6,
+      "community": 4,
       "norm_label": "summarydata",
       "id": "src_app_summarydata"
     },
@@ -805,7 +805,7 @@
       "file_type": "code",
       "source_file": "frontend/src/App.tsx",
       "source_location": "L78",
-      "community": 6,
+      "community": 4,
       "norm_label": "app()",
       "id": "src_app_app"
     },
@@ -814,7 +814,7 @@
       "file_type": "code",
       "source_file": "frontend/src/main.tsx",
       "source_location": "L1",
-      "community": 6,
+      "community": 4,
       "norm_label": "main.tsx",
       "id": "frontend_src_main_tsx"
     },
@@ -823,7 +823,7 @@
       "file_type": "code",
       "source_file": "backend/cmd/main.go",
       "source_location": "L1",
-      "community": 5,
+      "community": 7,
       "norm_label": "main.go",
       "id": "backend_cmd_main_go"
     },
@@ -832,7 +832,7 @@
       "file_type": "code",
       "source_file": "backend/cmd/main.go",
       "source_location": "L19",
-      "community": 5,
+      "community": 7,
       "norm_label": "main()",
       "id": "cmd_main_main"
     },
@@ -841,7 +841,7 @@
       "file_type": "code",
       "source_file": "backend/cmd/main.go",
       "source_location": "L120",
-      "community": 5,
+      "community": 7,
       "norm_label": "corsmiddleware()",
       "id": "cmd_main_corsmiddleware"
     },
@@ -850,7 +850,7 @@
       "file_type": "code",
       "source_file": "backend/cmd/main.go",
       "source_location": "L137",
-      "community": 5,
+      "community": 7,
       "norm_label": "zaprequestlogger()",
       "id": "cmd_main_zaprequestlogger"
     },
@@ -859,7 +859,7 @@
       "file_type": "code",
       "source_file": "backend/cmd/main.go",
       "source_location": "L161",
-      "community": 5,
+      "community": 7,
       "norm_label": "seedinitialdataifempty()",
       "id": "cmd_main_seedinitialdataifempty"
     },
@@ -868,7 +868,7 @@
       "file_type": "code",
       "source_file": "backend/internal/config/logger.go",
       "source_location": "L1",
-      "community": 8,
+      "community": 12,
       "norm_label": "logger.go",
       "id": "backend_internal_config_logger_go"
     },
@@ -877,7 +877,7 @@
       "file_type": "code",
       "source_file": "backend/internal/config/logger.go",
       "source_location": "L11",
-      "community": 8,
+      "community": 12,
       "norm_label": "gormzaplogger",
       "id": "config_gormzaplogger"
     },
@@ -886,7 +886,7 @@
       "file_type": "code",
       "source_file": "backend/internal/config/logger.go",
       "source_location": "L16",
-      "community": 8,
+      "community": 12,
       "norm_label": ".logmode()",
       "id": "config_gormzaplogger_logmode"
     },
@@ -895,7 +895,7 @@
       "file_type": "code",
       "source_file": "backend/internal/config/logger.go",
       "source_location": "L20",
-      "community": 8,
+      "community": 12,
       "norm_label": ".info()",
       "id": "config_gormzaplogger_info"
     },
@@ -904,7 +904,7 @@
       "file_type": "code",
       "source_file": "backend/internal/config/logger.go",
       "source_location": "L26",
-      "community": 8,
+      "community": 12,
       "norm_label": ".warn()",
       "id": "config_gormzaplogger_warn"
     },
@@ -913,7 +913,7 @@
       "file_type": "code",
       "source_file": "backend/internal/config/logger.go",
       "source_location": "L32",
-      "community": 8,
+      "community": 12,
       "norm_label": ".error()",
       "id": "config_gormzaplogger_error"
     },
@@ -922,7 +922,7 @@
       "file_type": "code",
       "source_file": "backend/internal/config/logger.go",
       "source_location": "L38",
-      "community": 8,
+      "community": 12,
       "norm_label": ".trace()",
       "id": "config_gormzaplogger_trace"
     },
@@ -931,7 +931,7 @@
       "file_type": "code",
       "source_file": "backend/internal/config/config.go",
       "source_location": "L1",
-      "community": 5,
+      "community": 7,
       "norm_label": "config.go",
       "id": "backend_internal_config_config_go"
     },
@@ -940,7 +940,7 @@
       "file_type": "code",
       "source_file": "backend/internal/config/config.go",
       "source_location": "L8",
-      "community": 5,
+      "community": 7,
       "norm_label": "config",
       "id": "config_config"
     },
@@ -949,7 +949,7 @@
       "file_type": "code",
       "source_file": "backend/internal/config/config.go",
       "source_location": "L17",
-      "community": 5,
+      "community": 7,
       "norm_label": "loadconfig()",
       "id": "config_config_loadconfig"
     },
@@ -958,7 +958,7 @@
       "file_type": "code",
       "source_file": "backend/internal/config/config.go",
       "source_location": "L28",
-      "community": 5,
+      "community": 7,
       "norm_label": ".getdsn()",
       "id": "config_config_getdsn"
     },
@@ -967,79 +967,16 @@
       "file_type": "code",
       "source_file": "backend/internal/config/config.go",
       "source_location": "L33",
-      "community": 5,
+      "community": 7,
       "norm_label": "getenv()",
       "id": "config_config_getenv"
-    },
-    {
-      "label": "models.go",
-      "file_type": "code",
-      "source_file": "backend/internal/models/models.go",
-      "source_location": "L1",
-      "community": 9,
-      "norm_label": "models.go",
-      "id": "backend_internal_models_models_go"
-    },
-    {
-      "label": "ContactDetails",
-      "file_type": "code",
-      "source_file": "backend/internal/models/models.go",
-      "source_location": "L8",
-      "community": 9,
-      "norm_label": "contactdetails",
-      "id": "models_contactdetails"
-    },
-    {
-      "label": "Contact",
-      "file_type": "code",
-      "source_file": "backend/internal/models/models.go",
-      "source_location": "L16",
-      "community": 9,
-      "norm_label": "contact",
-      "id": "models_contact"
-    },
-    {
-      "label": "AssociatedWorkflows",
-      "file_type": "code",
-      "source_file": "backend/internal/models/models.go",
-      "source_location": "L27",
-      "community": 9,
-      "norm_label": "associatedworkflows",
-      "id": "models_associatedworkflows"
-    },
-    {
-      "label": "FinancialEntity",
-      "file_type": "code",
-      "source_file": "backend/internal/models/models.go",
-      "source_location": "L34",
-      "community": 9,
-      "norm_label": "financialentity",
-      "id": "models_financialentity"
-    },
-    {
-      "label": "MetaConfig",
-      "file_type": "code",
-      "source_file": "backend/internal/models/models.go",
-      "source_location": "L45",
-      "community": 9,
-      "norm_label": "metaconfig",
-      "id": "models_metaconfig"
-    },
-    {
-      "label": ".TableName()",
-      "file_type": "code",
-      "source_file": "backend/internal/models/models.go",
-      "source_location": "L54",
-      "community": 9,
-      "norm_label": ".tablename()",
-      "id": "models_metaconfig_tablename"
     },
     {
       "label": "handlers.go",
       "file_type": "code",
       "source_file": "backend/internal/handlers/handlers.go",
       "source_location": "L1",
-      "community": 4,
+      "community": 7,
       "norm_label": "handlers.go",
       "id": "backend_internal_handlers_handlers_go"
     },
@@ -1048,7 +985,7 @@
       "file_type": "code",
       "source_file": "backend/internal/handlers/handlers.go",
       "source_location": "L14",
-      "community": 4,
+      "community": 0,
       "norm_label": "handler",
       "id": "handlers_handler"
     },
@@ -1057,7 +994,7 @@
       "file_type": "code",
       "source_file": "backend/internal/handlers/handlers.go",
       "source_location": "L19",
-      "community": 4,
+      "community": 7,
       "norm_label": "newhandler()",
       "id": "handlers_handlers_newhandler"
     },
@@ -1066,7 +1003,7 @@
       "file_type": "code",
       "source_file": "backend/internal/handlers/handlers.go",
       "source_location": "L23",
-      "community": 4,
+      "community": 7,
       "norm_label": "summaryresponse",
       "id": "handlers_summaryresponse"
     },
@@ -1075,7 +1012,7 @@
       "file_type": "code",
       "source_file": "backend/internal/handlers/handlers.go",
       "source_location": "L31",
-      "community": 4,
+      "community": 0,
       "norm_label": ".getsummary()",
       "id": "handlers_handler_getsummary"
     },
@@ -1084,7 +1021,7 @@
       "file_type": "code",
       "source_file": "backend/internal/handlers/handlers.go",
       "source_location": "L77",
-      "community": 4,
+      "community": 0,
       "norm_label": ".getcontacts()",
       "id": "handlers_handler_getcontacts"
     },
@@ -1093,7 +1030,7 @@
       "file_type": "code",
       "source_file": "backend/internal/handlers/handlers.go",
       "source_location": "L89",
-      "community": 4,
+      "community": 0,
       "norm_label": ".createcontact()",
       "id": "handlers_handler_createcontact"
     },
@@ -1102,7 +1039,7 @@
       "file_type": "code",
       "source_file": "backend/internal/handlers/handlers.go",
       "source_location": "L114",
-      "community": 4,
+      "community": 0,
       "norm_label": ".getfinancials()",
       "id": "handlers_handler_getfinancials"
     },
@@ -1111,7 +1048,7 @@
       "file_type": "code",
       "source_file": "backend/internal/handlers/handlers.go",
       "source_location": "L126",
-      "community": 4,
+      "community": 0,
       "norm_label": ".createfinancial()",
       "id": "handlers_handler_createfinancial"
     },
@@ -1120,7 +1057,7 @@
       "file_type": "code",
       "source_file": "backend/internal/handlers/handlers.go",
       "source_location": "L151",
-      "community": 4,
+      "community": 0,
       "norm_label": ".getmetaconfigs()",
       "id": "handlers_handler_getmetaconfigs"
     },
@@ -1129,7 +1066,7 @@
       "file_type": "code",
       "source_file": "backend/internal/handlers/handlers.go",
       "source_location": "L163",
-      "community": 4,
+      "community": 0,
       "norm_label": ".createmetaconfig()",
       "id": "handlers_handler_createmetaconfig"
     },
@@ -1142,7 +1079,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 23,
       "norm_label": "react",
       "id": "readme_react"
     },
@@ -1155,7 +1092,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 22,
       "norm_label": "typescript",
       "id": "readme_typescript"
     },
@@ -1168,7 +1105,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 23,
       "norm_label": "vite",
       "id": "readme_vite"
     },
@@ -1181,7 +1118,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 22,
       "norm_label": "eslint",
       "id": "readme_eslint"
     },
@@ -1194,7 +1131,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 21,
       "norm_label": "root div",
       "id": "index_html_root"
     },
@@ -1207,7 +1144,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 21,
       "norm_label": "main entry point",
       "id": "main_tsx"
     },
@@ -1220,7 +1157,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 26,
       "norm_label": "favicon",
       "id": "favicon_svg"
     },
@@ -1233,7 +1170,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 27,
       "norm_label": "icon sprite sheet",
       "id": "icons_svg"
     },
@@ -1246,7 +1183,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 28,
       "norm_label": "hero image",
       "id": "hero_png"
     },
@@ -1259,7 +1196,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
+      "community": 29,
       "norm_label": "vite logo",
       "id": "vite_svg"
     },
@@ -1272,7 +1209,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 30,
       "norm_label": "react logo",
       "id": "react_svg"
     },
@@ -1285,7 +1222,7 @@
         "language": "bash",
         "kind": "file"
       },
-      "community": 12,
+      "community": 19,
       "norm_label": "docker-setup.sh",
       "id": "docker_setup_sh"
     },
@@ -1298,7 +1235,7 @@
         "language": "bash",
         "kind": "bash_entrypoint"
       },
-      "community": 12,
+      "community": 19,
       "norm_label": "docker-setup.sh script",
       "id": "home_ubuntu_code_github_raviautopilot_twin_config_docker_setup_sh__entry"
     },
@@ -1311,7 +1248,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 10,
       "norm_label": "backend service",
       "id": "docker_compose_backend"
     },
@@ -1324,7 +1261,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 10,
       "norm_label": "frontend service",
       "id": "docker_compose_frontend"
     },
@@ -1337,9 +1274,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "usage_frontend",
-      "community": 10,
-      "norm_label": "frontend service"
+      "community": 14,
+      "norm_label": "frontend service",
+      "id": "usage_frontend"
     },
     {
       "label": "Backend API Server",
@@ -1350,9 +1287,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "usage_backend",
-      "community": 10,
-      "norm_label": "backend api server"
+      "community": 14,
+      "norm_label": "backend api server",
+      "id": "usage_backend"
     },
     {
       "label": "PostgreSQL Database",
@@ -1363,9 +1300,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "usage_postgresql",
-      "community": 10,
-      "norm_label": "postgresql database"
+      "community": 14,
+      "norm_label": "postgresql database",
+      "id": "usage_postgresql"
     },
     {
       "label": "digital_twin Database",
@@ -1376,9 +1313,927 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "usage_digital_twin",
-      "community": 10,
-      "norm_label": "digital_twin database"
+      "community": 14,
+      "norm_label": "digital_twin database",
+      "id": "usage_digital_twin"
+    },
+    {
+      "label": "CfgModule",
+      "file_type": "code",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L27",
+      "id": "src_app_cfgmodule",
+      "community": 4,
+      "norm_label": "cfgmodule"
+    },
+    {
+      "label": "CfgType",
+      "file_type": "code",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L35",
+      "id": "src_app_cfgtype",
+      "community": 4,
+      "norm_label": "cfgtype"
+    },
+    {
+      "label": "TwinEvent",
+      "file_type": "code",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L63",
+      "id": "src_app_twinevent",
+      "community": 4,
+      "norm_label": "twinevent"
+    },
+    {
+      "label": "TwinImpact",
+      "file_type": "code",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L70",
+      "id": "src_app_twinimpact",
+      "community": 4,
+      "norm_label": "twinimpact"
+    },
+    {
+      "label": "EventDetail",
+      "file_type": "code",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L78",
+      "id": "src_app_eventdetail",
+      "community": 4,
+      "norm_label": "eventdetail"
+    },
+    {
+      "label": "MenuSection",
+      "file_type": "code",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L103",
+      "id": "src_app_menusection",
+      "community": 4,
+      "norm_label": "menusection"
+    },
+    {
+      "label": "docs.go",
+      "file_type": "code",
+      "source_file": "backend/docs/docs.go",
+      "source_location": "L1",
+      "id": "backend_docs_docs_go",
+      "community": 18,
+      "norm_label": "docs.go"
+    },
+    {
+      "label": "init()",
+      "file_type": "code",
+      "source_file": "backend/docs/docs.go",
+      "source_location": "L1758",
+      "id": "docs_docs_init",
+      "community": 18,
+      "norm_label": "init()"
+    },
+    {
+      "label": "swagger.json",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1",
+      "id": "backend_docs_swagger_json",
+      "community": 9,
+      "norm_label": "swagger.json"
+    },
+    {
+      "label": "swagger",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L2",
+      "id": "docs_swagger_swagger",
+      "community": 9,
+      "norm_label": "swagger"
+    },
+    {
+      "label": "info",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L3",
+      "id": "docs_swagger_info",
+      "community": 9,
+      "norm_label": "info"
+    },
+    {
+      "label": "title",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L5",
+      "id": "docs_swagger_info_title",
+      "community": 9,
+      "norm_label": "title"
+    },
+    {
+      "label": "contact",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L6",
+      "id": "docs_swagger_info_contact",
+      "community": 9,
+      "norm_label": "contact"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L7",
+      "id": "docs_swagger_contact_name",
+      "community": 9,
+      "norm_label": "name"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L9",
+      "id": "docs_swagger_info_version",
+      "community": 9,
+      "norm_label": "version"
+    },
+    {
+      "label": "host",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L11",
+      "id": "docs_swagger_host",
+      "community": 9,
+      "norm_label": "host"
+    },
+    {
+      "label": "basePath",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L12",
+      "id": "docs_swagger_basepath",
+      "community": 9,
+      "norm_label": "basepath"
+    },
+    {
+      "label": "paths",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L13",
+      "id": "docs_swagger_paths",
+      "community": 1,
+      "norm_label": "paths"
+    },
+    {
+      "label": "description",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L16",
+      "id": "docs_swagger_get_description",
+      "community": 8,
+      "norm_label": "description"
+    },
+    {
+      "label": "produces",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L17",
+      "id": "docs_swagger_get_produces",
+      "community": 1,
+      "norm_label": "produces"
+    },
+    {
+      "label": "tags",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L20",
+      "id": "docs_swagger_get_tags",
+      "community": 1,
+      "norm_label": "tags"
+    },
+    {
+      "label": "summary",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L23",
+      "id": "docs_swagger_get_summary",
+      "community": 1,
+      "norm_label": "summary"
+    },
+    {
+      "label": "responses",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L24",
+      "id": "docs_swagger_get_responses",
+      "community": 8,
+      "norm_label": "responses"
+    },
+    {
+      "label": "200",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L25",
+      "id": "docs_swagger_responses_200",
+      "community": 8,
+      "norm_label": "200"
+    },
+    {
+      "label": "schema",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L27",
+      "id": "docs_swagger_200_schema",
+      "community": 8,
+      "norm_label": "schema"
+    },
+    {
+      "label": "type",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L28",
+      "id": "docs_swagger_schema_type",
+      "community": 8,
+      "norm_label": "type"
+    },
+    {
+      "label": "items",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L29",
+      "id": "docs_swagger_schema_items",
+      "community": 8,
+      "norm_label": "items"
+    },
+    {
+      "label": "500",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L34",
+      "id": "docs_swagger_responses_500",
+      "community": 8,
+      "norm_label": "500"
+    },
+    {
+      "label": "additionalProperties",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L38",
+      "id": "docs_swagger_schema_additionalproperties",
+      "community": 8,
+      "norm_label": "additionalproperties"
+    },
+    {
+      "label": "201",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L69",
+      "id": "docs_swagger_responses_201",
+      "community": 8,
+      "norm_label": "201"
+    },
+    {
+      "label": "$ref",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L72",
+      "id": "docs_swagger_schema_ref",
+      "community": 8,
+      "norm_label": "$ref"
+    },
+    {
+      "label": "400",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L75",
+      "id": "docs_swagger_responses_400",
+      "community": 8,
+      "norm_label": "400"
+    },
+    {
+      "label": "consumes",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L99",
+      "id": "docs_swagger_put_consumes",
+      "community": 1,
+      "norm_label": "consumes"
+    },
+    {
+      "label": "parameters",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L109",
+      "id": "docs_swagger_put_parameters",
+      "community": 1,
+      "norm_label": "parameters"
+    },
+    {
+      "label": "404",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L150",
+      "id": "docs_swagger_responses_404",
+      "community": 8,
+      "norm_label": "404"
+    },
+    {
+      "label": "/cfg/modules",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L595",
+      "id": "docs_swagger_paths_cfg_modules",
+      "community": 1,
+      "norm_label": "/cfg/modules"
+    },
+    {
+      "label": "/cfg/types",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L784",
+      "id": "docs_swagger_paths_cfg_types",
+      "community": 1,
+      "norm_label": "/cfg/types"
+    },
+    {
+      "label": "post",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L815",
+      "id": "docs_swagger_cfg_types_post",
+      "community": 1,
+      "norm_label": "post"
+    },
+    {
+      "label": "put",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L867",
+      "id": "docs_swagger_cfg_types_id_put",
+      "community": 1,
+      "norm_label": "put"
+    },
+    {
+      "label": "delete",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L933",
+      "id": "docs_swagger_cfg_types_id_delete",
+      "community": 1,
+      "norm_label": "delete"
+    },
+    {
+      "label": "get",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L974",
+      "id": "docs_swagger_summary_get",
+      "community": 1,
+      "norm_label": "get"
+    },
+    {
+      "label": "/twin/event-details",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L993",
+      "id": "docs_swagger_paths_twin_event_details",
+      "community": 1,
+      "norm_label": "/twin/event-details"
+    },
+    {
+      "label": "audit.go",
+      "file_type": "code",
+      "source_file": "backend/internal/models/audit.go",
+      "source_location": "L1",
+      "id": "backend_internal_models_audit_go",
+      "community": 15,
+      "norm_label": "audit.go"
+    },
+    {
+      "label": "AuditLog",
+      "file_type": "code",
+      "source_file": "backend/internal/models/audit.go",
+      "source_location": "L6",
+      "id": "models_auditlog",
+      "community": 15,
+      "norm_label": "auditlog"
+    },
+    {
+      "label": ".TableName()",
+      "file_type": "code",
+      "source_file": "backend/internal/models/audit.go",
+      "source_location": "L17",
+      "id": "models_auditlog_tablename",
+      "community": 15,
+      "norm_label": ".tablename()"
+    },
+    {
+      "label": "twin.go",
+      "file_type": "code",
+      "source_file": "backend/internal/models/twin.go",
+      "source_location": "L1",
+      "id": "backend_internal_models_twin_go",
+      "community": 13,
+      "norm_label": "twin.go"
+    },
+    {
+      "label": "TwinEvent",
+      "file_type": "code",
+      "source_file": "backend/internal/models/twin.go",
+      "source_location": "L6",
+      "id": "models_twinevent",
+      "community": 13,
+      "norm_label": "twinevent"
+    },
+    {
+      "label": ".TableName()",
+      "file_type": "code",
+      "source_file": "backend/internal/models/twin.go",
+      "source_location": "L13",
+      "id": "models_twinevent_tablename",
+      "community": 13,
+      "norm_label": ".tablename()"
+    },
+    {
+      "label": "TwinImpact",
+      "file_type": "code",
+      "source_file": "backend/internal/models/twin.go",
+      "source_location": "L18",
+      "id": "models_twinimpact",
+      "community": 13,
+      "norm_label": "twinimpact"
+    },
+    {
+      "label": "cfg.go",
+      "file_type": "code",
+      "source_file": "backend/internal/models/cfg.go",
+      "source_location": "L1",
+      "id": "backend_internal_models_cfg_go",
+      "community": 1,
+      "norm_label": "cfg.go"
+    },
+    {
+      "label": "CfgModule",
+      "file_type": "code",
+      "source_file": "backend/internal/models/cfg.go",
+      "source_location": "L6",
+      "id": "models_cfgmodule",
+      "community": 1,
+      "norm_label": "cfgmodule"
+    },
+    {
+      "label": "CfgType",
+      "file_type": "code",
+      "source_file": "backend/internal/models/cfg.go",
+      "source_location": "L19",
+      "id": "models_cfgtype",
+      "community": 1,
+      "norm_label": "cfgtype"
+    },
+    {
+      "label": ".TableName()",
+      "file_type": "code",
+      "source_file": "backend/internal/models/cfg.go",
+      "source_location": "L29",
+      "id": "models_cfgtype_tablename",
+      "community": 1,
+      "norm_label": ".tablename()"
+    },
+    {
+      "label": "CfgEventType",
+      "file_type": "code",
+      "source_file": "backend/internal/models/cfg.go",
+      "source_location": "L34",
+      "id": "models_cfgeventtype",
+      "community": 1,
+      "norm_label": "cfgeventtype"
+    },
+    {
+      "label": "CfgDimension",
+      "file_type": "code",
+      "source_file": "backend/internal/models/cfg.go",
+      "source_location": "L45",
+      "id": "models_cfgdimension",
+      "community": 1,
+      "norm_label": "cfgdimension"
+    },
+    {
+      "label": "CfgAttributeKey",
+      "file_type": "code",
+      "source_file": "backend/internal/models/cfg.go",
+      "source_location": "L56",
+      "id": "models_cfgattributekey",
+      "community": 1,
+      "norm_label": "cfgattributekey"
+    },
+    {
+      "label": "event.go",
+      "file_type": "code",
+      "source_file": "backend/internal/models/event.go",
+      "source_location": "L1",
+      "id": "backend_internal_models_event_go",
+      "community": 17,
+      "norm_label": "event.go"
+    },
+    {
+      "label": "EventDetail",
+      "file_type": "code",
+      "source_file": "backend/internal/models/event.go",
+      "source_location": "L4",
+      "id": "models_eventdetail",
+      "community": 17,
+      "norm_label": "eventdetail"
+    },
+    {
+      "label": ".TableName()",
+      "file_type": "code",
+      "source_file": "backend/internal/models/event.go",
+      "source_location": "L10",
+      "id": "models_eventdetail_tablename",
+      "community": 17,
+      "norm_label": ".tablename()"
+    },
+    {
+      "label": ".GetModules()",
+      "file_type": "code",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L90",
+      "id": "handlers_handler_getmodules",
+      "community": 0,
+      "norm_label": ".getmodules()"
+    },
+    {
+      "label": ".CreateModule()",
+      "file_type": "code",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L111",
+      "id": "handlers_handler_createmodule",
+      "community": 0,
+      "norm_label": ".createmodule()"
+    },
+    {
+      "label": ".UpdateModule()",
+      "file_type": "code",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L142",
+      "id": "handlers_handler_updatemodule",
+      "community": 0,
+      "norm_label": ".updatemodule()"
+    },
+    {
+      "label": ".DeleteModule()",
+      "file_type": "code",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L171",
+      "id": "handlers_handler_deletemodule",
+      "community": 0,
+      "norm_label": ".deletemodule()"
+    },
+    {
+      "label": ".GetTypes()",
+      "file_type": "code",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L191",
+      "id": "handlers_handler_gettypes",
+      "community": 0,
+      "norm_label": ".gettypes()"
+    },
+    {
+      "label": ".CreateType()",
+      "file_type": "code",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L212",
+      "id": "handlers_handler_createtype",
+      "community": 0,
+      "norm_label": ".createtype()"
+    },
+    {
+      "label": ".UpdateType()",
+      "file_type": "code",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L243",
+      "id": "handlers_handler_updatetype",
+      "community": 0,
+      "norm_label": ".updatetype()"
+    },
+    {
+      "label": ".DeleteType()",
+      "file_type": "code",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L271",
+      "id": "handlers_handler_deletetype",
+      "community": 0,
+      "norm_label": ".deletetype()"
+    },
+    {
+      "label": ".GetEventTypes()",
+      "file_type": "code",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L291",
+      "id": "handlers_handler_geteventtypes",
+      "community": 0,
+      "norm_label": ".geteventtypes()"
+    },
+    {
+      "label": ".DeleteEventType()",
+      "file_type": "code",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L372",
+      "id": "handlers_handler_deleteeventtype",
+      "community": 0,
+      "norm_label": ".deleteeventtype()"
+    },
+    {
+      "label": ".GetDimensions()",
+      "file_type": "code",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L392",
+      "id": "handlers_handler_getdimensions",
+      "community": 0,
+      "norm_label": ".getdimensions()"
+    },
+    {
+      "label": ".CreateDimension()",
+      "file_type": "code",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L413",
+      "id": "handlers_handler_createdimension",
+      "community": 0,
+      "norm_label": ".createdimension()"
+    },
+    {
+      "label": ".UpdateDimension()",
+      "file_type": "code",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L444",
+      "id": "handlers_handler_updatedimension",
+      "community": 0,
+      "norm_label": ".updatedimension()"
+    },
+    {
+      "label": ".DeleteDimension()",
+      "file_type": "code",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L473",
+      "id": "handlers_handler_deletedimension",
+      "community": 0,
+      "norm_label": ".deletedimension()"
+    },
+    {
+      "label": ".GetAttributeKeys()",
+      "file_type": "code",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L493",
+      "id": "handlers_handler_getattributekeys",
+      "community": 0,
+      "norm_label": ".getattributekeys()"
+    },
+    {
+      "label": ".CreateAttributeKey()",
+      "file_type": "code",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L514",
+      "id": "handlers_handler_createattributekey",
+      "community": 0,
+      "norm_label": ".createattributekey()"
+    },
+    {
+      "label": ".UpdateAttributeKey()",
+      "file_type": "code",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L546",
+      "id": "handlers_handler_updateattributekey",
+      "community": 0,
+      "norm_label": ".updateattributekey()"
+    },
+    {
+      "label": ".DeleteAttributeKey()",
+      "file_type": "code",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L578",
+      "id": "handlers_handler_deleteattributekey",
+      "community": 0,
+      "norm_label": ".deleteattributekey()"
+    },
+    {
+      "label": ".GetEvents()",
+      "file_type": "code",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L599",
+      "id": "handlers_handler_getevents",
+      "community": 0,
+      "norm_label": ".getevents()"
+    },
+    {
+      "label": ".CreateEvent()",
+      "file_type": "code",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L620",
+      "id": "handlers_handler_createevent",
+      "community": 0,
+      "norm_label": ".createevent()"
+    },
+    {
+      "label": ".UpdateEvent()",
+      "file_type": "code",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L651",
+      "id": "handlers_handler_updateevent",
+      "community": 0,
+      "norm_label": ".updateevent()"
+    },
+    {
+      "label": ".DeleteEvent()",
+      "file_type": "code",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L680",
+      "id": "handlers_handler_deleteevent",
+      "community": 0,
+      "norm_label": ".deleteevent()"
+    },
+    {
+      "label": ".GetImpacts()",
+      "file_type": "code",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L700",
+      "id": "handlers_handler_getimpacts",
+      "community": 0,
+      "norm_label": ".getimpacts()"
+    },
+    {
+      "label": ".CreateImpact()",
+      "file_type": "code",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L721",
+      "id": "handlers_handler_createimpact",
+      "community": 0,
+      "norm_label": ".createimpact()"
+    },
+    {
+      "label": ".UpdateImpact()",
+      "file_type": "code",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L752",
+      "id": "handlers_handler_updateimpact",
+      "community": 0,
+      "norm_label": ".updateimpact()"
+    },
+    {
+      "label": ".DeleteImpact()",
+      "file_type": "code",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L781",
+      "id": "handlers_handler_deleteimpact",
+      "community": 0,
+      "norm_label": ".deleteimpact()"
+    },
+    {
+      "label": ".GetEventDetails()",
+      "file_type": "code",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L801",
+      "id": "handlers_handler_geteventdetails",
+      "community": 0,
+      "norm_label": ".geteventdetails()"
+    },
+    {
+      "label": ".CreateEventDetail()",
+      "file_type": "code",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L822",
+      "id": "handlers_handler_createeventdetail",
+      "community": 0,
+      "norm_label": ".createeventdetail()"
+    },
+    {
+      "label": ".UpdateEventDetail()",
+      "file_type": "code",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L854",
+      "id": "handlers_handler_updateeventdetail",
+      "community": 0,
+      "norm_label": ".updateeventdetail()"
+    },
+    {
+      "label": ".DeleteEventDetail()",
+      "file_type": "code",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L886",
+      "id": "handlers_handler_deleteeventdetail",
+      "community": 0,
+      "norm_label": ".deleteeventdetail()"
+    },
+    {
+      "label": "handlers.SummaryResponse",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.yaml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "swagger_summaryresponse",
+      "community": 31,
+      "norm_label": "handlers.summaryresponse"
+    },
+    {
+      "label": "models.CfgAttributeKey",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.yaml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "swagger_cfgattributekey",
+      "community": 11,
+      "norm_label": "models.cfgattributekey"
+    },
+    {
+      "label": "models.CfgDimension",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.yaml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "swagger_cfgdimension",
+      "community": 11,
+      "norm_label": "models.cfgdimension"
+    },
+    {
+      "label": "models.CfgEventType",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.yaml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "swagger_cfgeventtype",
+      "community": 11,
+      "norm_label": "models.cfgeventtype"
+    },
+    {
+      "label": "models.CfgModule",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.yaml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "swagger_cfgmodule",
+      "community": 11,
+      "norm_label": "models.cfgmodule"
+    },
+    {
+      "label": "models.CfgType",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.yaml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "swagger_cfgtype",
+      "community": 11,
+      "norm_label": "models.cfgtype"
+    },
+    {
+      "label": "models.EventDetail",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.yaml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "swagger_eventdetail",
+      "community": 11,
+      "norm_label": "models.eventdetail"
+    },
+    {
+      "label": "models.TwinEvent",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.yaml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "swagger_twinevent",
+      "community": 11,
+      "norm_label": "models.twinevent"
+    },
+    {
+      "label": "models.TwinImpact",
+      "file_type": "code",
+      "source_file": "backend/docs/swagger.yaml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "swagger_twinimpact",
+      "community": 11,
+      "norm_label": "models.twinimpact"
     }
   ],
   "links": [
@@ -2106,7 +2961,37 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L78",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "frontend_src_app_tsx",
+      "target": "models_cfgattributekey",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "frontend_src_app_tsx",
+      "target": "models_cfgdimension",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "frontend_src_app_tsx",
+      "target": "models_cfgeventtype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L114",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "frontend_src_app_tsx",
@@ -2121,6 +3006,26 @@
       "confidence_score": 1.0,
       "source": "frontend_src_app_tsx",
       "target": "src_app_associatedworkflows"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "frontend_src_app_tsx",
+      "target": "src_app_cfgmodule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "frontend_src_app_tsx",
+      "target": "src_app_cfgtype",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2146,11 +3051,31 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/App.tsx",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "frontend_src_app_tsx",
+      "target": "src_app_eventdetail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.tsx",
       "source_location": "L46",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "frontend_src_app_tsx",
       "target": "src_app_financialentity"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "frontend_src_app_tsx",
+      "target": "src_app_menusection",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2166,11 +3091,31 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L62",
+      "source_location": "L84",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "frontend_src_app_tsx",
       "target": "src_app_summarydata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "frontend_src_app_tsx",
+      "target": "src_app_twinevent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "frontend_src_app_tsx",
+      "target": "src_app_twinimpact",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -2187,7 +3132,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/cmd/main.go",
-      "source_location": "L134",
+      "source_location": "L184",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "backend_cmd_main_go",
@@ -2197,7 +3142,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/cmd/main.go",
-      "source_location": "L19",
+      "source_location": "L28",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "backend_cmd_main_go",
@@ -2217,7 +3162,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/cmd/main.go",
-      "source_location": "L151",
+      "source_location": "L201",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "backend_cmd_main_go",
@@ -2228,7 +3173,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/cmd/main.go",
-      "source_location": "L89",
+      "source_location": "L101",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "cmd_main_main",
@@ -2250,7 +3195,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/cmd/main.go",
-      "source_location": "L85",
+      "source_location": "L97",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "cmd_main_main",
@@ -2273,7 +3218,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "backend/cmd/main.go",
-      "source_location": "L78",
+      "source_location": "L104",
       "weight": 1.0,
       "source": "cmd_main_main",
       "target": "handlers_handlers_newhandler"
@@ -2414,66 +3359,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "backend/internal/models/models.go",
-      "source_location": "L27",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "backend_internal_models_models_go",
-      "target": "models_associatedworkflows"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/internal/models/models.go",
-      "source_location": "L16",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "backend_internal_models_models_go",
-      "target": "models_contact"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/internal/models/models.go",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "backend_internal_models_models_go",
-      "target": "models_contactdetails"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/internal/models/models.go",
-      "source_location": "L34",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "backend_internal_models_models_go",
-      "target": "models_financialentity"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/internal/models/models.go",
-      "source_location": "L45",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "backend_internal_models_models_go",
-      "target": "models_metaconfig"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/internal/models/models.go",
-      "source_location": "L54",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "models_metaconfig",
-      "target": "models_metaconfig_tablename"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "backend/internal/handlers/handlers.go",
       "source_location": "L14",
       "weight": 1.0,
@@ -2505,11 +3390,51 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L514",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_createattributekey",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/handlers/handlers.go",
       "source_location": "L89",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "handlers_handler",
       "target": "handlers_handler_createcontact"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L413",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_createdimension",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L620",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_createevent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L822",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_createeventdetail",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -2525,11 +3450,131 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L721",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_createimpact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/handlers/handlers.go",
       "source_location": "L163",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "handlers_handler",
       "target": "handlers_handler_createmetaconfig"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_createmodule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L212",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_createtype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L578",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_deleteattributekey",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L473",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_deletedimension",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L680",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_deleteevent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L886",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_deleteeventdetail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L372",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_deleteeventtype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L781",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_deleteimpact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L171",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_deletemodule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L271",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_deletetype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L493",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_getattributekeys",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -2545,11 +3590,61 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L392",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_getdimensions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L801",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_geteventdetails",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L599",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_getevents",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L291",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_geteventtypes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/handlers/handlers.go",
       "source_location": "L114",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "handlers_handler",
       "target": "handlers_handler_getfinancials"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L700",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_getimpacts",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -2565,11 +3660,101 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "backend/internal/handlers/handlers.go",
-      "source_location": "L31",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_getmodules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L37",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "handlers_handler",
       "target": "handlers_handler_getsummary"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L191",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_gettypes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L546",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_updateattributekey",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L444",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_updatedimension",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L651",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_updateevent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L854",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_updateeventdetail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L752",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_updateimpact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L142",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_updatemodule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/handlers/handlers.go",
+      "source_location": "L243",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_updatetype",
+      "confidence_score": 1.0
     },
     {
       "relation": "conceptually_related_to",
@@ -2650,8 +3835,1108 @@
       "weight": 1.0,
       "source": "usage_postgresql",
       "target": "usage_digital_twin"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/docs.go",
+      "source_location": "L1758",
+      "weight": 1.0,
+      "source": "backend_docs_docs_go",
+      "target": "docs_docs_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "backend_docs_swagger_json",
+      "target": "docs_swagger_basepath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "backend_docs_swagger_json",
+      "target": "docs_swagger_host",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "backend_docs_swagger_json",
+      "target": "docs_swagger_info",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "backend_docs_swagger_json",
+      "target": "docs_swagger_paths",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "backend_docs_swagger_json",
+      "target": "docs_swagger_swagger",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "docs_swagger_info",
+      "target": "docs_swagger_get_description",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "docs_swagger_info",
+      "target": "docs_swagger_info_contact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "docs_swagger_info",
+      "target": "docs_swagger_info_title",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "docs_swagger_info",
+      "target": "docs_swagger_info_version",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "docs_swagger_info_contact",
+      "target": "docs_swagger_contact_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L973",
+      "weight": 1.0,
+      "source": "docs_swagger_paths",
+      "target": "docs_swagger_get_summary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L677",
+      "weight": 1.0,
+      "source": "docs_swagger_paths",
+      "target": "docs_swagger_paths_cfg_modules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L866",
+      "weight": 1.0,
+      "source": "docs_swagger_paths",
+      "target": "docs_swagger_paths_cfg_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1075",
+      "weight": 1.0,
+      "source": "docs_swagger_paths",
+      "target": "docs_swagger_paths_twin_event_details",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "docs_swagger_paths",
+      "target": "models_cfgattributekey",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L299",
+      "weight": 1.0,
+      "source": "docs_swagger_paths",
+      "target": "models_cfgdimension",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L488",
+      "weight": 1.0,
+      "source": "docs_swagger_paths",
+      "target": "models_cfgeventtype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L934",
+      "weight": 1.0,
+      "source": "docs_swagger_cfg_types_id_delete",
+      "target": "docs_swagger_get_description",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1077",
+      "weight": 1.0,
+      "source": "docs_swagger_cfg_types_id_put",
+      "target": "docs_swagger_get_description",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1025",
+      "weight": 1.0,
+      "source": "docs_swagger_cfg_types_post",
+      "target": "docs_swagger_get_description",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1115",
+      "weight": 1.0,
+      "source": "docs_swagger_responses_200",
+      "target": "docs_swagger_get_description",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1049",
+      "weight": 1.0,
+      "source": "docs_swagger_responses_201",
+      "target": "docs_swagger_get_description",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1121",
+      "weight": 1.0,
+      "source": "docs_swagger_responses_400",
+      "target": "docs_swagger_get_description",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1130",
+      "weight": 1.0,
+      "source": "docs_swagger_responses_404",
+      "target": "docs_swagger_get_description",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1064",
+      "weight": 1.0,
+      "source": "docs_swagger_responses_500",
+      "target": "docs_swagger_get_description",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L995",
+      "weight": 1.0,
+      "source": "docs_swagger_summary_get",
+      "target": "docs_swagger_get_description",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L935",
+      "weight": 1.0,
+      "source": "docs_swagger_cfg_types_id_delete",
+      "target": "docs_swagger_get_produces",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1081",
+      "weight": 1.0,
+      "source": "docs_swagger_cfg_types_id_put",
+      "target": "docs_swagger_get_produces",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1029",
+      "weight": 1.0,
+      "source": "docs_swagger_cfg_types_post",
+      "target": "docs_swagger_get_produces",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L996",
+      "weight": 1.0,
+      "source": "docs_swagger_summary_get",
+      "target": "docs_swagger_get_produces",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L938",
+      "weight": 1.0,
+      "source": "docs_swagger_cfg_types_id_delete",
+      "target": "docs_swagger_get_tags",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1084",
+      "weight": 1.0,
+      "source": "docs_swagger_cfg_types_id_put",
+      "target": "docs_swagger_get_tags",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1032",
+      "weight": 1.0,
+      "source": "docs_swagger_cfg_types_post",
+      "target": "docs_swagger_get_tags",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L999",
+      "weight": 1.0,
+      "source": "docs_swagger_summary_get",
+      "target": "docs_swagger_get_tags",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L941",
+      "weight": 1.0,
+      "source": "docs_swagger_cfg_types_id_delete",
+      "target": "docs_swagger_get_summary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1087",
+      "weight": 1.0,
+      "source": "docs_swagger_cfg_types_id_put",
+      "target": "docs_swagger_get_summary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1035",
+      "weight": 1.0,
+      "source": "docs_swagger_cfg_types_post",
+      "target": "docs_swagger_get_summary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1002",
+      "weight": 1.0,
+      "source": "docs_swagger_summary_get",
+      "target": "docs_swagger_get_summary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L951",
+      "weight": 1.0,
+      "source": "docs_swagger_cfg_types_id_delete",
+      "target": "docs_swagger_get_responses",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1113",
+      "weight": 1.0,
+      "source": "docs_swagger_cfg_types_id_put",
+      "target": "docs_swagger_get_responses",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1047",
+      "weight": 1.0,
+      "source": "docs_swagger_cfg_types_post",
+      "target": "docs_swagger_get_responses",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1114",
+      "weight": 1.0,
+      "source": "docs_swagger_get_responses",
+      "target": "docs_swagger_responses_200",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1048",
+      "weight": 1.0,
+      "source": "docs_swagger_get_responses",
+      "target": "docs_swagger_responses_201",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1120",
+      "weight": 1.0,
+      "source": "docs_swagger_get_responses",
+      "target": "docs_swagger_responses_400",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1129",
+      "weight": 1.0,
+      "source": "docs_swagger_get_responses",
+      "target": "docs_swagger_responses_404",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1063",
+      "weight": 1.0,
+      "source": "docs_swagger_get_responses",
+      "target": "docs_swagger_responses_500",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1003",
+      "weight": 1.0,
+      "source": "docs_swagger_summary_get",
+      "target": "docs_swagger_get_responses",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1116",
+      "weight": 1.0,
+      "source": "docs_swagger_responses_200",
+      "target": "docs_swagger_200_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1124",
+      "weight": 1.0,
+      "source": "docs_swagger_200_schema",
+      "target": "docs_swagger_schema_additionalproperties",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1008",
+      "weight": 1.0,
+      "source": "docs_swagger_200_schema",
+      "target": "docs_swagger_schema_items",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1117",
+      "weight": 1.0,
+      "source": "docs_swagger_200_schema",
+      "target": "docs_swagger_schema_ref",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1123",
+      "weight": 1.0,
+      "source": "docs_swagger_200_schema",
+      "target": "docs_swagger_schema_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1050",
+      "weight": 1.0,
+      "source": "docs_swagger_responses_201",
+      "target": "docs_swagger_200_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1122",
+      "weight": 1.0,
+      "source": "docs_swagger_responses_400",
+      "target": "docs_swagger_200_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L915",
+      "weight": 1.0,
+      "source": "docs_swagger_responses_404",
+      "target": "docs_swagger_200_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1065",
+      "weight": 1.0,
+      "source": "docs_swagger_responses_500",
+      "target": "docs_swagger_200_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1078",
+      "weight": 1.0,
+      "source": "docs_swagger_cfg_types_id_put",
+      "target": "docs_swagger_put_consumes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1026",
+      "weight": 1.0,
+      "source": "docs_swagger_cfg_types_post",
+      "target": "docs_swagger_put_consumes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L942",
+      "weight": 1.0,
+      "source": "docs_swagger_cfg_types_id_delete",
+      "target": "docs_swagger_put_parameters",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1088",
+      "weight": 1.0,
+      "source": "docs_swagger_cfg_types_id_put",
+      "target": "docs_swagger_put_parameters",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1036",
+      "weight": 1.0,
+      "source": "docs_swagger_cfg_types_post",
+      "target": "docs_swagger_put_parameters",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L744",
+      "weight": 1.0,
+      "source": "docs_swagger_paths_cfg_modules",
+      "target": "docs_swagger_cfg_types_id_delete",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L678",
+      "weight": 1.0,
+      "source": "docs_swagger_paths_cfg_modules",
+      "target": "docs_swagger_cfg_types_id_put",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L626",
+      "weight": 1.0,
+      "source": "docs_swagger_paths_cfg_modules",
+      "target": "docs_swagger_cfg_types_post",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L596",
+      "weight": 1.0,
+      "source": "docs_swagger_paths_cfg_modules",
+      "target": "docs_swagger_summary_get",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L933",
+      "weight": 1.0,
+      "source": "docs_swagger_paths_cfg_types",
+      "target": "docs_swagger_cfg_types_id_delete",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L867",
+      "weight": 1.0,
+      "source": "docs_swagger_paths_cfg_types",
+      "target": "docs_swagger_cfg_types_id_put",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L815",
+      "weight": 1.0,
+      "source": "docs_swagger_paths_cfg_types",
+      "target": "docs_swagger_cfg_types_post",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L785",
+      "weight": 1.0,
+      "source": "docs_swagger_paths_cfg_types",
+      "target": "docs_swagger_summary_get",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1024",
+      "weight": 1.0,
+      "source": "docs_swagger_paths_twin_event_details",
+      "target": "docs_swagger_cfg_types_post",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "models_cfgattributekey",
+      "target": "docs_swagger_cfg_types_post",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L248",
+      "weight": 1.0,
+      "source": "models_cfgdimension",
+      "target": "docs_swagger_cfg_types_post",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L437",
+      "weight": 1.0,
+      "source": "models_cfgeventtype",
+      "target": "docs_swagger_cfg_types_post",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L1076",
+      "weight": 1.0,
+      "source": "docs_swagger_paths_twin_event_details",
+      "target": "docs_swagger_cfg_types_id_put",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L97",
+      "weight": 1.0,
+      "source": "models_cfgattributekey",
+      "target": "docs_swagger_cfg_types_id_put",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L300",
+      "weight": 1.0,
+      "source": "models_cfgdimension",
+      "target": "docs_swagger_cfg_types_id_put",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L489",
+      "weight": 1.0,
+      "source": "models_cfgeventtype",
+      "target": "docs_swagger_cfg_types_id_put",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L170",
+      "weight": 1.0,
+      "source": "models_cfgattributekey",
+      "target": "docs_swagger_cfg_types_id_delete",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L366",
+      "weight": 1.0,
+      "source": "models_cfgdimension",
+      "target": "docs_swagger_cfg_types_id_delete",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L555",
+      "weight": 1.0,
+      "source": "models_cfgeventtype",
+      "target": "docs_swagger_cfg_types_id_delete",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L994",
+      "weight": 1.0,
+      "source": "docs_swagger_paths_twin_event_details",
+      "target": "docs_swagger_summary_get",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "models_cfgattributekey",
+      "target": "docs_swagger_summary_get",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L218",
+      "weight": 1.0,
+      "source": "models_cfgdimension",
+      "target": "docs_swagger_summary_get",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/docs/swagger.json",
+      "source_location": "L407",
+      "weight": 1.0,
+      "source": "models_cfgeventtype",
+      "target": "docs_swagger_summary_get",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/models/audit.go",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "backend_internal_models_audit_go",
+      "target": "models_auditlog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/models/audit.go",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "models_auditlog",
+      "target": "models_auditlog_tablename",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/models/twin.go",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "backend_internal_models_twin_go",
+      "target": "models_twinevent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/models/twin.go",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "backend_internal_models_twin_go",
+      "target": "models_twinimpact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/models/twin.go",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "models_twinevent",
+      "target": "models_twinevent_tablename",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/models/twin.go",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "models_twinimpact",
+      "target": "models_twinevent_tablename",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/models/cfg.go",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "backend_internal_models_cfg_go",
+      "target": "models_cfgattributekey",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/models/cfg.go",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "backend_internal_models_cfg_go",
+      "target": "models_cfgdimension",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/models/cfg.go",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "backend_internal_models_cfg_go",
+      "target": "models_cfgeventtype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/models/cfg.go",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "backend_internal_models_cfg_go",
+      "target": "models_cfgmodule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/models/cfg.go",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "backend_internal_models_cfg_go",
+      "target": "models_cfgtype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/models/cfg.go",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "models_cfgmodule",
+      "target": "models_cfgtype_tablename",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/models/cfg.go",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "models_cfgtype",
+      "target": "models_cfgtype_tablename",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/models/cfg.go",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "models_cfgattributekey",
+      "target": "models_cfgtype_tablename",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/models/cfg.go",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "models_cfgdimension",
+      "target": "models_cfgtype_tablename",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/models/cfg.go",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "models_cfgeventtype",
+      "target": "models_cfgtype_tablename",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/models/event.go",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "backend_internal_models_event_go",
+      "target": "models_eventdetail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/internal/models/event.go",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "models_eventdetail",
+      "target": "models_eventdetail_tablename",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "backend/docs/swagger.yaml",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "swagger_cfgattributekey",
+      "target": "swagger_cfgeventtype"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "backend/docs/swagger.yaml",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "swagger_twinimpact",
+      "target": "swagger_cfgdimension"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "backend/docs/swagger.yaml",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "swagger_cfgeventtype",
+      "target": "swagger_cfgmodule"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "backend/docs/swagger.yaml",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "swagger_twinevent",
+      "target": "swagger_cfgeventtype"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "backend/docs/swagger.yaml",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "swagger_cfgtype",
+      "target": "swagger_cfgmodule"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "backend/docs/swagger.yaml",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "swagger_eventdetail",
+      "target": "swagger_twinevent"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "backend/docs/swagger.yaml",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "swagger_twinimpact",
+      "target": "swagger_twinevent"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "5ba38a00845efc3e19c0349aaabec470009bf64a"
+  "built_at_commit": "5922aef4f2d2fc41b21898b72320d4f9b7b9c403"
 }

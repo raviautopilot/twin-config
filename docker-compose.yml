@@ -1,8 +1,8 @@
 services:
   db:
-    image: twin-config-db
+    image: kaalam
     build:
-      context: ./database
+      context: kaalam
       dockerfile: Dockerfile
     environment:
       POSTGRES_DB: digital_twin
@@ -14,7 +14,7 @@ services:
       - pgdata:/var/lib/postgresql/data
 
   brahma:
-    image: twin-config-brahma
+    image: brahma
     build:
       context: brahma
       dockerfile: Dockerfile
