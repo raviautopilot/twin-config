@@ -1,0 +1,17 @@
+{
+  "/home/ubuntu/code/github/raviautopilot/twin-config/manage.sh": {
+    "mtime": 1780840395.727189,
+    "ast_hash": "c6f02da4f15fb58d39d03058e9825fc2",
+    "semantic_hash": "c6f02da4f15fb58d39d03058e9825fc2"
+  },
+  "/home/ubuntu/code/github/raviautopilot/twin-config/config.sql": {
+    "mtime": 1780840395.727189,
+    "ast_hash": "741521b7d719359c58c27b4b04cf3099",
+    "semantic_hash": "741521b7d719359c58c27b4b04cf3099"
+  },
+  "/home/ubuntu/code/github/raviautopilot/twin-config/init_twin.sql": {
+    "mtime": 1780840395.727189,
+    "ast_hash": "3c908515dcf826ecf8780554c0e1262c",
+    "semantic_hash": "3c908515dcf826ecf8780554c0e1262c"
+  }
+}
