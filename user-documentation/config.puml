@@ -1,0 +1,106 @@
+@startuml
+hide circle
+skinparam linetype ortho
+
+' ==========================================
+' Core Configuration Tables
+' ==========================================
+
+entity "cfg_modules" as cfg_modules {
+  * module_id : VARCHAR(10) <<PK>>
+  --
+  * module_name : VARCHAR(100)
+  notes : TEXT
+  created_at : TIMESTAMP
+  updated_at : TIMESTAMP
+}
+
+entity "cfg_type" as cfg_type {
+  * type_id : SERIAL <<PK>>
+  --
+  * module_id : VARCHAR(10) <<FK>>
+  * config_type : VARCHAR(100)
+  metadata_schema : JSONB
+  notes : TEXT
+  created_at : TIMESTAMP
+  updated_at : TIMESTAMP
+}
+
+entity "cfg_event_types" as cfg_event_types {
+  * event_type_code : TEXT <<PK>>
+  --
+  * module_code : VARCHAR(10) <<FK>>
+  * display_name : TEXT
+}
+
+entity "cfg_dimensions" as cfg_dimensions {
+  * dimension_code : TEXT <<PK>>
+  --
+  * unit_code : TEXT
+  * description : TEXT
+}
+
+entity "cfg_attribute_keys" as cfg_attribute_keys {
+  * event_type_code : TEXT <<PK, FK>>
+  * attribute_key : TEXT <<PK>>
+  --
+  is_required : INTEGER
+}
+
+' ==========================================
+' Operational / Event Ledger Tables
+' ==========================================
+
+entity "twin_event" as twin_event {
+  * event_id : TEXT <<PK>>
+  --
+  * event_type_code : TEXT <<FK>>
+  * occurred_at : TIMESTAMP
+  created_at : TIMESTAMP
+}
+
+entity "twin_impact" as twin_impact {
+  * impact_id : TEXT <<PK>>
+  --
+  * event_id : TEXT <<FK>>
+  * dimension_code : TEXT <<FK>>
+  * value : NUMERIC
+  * target_entity : TEXT
+}
+
+entity "event_details" as event_details {
+  * event_id : TEXT <<PK, FK>>
+  * attribute_key : TEXT <<PK>>
+  --
+  * attribute_val : TEXT
+}
+
+' ==========================================
+' Audit Log
+' ==========================================
+
+entity "audit_log" as audit_log {
+  * audit_id : BIGSERIAL <<PK>>
+  --
+  * table_name : VARCHAR(100)
+  * operation : VARCHAR(10)
+  * row_id : VARCHAR(100)
+  old_data : JSONB
+  new_data : JSONB
+  changed_by : VARCHAR(50)
+  changed_at : TIMESTAMP
+}
+
+' ==========================================
+' Relationships
+' ==========================================
+
+cfg_modules ||--o{ cfg_type : "1:N"
+cfg_modules ||--o{ cfg_event_types : "1:N"
+cfg_event_types ||--o{ cfg_attribute_keys : "1:N"
+cfg_event_types ||--o{ twin_event : "1:N"
+twin_event ||--o{ twin_impact : "1:N"
+cfg_dimensions ||--o{ twin_impact : "1:N"
+twin_event ||--o{ event_details : "1:N"
+
+@enduml
