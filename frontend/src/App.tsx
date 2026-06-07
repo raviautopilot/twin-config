@@ -911,7 +911,7 @@ export default function App() {
                   { title: 'Attribute Keys', count: summary?.counts.cfg_attribute_keys ?? 0, desc: 'Validation keys for events', color: 'from-amber-500/10 to-orange-500/10 border-amber-800/40 text-amber-400' },
                   { title: 'Events Logged', count: summary?.counts.twin_event ?? 0, desc: 'Timeline entries ledger', color: 'from-emerald-500/10 to-teal-500/10 border-emerald-800/40 text-emerald-400' },
                   { title: 'Ledger Impacts', count: summary?.counts.twin_impact ?? 0, desc: 'Impact balances adjustments', color: 'from-purple-500/10 to-fuchsia-500/10 border-purple-800/40 text-purple-400' },
-                  { title: 'Audit Logs', count: summary?.counts.audit_log ?? 0, desc: 'Traceability database actions', color: 'from-slate-500/10 to-zinc-500/10 border-slate-800/40 text-slate-400' }
+                  { title: 'Audit Logs', count: summary?.counts.audit_log ?? 0, desc: 'Traceability kaalam actions', color: 'from-slate-500/10 to-zinc-500/10 border-slate-800/40 text-slate-400' }
                 ].map((stat, idx) => (
                   <div
                     key={idx}

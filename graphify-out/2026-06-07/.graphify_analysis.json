@@ -1,6 +1,68 @@
 {
   "communities": {
     "0": [
+      "handlers_handler",
+      "handlers_handler_createattributekey",
+      "handlers_handler_createcontact",
+      "handlers_handler_createdimension",
+      "handlers_handler_createevent",
+      "handlers_handler_createeventdetail",
+      "handlers_handler_createfinancial",
+      "handlers_handler_createimpact",
+      "handlers_handler_createmetaconfig",
+      "handlers_handler_createmodule",
+      "handlers_handler_createtype",
+      "handlers_handler_deleteattributekey",
+      "handlers_handler_deletedimension",
+      "handlers_handler_deleteevent",
+      "handlers_handler_deleteeventdetail",
+      "handlers_handler_deleteeventtype",
+      "handlers_handler_deleteimpact",
+      "handlers_handler_deletemodule",
+      "handlers_handler_deletetype",
+      "handlers_handler_getattributekeys",
+      "handlers_handler_getcontacts",
+      "handlers_handler_getdimensions",
+      "handlers_handler_geteventdetails",
+      "handlers_handler_getevents",
+      "handlers_handler_geteventtypes",
+      "handlers_handler_getfinancials",
+      "handlers_handler_getimpacts",
+      "handlers_handler_getmetaconfigs",
+      "handlers_handler_getmodules",
+      "handlers_handler_getsummary",
+      "handlers_handler_gettypes",
+      "handlers_handler_updateattributekey",
+      "handlers_handler_updatedimension",
+      "handlers_handler_updateevent",
+      "handlers_handler_updateeventdetail",
+      "handlers_handler_updateimpact",
+      "handlers_handler_updatemodule",
+      "handlers_handler_updatetype"
+    ],
+    "1": [
+      "backend_internal_models_cfg_go",
+      "docs_swagger_cfg_types_id_delete",
+      "docs_swagger_cfg_types_id_put",
+      "docs_swagger_cfg_types_post",
+      "docs_swagger_get_produces",
+      "docs_swagger_get_summary",
+      "docs_swagger_get_tags",
+      "docs_swagger_paths",
+      "docs_swagger_paths_cfg_modules",
+      "docs_swagger_paths_cfg_types",
+      "docs_swagger_paths_twin_event_details",
+      "docs_swagger_put_consumes",
+      "docs_swagger_put_parameters",
+      "docs_swagger_summary_get",
+      "models_cfgattributekey",
+      "models_cfgdimension",
+      "models_cfgeventtype",
+      "models_cfgmodule",
+      "models_cfgtype",
+      "models_cfgtype_tablename"
+    ],
+    "2": [
       "frontend_tsconfig_app_compileroptions",
       "frontend_tsconfig_app_compileroptions_allowimportingtsextensions",
       "frontend_tsconfig_app_compileroptions_erasablesyntaxonly",
@@ -21,7 +83,7 @@
       "frontend_tsconfig_app_include",
       "frontend_tsconfig_app_json"
     ],
-    "1": [
+    "3": [
       "frontend_tsconfig_node_compileroptions",
       "frontend_tsconfig_node_compileroptions_allowimportingtsextensions",
       "frontend_tsconfig_node_compileroptions_erasablesyntaxonly",
@@ -41,7 +103,24 @@
       "frontend_tsconfig_node_include",
       "frontend_tsconfig_node_json"
     ],
-    "2": [
+    "4": [
+      "frontend_src_app_tsx",
+      "frontend_src_main_tsx",
+      "src_app_app",
+      "src_app_associatedworkflows",
+      "src_app_cfgmodule",
+      "src_app_cfgtype",
+      "src_app_contact",
+      "src_app_contactdetails",
+      "src_app_eventdetail",
+      "src_app_financialentity",
+      "src_app_menusection",
+      "src_app_metaconfig",
+      "src_app_summarydata",
+      "src_app_twinevent",
+      "src_app_twinimpact"
+    ],
+    "5": [
       "frontend_package_devdependencies",
       "frontend_package_devdependencies_eslint",
       "frontend_package_devdependencies_eslint_js",
@@ -57,7 +136,7 @@
       "frontend_package_devdependencies_vite",
       "frontend_package_devdependencies_vitejs_plugin_react"
     ],
-    "3": [
+    "6": [
       "frontend_package_dependencies",
       "frontend_package_dependencies_lucide_react",
       "frontend_package_dependencies_react",
@@ -73,22 +152,10 @@
       "frontend_package_type",
       "frontend_package_version"
     ],
-    "4": [
-      "backend_internal_handlers_handlers_go",
-      "handlers_handler",
-      "handlers_handler_createcontact",
-      "handlers_handler_createfinancial",
-      "handlers_handler_createmetaconfig",
-      "handlers_handler_getcontacts",
-      "handlers_handler_getfinancials",
-      "handlers_handler_getmetaconfigs",
-      "handlers_handler_getsummary",
-      "handlers_handlers_newhandler",
-      "handlers_summaryresponse"
-    ],
-    "5": [
+    "7": [
       "backend_cmd_main_go",
       "backend_internal_config_config_go",
+      "backend_internal_handlers_handlers_go",
       "cmd_main_corsmiddleware",
       "cmd_main_main",
       "cmd_main_seedinitialdataifempty",
@@ -96,20 +163,36 @@
       "config_config",
       "config_config_getdsn",
       "config_config_getenv",
-      "config_config_loadconfig"
+      "config_config_loadconfig",
+      "handlers_handlers_newhandler",
+      "handlers_summaryresponse"
     ],
-    "6": [
-      "frontend_src_app_tsx",
-      "frontend_src_main_tsx",
-      "src_app_app",
-      "src_app_associatedworkflows",
-      "src_app_contact",
-      "src_app_contactdetails",
-      "src_app_financialentity",
-      "src_app_metaconfig",
-      "src_app_summarydata"
+    "8": [
+      "docs_swagger_200_schema",
+      "docs_swagger_get_description",
+      "docs_swagger_get_responses",
+      "docs_swagger_responses_200",
+      "docs_swagger_responses_201",
+      "docs_swagger_responses_400",
+      "docs_swagger_responses_404",
+      "docs_swagger_responses_500",
+      "docs_swagger_schema_additionalproperties",
+      "docs_swagger_schema_items",
+      "docs_swagger_schema_ref",
+      "docs_swagger_schema_type"
     ],
-    "7": [
+    "9": [
+      "backend_docs_swagger_json",
+      "docs_swagger_basepath",
+      "docs_swagger_contact_name",
+      "docs_swagger_host",
+      "docs_swagger_info",
+      "docs_swagger_info_contact",
+      "docs_swagger_info_title",
+      "docs_swagger_info_version",
+      "docs_swagger_swagger"
+    ],
+    "10": [
       "concept_digital_twin_db",
       "docker_compose_backend",
       "docker_compose_db",
@@ -119,7 +202,17 @@
       "dockerfile_twin_config",
       "readme_twin_config"
     ],
-    "8": [
+    "11": [
+      "swagger_cfgattributekey",
+      "swagger_cfgdimension",
+      "swagger_cfgeventtype",
+      "swagger_cfgmodule",
+      "swagger_cfgtype",
+      "swagger_eventdetail",
+      "swagger_twinevent",
+      "swagger_twinimpact"
+    ],
+    "12": [
       "backend_internal_config_logger_go",
       "config_gormzaplogger",
       "config_gormzaplogger_error",
@@ -128,95 +221,122 @@
       "config_gormzaplogger_trace",
       "config_gormzaplogger_warn"
     ],
-    "9": [
-      "backend_internal_models_models_go",
-      "models_associatedworkflows",
-      "models_contact",
-      "models_contactdetails",
-      "models_financialentity",
-      "models_metaconfig",
-      "models_metaconfig_tablename"
+    "13": [
+      "backend_internal_models_twin_go",
+      "models_twinevent",
+      "models_twinevent_tablename",
+      "models_twinimpact"
     ],
-    "10": [
+    "14": [
       "usage_backend",
       "usage_digital_twin",
       "usage_frontend",
       "usage_postgresql"
     ],
-    "11": [
+    "15": [
+      "backend_internal_models_audit_go",
+      "models_auditlog",
+      "models_auditlog_tablename"
+    ],
+    "16": [
       "frontend_tsconfig_files",
       "frontend_tsconfig_json",
       "frontend_tsconfig_references"
     ],
-    "12": [
+    "17": [
+      "backend_internal_models_event_go",
+      "models_eventdetail",
+      "models_eventdetail_tablename"
+    ],
+    "18": [
+      "backend_docs_docs_go",
+      "docs_docs_init"
+    ],
+    "19": [
       "docker_setup_sh",
       "home_ubuntu_code_github_raviautopilot_twin_config_docker_setup_sh__entry"
     ],
-    "13": [
-      "index_html_root",
-      "main_tsx"
-    ],
-    "14": [
-      "readme_react",
-      "readme_vite"
-    ],
-    "15": [
-      "readme_eslint",
-      "readme_typescript"
-    ],
-    "16": [
+    "20": [
       "home_ubuntu_code_github_raviautopilot_twin_config_volume_wipe_sh__entry",
       "volume_wipe_sh"
     ],
-    "17": [
-      "frontend_vite_config_ts"
-    ],
-    "18": [
-      "frontend_eslint_config_js"
-    ],
-    "19": [
-      "favicon_svg"
-    ],
-    "20": [
-      "icons_svg"
-    ],
     "21": [
-      "hero_png"
+      "index_html_root",
+      "main_tsx"
     ],
     "22": [
-      "vite_svg"
+      "readme_eslint",
+      "readme_typescript"
     ],
     "23": [
+      "readme_react",
+      "readme_vite"
+    ],
+    "24": [
+      "frontend_vite_config_ts"
+    ],
+    "25": [
+      "frontend_eslint_config_js"
+    ],
+    "26": [
+      "favicon_svg"
+    ],
+    "27": [
+      "icons_svg"
+    ],
+    "28": [
+      "hero_png"
+    ],
+    "29": [
+      "vite_svg"
+    ],
+    "30": [
       "react_svg"
+    ],
+    "31": [
+      "swagger_summaryresponse"
     ]
   },
   "cohesion": {
-    "0": 0.10526315789473684,
-    "1": 0.1111111111111111,
-    "2": 0.14285714285714285,
-    "3": 0.14285714285714285,
-    "4": 0.18181818181818182,
-    "5": 0.28888888888888886,
-    "6": 0.2222222222222222,
-    "7": 0.2857142857142857,
-    "8": 0.38095238095238093,
-    "9": 0.2857142857142857,
-    "10": 0.5,
-    "11": 0.6666666666666666,
-    "12": 1.0,
-    "13": 1.0,
-    "14": 1.0,
-    "15": 1.0,
-    "16": 1.0,
-    "17": 1.0,
+    "0": 0.05263157894736842,
+    "1": 0.3,
+    "2": 0.10526315789473684,
+    "3": 0.1111111111111111,
+    "4": 0.13333333333333333,
+    "5": 0.14285714285714285,
+    "6": 0.14285714285714285,
+    "7": 0.20512820512820512,
+    "8": 0.2878787878787879,
+    "9": 0.2222222222222222,
+    "10": 0.2857142857142857,
+    "11": 0.25,
+    "12": 0.38095238095238093,
+    "13": 0.6666666666666666,
+    "14": 0.5,
+    "15": 0.6666666666666666,
+    "16": 0.6666666666666666,
+    "17": 0.6666666666666666,
     "18": 1.0,
     "19": 1.0,
     "20": 1.0,
     "21": 1.0,
     "22": 1.0,
-    "23": 1.0
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 1.0,
+    "31": 1.0
   },
   "gods": [
+    {
+      "id": "handlers_handler",
+      "label": "Handler",
+      "degree": 38
+    },
     {
       "id": "frontend_tsconfig_app_compileroptions",
       "label": "compilerOptions",
@@ -228,44 +348,39 @@
       "degree": 16
     },
     {
-      "id": "handlers_handler",
-      "label": "Handler",
+      "id": "docs_swagger_cfg_types_post",
+      "label": "post",
+      "degree": 13
+    },
+    {
+      "id": "docs_swagger_cfg_types_id_put",
+      "label": "put",
+      "degree": 13
+    },
+    {
+      "id": "docs_swagger_cfg_types_id_delete",
+      "label": "delete",
+      "degree": 11
+    },
+    {
+      "id": "docs_swagger_summary_get",
+      "label": "get",
+      "degree": 11
+    },
+    {
+      "id": "docs_swagger_get_responses",
+      "label": "responses",
+      "degree": 9
+    },
+    {
+      "id": "docs_swagger_200_schema",
+      "label": "schema",
+      "degree": 9
+    },
+    {
+      "id": "docs_swagger_paths",
+      "label": "paths",
       "degree": 8
-    },
-    {
-      "id": "docker_compose_db",
-      "label": "db service",
-      "degree": 6
-    },
-    {
-      "id": "cmd_main_main",
-      "label": "main()",
-      "degree": 6
-    },
-    {
-      "id": "config_gormzaplogger",
-      "label": "GormZapLogger",
-      "degree": 6
-    },
-    {
-      "id": "frontend_package_scripts",
-      "label": "scripts",
-      "degree": 5
-    },
-    {
-      "id": "config_config_loadconfig",
-      "label": "LoadConfig()",
-      "degree": 3
-    },
-    {
-      "id": "docker_compose_backend",
-      "label": "Backend Service",
-      "degree": 3
-    },
-    {
-      "id": "docker_compose_digital_twin",
-      "label": "digital_twin database",
-      "degree": 2
     }
   ],
   "surprises": [
@@ -292,17 +407,6 @@
       "why": "connects across different repos/directories; peripheral node `Digital Twin Database` unexpectedly reaches hub `db service`"
     },
     {
-      "source": "main()",
-      "target": "NewHandler()",
-      "source_files": [
-        "backend/cmd/main.go",
-        "backend/internal/handlers/handlers.go"
-      ],
-      "confidence": "INFERRED",
-      "relation": "calls",
-      "why": "inferred connection - not explicitly stated in source; bridges separate communities; peripheral node `NewHandler()` unexpectedly reaches hub `main()`"
-    },
-    {
       "source": "Main Entry Point",
       "target": "Root Div",
       "source_files": [
@@ -323,10 +427,21 @@
       "confidence": "EXTRACTED",
       "relation": "references",
       "why": "connects across different repos/directories"
+    },
+    {
+      "source": "Backend Service",
+      "target": "digital_twin database",
+      "source_files": [
+        "docker/docker-compose.yml",
+        "docker-compose.yml"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories"
     }
   ],
   "tokens": {
-    "input": 511,
-    "output": 402
+    "input": 5078,
+    "output": 1558
   }
 }

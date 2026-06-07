@@ -13,7 +13,7 @@ RUN go mod download
 COPY . .
 
 # Build the Go app
-RUN CGO_ENABLED=0 GOOS=linux go build -o /app/backend-app ./cmd/main.go
+RUN CGO_ENABLED=0 GOOS=linux go build -o /app/brahma-app ./cmd/main.go
 
 # Final stage
 FROM alpine:latest
@@ -21,10 +21,10 @@ FROM alpine:latest
 WORKDIR /root/
 
 # Copy the pre-built binary file from the previous stage
-COPY --from=builder /app/backend-app .
+COPY --from=builder /app/brahma-app .
 
 # Expose port (adjust as necessary)
 EXPOSE 8080
 
 # Command to run the executable
-CMD ["./backend-app"]
+CMD ["./brahma-app"]

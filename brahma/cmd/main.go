@@ -46,15 +46,15 @@ func main() {
 
 	// Connect to local PostgreSQL
 	dsn := cfg.GetDSN()
-	zapLogger.Info("Connecting to PostgreSQL database", zap.String("host", cfg.DBHost), zap.String("port", cfg.DBPort))
-	
+	zapLogger.Info("Connecting to PostgreSQL kaalam", zap.String("host", cfg.DBHost), zap.String("port", cfg.DBPort))
+
 	var db *gorm.DB
 	var dbErr error
 	maxRetries := 15
 	retryDelay := 2 * time.Second
 
 	for i := 1; i <= maxRetries; i++ {
-		zapLogger.Info(fmt.Sprintf("Attempting to connect to database (attempt %d/%d)...", i, maxRetries))
+		zapLogger.Info(fmt.Sprintf("Attempting to connect to kaalam (attempt %d/%d)...", i, maxRetries))
 		db, dbErr = gorm.Open(postgres.Open(dsn), &gorm.Config{
 			Logger: gormZapLogger,
 		})
@@ -71,7 +71,7 @@ func main() {
 
 	zapLogger.Info("PostgreSQL connection established successfully")
 
-	// Execute database auto-migrations for the digital twin structures
+	// Execute kaalam auto-migrations for the digital twin structures
 	zapLogger.Info("Running model auto-migrations")
 	err = db.AutoMigrate(
 		&models.CfgModule{},
@@ -220,4 +220,3 @@ func ZapRequestLogger(logger *zap.Logger) gin.HandlerFunc {
 		)
 	}
 }
-
