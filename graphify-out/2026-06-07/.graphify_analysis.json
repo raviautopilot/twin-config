@@ -141,12 +141,12 @@
       "frontend_tsconfig_references"
     ],
     "11": [
-      "index_html_root",
-      "main_tsx"
+      "docker_setup_sh",
+      "home_ubuntu_code_github_raviautopilot_twin_config_docker_setup_sh__entry"
     ],
     "12": [
-      "home_ubuntu_code_github_raviautopilot_twin_config_manage_sh__entry",
-      "manage_sh"
+      "index_html_root",
+      "main_tsx"
     ],
     "13": [
       "readme_eslint",
@@ -317,7 +317,7 @@
     }
   ],
   "tokens": {
-    "input": 27744,
-    "output": 1516
+    "input": 0,
+    "output": 0
   }
 }
