@@ -1,9 +1,4 @@
 {
-  "/home/ubuntu/code/github/raviautopilot/twin-config/manage.sh": {
-    "mtime": 1780842570.8325343,
-    "ast_hash": "a8ebb31acb5ea51d2f8f3632c5b14d06",
-    "semantic_hash": "a8ebb31acb5ea51d2f8f3632c5b14d06"
-  },
   "/home/ubuntu/code/github/raviautopilot/twin-config/volume-wipe.sh": {
     "mtime": 1780842142.6729703,
     "ast_hash": "c06adced8e80f9a9d7d1bfbefc08df24",
@@ -20,68 +15,73 @@
     "semantic_hash": "ccaf305d4289cf5f753d9f9187dd7790"
   },
   "/home/ubuntu/code/github/raviautopilot/twin-config/frontend/tsconfig.node.json": {
-    "mtime": 1780843353.3961828,
+    "mtime": 1780843641.0107105,
     "ast_hash": "70bdd0a673bcfc0e828080b306e7c680",
     "semantic_hash": "70bdd0a673bcfc0e828080b306e7c680"
   },
   "/home/ubuntu/code/github/raviautopilot/twin-config/frontend/tsconfig.app.json": {
-    "mtime": 1780843353.3961828,
+    "mtime": 1780843641.0107105,
     "ast_hash": "136630b5accce1ca50663df229534a26",
     "semantic_hash": "136630b5accce1ca50663df229534a26"
   },
   "/home/ubuntu/code/github/raviautopilot/twin-config/frontend/package.json": {
-    "mtime": 1780843409.8846796,
+    "mtime": 1780843640.9907103,
     "ast_hash": "5e3be431c99f16d78d61d6f385d7caff",
     "semantic_hash": "5e3be431c99f16d78d61d6f385d7caff"
   },
   "/home/ubuntu/code/github/raviautopilot/twin-config/frontend/vite.config.ts": {
-    "mtime": 1780843374.2443662,
+    "mtime": 1780843641.0107105,
     "ast_hash": "e71f334c92473b2f4db141aa06b730e1",
     "semantic_hash": "e71f334c92473b2f4db141aa06b730e1"
   },
   "/home/ubuntu/code/github/raviautopilot/twin-config/frontend/eslint.config.js": {
-    "mtime": 1780843353.3881826,
+    "mtime": 1780843640.9907103,
     "ast_hash": "0355276bc79439afe3c53e3a2470ca1e",
     "semantic_hash": "0355276bc79439afe3c53e3a2470ca1e"
   },
   "/home/ubuntu/code/github/raviautopilot/twin-config/frontend/tsconfig.json": {
-    "mtime": 1780843353.3961828,
+    "mtime": 1780843641.0107105,
     "ast_hash": "a3d39fa780ebff65444de257f291ce6c",
     "semantic_hash": "a3d39fa780ebff65444de257f291ce6c"
   },
   "/home/ubuntu/code/github/raviautopilot/twin-config/frontend/src/App.tsx": {
-    "mtime": 1780843446.096998,
+    "mtime": 1780843640.9987104,
     "ast_hash": "cf71ee703d9f798afdc42c73bc273f6c",
     "semantic_hash": "cf71ee703d9f798afdc42c73bc273f6c"
   },
   "/home/ubuntu/code/github/raviautopilot/twin-config/frontend/src/main.tsx": {
-    "mtime": 1780843353.3921826,
+    "mtime": 1780843641.0107105,
     "ast_hash": "787e5a07efeb2bf6209d5937195f2f68",
     "semantic_hash": "787e5a07efeb2bf6209d5937195f2f68"
   },
   "/home/ubuntu/code/github/raviautopilot/twin-config/backend/cmd/main.go": {
-    "mtime": 1780843302.923732,
+    "mtime": 1780843640.9747102,
     "ast_hash": "868604c3dfacfe84843d1be1bbcaffea",
     "semantic_hash": "868604c3dfacfe84843d1be1bbcaffea"
   },
   "/home/ubuntu/code/github/raviautopilot/twin-config/backend/internal/config/logger.go": {
-    "mtime": 1780843285.8955777,
+    "mtime": 1780843640.9747102,
     "ast_hash": "489a3b45052194954cccf89c7442234a",
     "semantic_hash": "489a3b45052194954cccf89c7442234a"
   },
   "/home/ubuntu/code/github/raviautopilot/twin-config/backend/internal/config/config.go": {
-    "mtime": 1780843288.5316017,
+    "mtime": 1780843640.9747102,
     "ast_hash": "44260139dad080e36bd9df6b1765b48f",
     "semantic_hash": "44260139dad080e36bd9df6b1765b48f"
   },
   "/home/ubuntu/code/github/raviautopilot/twin-config/backend/internal/models/models.go": {
-    "mtime": 1780843291.9196324,
+    "mtime": 1780843640.9907103,
     "ast_hash": "3d40598c8687f5b92c2625a87010d464",
     "semantic_hash": "3d40598c8687f5b92c2625a87010d464"
   },
   "/home/ubuntu/code/github/raviautopilot/twin-config/backend/internal/handlers/handlers.go": {
-    "mtime": 1780843296.3396723,
+    "mtime": 1780843640.9747102,
     "ast_hash": "9259faa81f6ed238182b4be268e04b96",
     "semantic_hash": "9259faa81f6ed238182b4be268e04b96"
+  },
+  "/home/ubuntu/code/github/raviautopilot/twin-config/docker-setup.sh": {
+    "mtime": 1780844349.388906,
+    "ast_hash": "36b0d276106a582399d112d542435172",
+    "semantic_hash": "36b0d276106a582399d112d542435172"
   }
 }
