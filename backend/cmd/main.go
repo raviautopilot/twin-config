@@ -39,11 +39,25 @@ func main() {
 	dsn := cfg.GetDSN()
 	zapLogger.Info("Connecting to PostgreSQL database", zap.String("host", cfg.DBHost), zap.String("port", cfg.DBPort))
 	
-	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{
-		Logger: gormZapLogger,
-	})
-	if err != nil {
-		zapLogger.Fatal("Failed to establish PostgreSQL connection via GORM", zap.Error(err))
+	var db *gorm.DB
+	var dbErr error
+	maxRetries := 15
+	retryDelay := 2 * time.Second
+
+	for i := 1; i <= maxRetries; i++ {
+		zapLogger.Info(fmt.Sprintf("Attempting to connect to database (attempt %d/%d)...", i, maxRetries))
+		db, dbErr = gorm.Open(postgres.Open(dsn), &gorm.Config{
+			Logger: gormZapLogger,
+		})
+		if dbErr == nil {
+			break
+		}
+		zapLogger.Warn("Failed to establish PostgreSQL connection, retrying in 2 seconds...", zap.Error(dbErr))
+		time.Sleep(retryDelay)
+	}
+
+	if dbErr != nil {
+		zapLogger.Fatal("Failed to establish PostgreSQL connection via GORM after retries", zap.Error(dbErr))
 	}
 
 	zapLogger.Info("PostgreSQL connection established successfully")

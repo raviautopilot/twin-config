@@ -3,7 +3,7 @@
 # docker-setup.sh for twin-config full stack
 
 COMMAND=$1
-COMPOSE_FILE="docker/docker-compose.yml"
+COMPOSE_FILE="docker-compose.yml"
 
 # You can pass an optional service name (db, backend, frontend)
 SERVICE=$2
