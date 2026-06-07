@@ -1,7 +1,9 @@
 services:
   db:
     image: twin-config
-    build: .
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
     environment:
       POSTGRES_DB: digital_twin
       POSTGRES_USER: twin_user

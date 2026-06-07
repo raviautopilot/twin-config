@@ -59,7 +59,7 @@ CREATE TABLE event_details (
 
 -- Financial Ledger View
 CREATE VIEW vw_finance_balances AS
-SELECT 
+SELECT
     target_entity AS account_or_party,
     SUM(value) AS balance
 FROM twin_impact
@@ -68,7 +68,7 @@ GROUP BY target_entity;
 
 -- Warranty Status View
 CREATE VIEW vw_active_warranties AS
-SELECT 
+SELECT
     e.event_id,
     e.occurred_at AS purchase_date,
     d1.attribute_val AS item_name,
@@ -82,7 +82,7 @@ WHERE CAST(d3.attribute_val AS DATE) >= CURRENT_DATE;
 
 -- Health Log View
 CREATE VIEW vw_health_vitals AS
-SELECT 
+SELECT
     e.occurred_at,
     MAX(CASE WHEN i.target_entity = 'SYS' THEN i.value END) AS systolic,
     MAX(CASE WHEN i.target_entity = 'DIA' THEN i.value END) AS diastolic,

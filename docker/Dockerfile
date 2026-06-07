@@ -5,8 +5,8 @@ FROM postgres:16-alpine
 WORKDIR /app
 
 # Copy the relational data schema and initialization instructions
-COPY config.sql /docker-entrypoint-initdb.d/01_config.sql
-COPY init_twin.sql /docker-entrypoint-initdb.d/02_init_twin.sql
+COPY sql/config.sql /docker-entrypoint-initdb.d/01_config.sql
+COPY sql/init_twin.sql /docker-entrypoint-initdb.d/02_init_twin.sql
 
 # Set environment variables for Postgres
 ENV POSTGRES_DB=digital_twin
