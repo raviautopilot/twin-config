@@ -1,6 +1,6 @@
 services:
   db:
-    image: twin-config
+    image: twin-config-db
     build:
       context: ..
       dockerfile: docker/Dockerfile
@@ -12,6 +12,33 @@ services:
       - "5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
+
+  backend:
+    image: twin-config-backend
+    build:
+      context: ../backend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      # Add environment variables as needed, e.g., for DB connection
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_USER=twin_user
+      - DB_PASSWORD=twin_pass
+      - DB_NAME=digital_twin
+
+  frontend:
+    image: twin-config-frontend
+    build:
+      context: ../frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
 
 volumes:
   pgdata:
