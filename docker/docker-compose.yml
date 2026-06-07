@@ -1,0 +1,17 @@
+services:
+  db:
+    image: twin-config
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    environment:
+      POSTGRES_DB: digital_twin
+      POSTGRES_USER: twin_user
+      POSTGRES_PASSWORD: twin_pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
