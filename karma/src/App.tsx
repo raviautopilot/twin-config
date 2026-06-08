@@ -651,7 +651,7 @@ export default function App() {
                       <thead>
                         <tr className="border-b border-slate-800 text-slate-400 font-semibold bg-slate-950/20">
                           <th className="p-4 pl-6">Type ID</th>
-                          <th className="p-4">Config Type</th>
+                          <th className="p-4">Entity Type</th>
                           <th className="p-4">Notes</th>
                           <th className="p-4">Metadata Schema</th>
                           <th className="p-4 text-right pr-6">Actions</th>
