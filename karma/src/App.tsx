@@ -17,12 +17,100 @@ import {
   Edit2,
   Trash2,
   Database,
-  Info
+  Info,
+  Users,
+  Landmark,
+  CreditCard,
+  Percent,
+  Coins,
+  PiggyBank,
+  User
 } from 'lucide-react';
 
 const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8080/api/v1';
 
-// TypeScript Interfaces matching Database Schema
+interface Person {
+  person_id: string;
+  first_name: string;
+  last_name?: string;
+  middle_name?: string;
+  date_of_birth?: string;
+  gender?: string;
+  nationality?: string;
+  email?: string;
+  phone_number?: string;
+  address_line1?: string;
+  address_line2?: string;
+  city?: string;
+  state_province?: string;
+  postal_code?: string;
+  country?: string;
+  father_name?: string;
+  mother_name?: string;
+  created_at: string;
+  updated_at: string;
+}
+
+interface FinEntity {
+  fin_entity_id: string;
+  entity_type: 'BANK_ACCOUNT' | 'CREDIT_CARD' | 'DEBIT_CARD' | 'FIXED_DEPOSIT' | 'LOAN' | 'OVERDRAFT';
+  entity_name: string;
+  owner_person_id?: string;
+  balance: number;
+  currency: string;
+  is_active: boolean;
+  notes?: string;
+  created_at: string;
+  updated_at: string;
+
+  // Global & Regional banking
+  bank_name?: string;
+  branch_name?: string;
+  account_number?: string;
+  iban?: string;
+  bic_swift?: string;
+  ifsc?: string;
+  micr?: string;
+  bsr_code?: string;
+  sort_code?: string;
+  roll_number?: string;
+
+  // Cards
+  card_number_masked?: string;
+  card_network?: string;
+  card_holder_name?: string;
+  issue_date?: string;
+  expiry_date?: string;
+
+  // Credit Card
+  credit_limit?: number;
+  available_limit?: number;
+  minimum_due?: number;
+  statement_date_day?: number;
+  payment_due_date_day?: number;
+
+  // Fixed Deposit
+  fd_receipt_number?: string;
+  principal_amount?: number;
+  compounding_frequency?: string;
+  booking_date?: string;
+  maturity_date?: string;
+  maturity_amount?: number;
+  is_cumulative?: boolean;
+
+  // Loan
+  loan_type?: string;
+  sanctioned_amount?: number;
+  interest_type?: string;
+  tenure_months?: number;
+  emi_amount?: number;
+  next_emi_date?: string;
+
+  // Overdraft & Interest
+  overdraft_limit?: number;
+  interest_rate?: number;
+  linked_parent_entity_id?: string;
+}
 
 interface CfgModule {
   module_id: string;
@@ -109,7 +197,8 @@ type MenuSection =
   | 'cfg_attribute_keys'
   | 'twin_event'
   | 'twin_impact'
-  | 'event_details';
+  | 'event_details'
+  | 'entity_management';
 
 const getInitialRouteState = () => {
   const path = window.location.pathname;
@@ -124,6 +213,7 @@ const getInitialRouteState = () => {
   const eventsMatch = path.match(/^\/events$/);
   const impactsMatch = path.match(/^\/event-impacts$/);
   const eventDetailsMatch = path.match(/^\/event-details$/);
+  const entityManagementMatch = path.match(/^\/entity-management$/);
 
   let initialMenu: MenuSection = 'dashboard';
   let initialTypeTab = '';
@@ -148,6 +238,8 @@ const getInitialRouteState = () => {
     initialMenu = 'twin_impact';
   } else if (eventDetailsMatch) {
     initialMenu = 'event_details';
+  } else if (entityManagementMatch) {
+    initialMenu = 'entity_management';
   }
 
   return { initialMenu, initialTypeTab };
@@ -203,10 +295,342 @@ export default function App() {
   // Toast State
   const [toast, setToast] = useState<{ message: string; type: 'success' | 'error' } | null>(null);
 
+  // Show Toast Helper
+  const showToast = (message: string, type: 'success' | 'error' = 'success') => {
+    setToast({ message, type });
+    setTimeout(() => setToast(null), 4000);
+  };
+
   // Modal State
   const [modalOpen, setModalOpen] = useState(false);
   const [modalType, setModalType] = useState<'create' | 'edit'>('create');
   const [editKeys, setEditKeys] = useState<Record<string, string | number>>({});
+
+  // Entity Management states
+  const [persons, setPersons] = useState<Person[]>([]);
+  const [finEntities, setFinEntities] = useState<FinEntity[]>([]);
+  const [selectedEntityType, setSelectedEntityType] = useState<string>('PERSON');
+  
+  // Modals for Entity CRUD
+  const [entityModalOpen, setEntityModalOpen] = useState(false);
+  const [entityModalType, setEntityModalType] = useState<'create' | 'edit'>('create');
+  
+  // Detail modal state
+  const [detailModalOpen, setDetailModalOpen] = useState(false);
+  const [selectedEntityDetails, setSelectedEntityDetails] = useState<any>(null);
+
+  // Form states for Person
+  const [formPerson, setFormPerson] = useState({
+    person_id: '',
+    first_name: '',
+    last_name: '',
+    middle_name: '',
+    date_of_birth: '',
+    gender: 'Male',
+    nationality: '',
+    email: '',
+    phone_number: '',
+    address_line1: '',
+    address_line2: '',
+    city: '',
+    state_province: '',
+    postal_code: '',
+    country: '',
+    father_name: '',
+    mother_name: ''
+  });
+
+  // Form states for Financial Entity
+  const [formFinEntity, setFormFinEntity] = useState({
+    fin_entity_id: '',
+    entity_type: 'BANK_ACCOUNT',
+    entity_name: '',
+    owner_person_id: '',
+    balance: 0,
+    currency: 'USD',
+    is_active: true,
+    notes: '',
+    bank_name: '',
+    branch_name: '',
+    account_number: '',
+    iban: '',
+    bic_swift: '',
+    ifsc: '',
+    micr: '',
+    bsr_code: '',
+    sort_code: '',
+    roll_number: '',
+    card_number_masked: '',
+    card_network: 'VISA',
+    card_holder_name: '',
+    issue_date: '',
+    expiry_date: '',
+    credit_limit: 0,
+    available_limit: 0,
+    minimum_due: 0,
+    statement_date_day: 1,
+    payment_due_date_day: 1,
+    fd_receipt_number: '',
+    principal_amount: 0,
+    compounding_frequency: 'MONTHLY',
+    booking_date: '',
+    maturity_date: '',
+    maturity_amount: 0,
+    is_cumulative: true,
+    loan_type: 'HOME',
+    sanctioned_amount: 0,
+    interest_type: 'FIXED',
+    tenure_months: 12,
+    emi_amount: 0,
+    next_emi_date: '',
+    overdraft_limit: 0,
+    interest_rate: 0.0,
+    linked_parent_entity_id: ''
+  });
+
+  const fetchPersonsList = async () => {
+    try {
+      const res = await fetch(`${API_BASE}/persons`);
+      if (res.ok) {
+        setPersons(await res.json());
+      }
+    } catch (err: any) {
+      showToast(err.message, 'error');
+    }
+  };
+
+  const fetchFinEntitiesList = async (type: string) => {
+    try {
+      setLoading(true);
+      const res = await fetch(`${API_BASE}/fin-entities?type=${type}`);
+      if (res.ok) {
+        setFinEntities(await res.json());
+      }
+      setLoading(false);
+    } catch (err: any) {
+      setLoading(false);
+      showToast(err.message, 'error');
+    }
+  };
+
+  // Fetch Entity Management Data
+  useEffect(() => {
+    if (activeMenu === 'entity_management') {
+      fetchPersonsList();
+      if (selectedEntityType !== 'PERSON') {
+        fetchFinEntitiesList(selectedEntityType);
+      }
+    }
+  }, [activeMenu, selectedEntityType, refreshTrigger]);
+
+  const openEntityCreateModal = () => {
+    setEntityModalType('create');
+    if (selectedEntityType === 'PERSON') {
+      setFormPerson({
+        person_id: '',
+        first_name: '',
+        last_name: '',
+        middle_name: '',
+        date_of_birth: '',
+        gender: 'Male',
+        nationality: '',
+        email: '',
+        phone_number: '',
+        address_line1: '',
+        address_line2: '',
+        city: '',
+        state_province: '',
+        postal_code: '',
+        country: '',
+        father_name: '',
+        mother_name: ''
+      });
+    } else {
+      setFormFinEntity({
+        fin_entity_id: '',
+        entity_type: selectedEntityType as any,
+        entity_name: '',
+        owner_person_id: persons[0]?.person_id || '',
+        balance: 0,
+        currency: 'USD',
+        is_active: true,
+        notes: '',
+        bank_name: '',
+        branch_name: '',
+        account_number: '',
+        iban: '',
+        bic_swift: '',
+        ifsc: '',
+        micr: '',
+        bsr_code: '',
+        sort_code: '',
+        roll_number: '',
+        card_number_masked: '',
+        card_network: 'VISA',
+        card_holder_name: '',
+        issue_date: '',
+        expiry_date: '',
+        credit_limit: 0,
+        available_limit: 0,
+        minimum_due: 0,
+        statement_date_day: 1,
+        payment_due_date_day: 1,
+        fd_receipt_number: '',
+        principal_amount: 0,
+        compounding_frequency: 'MONTHLY',
+        booking_date: '',
+        maturity_date: '',
+        maturity_amount: 0,
+        is_cumulative: true,
+        loan_type: 'HOME',
+        sanctioned_amount: 0,
+        interest_type: 'FIXED',
+        tenure_months: 12,
+        emi_amount: 0,
+        next_emi_date: '',
+        overdraft_limit: 0,
+        interest_rate: 0.0,
+        linked_parent_entity_id: ''
+      });
+    }
+    setEntityModalOpen(true);
+  };
+
+  const openEntityEditModal = (item: any) => {
+    setEntityModalType('edit');
+    if (selectedEntityType === 'PERSON') {
+      setFormPerson({
+        ...item,
+        date_of_birth: item.date_of_birth ? item.date_of_birth.substring(0, 10) : ''
+      });
+    } else {
+      setFormFinEntity({
+        ...item,
+        issue_date: item.issue_date ? item.issue_date.substring(0, 10) : '',
+        expiry_date: item.expiry_date ? item.expiry_date.substring(0, 10) : '',
+        booking_date: item.booking_date ? item.booking_date.substring(0, 10) : '',
+        maturity_date: item.maturity_date ? item.maturity_date.substring(0, 10) : '',
+        next_emi_date: item.next_emi_date ? item.next_emi_date.substring(0, 10) : ''
+      });
+    }
+    setEntityModalOpen(true);
+  };
+
+  const openEntityDetailModal = (item: any) => {
+    setSelectedEntityDetails(item);
+    setDetailModalOpen(true);
+  };
+
+  const handleEntitySubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    try {
+      const isPerson = selectedEntityType === 'PERSON';
+      const url = isPerson
+        ? (entityModalType === 'create' ? `${API_BASE}/persons` : `${API_BASE}/persons/${formPerson.person_id}`)
+        : (entityModalType === 'create' ? `${API_BASE}/fin-entities` : `${API_BASE}/fin-entities/${formFinEntity.fin_entity_id}`);
+      
+      const method = entityModalType === 'create' ? 'POST' : 'PUT';
+      
+      let body: any;
+      if (isPerson) {
+        body = {
+          ...formPerson,
+          middle_name: formPerson.middle_name || null,
+          last_name: formPerson.last_name || null,
+          date_of_birth: formPerson.date_of_birth ? new Date(formPerson.date_of_birth).toISOString() : null,
+          email: formPerson.email || null,
+          phone_number: formPerson.phone_number || null,
+          address_line1: formPerson.address_line1 || null,
+          address_line2: formPerson.address_line2 || null,
+          city: formPerson.city || null,
+          state_province: formPerson.state_province || null,
+          postal_code: formPerson.postal_code || null,
+          country: formPerson.country || null,
+          father_name: formPerson.father_name || null,
+          mother_name: formPerson.mother_name || null
+        };
+      } else {
+        body = {
+          ...formFinEntity,
+          entity_type: selectedEntityType,
+          balance: parseFloat(formFinEntity.balance as any) || 0.0,
+          credit_limit: formFinEntity.credit_limit ? parseFloat(formFinEntity.credit_limit as any) : null,
+          available_limit: formFinEntity.available_limit ? parseFloat(formFinEntity.available_limit as any) : null,
+          minimum_due: formFinEntity.minimum_due ? parseFloat(formFinEntity.minimum_due as any) : null,
+          principal_amount: formFinEntity.principal_amount ? parseFloat(formFinEntity.principal_amount as any) : null,
+          maturity_amount: formFinEntity.maturity_amount ? parseFloat(formFinEntity.maturity_amount as any) : null,
+          sanctioned_amount: formFinEntity.sanctioned_amount ? parseFloat(formFinEntity.sanctioned_amount as any) : null,
+          emi_amount: formFinEntity.emi_amount ? parseFloat(formFinEntity.emi_amount as any) : null,
+          overdraft_limit: formFinEntity.overdraft_limit ? parseFloat(formFinEntity.overdraft_limit as any) : null,
+          interest_rate: formFinEntity.interest_rate ? parseFloat(formFinEntity.interest_rate as any) : null,
+          statement_date_day: formFinEntity.statement_date_day ? parseInt(formFinEntity.statement_date_day as any) : null,
+          payment_due_date_day: formFinEntity.payment_due_date_day ? parseInt(formFinEntity.payment_due_date_day as any) : null,
+          tenure_months: formFinEntity.tenure_months ? parseInt(formFinEntity.tenure_months as any) : null,
+          owner_person_id: formFinEntity.owner_person_id || null,
+          linked_parent_entity_id: formFinEntity.linked_parent_entity_id || null,
+          bank_name: formFinEntity.bank_name || null,
+          branch_name: formFinEntity.branch_name || null,
+          account_number: formFinEntity.account_number || null,
+          iban: formFinEntity.iban || null,
+          bic_swift: formFinEntity.bic_swift || null,
+          ifsc: formFinEntity.ifsc || null,
+          micr: formFinEntity.micr || null,
+          bsr_code: formFinEntity.bsr_code || null,
+          sort_code: formFinEntity.sort_code || null,
+          roll_number: formFinEntity.roll_number || null,
+          card_number_masked: formFinEntity.card_number_masked || null,
+          card_holder_name: formFinEntity.card_holder_name || null,
+          fd_receipt_number: formFinEntity.fd_receipt_number || null,
+          notes: formFinEntity.notes || null,
+          issue_date: formFinEntity.issue_date ? new Date(formFinEntity.issue_date).toISOString() : null,
+          expiry_date: formFinEntity.expiry_date ? new Date(formFinEntity.expiry_date).toISOString() : null,
+          booking_date: formFinEntity.booking_date ? new Date(formFinEntity.booking_date).toISOString() : null,
+          maturity_date: formFinEntity.maturity_date ? new Date(formFinEntity.maturity_date).toISOString() : null,
+          next_emi_date: formFinEntity.next_emi_date ? new Date(formFinEntity.next_emi_date).toISOString() : null
+        };
+      }
+
+      const res = await fetch(url, {
+        method,
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body)
+      });
+
+      if (!res.ok) {
+        const errData = await res.json();
+        throw new Error(errData.error || 'Failed to save entity');
+      }
+
+      showToast(`Entity ${entityModalType === 'create' ? 'created' : 'updated'} successfully`);
+      setEntityModalOpen(false);
+      setRefreshTrigger(prev => prev + 1);
+    } catch (err: any) {
+      showToast(err.message, 'error');
+    }
+  };
+
+  const handleEntityDelete = async (item: any) => {
+    const isPerson = selectedEntityType === 'PERSON';
+    const name = isPerson ? `${item.first_name} ${item.last_name || ''}` : item.entity_name;
+    if (!confirm(`Are you sure you want to delete "${name}"?`)) return;
+
+    try {
+      const url = isPerson
+        ? `${API_BASE}/persons/${item.person_id}`
+        : `${API_BASE}/fin-entities/${item.fin_entity_id}`;
+      
+      const res = await fetch(url, { method: 'DELETE' });
+      if (!res.ok) {
+        const errData = await res.json();
+        throw new Error(errData.error || 'Failed to delete entity');
+      }
+
+      showToast('Entity deleted successfully');
+      setRefreshTrigger(prev => prev + 1);
+    } catch (err: any) {
+      showToast(err.message, 'error');
+    }
+  };
 
   // Form Field States
   const [formModule, setFormModule] = useState({ module_id: '', module_name: '', notes: '' });
@@ -218,11 +642,6 @@ export default function App() {
   const [formImpact, setFormImpact] = useState({ impact_id: '', event_id: '', dimension_code: '', value: 0, target_entity: '' });
   const [formEventDetail, setFormEventDetail] = useState({ event_id: '', attribute_key: '', attribute_val: '' });
 
-  // Show Toast Helper
-  const showToast = (message: string, type: 'success' | 'error' = 'success') => {
-    setToast({ message, type });
-    setTimeout(() => setToast(null), 4000);
-  };
 
   const navigateTo = (menu: MenuSection, params?: { module?: string }) => {
     let path = '/';
@@ -246,6 +665,8 @@ export default function App() {
       path = '/event-impacts';
     } else if (menu === 'event_details') {
       path = '/event-details';
+    } else if (menu === 'entity_management') {
+      path = '/entity-management';
     } else if (menu === 'dashboard') {
       path = '/';
     }
@@ -520,7 +941,8 @@ export default function App() {
     { id: 'cfg_attribute_keys', label: 'Attribute Keys', icon: Tag, group: 'Configuration Engine' },
     { id: 'twin_event', label: 'Events Ledger', icon: Database, group: 'Operational Ledger' },
     { id: 'twin_impact', label: 'Event Impacts', icon: TrendingUp, group: 'Operational Ledger' },
-    { id: 'event_details', label: 'Event Details', icon: FileText, group: 'Operational Ledger' }
+    { id: 'event_details', label: 'Event Details', icon: FileText, group: 'Operational Ledger' },
+    { id: 'entity_management', label: 'Entity Registry', icon: Users, group: 'Operational Ledger' }
   ];
 
   // Helper for Table Column Headers & Cells
@@ -1002,6 +1424,248 @@ export default function App() {
     }
   };
 
+  // Render Entity Management Drill-Down Layout
+  const renderEntityManagement = () => {
+    const filteredPersons = persons.filter(p => 
+      `${p.first_name} ${p.last_name || ''}`.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      (p.email && p.email.toLowerCase().includes(searchQuery.toLowerCase()))
+    );
+
+    const filteredFinEntities = finEntities.filter(f => 
+      f.entity_name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      (f.bank_name && f.bank_name.toLowerCase().includes(searchQuery.toLowerCase())) ||
+      (f.account_number && f.account_number.toLowerCase().includes(searchQuery.toLowerCase()))
+    );
+
+    const modulesList = [
+      {
+        id: 'identity',
+        label: 'Identity Registry',
+        icon: Users,
+        types: [
+          { code: 'PERSON', label: 'Persons', icon: User }
+        ]
+      },
+      {
+        id: 'finance',
+        label: 'Financial Ledger',
+        icon: Coins,
+        types: [
+          { code: 'BANK_ACCOUNT', label: 'Bank Accounts', icon: Landmark },
+          { code: 'CREDIT_CARD', label: 'Credit Cards', icon: CreditCard },
+          { code: 'LOAN', label: 'Loans & Liabilities', icon: Percent },
+          { code: 'FIXED_DEPOSIT', label: 'Fixed Deposits', icon: Coins },
+          { code: 'OVERDRAFT', label: 'Overdrafts', icon: PiggyBank }
+        ]
+      }
+    ];
+
+    return (
+      <div className="flex flex-col lg:flex-row gap-6 min-h-[500px]">
+        {/* Left Sub-Sidebar (Drilldown Nav) */}
+        <div className="w-full lg:w-64 shrink-0 space-y-4">
+          <div className="bg-slate-900/40 border border-slate-800 rounded-2xl p-4 space-y-6 backdrop-blur-md">
+            <h3 className="text-slate-400 text-xs font-mono font-semibold uppercase tracking-wider px-2">Navigation</h3>
+            
+            <div className="space-y-4">
+              {modulesList.map(mod => (
+                <div key={mod.id} className="space-y-1.5">
+                  <div className="flex items-center gap-2 text-slate-350 font-semibold text-xs uppercase tracking-wider px-2 py-1 bg-slate-950/20 rounded-md">
+                    <mod.icon className="w-3.5 h-3.5 text-teal-400" />
+                    <span>{mod.label}</span>
+                  </div>
+                  
+                  <div className="space-y-0.5 pl-2">
+                    {mod.types.map(type => {
+                      const isActive = selectedEntityType === type.code;
+                      return (
+                        <button
+                          key={type.code}
+                          onClick={() => {
+                            setSelectedEntityType(type.code);
+                          }}
+                          className={`w-full text-left px-3 py-2 rounded-xl text-sm flex items-center justify-between transition-all ${
+                            isActive
+                              ? 'bg-gradient-to-r from-teal-500/10 to-indigo-500/10 text-teal-400 border border-teal-805/40 font-medium'
+                              : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/30 border border-transparent'
+                          }`}
+                        >
+                          <div className="flex items-center gap-2.5">
+                            <type.icon className={`w-4 h-4 ${isActive ? 'text-teal-400' : 'text-slate-500'}`} />
+                            <span>{type.label}</span>
+                          </div>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Right Content Area */}
+        <div className="flex-1 space-y-4 min-w-0">
+          <div className="bg-slate-900/20 border border-slate-800 rounded-2xl shadow-xl backdrop-blur-md overflow-hidden">
+            {/* Header inside view */}
+            <div className="p-6 border-b border-slate-800 bg-slate-900/30 flex flex-col md:flex-row md:items-center justify-between gap-4">
+              <div>
+                <h3 className="font-semibold text-slate-200 text-lg">
+                  {selectedEntityType === 'PERSON' ? 'Persons Directory' : `${selectedEntityType.replace(/_/g, ' ')}s Registry`}
+                </h3>
+                <p className="text-slate-400 text-xs mt-0.5">
+                  Manage active entities registered in this node.
+                </p>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <div className="relative w-64">
+                  <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-550" />
+                  <input
+                    type="text"
+                    placeholder="Search registry..."
+                    value={searchQuery}
+                    onChange={e => setSearchQuery(e.target.value)}
+                    className="w-full pl-10 pr-4 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200 placeholder-slate-500 transition"
+                  />
+                </div>
+                <button
+                  onClick={openEntityCreateModal}
+                  className="px-4 py-2 bg-gradient-to-r from-teal-500 to-indigo-500 hover:from-teal-600 hover:to-indigo-600 text-slate-950 font-bold rounded-xl flex items-center gap-2 shadow-lg transition"
+                >
+                  <Plus className="w-4 h-4" />
+                  Add New
+                </button>
+              </div>
+            </div>
+
+            {/* Dynamic Data Table */}
+            <div className="overflow-x-auto">
+              {selectedEntityType === 'PERSON' ? (
+                // PERSON Table
+                <table className="w-full text-left border-collapse text-sm">
+                  <thead>
+                    <tr className="border-b border-slate-800 text-slate-400 font-semibold bg-slate-950/20">
+                      <th className="p-4 pl-6">Person ID</th>
+                      <th className="p-4">Name</th>
+                      <th className="p-4">Email</th>
+                      <th className="p-4">Phone</th>
+                      <th className="p-4">Nationality</th>
+                      <th className="p-4 text-right pr-6">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-800">
+                    {filteredPersons.length === 0 ? (
+                      <tr>
+                        <td colSpan={6} className="text-center p-8 text-slate-500">No persons found.</td>
+                      </tr>
+                    ) : (
+                      filteredPersons.map(p => (
+                        <tr key={p.person_id} className="hover:bg-slate-900/30 transition">
+                          <td className="p-4 pl-6 font-mono text-xs text-slate-400 truncate max-w-[120px]">{p.person_id}</td>
+                          <td className="p-4 font-medium text-slate-200">
+                            {p.first_name} {p.last_name || ''}
+                          </td>
+                          <td className="p-4 text-slate-400">{p.email || '—'}</td>
+                          <td className="p-4 text-slate-400">{p.phone_number || '—'}</td>
+                          <td className="p-4 text-slate-400">{p.nationality || '—'}</td>
+                          <td className="p-4 text-right pr-6 space-x-2">
+                            <button onClick={() => openEntityDetailModal(p)} className="px-2.5 py-1 text-xs bg-slate-850 hover:bg-slate-800 text-slate-300 rounded-lg transition">Details</button>
+                            <button onClick={() => openEntityEditModal(p)} className="p-1 hover:text-teal-400 transition" title="Edit"><Edit2 className="w-4 h-4" /></button>
+                            <button onClick={() => handleEntityDelete(p)} className="p-1 hover:text-rose-400 transition" title="Delete"><Trash2 className="w-4 h-4" /></button>
+                          </td>
+                        </tr>
+                      ))
+                    )}
+                  </tbody>
+                </table>
+              ) : (
+                // Financial Entities Table
+                <table className="w-full text-left border-collapse text-sm">
+                  <thead>
+                    <tr className="border-b border-slate-800 text-slate-400 font-semibold bg-slate-950/20">
+                      <th className="p-4 pl-6">Entity ID</th>
+                      <th className="p-4">Entity Name</th>
+                      <th className="p-4">Owner</th>
+                      <th className="p-4">Balance</th>
+                      <th className="p-4">Status</th>
+                      {selectedEntityType === 'BANK_ACCOUNT' && <th className="p-4">Routing / IFSC</th>}
+                      {selectedEntityType === 'CREDIT_CARD' && <th className="p-4">Limit</th>}
+                      {selectedEntityType === 'LOAN' && <th className="p-4">Sanctioned</th>}
+                      {selectedEntityType === 'FIXED_DEPOSIT' && <th className="p-4">Principal</th>}
+                      {selectedEntityType === 'OVERDRAFT' && <th className="p-4">OD Limit</th>}
+                      <th className="p-4 text-right pr-6">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-800">
+                    {filteredFinEntities.length === 0 ? (
+                      <tr>
+                        <td colSpan={7} className="text-center p-8 text-slate-500">No financial entities found.</td>
+                      </tr>
+                    ) : (
+                      filteredFinEntities.map(f => {
+                        const owner = persons.find(p => p.person_id === f.owner_person_id);
+                        return (
+                          <tr key={f.fin_entity_id} className="hover:bg-slate-900/30 transition">
+                            <td className="p-4 pl-6 font-mono text-xs text-slate-400 truncate max-w-[120px]">{f.fin_entity_id}</td>
+                            <td className="p-4 font-medium text-slate-200">{f.entity_name}</td>
+                            <td className="p-4 text-slate-450">{owner ? `${owner.first_name} ${owner.last_name || ''}` : '—'}</td>
+                            <td className="p-4 font-semibold text-slate-300">
+                              {f.balance.toLocaleString('en-US', { style: 'currency', currency: f.currency })}
+                            </td>
+                            <td className="p-4">
+                              <span className={`px-2 py-0.5 rounded-full text-xxs font-mono font-bold ${
+                                f.is_active
+                                  ? 'bg-emerald-950/80 text-emerald-300 border border-emerald-800/40'
+                                  : 'bg-rose-950/80 text-rose-300 border border-rose-800/40'
+                              }`}>
+                                {f.is_active ? 'Active' : 'Inactive'}
+                              </span>
+                            </td>
+                            {selectedEntityType === 'BANK_ACCOUNT' && (
+                              <td className="p-4 text-slate-450 font-mono text-xs">
+                                {f.ifsc ? `IFSC: ${f.ifsc}` : (f.sort_code ? `Sort: ${f.sort_code}` : '—')}
+                              </td>
+                            )}
+                            {selectedEntityType === 'CREDIT_CARD' && (
+                              <td className="p-4 text-slate-400 font-semibold">
+                                {f.credit_limit ? f.credit_limit.toLocaleString('en-US', { style: 'currency', currency: f.currency }) : '—'}
+                              </td>
+                            )}
+                            {selectedEntityType === 'LOAN' && (
+                              <td className="p-4 text-slate-450 font-semibold">
+                                {f.sanctioned_amount ? f.sanctioned_amount.toLocaleString('en-US', { style: 'currency', currency: f.currency }) : '—'}
+                              </td>
+                            )}
+                            {selectedEntityType === 'FIXED_DEPOSIT' && (
+                              <td className="p-4 text-slate-450 font-semibold">
+                                {f.principal_amount ? f.principal_amount.toLocaleString('en-US', { style: 'currency', currency: f.currency }) : '—'}
+                              </td>
+                            )}
+                            {selectedEntityType === 'OVERDRAFT' && (
+                              <td className="p-4 text-slate-450 font-semibold">
+                                {f.overdraft_limit ? f.overdraft_limit.toLocaleString('en-US', { style: 'currency', currency: f.currency }) : '—'}
+                              </td>
+                            )}
+                            <td className="p-4 text-right pr-6 space-x-2">
+                              <button onClick={() => openEntityDetailModal(f)} className="px-2.5 py-1 text-xs bg-slate-850 hover:bg-slate-800 text-slate-300 rounded-lg transition font-medium">Details</button>
+                              <button onClick={() => openEntityEditModal(f)} className="p-1 hover:text-teal-400 transition" title="Edit"><Edit2 className="w-4 h-4" /></button>
+                              <button onClick={() => handleEntityDelete(f)} className="p-1 hover:text-rose-400 transition" title="Delete"><Trash2 className="w-4 h-4" /></button>
+                            </td>
+                          </tr>
+                        );
+                      })
+                    )}
+                  </tbody>
+                </table>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 flex font-sans">
       {/* Toast Notification */}
@@ -1159,6 +1823,8 @@ export default function App() {
                 </div>
               </div>
             </div>
+          ) : activeMenu === 'entity_management' ? (
+            renderEntityManagement()
           ) : (
             /* CRUD View */
             <div className="bg-slate-900/20 border border-slate-800 rounded-2xl shadow-xl backdrop-blur-md overflow-hidden">
@@ -1572,6 +2238,457 @@ export default function App() {
                 </button>
               </div>
             </form>
+          </div>
+        </div>
+      )}
+
+      {/* Polymorphic Entity CRUD Modal */}
+      {entityModalOpen && (
+        <div className="fixed inset-0 bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4 z-50 overflow-y-auto">
+          <div className="bg-slate-900 border border-slate-800 w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200 my-8">
+            {/* Modal Header */}
+            <div className="px-6 py-4 border-b border-slate-800 flex items-center justify-between bg-slate-950/40">
+              <h3 className="font-semibold text-slate-200 text-lg">
+                {entityModalType === 'create' ? 'Create' : 'Edit'} {selectedEntityType === 'PERSON' ? 'Person Profile' : selectedEntityType.replace(/_/g, ' ')}
+              </h3>
+              <button onClick={() => setEntityModalOpen(false)} className="p-1 hover:bg-slate-800 rounded-lg text-slate-400 hover:text-slate-200 transition">
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            {/* Modal Form */}
+            <form onSubmit={handleEntitySubmit} className="p-6 space-y-4 max-h-[70vh] overflow-y-auto">
+              {selectedEntityType === 'PERSON' ? (
+                // PERSON FORM FIELDS
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="col-span-2 sm:col-span-1">
+                    <label className="block text-xs font-mono text-slate-400 mb-1.5">First Name *</label>
+                    <input type="text" required value={formPerson.first_name} onChange={e => setFormPerson(prev => ({ ...prev, first_name: e.target.value }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                  </div>
+                  <div className="col-span-2 sm:col-span-1">
+                    <label className="block text-xs font-mono text-slate-400 mb-1.5">Last Name</label>
+                    <input type="text" value={formPerson.last_name} onChange={e => setFormPerson(prev => ({ ...prev, last_name: e.target.value }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                  </div>
+                  <div className="col-span-2 sm:col-span-1">
+                    <label className="block text-xs font-mono text-slate-400 mb-1.5">Email</label>
+                    <input type="email" value={formPerson.email} onChange={e => setFormPerson(prev => ({ ...prev, email: e.target.value }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                  </div>
+                  <div className="col-span-2 sm:col-span-1">
+                    <label className="block text-xs font-mono text-slate-400 mb-1.5">Phone Number</label>
+                    <input type="text" value={formPerson.phone_number} onChange={e => setFormPerson(prev => ({ ...prev, phone_number: e.target.value }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                  </div>
+                  <div className="col-span-2 sm:col-span-1">
+                    <label className="block text-xs font-mono text-slate-400 mb-1.5">Date of Birth</label>
+                    <input type="date" value={formPerson.date_of_birth} onChange={e => setFormPerson(prev => ({ ...prev, date_of_birth: e.target.value }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                  </div>
+                  <div className="col-span-2 sm:col-span-1">
+                    <label className="block text-xs font-mono text-slate-400 mb-1.5">Gender</label>
+                    <select value={formPerson.gender} onChange={e => setFormPerson(prev => ({ ...prev, gender: e.target.value }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200">
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                  <div className="col-span-2 sm:col-span-1">
+                    <label className="block text-xs font-mono text-slate-400 mb-1.5">City</label>
+                    <input type="text" value={formPerson.city} onChange={e => setFormPerson(prev => ({ ...prev, city: e.target.value }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                  </div>
+                  <div className="col-span-2 sm:col-span-1">
+                    <label className="block text-xs font-mono text-slate-400 mb-1.5">Country</label>
+                    <input type="text" value={formPerson.country} onChange={e => setFormPerson(prev => ({ ...prev, country: e.target.value }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                  </div>
+                </div>
+              ) : (
+                // FINANCIAL ENTITY FORM FIELDS
+                <div className="space-y-4">
+                  {/* Shared Fields Section */}
+                  <div className="p-4 bg-slate-950/40 rounded-xl border border-slate-850 space-y-4">
+                    <h4 className="text-slate-400 text-xs font-mono font-semibold uppercase tracking-wider">Core Shared Fields</h4>
+                    
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="col-span-2">
+                        <label className="block text-xs font-mono text-slate-400 mb-1.5">Entity Name *</label>
+                        <input type="text" required placeholder="e.g. Chase Checking, Barclays Card" value={formFinEntity.entity_name} onChange={e => setFormFinEntity(prev => ({ ...prev, entity_name: e.target.value }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                      </div>
+                      <div className="col-span-2 sm:col-span-1">
+                        <label className="block text-xs font-mono text-slate-400 mb-1.5">Owner *</label>
+                        <select required value={formFinEntity.owner_person_id} onChange={e => setFormFinEntity(prev => ({ ...prev, owner_person_id: e.target.value }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200">
+                          {persons.map(p => (
+                            <option key={p.person_id} value={p.person_id}>{p.first_name} {p.last_name || ''}</option>
+                          ))}
+                        </select>
+                      </div>
+                      <div className="col-span-2 sm:col-span-1">
+                        <label className="block text-xs font-mono text-slate-400 mb-1.5">Currency *</label>
+                        <select value={formFinEntity.currency} onChange={e => setFormFinEntity(prev => ({ ...prev, currency: e.target.value }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200">
+                          <option value="USD">USD ($)</option>
+                          <option value="INR">INR (₹)</option>
+                          <option value="GBP">GBP (£)</option>
+                          <option value="EUR">EUR (€)</option>
+                        </select>
+                      </div>
+                      <div className="col-span-2 sm:col-span-1">
+                        <label className="block text-xs font-mono text-slate-400 mb-1.5">Balance / Principal / Spent *</label>
+                        <input type="number" step="0.01" required value={formFinEntity.balance} onChange={e => setFormFinEntity(prev => ({ ...prev, balance: parseFloat(e.target.value) || 0 }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                      </div>
+                      <div className="col-span-2 sm:col-span-1 flex items-center">
+                        <label className="flex items-center gap-2 text-slate-300 text-sm h-full pt-4">
+                          <input type="checkbox" checked={formFinEntity.is_active} onChange={e => setFormFinEntity(prev => ({ ...prev, is_active: e.target.checked }))} className="w-4 h-4 accent-teal-500 rounded border-slate-800 bg-slate-950" />
+                          Is Active
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Conditional Fields Section */}
+                  <div className="p-4 bg-slate-950/20 rounded-xl border border-slate-850 space-y-4">
+                    <h4 className="text-slate-400 text-xs font-mono font-semibold uppercase tracking-wider">Type Specific Fields ({selectedEntityType.replace(/_/g, ' ')})</h4>
+                    
+                    {selectedEntityType === 'BANK_ACCOUNT' && (
+                      <div className="grid grid-cols-2 gap-4">
+                        <div className="col-span-2">
+                          <label className="block text-xs font-mono text-slate-400 mb-1.5">Bank Name</label>
+                          <input type="text" placeholder="e.g. Barclays Bank" value={formFinEntity.bank_name || ''} onChange={e => setFormFinEntity(prev => ({ ...prev, bank_name: e.target.value }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                        </div>
+                        <div className="col-span-2 sm:col-span-1">
+                          <label className="block text-xs font-mono text-slate-400 mb-1.5">Account Number</label>
+                          <input type="text" value={formFinEntity.account_number || ''} onChange={e => setFormFinEntity(prev => ({ ...prev, account_number: e.target.value }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                        </div>
+                        <div className="col-span-2 sm:col-span-1">
+                          <label className="block text-xs font-mono text-slate-400 mb-1.5">IFSC (India)</label>
+                          <input type="text" placeholder="BARC0000001" value={formFinEntity.ifsc || ''} onChange={e => setFormFinEntity(prev => ({ ...prev, ifsc: e.target.value.toUpperCase() }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                        </div>
+                        <div className="col-span-2 sm:col-span-1">
+                          <label className="block text-xs font-mono text-slate-400 mb-1.5">Sort Code (UK)</label>
+                          <input type="text" placeholder="200000" value={formFinEntity.sort_code || ''} onChange={e => setFormFinEntity(prev => ({ ...prev, sort_code: e.target.value }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                        </div>
+                        <div className="col-span-2">
+                          <label className="block text-xs font-mono text-slate-400 mb-1.5">IBAN</label>
+                          <input type="text" value={formFinEntity.iban || ''} onChange={e => setFormFinEntity(prev => ({ ...prev, iban: e.target.value.toUpperCase() }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                        </div>
+                      </div>
+                    )}
+
+                    {selectedEntityType === 'CREDIT_CARD' && (
+                      <div className="grid grid-cols-2 gap-4">
+                        <div className="col-span-2 sm:col-span-1">
+                          <label className="block text-xs font-mono text-slate-400 mb-1.5">Masked Card Number</label>
+                          <input type="text" placeholder="XXXX-XXXX-XXXX-1234" value={formFinEntity.card_number_masked || ''} onChange={e => setFormFinEntity(prev => ({ ...prev, card_number_masked: e.target.value }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                        </div>
+                        <div className="col-span-2 sm:col-span-1">
+                          <label className="block text-xs font-mono text-slate-400 mb-1.5">Card Network</label>
+                          <select value={formFinEntity.card_network} onChange={e => setFormFinEntity(prev => ({ ...prev, card_network: e.target.value }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200">
+                            <option value="VISA">VISA</option>
+                            <option value="MASTERCARD">MASTERCARD</option>
+                            <option value="AMEX">AMEX</option>
+                            <option value="RUPAY">RUPAY</option>
+                          </select>
+                        </div>
+                        <div className="col-span-2">
+                          <label className="block text-xs font-mono text-slate-400 mb-1.5">Cardholder Name</label>
+                          <input type="text" value={formFinEntity.card_holder_name || ''} onChange={e => setFormFinEntity(prev => ({ ...prev, card_holder_name: e.target.value }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                        </div>
+                        <div className="col-span-2 sm:col-span-1">
+                          <label className="block text-xs font-mono text-slate-400 mb-1.5">Credit Limit</label>
+                          <input type="number" step="0.01" value={formFinEntity.credit_limit} onChange={e => setFormFinEntity(prev => ({ ...prev, credit_limit: parseFloat(e.target.value) || 0 }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                        </div>
+                        <div className="col-span-2 sm:col-span-1">
+                          <label className="block text-xs font-mono text-slate-400 mb-1.5">Available Limit</label>
+                          <input type="number" step="0.01" value={formFinEntity.available_limit} onChange={e => setFormFinEntity(prev => ({ ...prev, available_limit: parseFloat(e.target.value) || 0 }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                        </div>
+                        <div className="col-span-2 sm:col-span-1">
+                          <label className="block text-xs font-mono text-slate-400 mb-1.5">Statement Day (1-31)</label>
+                          <input type="number" min="1" max="31" value={formFinEntity.statement_date_day} onChange={e => setFormFinEntity(prev => ({ ...prev, statement_date_day: parseInt(e.target.value) || 1 }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                        </div>
+                        <div className="col-span-2 sm:col-span-1">
+                          <label className="block text-xs font-mono text-slate-400 mb-1.5">Payment Due Day (1-31)</label>
+                          <input type="number" min="1" max="31" value={formFinEntity.payment_due_date_day} onChange={e => setFormFinEntity(prev => ({ ...prev, payment_due_date_day: parseInt(e.target.value) || 1 }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                        </div>
+                      </div>
+                    )}
+
+                    {selectedEntityType === 'LOAN' && (
+                      <div className="grid grid-cols-2 gap-4">
+                        <div className="col-span-2 sm:col-span-1">
+                          <label className="block text-xs font-mono text-slate-400 mb-1.5">Loan Type</label>
+                          <select value={formFinEntity.loan_type} onChange={e => setFormFinEntity(prev => ({ ...prev, loan_type: e.target.value }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200">
+                            <option value="HOME">Home Loan</option>
+                            <option value="PERSONAL">Personal Loan</option>
+                            <option value="AUTO">Auto Loan</option>
+                          </select>
+                        </div>
+                        <div className="col-span-2 sm:col-span-1">
+                          <label className="block text-xs font-mono text-slate-400 mb-1.5">Sanctioned Amount</label>
+                          <input type="number" step="0.01" value={formFinEntity.sanctioned_amount} onChange={e => setFormFinEntity(prev => ({ ...prev, sanctioned_amount: parseFloat(e.target.value) || 0 }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                        </div>
+                        <div className="col-span-2 sm:col-span-1">
+                          <label className="block text-xs font-mono text-slate-400 mb-1.5">Interest Type</label>
+                          <select value={formFinEntity.interest_type} onChange={e => setFormFinEntity(prev => ({ ...prev, interest_type: e.target.value }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200">
+                            <option value="FIXED">Fixed Rate</option>
+                            <option value="FLOATING">Floating Rate</option>
+                          </select>
+                        </div>
+                        <div className="col-span-2 sm:col-span-1">
+                          <label className="block text-xs font-mono text-slate-400 mb-1.5">Interest Rate (APR %)</label>
+                          <input type="number" step="0.001" value={formFinEntity.interest_rate} onChange={e => setFormFinEntity(prev => ({ ...prev, interest_rate: parseFloat(e.target.value) || 0 }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                        </div>
+                        <div className="col-span-2 sm:col-span-1">
+                          <label className="block text-xs font-mono text-slate-400 mb-1.5">EMI Amount</label>
+                          <input type="number" step="0.01" value={formFinEntity.emi_amount} onChange={e => setFormFinEntity(prev => ({ ...prev, emi_amount: parseFloat(e.target.value) || 0 }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                        </div>
+                        <div className="col-span-2 sm:col-span-1">
+                          <label className="block text-xs font-mono text-slate-400 mb-1.5">Tenure (Months)</label>
+                          <input type="number" value={formFinEntity.tenure_months} onChange={e => setFormFinEntity(prev => ({ ...prev, tenure_months: parseInt(e.target.value) || 12 }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                        </div>
+                      </div>
+                    )}
+
+                    {selectedEntityType === 'FIXED_DEPOSIT' && (
+                      <div className="grid grid-cols-2 gap-4">
+                        <div className="col-span-2 sm:col-span-1">
+                          <label className="block text-xs font-mono text-slate-400 mb-1.5">Receipt Number</label>
+                          <input type="text" value={formFinEntity.fd_receipt_number || ''} onChange={e => setFormFinEntity(prev => ({ ...prev, fd_receipt_number: e.target.value }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                        </div>
+                        <div className="col-span-2 sm:col-span-1">
+                          <label className="block text-xs font-mono text-slate-400 mb-1.5">Principal Amount</label>
+                          <input type="number" step="0.01" value={formFinEntity.principal_amount} onChange={e => setFormFinEntity(prev => ({ ...prev, principal_amount: parseFloat(e.target.value) || 0 }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                        </div>
+                        <div className="col-span-2 sm:col-span-1">
+                          <label className="block text-xs font-mono text-slate-400 mb-1.5">Interest Rate (APR %)</label>
+                          <input type="number" step="0.001" value={formFinEntity.interest_rate} onChange={e => setFormFinEntity(prev => ({ ...prev, interest_rate: parseFloat(e.target.value) || 0 }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                        </div>
+                        <div className="col-span-2 sm:col-span-1">
+                          <label className="block text-xs font-mono text-slate-400 mb-1.5">Maturity Amount</label>
+                          <input type="number" step="0.01" value={formFinEntity.maturity_amount} onChange={e => setFormFinEntity(prev => ({ ...prev, maturity_amount: parseFloat(e.target.value) || 0 }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                        </div>
+                        <div className="col-span-2 sm:col-span-1">
+                          <label className="block text-xs font-mono text-slate-400 mb-1.5">Booking Date</label>
+                          <input type="date" value={formFinEntity.booking_date} onChange={e => setFormFinEntity(prev => ({ ...prev, booking_date: e.target.value }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                        </div>
+                        <div className="col-span-2 sm:col-span-1">
+                          <label className="block text-xs font-mono text-slate-400 mb-1.5">Maturity Date</label>
+                          <input type="date" value={formFinEntity.maturity_date} onChange={e => setFormFinEntity(prev => ({ ...prev, maturity_date: e.target.value }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                        </div>
+                        <div className="col-span-2 sm:col-span-1">
+                          <label className="block text-xs font-mono text-slate-400 mb-1.5">Compounding Frequency</label>
+                          <select value={formFinEntity.compounding_frequency} onChange={e => setFormFinEntity(prev => ({ ...prev, compounding_frequency: e.target.value }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200">
+                            <option value="MONTHLY">Monthly</option>
+                            <option value="QUARTERLY">Quarterly</option>
+                            <option value="MATURITY">At Maturity</option>
+                          </select>
+                        </div>
+                        <div className="col-span-2 sm:col-span-1 flex items-center">
+                          <label className="flex items-center gap-2 text-slate-300 text-sm h-full pt-4">
+                            <input type="checkbox" checked={formFinEntity.is_cumulative} onChange={e => setFormFinEntity(prev => ({ ...prev, is_cumulative: e.target.checked }))} className="w-4 h-4 accent-teal-500 rounded border-slate-800 bg-slate-950" />
+                            Is Cumulative
+                          </label>
+                        </div>
+                      </div>
+                    )}
+
+                    {selectedEntityType === 'OVERDRAFT' && (
+                      <div className="grid grid-cols-2 gap-4">
+                        <div className="col-span-2 sm:col-span-1">
+                          <label className="block text-xs font-mono text-slate-400 mb-1.5">Overdraft Limit</label>
+                          <input type="number" step="0.01" value={formFinEntity.overdraft_limit} onChange={e => setFormFinEntity(prev => ({ ...prev, overdraft_limit: parseFloat(e.target.value) || 0 }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                        </div>
+                        <div className="col-span-2 sm:col-span-1">
+                          <label className="block text-xs font-mono text-slate-400 mb-1.5">Interest Rate (APR %)</label>
+                          <input type="number" step="0.001" value={formFinEntity.interest_rate} onChange={e => setFormFinEntity(prev => ({ ...prev, interest_rate: parseFloat(e.target.value) || 0 }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200" />
+                        </div>
+                        <div className="col-span-2">
+                          <label className="block text-xs font-mono text-slate-400 mb-1.5">Linked Parent Bank Account</label>
+                          <select value={formFinEntity.linked_parent_entity_id} onChange={e => setFormFinEntity(prev => ({ ...prev, linked_parent_entity_id: e.target.value }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200">
+                            <option value="">None</option>
+                            {finEntities.filter(f => f.entity_type === 'BANK_ACCOUNT').map(f => (
+                              <option key={f.fin_entity_id} value={f.fin_entity_id}>{f.entity_name} ({f.account_number || '—'})</option>
+                            ))}
+                          </select>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+
+                  <div>
+                    <label className="block text-xs font-mono text-slate-400 mb-1.5">Notes</label>
+                    <textarea placeholder="Notes or operational description..." value={formFinEntity.notes || ''} onChange={e => setFormFinEntity(prev => ({ ...prev, notes: e.target.value }))} className="w-full px-3 py-2 text-sm bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-teal-500 text-slate-200 h-20 resize-none" />
+                  </div>
+                </div>
+              )}
+
+              {/* Modal Footer */}
+              <div className="pt-4 border-t border-slate-800 flex justify-end gap-3">
+                <button type="button" onClick={() => setEntityModalOpen(false)} className="px-4 py-2 border border-slate-800 text-slate-400 hover:text-slate-200 font-semibold rounded-xl text-sm transition">
+                  Cancel
+                </button>
+                <button type="submit" className="px-4 py-2 bg-gradient-to-r from-teal-500 to-indigo-500 hover:from-teal-600 hover:to-indigo-600 text-slate-950 font-bold rounded-xl text-sm transition shadow-lg">
+                  Save Entity
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+
+      {/* Entity Details Profile Modal */}
+      {detailModalOpen && selectedEntityDetails && (
+        <div className="fixed inset-0 bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4 z-50 overflow-y-auto">
+          <div className="bg-slate-900 border border-slate-800 w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200 my-8">
+            <div className="px-6 py-4 border-b border-slate-800 flex items-center justify-between bg-slate-950/40">
+              <h3 className="font-semibold text-slate-200 text-lg flex items-center gap-2">
+                <Info className="w-5 h-5 text-teal-400" />
+                <span>Entity Profile Details</span>
+              </h3>
+              <button onClick={() => setDetailModalOpen(false)} className="p-1 hover:bg-slate-800 rounded-lg text-slate-400 hover:text-slate-200 transition">
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            <div className="p-6 space-y-4 max-h-[70vh] overflow-y-auto">
+              {selectedEntityType === 'PERSON' ? (
+                // Person Profile Details
+                <div className="space-y-4">
+                  <div className="flex items-center gap-3 pb-4 border-b border-slate-800">
+                    <div className="w-12 h-12 bg-teal-950 border border-teal-850 rounded-full flex items-center justify-center text-teal-400 font-bold text-lg">
+                      {selectedEntityDetails.first_name[0]}{selectedEntityDetails.last_name ? selectedEntityDetails.last_name[0] : ''}
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-slate-200 text-lg">{selectedEntityDetails.first_name} {selectedEntityDetails.last_name || ''}</h4>
+                      <p className="text-slate-500 text-xs font-mono">{selectedEntityDetails.person_id}</p>
+                    </div>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-x-4 gap-y-3 text-sm">
+                    <div>
+                      <span className="text-slate-500 text-xs block font-mono">Email</span>
+                      <span className="text-slate-300">{selectedEntityDetails.email || '—'}</span>
+                    </div>
+                    <div>
+                      <span className="text-slate-500 text-xs block font-mono">Phone Number</span>
+                      <span className="text-slate-300">{selectedEntityDetails.phone_number || '—'}</span>
+                    </div>
+                    <div>
+                      <span className="text-slate-500 text-xs block font-mono">Date of Birth</span>
+                      <span className="text-slate-300">{selectedEntityDetails.date_of_birth ? new Date(selectedEntityDetails.date_of_birth).toLocaleDateString() : '—'}</span>
+                    </div>
+                    <div>
+                      <span className="text-slate-500 text-xs block font-mono">Gender</span>
+                      <span className="text-slate-300">{selectedEntityDetails.gender || '—'}</span>
+                    </div>
+                    <div className="col-span-2">
+                      <span className="text-slate-500 text-xs block font-mono">Address</span>
+                      <span className="text-slate-300">
+                        {selectedEntityDetails.address_line1 || ''}
+                        {selectedEntityDetails.address_line2 ? `, ${selectedEntityDetails.address_line2}` : ''}
+                        {selectedEntityDetails.city ? `, ${selectedEntityDetails.city}` : ''}
+                        {selectedEntityDetails.country ? `, ${selectedEntityDetails.country}` : ''}
+                        {!selectedEntityDetails.address_line1 && '—'}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                // Financial Entity Profile Details
+                <div className="space-y-4">
+                  <div className="pb-4 border-b border-slate-800">
+                    <span className="px-2.5 py-0.5 rounded-full text-xxs font-mono font-bold bg-teal-950 text-teal-300 border border-teal-800/40 uppercase tracking-wide">
+                      {selectedEntityDetails.entity_type}
+                    </span>
+                    <h4 className="font-semibold text-slate-200 text-xl mt-2">{selectedEntityDetails.entity_name}</h4>
+                    <p className="text-slate-500 text-xs font-mono mt-0.5">{selectedEntityDetails.fin_entity_id}</p>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-x-4 gap-y-3 text-sm">
+                    <div>
+                      <span className="text-slate-500 text-xs block font-mono">Balance</span>
+                      <span className="text-slate-200 font-semibold">
+                        {selectedEntityDetails.balance.toLocaleString('en-US', { style: 'currency', currency: selectedEntityDetails.currency })}
+                      </span>
+                    </div>
+                    <div>
+                      <span className="text-slate-500 text-xs block font-mono">Status</span>
+                      <span className={selectedEntityDetails.is_active ? 'text-emerald-400 font-semibold' : 'text-rose-400'}>
+                        {selectedEntityDetails.is_active ? 'Active' : 'Inactive'}
+                      </span>
+                    </div>
+
+                    {selectedEntityDetails.bank_name && (
+                      <div>
+                        <span className="text-slate-500 text-xs block font-mono">Bank Name</span>
+                        <span className="text-slate-300">{selectedEntityDetails.bank_name}</span>
+                      </div>
+                    )}
+                    {selectedEntityDetails.account_number && (
+                      <div>
+                        <span className="text-slate-500 text-xs block font-mono">Account Number</span>
+                        <span className="text-slate-350">{selectedEntityDetails.account_number}</span>
+                      </div>
+                    )}
+                    {selectedEntityDetails.ifsc && (
+                      <div>
+                        <span className="text-slate-500 text-xs block font-mono">IFSC</span>
+                        <span className="text-slate-350">{selectedEntityDetails.ifsc}</span>
+                      </div>
+                    )}
+                    {selectedEntityDetails.sort_code && (
+                      <div>
+                        <span className="text-slate-500 text-xs block font-mono">Sort Code</span>
+                        <span className="text-slate-350">{selectedEntityDetails.sort_code}</span>
+                      </div>
+                    )}
+                    {selectedEntityDetails.iban && (
+                      <div className="col-span-2">
+                        <span className="text-slate-500 text-xs block font-mono">IBAN</span>
+                        <span className="text-slate-350 font-mono text-xs">{selectedEntityDetails.iban}</span>
+                      </div>
+                    )}
+
+                    {/* CC Limit */}
+                    {selectedEntityDetails.credit_limit !== null && selectedEntityDetails.credit_limit !== undefined && (
+                      <div>
+                        <span className="text-slate-500 text-xs block font-mono">Credit Limit</span>
+                        <span className="text-slate-300">
+                          {selectedEntityDetails.credit_limit.toLocaleString('en-US', { style: 'currency', currency: selectedEntityDetails.currency })}
+                        </span>
+                      </div>
+                    )}
+                    {selectedEntityDetails.card_number_masked && (
+                      <div>
+                        <span className="text-slate-500 text-xs block font-mono">Card Number</span>
+                        <span className="text-slate-300">{selectedEntityDetails.card_number_masked}</span>
+                      </div>
+                    )}
+
+                    {/* Interest details */}
+                    {selectedEntityDetails.interest_rate !== null && selectedEntityDetails.interest_rate !== undefined && (
+                      <div>
+                        <span className="text-slate-500 text-xs block font-mono">Interest Rate</span>
+                        <span className="text-slate-300">{selectedEntityDetails.interest_rate}% APR</span>
+                      </div>
+                    )}
+                    {selectedEntityDetails.tenure_months && (
+                      <div>
+                        <span className="text-slate-500 text-xs block font-mono">Tenure</span>
+                        <span className="text-slate-300">{selectedEntityDetails.tenure_months} Months</span>
+                      </div>
+                    )}
+                  </div>
+                  
+                  {selectedEntityDetails.notes && (
+                    <div className="pt-2">
+                      <span className="text-slate-500 text-xs block font-mono">Notes</span>
+                      <p className="text-slate-300 text-xs bg-slate-950/40 p-3 rounded-lg border border-slate-850 mt-1">{selectedEntityDetails.notes}</p>
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+
+            <div className="px-6 py-4 border-t border-slate-800 flex justify-end bg-slate-950/25">
+              <button onClick={() => setDetailModalOpen(false)} className="px-4 py-2 bg-slate-800 hover:bg-slate-750 text-slate-350 font-semibold rounded-xl text-sm transition">
+                Close
+              </button>
+            </div>
           </div>
         </div>
       )}

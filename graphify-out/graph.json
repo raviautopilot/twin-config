@@ -12,7 +12,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 5,
       "norm_label": "twin config",
       "id": "readme_twin_config"
     },
@@ -25,7 +25,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 5,
       "norm_label": "db service",
       "id": "docker_compose_db"
     },
@@ -38,7 +38,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 5,
       "norm_label": "digital_twin database",
       "id": "docker_compose_digital_twin"
     },
@@ -51,7 +51,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 5,
       "norm_label": "pgdata volume",
       "id": "docker_compose_pgdata"
     },
@@ -64,7 +64,7 @@
         "language": "bash",
         "kind": "file"
       },
-      "community": 14,
+      "community": 15,
       "norm_label": "volume-wipe.sh",
       "id": "volume_wipe_sh"
     },
@@ -77,7 +77,7 @@
         "language": "bash",
         "kind": "bash_entrypoint"
       },
-      "community": 14,
+      "community": 15,
       "norm_label": "volume-wipe.sh script",
       "id": "home_ubuntu_code_github_raviautopilot_twin_config_volume_wipe_sh__entry"
     },
@@ -90,7 +90,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 5,
       "norm_label": "twin config dockerfile",
       "id": "dockerfile_twin_config"
     },
@@ -103,7 +103,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 5,
       "norm_label": "digital twin database",
       "id": "concept_digital_twin_db"
     },
@@ -116,7 +116,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "react",
       "id": "readme_react"
     },
@@ -129,7 +129,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 14,
       "norm_label": "typescript",
       "id": "readme_typescript"
     },
@@ -142,7 +142,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "vite",
       "id": "readme_vite"
     },
@@ -155,7 +155,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 14,
       "norm_label": "eslint",
       "id": "readme_eslint"
     },
@@ -168,7 +168,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 16,
       "norm_label": "root div",
       "id": "index_html_root"
     },
@@ -181,7 +181,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "favicon",
       "id": "favicon_svg"
     },
@@ -194,7 +194,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "icon sprite sheet",
       "id": "icons_svg"
     },
@@ -207,7 +207,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 18,
       "norm_label": "hero image",
       "id": "hero_png"
     },
@@ -220,7 +220,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "vite logo",
       "id": "vite_svg"
     },
@@ -233,7 +233,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "react logo",
       "id": "react_svg"
     },
@@ -246,7 +246,7 @@
         "language": "bash",
         "kind": "file"
       },
-      "community": 10,
+      "community": 11,
       "norm_label": "docker-setup.sh",
       "id": "docker_setup_sh"
     },
@@ -259,7 +259,7 @@
         "language": "bash",
         "kind": "bash_entrypoint"
       },
-      "community": 10,
+      "community": 11,
       "norm_label": "docker-setup.sh script",
       "id": "home_ubuntu_code_github_raviautopilot_twin_config_docker_setup_sh__entry"
     },
@@ -272,7 +272,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 5,
       "norm_label": "backend service",
       "id": "docker_compose_backend"
     },
@@ -285,7 +285,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 5,
       "norm_label": "frontend service",
       "id": "docker_compose_frontend"
     },
@@ -298,7 +298,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 12,
       "norm_label": "frontend service",
       "id": "usage_frontend"
     },
@@ -311,7 +311,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 12,
       "norm_label": "backend api server",
       "id": "usage_backend"
     },
@@ -324,7 +324,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 12,
       "norm_label": "postgresql database",
       "id": "usage_postgresql"
     },
@@ -337,7 +337,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 12,
       "norm_label": "digital_twin database",
       "id": "usage_digital_twin"
     },
@@ -350,7 +350,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "handlers.summaryresponse",
       "id": "swagger_summaryresponse"
     },
@@ -363,7 +363,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "models.cfgattributekey",
       "id": "swagger_cfgattributekey"
     },
@@ -376,7 +376,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "models.cfgdimension",
       "id": "swagger_cfgdimension"
     },
@@ -389,7 +389,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "models.cfgeventtype",
       "id": "swagger_cfgeventtype"
     },
@@ -402,7 +402,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "models.cfgmodule",
       "id": "swagger_cfgmodule"
     },
@@ -415,7 +415,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "models.cfgtype",
       "id": "swagger_cfgtype"
     },
@@ -428,7 +428,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "models.eventdetail",
       "id": "swagger_eventdetail"
     },
@@ -441,7 +441,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "models.twinevent",
       "id": "swagger_twinevent"
     },
@@ -454,7 +454,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "models.twinimpact",
       "id": "swagger_twinimpact"
     },
@@ -463,7 +463,7 @@
       "file_type": "code",
       "source_file": "brahma/docs/docs.go",
       "source_location": "L1",
-      "community": 19,
+      "community": 20,
       "norm_label": "docs.go",
       "id": "brahma_docs_docs_go"
     },
@@ -472,7 +472,7 @@
       "file_type": "code",
       "source_file": "brahma/docs/swagger.json",
       "source_location": "L1",
-      "community": 20,
+      "community": 21,
       "norm_label": "swagger.json",
       "id": "brahma_docs_swagger_json"
     },
@@ -481,7 +481,7 @@
       "file_type": "code",
       "source_file": "brahma/docs/swagger.json",
       "source_location": "L26",
-      "community": 6,
+      "community": 7,
       "norm_label": "description",
       "id": "docs_swagger_200_description"
     },
@@ -490,7 +490,7 @@
       "file_type": "code",
       "source_file": "brahma/docs/swagger.json",
       "source_location": "L36",
-      "community": 21,
+      "community": 22,
       "norm_label": "schema",
       "id": "docs_swagger_500_schema"
     },
@@ -499,7 +499,7 @@
       "file_type": "code",
       "source_file": "brahma/docs/swagger.json",
       "source_location": "L47",
-      "community": 6,
+      "community": 7,
       "norm_label": "consumes",
       "id": "docs_swagger_post_consumes"
     },
@@ -508,7 +508,7 @@
       "file_type": "code",
       "source_file": "brahma/docs/swagger.json",
       "source_location": "L57",
-      "community": 6,
+      "community": 7,
       "norm_label": "parameters",
       "id": "docs_swagger_post_parameters"
     },
@@ -517,7 +517,7 @@
       "file_type": "code",
       "source_file": "brahma/docs/swagger.json",
       "source_location": "L102",
-      "community": 6,
+      "community": 7,
       "norm_label": "produces",
       "id": "docs_swagger_put_produces"
     },
@@ -526,7 +526,7 @@
       "file_type": "code",
       "source_file": "brahma/docs/swagger.json",
       "source_location": "L105",
-      "community": 6,
+      "community": 7,
       "norm_label": "tags",
       "id": "docs_swagger_put_tags"
     },
@@ -535,7 +535,7 @@
       "file_type": "code",
       "source_file": "brahma/docs/swagger.json",
       "source_location": "L108",
-      "community": 6,
+      "community": 7,
       "norm_label": "summary",
       "id": "docs_swagger_put_summary"
     },
@@ -544,7 +544,7 @@
       "file_type": "code",
       "source_file": "brahma/docs/swagger.json",
       "source_location": "L134",
-      "community": 6,
+      "community": 7,
       "norm_label": "responses",
       "id": "docs_swagger_put_responses"
     },
@@ -553,7 +553,7 @@
       "file_type": "code",
       "source_file": "brahma/docs/swagger.json",
       "source_location": "L626",
-      "community": 6,
+      "community": 7,
       "norm_label": "post",
       "id": "docs_swagger_cfg_modules_post"
     },
@@ -562,7 +562,7 @@
       "file_type": "code",
       "source_file": "brahma/docs/swagger.json",
       "source_location": "L678",
-      "community": 6,
+      "community": 7,
       "norm_label": "put",
       "id": "docs_swagger_cfg_modules_id_put"
     },
@@ -571,7 +571,7 @@
       "file_type": "code",
       "source_file": "brahma/docs/swagger.json",
       "source_location": "L744",
-      "community": 6,
+      "community": 7,
       "norm_label": "delete",
       "id": "docs_swagger_cfg_modules_id_delete"
     },
@@ -580,7 +580,7 @@
       "file_type": "code",
       "source_file": "brahma/docs/swagger.json",
       "source_location": "L785",
-      "community": 22,
+      "community": 23,
       "norm_label": "get",
       "id": "docs_swagger_cfg_types_get"
     },
@@ -598,7 +598,7 @@
       "file_type": "code",
       "source_file": "brahma/internal/config/logger.go",
       "source_location": "L1",
-      "community": 23,
+      "community": 24,
       "norm_label": "logger.go",
       "id": "brahma_internal_config_logger_go"
     },
@@ -607,7 +607,7 @@
       "file_type": "code",
       "source_file": "brahma/internal/config/config.go",
       "source_location": "L1",
-      "community": 24,
+      "community": 25,
       "norm_label": "config.go",
       "id": "brahma_internal_config_config_go"
     },
@@ -616,7 +616,7 @@
       "file_type": "code",
       "source_file": "brahma/internal/models/audit.go",
       "source_location": "L1",
-      "community": 25,
+      "community": 26,
       "norm_label": "audit.go",
       "id": "brahma_internal_models_audit_go"
     },
@@ -625,7 +625,7 @@
       "file_type": "code",
       "source_file": "brahma/internal/models/twin.go",
       "source_location": "L1",
-      "community": 26,
+      "community": 27,
       "norm_label": "twin.go",
       "id": "brahma_internal_models_twin_go"
     },
@@ -634,7 +634,7 @@
       "file_type": "code",
       "source_file": "brahma/internal/models/twin.go",
       "source_location": "L26",
-      "community": 27,
+      "community": 28,
       "norm_label": ".tablename()",
       "id": "models_twinimpact_tablename"
     },
@@ -643,7 +643,7 @@
       "file_type": "code",
       "source_file": "brahma/internal/models/cfg.go",
       "source_location": "L1",
-      "community": 28,
+      "community": 29,
       "norm_label": "cfg.go",
       "id": "brahma_internal_models_cfg_go"
     },
@@ -652,7 +652,7 @@
       "file_type": "code",
       "source_file": "brahma/internal/models/cfg.go",
       "source_location": "L14",
-      "community": 29,
+      "community": 30,
       "norm_label": ".tablename()",
       "id": "models_cfgmodule_tablename"
     },
@@ -661,7 +661,7 @@
       "file_type": "code",
       "source_file": "brahma/internal/models/event.go",
       "source_location": "L1",
-      "community": 30,
+      "community": 31,
       "norm_label": "event.go",
       "id": "brahma_internal_models_event_go"
     },
@@ -670,7 +670,7 @@
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L1",
-      "community": 31,
+      "community": 9,
       "norm_label": "handlers.go",
       "id": "brahma_internal_handlers_handlers_go"
     },
@@ -683,7 +683,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "brahma (configuration service)",
       "id": "usage_brahma"
     },
@@ -696,7 +696,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 5,
       "norm_label": "kaalam (postgresql database)",
       "id": "usage_kaalam"
     },
@@ -709,7 +709,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 5,
       "norm_label": "brahma container",
       "id": "docker_compose_brahma"
     },
@@ -722,7 +722,7 @@
       "captured_at": null,
       "author": "PLOS Support",
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "digital twin config engine api",
       "id": "swagger_api"
     },
@@ -758,7 +758,7 @@
       "file_type": "code",
       "source_file": "brahma/internal/models/financial.go",
       "source_location": "L1",
-      "community": 8,
+      "community": 10,
       "norm_label": "financial.go",
       "id": "brahma_internal_models_financial_go"
     },
@@ -767,7 +767,7 @@
       "file_type": "code",
       "source_file": "brahma/internal/models/financial.go",
       "source_location": "L12",
-      "community": 8,
+      "community": 10,
       "norm_label": "financialentitytype",
       "id": "models_financialentitytype"
     },
@@ -776,7 +776,7 @@
       "file_type": "code",
       "source_file": "brahma/internal/models/financial.go",
       "source_location": "L24",
-      "community": 8,
+      "community": 10,
       "norm_label": ".scan()",
       "id": "models_financialentitytype_scan"
     },
@@ -785,7 +785,7 @@
       "file_type": "code",
       "source_file": "brahma/internal/models/financial.go",
       "source_location": "L41",
-      "community": 8,
+      "community": 10,
       "norm_label": ".value()",
       "id": "models_financialentitytype_value"
     },
@@ -794,7 +794,7 @@
       "file_type": "code",
       "source_file": "brahma/internal/models/financial.go",
       "source_location": "L46",
-      "community": 8,
+      "community": 10,
       "norm_label": "person",
       "id": "models_person"
     },
@@ -803,7 +803,7 @@
       "file_type": "code",
       "source_file": "brahma/internal/models/financial.go",
       "source_location": "L69",
-      "community": 8,
+      "community": 10,
       "norm_label": ".tablename()",
       "id": "models_person_tablename"
     },
@@ -812,7 +812,7 @@
       "file_type": "code",
       "source_file": "brahma/internal/models/financial.go",
       "source_location": "L74",
-      "community": 8,
+      "community": 10,
       "norm_label": "finentity",
       "id": "models_finentity"
     },
@@ -825,7 +825,7 @@
         "language": "bash",
         "kind": "bash_function"
       },
-      "community": 10,
+      "community": 11,
       "norm_label": "build_frontend_locally()",
       "id": "twin_config_docker_setup_build_frontend_locally"
     },
@@ -838,7 +838,7 @@
         "language": "bash",
         "kind": "bash_function"
       },
-      "community": 10,
+      "community": 11,
       "norm_label": "build_karma_locally()",
       "id": "twin_config_docker_setup_build_karma_locally"
     },
@@ -847,7 +847,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.node.json",
       "source_location": "L1",
-      "community": 2,
+      "community": 3,
       "norm_label": "tsconfig.node.json",
       "id": "karma_tsconfig_node_json"
     },
@@ -856,7 +856,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.node.json",
       "source_location": "L2",
-      "community": 2,
+      "community": 3,
       "norm_label": "compileroptions",
       "id": "karma_tsconfig_node_compileroptions"
     },
@@ -865,7 +865,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.node.json",
       "source_location": "L3",
-      "community": 2,
+      "community": 3,
       "norm_label": "tsbuildinfofile",
       "id": "karma_tsconfig_node_compileroptions_tsbuildinfofile"
     },
@@ -874,7 +874,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.node.json",
       "source_location": "L4",
-      "community": 2,
+      "community": 3,
       "norm_label": "target",
       "id": "karma_tsconfig_node_compileroptions_target"
     },
@@ -883,7 +883,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.node.json",
       "source_location": "L5",
-      "community": 2,
+      "community": 3,
       "norm_label": "lib",
       "id": "karma_tsconfig_node_compileroptions_lib"
     },
@@ -892,7 +892,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.node.json",
       "source_location": "L6",
-      "community": 2,
+      "community": 3,
       "norm_label": "module",
       "id": "karma_tsconfig_node_compileroptions_module"
     },
@@ -901,7 +901,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.node.json",
       "source_location": "L7",
-      "community": 2,
+      "community": 3,
       "norm_label": "types",
       "id": "karma_tsconfig_node_compileroptions_types"
     },
@@ -910,7 +910,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.node.json",
       "source_location": "L8",
-      "community": 2,
+      "community": 3,
       "norm_label": "skiplibcheck",
       "id": "karma_tsconfig_node_compileroptions_skiplibcheck"
     },
@@ -919,7 +919,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.node.json",
       "source_location": "L11",
-      "community": 2,
+      "community": 3,
       "norm_label": "moduleresolution",
       "id": "karma_tsconfig_node_compileroptions_moduleresolution"
     },
@@ -928,7 +928,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.node.json",
       "source_location": "L12",
-      "community": 2,
+      "community": 3,
       "norm_label": "allowimportingtsextensions",
       "id": "karma_tsconfig_node_compileroptions_allowimportingtsextensions"
     },
@@ -937,7 +937,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.node.json",
       "source_location": "L13",
-      "community": 2,
+      "community": 3,
       "norm_label": "verbatimmodulesyntax",
       "id": "karma_tsconfig_node_compileroptions_verbatimmodulesyntax"
     },
@@ -946,7 +946,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.node.json",
       "source_location": "L14",
-      "community": 2,
+      "community": 3,
       "norm_label": "moduledetection",
       "id": "karma_tsconfig_node_compileroptions_moduledetection"
     },
@@ -955,7 +955,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.node.json",
       "source_location": "L15",
-      "community": 2,
+      "community": 3,
       "norm_label": "noemit",
       "id": "karma_tsconfig_node_compileroptions_noemit"
     },
@@ -964,7 +964,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.node.json",
       "source_location": "L18",
-      "community": 2,
+      "community": 3,
       "norm_label": "nounusedlocals",
       "id": "karma_tsconfig_node_compileroptions_nounusedlocals"
     },
@@ -973,7 +973,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.node.json",
       "source_location": "L19",
-      "community": 2,
+      "community": 3,
       "norm_label": "nounusedparameters",
       "id": "karma_tsconfig_node_compileroptions_nounusedparameters"
     },
@@ -982,7 +982,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.node.json",
       "source_location": "L20",
-      "community": 2,
+      "community": 3,
       "norm_label": "erasablesyntaxonly",
       "id": "karma_tsconfig_node_compileroptions_erasablesyntaxonly"
     },
@@ -991,7 +991,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.node.json",
       "source_location": "L21",
-      "community": 2,
+      "community": 3,
       "norm_label": "nofallthroughcasesinswitch",
       "id": "karma_tsconfig_node_compileroptions_nofallthroughcasesinswitch"
     },
@@ -1000,7 +1000,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.node.json",
       "source_location": "L23",
-      "community": 2,
+      "community": 3,
       "norm_label": "include",
       "id": "karma_tsconfig_node_include"
     },
@@ -1009,7 +1009,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.app.json",
       "source_location": "L1",
-      "community": 1,
+      "community": 2,
       "norm_label": "tsconfig.app.json",
       "id": "karma_tsconfig_app_json"
     },
@@ -1018,7 +1018,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.app.json",
       "source_location": "L2",
-      "community": 1,
+      "community": 2,
       "norm_label": "compileroptions",
       "id": "karma_tsconfig_app_compileroptions"
     },
@@ -1027,7 +1027,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.app.json",
       "source_location": "L3",
-      "community": 1,
+      "community": 2,
       "norm_label": "tsbuildinfofile",
       "id": "karma_tsconfig_app_compileroptions_tsbuildinfofile"
     },
@@ -1036,7 +1036,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.app.json",
       "source_location": "L4",
-      "community": 1,
+      "community": 2,
       "norm_label": "target",
       "id": "karma_tsconfig_app_compileroptions_target"
     },
@@ -1045,7 +1045,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.app.json",
       "source_location": "L5",
-      "community": 1,
+      "community": 2,
       "norm_label": "lib",
       "id": "karma_tsconfig_app_compileroptions_lib"
     },
@@ -1054,7 +1054,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.app.json",
       "source_location": "L6",
-      "community": 1,
+      "community": 2,
       "norm_label": "module",
       "id": "karma_tsconfig_app_compileroptions_module"
     },
@@ -1063,7 +1063,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.app.json",
       "source_location": "L7",
-      "community": 1,
+      "community": 2,
       "norm_label": "types",
       "id": "karma_tsconfig_app_compileroptions_types"
     },
@@ -1072,7 +1072,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.app.json",
       "source_location": "L8",
-      "community": 1,
+      "community": 2,
       "norm_label": "skiplibcheck",
       "id": "karma_tsconfig_app_compileroptions_skiplibcheck"
     },
@@ -1081,7 +1081,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.app.json",
       "source_location": "L11",
-      "community": 1,
+      "community": 2,
       "norm_label": "moduleresolution",
       "id": "karma_tsconfig_app_compileroptions_moduleresolution"
     },
@@ -1090,7 +1090,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.app.json",
       "source_location": "L12",
-      "community": 1,
+      "community": 2,
       "norm_label": "allowimportingtsextensions",
       "id": "karma_tsconfig_app_compileroptions_allowimportingtsextensions"
     },
@@ -1099,7 +1099,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.app.json",
       "source_location": "L13",
-      "community": 1,
+      "community": 2,
       "norm_label": "verbatimmodulesyntax",
       "id": "karma_tsconfig_app_compileroptions_verbatimmodulesyntax"
     },
@@ -1108,7 +1108,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.app.json",
       "source_location": "L14",
-      "community": 1,
+      "community": 2,
       "norm_label": "moduledetection",
       "id": "karma_tsconfig_app_compileroptions_moduledetection"
     },
@@ -1117,7 +1117,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.app.json",
       "source_location": "L15",
-      "community": 1,
+      "community": 2,
       "norm_label": "noemit",
       "id": "karma_tsconfig_app_compileroptions_noemit"
     },
@@ -1126,7 +1126,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.app.json",
       "source_location": "L16",
-      "community": 1,
+      "community": 2,
       "norm_label": "jsx",
       "id": "karma_tsconfig_app_compileroptions_jsx"
     },
@@ -1135,7 +1135,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.app.json",
       "source_location": "L19",
-      "community": 1,
+      "community": 2,
       "norm_label": "nounusedlocals",
       "id": "karma_tsconfig_app_compileroptions_nounusedlocals"
     },
@@ -1144,7 +1144,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.app.json",
       "source_location": "L20",
-      "community": 1,
+      "community": 2,
       "norm_label": "nounusedparameters",
       "id": "karma_tsconfig_app_compileroptions_nounusedparameters"
     },
@@ -1153,7 +1153,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.app.json",
       "source_location": "L21",
-      "community": 1,
+      "community": 2,
       "norm_label": "erasablesyntaxonly",
       "id": "karma_tsconfig_app_compileroptions_erasablesyntaxonly"
     },
@@ -1162,7 +1162,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.app.json",
       "source_location": "L22",
-      "community": 1,
+      "community": 2,
       "norm_label": "nofallthroughcasesinswitch",
       "id": "karma_tsconfig_app_compileroptions_nofallthroughcasesinswitch"
     },
@@ -1171,7 +1171,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.app.json",
       "source_location": "L24",
-      "community": 1,
+      "community": 2,
       "norm_label": "include",
       "id": "karma_tsconfig_app_include"
     },
@@ -1180,7 +1180,7 @@
       "file_type": "code",
       "source_file": "karma/package.json",
       "source_location": "L1",
-      "community": 4,
+      "community": 6,
       "norm_label": "package.json",
       "id": "karma_package_json"
     },
@@ -1189,7 +1189,7 @@
       "file_type": "code",
       "source_file": "karma/package.json",
       "source_location": "L2",
-      "community": 4,
+      "community": 6,
       "norm_label": "name",
       "id": "karma_package_name"
     },
@@ -1198,7 +1198,7 @@
       "file_type": "code",
       "source_file": "karma/package.json",
       "source_location": "L3",
-      "community": 4,
+      "community": 6,
       "norm_label": "private",
       "id": "karma_package_private"
     },
@@ -1207,7 +1207,7 @@
       "file_type": "code",
       "source_file": "karma/package.json",
       "source_location": "L4",
-      "community": 4,
+      "community": 6,
       "norm_label": "version",
       "id": "karma_package_version"
     },
@@ -1216,7 +1216,7 @@
       "file_type": "code",
       "source_file": "karma/package.json",
       "source_location": "L5",
-      "community": 4,
+      "community": 6,
       "norm_label": "type",
       "id": "karma_package_type"
     },
@@ -1225,7 +1225,7 @@
       "file_type": "code",
       "source_file": "karma/package.json",
       "source_location": "L6",
-      "community": 4,
+      "community": 6,
       "norm_label": "scripts",
       "id": "karma_package_scripts"
     },
@@ -1234,7 +1234,7 @@
       "file_type": "code",
       "source_file": "karma/package.json",
       "source_location": "L7",
-      "community": 4,
+      "community": 6,
       "norm_label": "dev",
       "id": "karma_package_scripts_dev"
     },
@@ -1243,7 +1243,7 @@
       "file_type": "code",
       "source_file": "karma/package.json",
       "source_location": "L8",
-      "community": 4,
+      "community": 6,
       "norm_label": "build",
       "id": "karma_package_scripts_build"
     },
@@ -1252,7 +1252,7 @@
       "file_type": "code",
       "source_file": "karma/package.json",
       "source_location": "L9",
-      "community": 4,
+      "community": 6,
       "norm_label": "lint",
       "id": "karma_package_scripts_lint"
     },
@@ -1261,7 +1261,7 @@
       "file_type": "code",
       "source_file": "karma/package.json",
       "source_location": "L10",
-      "community": 4,
+      "community": 6,
       "norm_label": "preview",
       "id": "karma_package_scripts_preview"
     },
@@ -1270,7 +1270,7 @@
       "file_type": "code",
       "source_file": "karma/package.json",
       "source_location": "L12",
-      "community": 4,
+      "community": 6,
       "norm_label": "dependencies",
       "id": "karma_package_dependencies"
     },
@@ -1279,7 +1279,7 @@
       "file_type": "code",
       "source_file": "karma/package.json",
       "source_location": "L13",
-      "community": 4,
+      "community": 6,
       "norm_label": "lucide-react",
       "id": "karma_package_dependencies_lucide_react"
     },
@@ -1288,7 +1288,7 @@
       "file_type": "code",
       "source_file": "karma/package.json",
       "source_location": "L14",
-      "community": 4,
+      "community": 6,
       "norm_label": "react",
       "id": "karma_package_dependencies_react"
     },
@@ -1297,7 +1297,7 @@
       "file_type": "code",
       "source_file": "karma/package.json",
       "source_location": "L15",
-      "community": 4,
+      "community": 6,
       "norm_label": "react-dom",
       "id": "karma_package_dependencies_react_dom"
     },
@@ -1306,7 +1306,7 @@
       "file_type": "code",
       "source_file": "karma/package.json",
       "source_location": "L17",
-      "community": 0,
+      "community": 1,
       "norm_label": "devdependencies",
       "id": "karma_package_devdependencies"
     },
@@ -1315,7 +1315,7 @@
       "file_type": "code",
       "source_file": "karma/package.json",
       "source_location": "L18",
-      "community": 0,
+      "community": 1,
       "norm_label": "@eslint/js",
       "id": "karma_package_devdependencies_eslint_js"
     },
@@ -1324,7 +1324,7 @@
       "file_type": "code",
       "source_file": "karma/package.json",
       "source_location": "L19",
-      "community": 0,
+      "community": 1,
       "norm_label": "@tailwindcss/vite",
       "id": "karma_package_devdependencies_tailwindcss_vite"
     },
@@ -1333,7 +1333,7 @@
       "file_type": "code",
       "source_file": "karma/package.json",
       "source_location": "L20",
-      "community": 0,
+      "community": 1,
       "norm_label": "@types/node",
       "id": "karma_package_devdependencies_types_node"
     },
@@ -1342,7 +1342,7 @@
       "file_type": "code",
       "source_file": "karma/package.json",
       "source_location": "L21",
-      "community": 0,
+      "community": 1,
       "norm_label": "@types/react",
       "id": "karma_package_devdependencies_types_react"
     },
@@ -1351,7 +1351,7 @@
       "file_type": "code",
       "source_file": "karma/package.json",
       "source_location": "L24",
-      "community": 0,
+      "community": 1,
       "norm_label": "eslint",
       "id": "karma_package_devdependencies_eslint"
     },
@@ -1360,7 +1360,7 @@
       "file_type": "code",
       "source_file": "karma/package.json",
       "source_location": "L25",
-      "community": 0,
+      "community": 1,
       "norm_label": "eslint-plugin-react-hooks",
       "id": "karma_package_devdependencies_eslint_plugin_react_hooks"
     },
@@ -1369,7 +1369,7 @@
       "file_type": "code",
       "source_file": "karma/package.json",
       "source_location": "L26",
-      "community": 0,
+      "community": 1,
       "norm_label": "eslint-plugin-react-refresh",
       "id": "karma_package_devdependencies_eslint_plugin_react_refresh"
     },
@@ -1378,7 +1378,7 @@
       "file_type": "code",
       "source_file": "karma/package.json",
       "source_location": "L27",
-      "community": 0,
+      "community": 1,
       "norm_label": "globals",
       "id": "karma_package_devdependencies_globals"
     },
@@ -1387,7 +1387,7 @@
       "file_type": "code",
       "source_file": "karma/package.json",
       "source_location": "L28",
-      "community": 0,
+      "community": 1,
       "norm_label": "tailwindcss",
       "id": "karma_package_devdependencies_tailwindcss"
     },
@@ -1396,7 +1396,7 @@
       "file_type": "code",
       "source_file": "karma/package.json",
       "source_location": "L29",
-      "community": 0,
+      "community": 1,
       "norm_label": "typescript",
       "id": "karma_package_devdependencies_typescript"
     },
@@ -1405,7 +1405,7 @@
       "file_type": "code",
       "source_file": "karma/package.json",
       "source_location": "L30",
-      "community": 0,
+      "community": 1,
       "norm_label": "typescript-eslint",
       "id": "karma_package_devdependencies_typescript_eslint"
     },
@@ -1414,7 +1414,7 @@
       "file_type": "code",
       "source_file": "karma/package.json",
       "source_location": "L31",
-      "community": 0,
+      "community": 1,
       "norm_label": "vite",
       "id": "karma_package_devdependencies_vite"
     },
@@ -1441,7 +1441,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.json",
       "source_location": "L1",
-      "community": 12,
+      "community": 13,
       "norm_label": "tsconfig.json",
       "id": "karma_tsconfig_json"
     },
@@ -1450,7 +1450,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.json",
       "source_location": "L2",
-      "community": 12,
+      "community": 13,
       "norm_label": "files",
       "id": "karma_tsconfig_files"
     },
@@ -1459,7 +1459,7 @@
       "file_type": "code",
       "source_file": "karma/tsconfig.json",
       "source_location": "L3",
-      "community": 12,
+      "community": 13,
       "norm_label": "references",
       "id": "karma_tsconfig_references"
     },
@@ -1468,7 +1468,7 @@
       "file_type": "code",
       "source_file": "karma/src/App.tsx",
       "source_location": "L1",
-      "community": 5,
+      "community": 4,
       "norm_label": "app.tsx",
       "id": "karma_src_app_tsx"
     },
@@ -1481,7 +1481,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 5,
       "norm_label": "karma (frontend)",
       "id": "usage_karma"
     },
@@ -1494,7 +1494,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 5,
       "norm_label": "karma (container)",
       "id": "docker_compose_karma"
     },
@@ -1507,7 +1507,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 5,
       "norm_label": "karma entry point",
       "id": "karma_main"
     },
@@ -1520,7 +1520,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 5,
       "norm_label": "main.tsx",
       "id": "karma_src_main"
     },
@@ -1529,117 +1529,117 @@
       "file_type": "code",
       "source_file": "karma/src/App.tsx",
       "source_location": "L27",
-      "id": "src_app_cfgmodule",
-      "community": 5,
-      "norm_label": "cfgmodule"
+      "community": 4,
+      "norm_label": "cfgmodule",
+      "id": "src_app_cfgmodule"
     },
     {
       "label": "CfgType",
       "file_type": "code",
       "source_file": "karma/src/App.tsx",
       "source_location": "L35",
-      "id": "src_app_cfgtype",
-      "community": 5,
-      "norm_label": "cfgtype"
+      "community": 4,
+      "norm_label": "cfgtype",
+      "id": "src_app_cfgtype"
     },
     {
       "label": "CfgEventType",
       "file_type": "code",
       "source_file": "karma/src/App.tsx",
       "source_location": "L45",
-      "id": "src_app_cfgeventtype",
-      "community": 5,
-      "norm_label": "cfgeventtype"
+      "community": 4,
+      "norm_label": "cfgeventtype",
+      "id": "src_app_cfgeventtype"
     },
     {
       "label": "CfgDimension",
       "file_type": "code",
       "source_file": "karma/src/App.tsx",
       "source_location": "L51",
-      "id": "src_app_cfgdimension",
-      "community": 5,
-      "norm_label": "cfgdimension"
+      "community": 4,
+      "norm_label": "cfgdimension",
+      "id": "src_app_cfgdimension"
     },
     {
       "label": "CfgAttributeKey",
       "file_type": "code",
       "source_file": "karma/src/App.tsx",
       "source_location": "L57",
-      "id": "src_app_cfgattributekey",
-      "community": 5,
-      "norm_label": "cfgattributekey"
+      "community": 4,
+      "norm_label": "cfgattributekey",
+      "id": "src_app_cfgattributekey"
     },
     {
       "label": "TwinEvent",
       "file_type": "code",
       "source_file": "karma/src/App.tsx",
       "source_location": "L63",
-      "id": "src_app_twinevent",
-      "community": 5,
-      "norm_label": "twinevent"
+      "community": 4,
+      "norm_label": "twinevent",
+      "id": "src_app_twinevent"
     },
     {
       "label": "TwinImpact",
       "file_type": "code",
       "source_file": "karma/src/App.tsx",
       "source_location": "L70",
-      "id": "src_app_twinimpact",
-      "community": 5,
-      "norm_label": "twinimpact"
+      "community": 4,
+      "norm_label": "twinimpact",
+      "id": "src_app_twinimpact"
     },
     {
       "label": "EventDetail",
       "file_type": "code",
       "source_file": "karma/src/App.tsx",
       "source_location": "L78",
-      "id": "src_app_eventdetail",
-      "community": 5,
-      "norm_label": "eventdetail"
+      "community": 4,
+      "norm_label": "eventdetail",
+      "id": "src_app_eventdetail"
     },
     {
       "label": "SummaryData",
       "file_type": "code",
       "source_file": "karma/src/App.tsx",
       "source_location": "L84",
-      "id": "src_app_summarydata",
-      "community": 5,
-      "norm_label": "summarydata"
+      "community": 4,
+      "norm_label": "summarydata",
+      "id": "src_app_summarydata"
     },
     {
       "label": "MenuSection",
       "file_type": "code",
       "source_file": "karma/src/App.tsx",
       "source_location": "L103",
-      "id": "src_app_menusection",
-      "community": 5,
-      "norm_label": "menusection"
+      "community": 4,
+      "norm_label": "menusection",
+      "id": "src_app_menusection"
     },
     {
       "label": "getInitialRouteState()",
       "file_type": "code",
       "source_file": "karma/src/App.tsx",
       "source_location": "L114",
-      "id": "src_app_getinitialroutestate",
-      "community": 5,
-      "norm_label": "getinitialroutestate()"
+      "community": 4,
+      "norm_label": "getinitialroutestate()",
+      "id": "src_app_getinitialroutestate"
     },
     {
       "label": "getMenuLabel()",
       "file_type": "code",
       "source_file": "karma/src/App.tsx",
       "source_location": "L156",
-      "id": "src_app_getmenulabel",
-      "community": 5,
-      "norm_label": "getmenulabel()"
+      "community": 4,
+      "norm_label": "getmenulabel()",
+      "id": "src_app_getmenulabel"
     },
     {
       "label": "App()",
       "file_type": "code",
       "source_file": "karma/src/App.tsx",
       "source_location": "L181",
-      "id": "src_app_app",
-      "community": 5,
-      "norm_label": "app()"
+      "community": 4,
+      "norm_label": "app()",
+      "id": "src_app_app"
     },
     {
       "label": "@vitejs/plugin-react",
@@ -1650,9 +1650,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_vite_plugin_react",
-      "community": 0,
-      "norm_label": "@vitejs/plugin-react"
+      "community": 1,
+      "norm_label": "@vitejs/plugin-react",
+      "id": "readme_vite_plugin_react"
     },
     {
       "label": "React Compiler",
@@ -1663,9 +1663,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_react_compiler",
-      "community": 0,
-      "norm_label": "react compiler"
+      "community": 1,
+      "norm_label": "react compiler",
+      "id": "readme_react_compiler"
     },
     {
       "label": "ESLint Configuration",
@@ -1676,9 +1676,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_eslint_config",
-      "community": 13,
-      "norm_label": "eslint configuration"
+      "community": 14,
+      "norm_label": "eslint configuration",
+      "id": "readme_eslint_config"
     },
     {
       "label": "Bluesky Icon",
@@ -1689,9 +1689,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "icons_svg_bluesky",
       "community": 34,
-      "norm_label": "bluesky icon"
+      "norm_label": "bluesky icon",
+      "id": "icons_svg_bluesky"
     },
     {
       "label": "Discord Icon",
@@ -1702,9 +1702,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "icons_svg_discord",
       "community": 35,
-      "norm_label": "discord icon"
+      "norm_label": "discord icon",
+      "id": "icons_svg_discord"
     },
     {
       "label": "Documentation Icon",
@@ -1715,9 +1715,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "icons_svg_documentation",
       "community": 36,
-      "norm_label": "documentation icon"
+      "norm_label": "documentation icon",
+      "id": "icons_svg_documentation"
     },
     {
       "label": "GitHub Icon",
@@ -1728,9 +1728,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "icons_svg_github",
       "community": 37,
-      "norm_label": "github icon"
+      "norm_label": "github icon",
+      "id": "icons_svg_github"
     },
     {
       "label": "Social Icon",
@@ -1741,9 +1741,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "icons_svg_social",
       "community": 38,
-      "norm_label": "social icon"
+      "norm_label": "social icon",
+      "id": "icons_svg_social"
     },
     {
       "label": "X Icon",
@@ -1754,9 +1754,405 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "icons_svg_x",
       "community": 39,
-      "norm_label": "x icon"
+      "norm_label": "x icon",
+      "id": "icons_svg_x"
+    },
+    {
+      "label": "Person",
+      "file_type": "code",
+      "source_file": "karma/src/App.tsx",
+      "source_location": "L32",
+      "id": "src_app_person",
+      "community": 4,
+      "norm_label": "person"
+    },
+    {
+      "label": "FinEntity",
+      "file_type": "code",
+      "source_file": "karma/src/App.tsx",
+      "source_location": "L54",
+      "id": "src_app_finentity",
+      "community": 4,
+      "norm_label": "finentity"
+    },
+    {
+      "label": "Handler",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L14",
+      "id": "handlers_handler",
+      "community": 0,
+      "norm_label": "handler"
+    },
+    {
+      "label": "NewHandler()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L19",
+      "id": "handlers_handlers_newhandler",
+      "community": 9,
+      "norm_label": "newhandler()"
+    },
+    {
+      "label": "SummaryResponse",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L23",
+      "id": "handlers_summaryresponse",
+      "community": 9,
+      "norm_label": "summaryresponse"
+    },
+    {
+      "label": ".GetSummary()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L37",
+      "id": "handlers_handler_getsummary",
+      "community": 0,
+      "norm_label": ".getsummary()"
+    },
+    {
+      "label": ".GetModules()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L90",
+      "id": "handlers_handler_getmodules",
+      "community": 0,
+      "norm_label": ".getmodules()"
+    },
+    {
+      "label": ".CreateModule()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L111",
+      "id": "handlers_handler_createmodule",
+      "community": 0,
+      "norm_label": ".createmodule()"
+    },
+    {
+      "label": ".UpdateModule()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L142",
+      "id": "handlers_handler_updatemodule",
+      "community": 0,
+      "norm_label": ".updatemodule()"
+    },
+    {
+      "label": ".DeleteModule()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L171",
+      "id": "handlers_handler_deletemodule",
+      "community": 0,
+      "norm_label": ".deletemodule()"
+    },
+    {
+      "label": ".GetTypes()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L191",
+      "id": "handlers_handler_gettypes",
+      "community": 0,
+      "norm_label": ".gettypes()"
+    },
+    {
+      "label": ".CreateType()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L212",
+      "id": "handlers_handler_createtype",
+      "community": 0,
+      "norm_label": ".createtype()"
+    },
+    {
+      "label": ".UpdateType()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L243",
+      "id": "handlers_handler_updatetype",
+      "community": 0,
+      "norm_label": ".updatetype()"
+    },
+    {
+      "label": ".DeleteType()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L271",
+      "id": "handlers_handler_deletetype",
+      "community": 0,
+      "norm_label": ".deletetype()"
+    },
+    {
+      "label": ".GetEventTypes()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L291",
+      "id": "handlers_handler_geteventtypes",
+      "community": 0,
+      "norm_label": ".geteventtypes()"
+    },
+    {
+      "label": ".DeleteEventType()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L372",
+      "id": "handlers_handler_deleteeventtype",
+      "community": 0,
+      "norm_label": ".deleteeventtype()"
+    },
+    {
+      "label": ".GetDimensions()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L392",
+      "id": "handlers_handler_getdimensions",
+      "community": 0,
+      "norm_label": ".getdimensions()"
+    },
+    {
+      "label": ".CreateDimension()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L413",
+      "id": "handlers_handler_createdimension",
+      "community": 0,
+      "norm_label": ".createdimension()"
+    },
+    {
+      "label": ".UpdateDimension()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L444",
+      "id": "handlers_handler_updatedimension",
+      "community": 0,
+      "norm_label": ".updatedimension()"
+    },
+    {
+      "label": ".DeleteDimension()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L473",
+      "id": "handlers_handler_deletedimension",
+      "community": 0,
+      "norm_label": ".deletedimension()"
+    },
+    {
+      "label": ".GetAttributeKeys()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L493",
+      "id": "handlers_handler_getattributekeys",
+      "community": 0,
+      "norm_label": ".getattributekeys()"
+    },
+    {
+      "label": ".CreateAttributeKey()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L514",
+      "id": "handlers_handler_createattributekey",
+      "community": 0,
+      "norm_label": ".createattributekey()"
+    },
+    {
+      "label": ".UpdateAttributeKey()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L546",
+      "id": "handlers_handler_updateattributekey",
+      "community": 0,
+      "norm_label": ".updateattributekey()"
+    },
+    {
+      "label": ".DeleteAttributeKey()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L578",
+      "id": "handlers_handler_deleteattributekey",
+      "community": 0,
+      "norm_label": ".deleteattributekey()"
+    },
+    {
+      "label": ".GetEvents()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L599",
+      "id": "handlers_handler_getevents",
+      "community": 0,
+      "norm_label": ".getevents()"
+    },
+    {
+      "label": ".CreateEvent()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L620",
+      "id": "handlers_handler_createevent",
+      "community": 0,
+      "norm_label": ".createevent()"
+    },
+    {
+      "label": ".UpdateEvent()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L651",
+      "id": "handlers_handler_updateevent",
+      "community": 0,
+      "norm_label": ".updateevent()"
+    },
+    {
+      "label": ".DeleteEvent()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L680",
+      "id": "handlers_handler_deleteevent",
+      "community": 0,
+      "norm_label": ".deleteevent()"
+    },
+    {
+      "label": ".GetImpacts()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L700",
+      "id": "handlers_handler_getimpacts",
+      "community": 0,
+      "norm_label": ".getimpacts()"
+    },
+    {
+      "label": ".CreateImpact()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L721",
+      "id": "handlers_handler_createimpact",
+      "community": 0,
+      "norm_label": ".createimpact()"
+    },
+    {
+      "label": ".UpdateImpact()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L752",
+      "id": "handlers_handler_updateimpact",
+      "community": 0,
+      "norm_label": ".updateimpact()"
+    },
+    {
+      "label": ".DeleteImpact()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L781",
+      "id": "handlers_handler_deleteimpact",
+      "community": 0,
+      "norm_label": ".deleteimpact()"
+    },
+    {
+      "label": ".GetEventDetails()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L801",
+      "id": "handlers_handler_geteventdetails",
+      "community": 0,
+      "norm_label": ".geteventdetails()"
+    },
+    {
+      "label": ".CreateEventDetail()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L822",
+      "id": "handlers_handler_createeventdetail",
+      "community": 0,
+      "norm_label": ".createeventdetail()"
+    },
+    {
+      "label": ".UpdateEventDetail()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L854",
+      "id": "handlers_handler_updateeventdetail",
+      "community": 0,
+      "norm_label": ".updateeventdetail()"
+    },
+    {
+      "label": ".DeleteEventDetail()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L886",
+      "id": "handlers_handler_deleteeventdetail",
+      "community": 0,
+      "norm_label": ".deleteeventdetail()"
+    },
+    {
+      "label": ".GetPersons()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L900",
+      "id": "handlers_handler_getpersons",
+      "community": 0,
+      "norm_label": ".getpersons()"
+    },
+    {
+      "label": ".CreatePerson()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L911",
+      "id": "handlers_handler_createperson",
+      "community": 0,
+      "norm_label": ".createperson()"
+    },
+    {
+      "label": ".UpdatePerson()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L930",
+      "id": "handlers_handler_updateperson",
+      "community": 0,
+      "norm_label": ".updateperson()"
+    },
+    {
+      "label": ".DeletePerson()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L950",
+      "id": "handlers_handler_deleteperson",
+      "community": 0,
+      "norm_label": ".deleteperson()"
+    },
+    {
+      "label": ".GetFinEntities()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L963",
+      "id": "handlers_handler_getfinentities",
+      "community": 0,
+      "norm_label": ".getfinentities()"
+    },
+    {
+      "label": ".CreateFinEntity()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L978",
+      "id": "handlers_handler_createfinentity",
+      "community": 0,
+      "norm_label": ".createfinentity()"
+    },
+    {
+      "label": ".UpdateFinEntity()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L997",
+      "id": "handlers_handler_updatefinentity",
+      "community": 0,
+      "norm_label": ".updatefinentity()"
+    },
+    {
+      "label": ".DeleteFinEntity()",
+      "file_type": "code",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L1017",
+      "id": "handlers_handler_deletefinentity",
+      "community": 0,
+      "norm_label": ".deletefinentity()"
     }
   ],
   "links": [
@@ -2316,7 +2712,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "brahma/cmd/main.go",
-      "source_location": "L186",
+      "source_location": "L198",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "brahma_cmd_main_go",
@@ -2336,11 +2732,41 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "brahma/cmd/main.go",
-      "source_location": "L203",
+      "source_location": "L215",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "brahma_cmd_main_go",
       "target": "cmd_main_zaprequestlogger"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "brahma_internal_handlers_handlers_go",
+      "target": "handlers_handler",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "brahma_internal_handlers_handlers_go",
+      "target": "handlers_handlers_newhandler",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "brahma_internal_handlers_handlers_go",
+      "target": "handlers_summaryresponse",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -2393,6 +2819,17 @@
       "confidence_score": 1.0,
       "source": "cmd_main_main",
       "target": "cmd_main_zaprequestlogger"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "brahma/cmd/main.go",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "cmd_main_main",
+      "target": "handlers_handlers_newhandler"
     },
     {
       "relation": "contains",
@@ -3109,131 +3546,151 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "karma/src/App.tsx",
-      "source_location": "L181",
+      "source_location": "L273",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "karma_src_app_tsx",
+      "target": "src_app_app"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "karma/src/App.tsx",
+      "source_location": "L145",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "karma_src_app_tsx",
+      "target": "src_app_cfgattributekey"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "karma/src/App.tsx",
+      "source_location": "L139",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "karma_src_app_tsx",
+      "target": "src_app_cfgdimension"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "karma/src/App.tsx",
+      "source_location": "L133",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "karma_src_app_tsx",
+      "target": "src_app_cfgeventtype"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "karma/src/App.tsx",
+      "source_location": "L115",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "karma_src_app_tsx",
+      "target": "src_app_cfgmodule"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "karma/src/App.tsx",
+      "source_location": "L123",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "karma_src_app_tsx",
+      "target": "src_app_cfgtype"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "karma/src/App.tsx",
+      "source_location": "L166",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "karma_src_app_tsx",
+      "target": "src_app_eventdetail"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "karma/src/App.tsx",
+      "source_location": "L54",
       "weight": 1.0,
       "source": "karma_src_app_tsx",
-      "target": "src_app_app",
+      "target": "src_app_finentity",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "karma/src/App.tsx",
-      "source_location": "L57",
+      "source_location": "L203",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "karma_src_app_tsx",
+      "target": "src_app_getinitialroutestate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "karma/src/App.tsx",
+      "source_location": "L248",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "karma_src_app_tsx",
+      "target": "src_app_getmenulabel"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "karma/src/App.tsx",
+      "source_location": "L191",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "karma_src_app_tsx",
+      "target": "src_app_menusection"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "karma/src/App.tsx",
+      "source_location": "L32",
       "weight": 1.0,
       "source": "karma_src_app_tsx",
-      "target": "src_app_cfgattributekey",
+      "target": "src_app_person",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "karma/src/App.tsx",
-      "source_location": "L51",
+      "source_location": "L172",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "karma_src_app_tsx",
-      "target": "src_app_cfgdimension",
-      "confidence_score": 1.0
+      "target": "src_app_summarydata"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "karma/src/App.tsx",
-      "source_location": "L45",
+      "source_location": "L151",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "karma_src_app_tsx",
-      "target": "src_app_cfgeventtype",
-      "confidence_score": 1.0
+      "target": "src_app_twinevent"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "karma/src/App.tsx",
-      "source_location": "L27",
+      "source_location": "L158",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "karma_src_app_tsx",
-      "target": "src_app_cfgmodule",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "karma/src/App.tsx",
-      "source_location": "L35",
-      "weight": 1.0,
-      "source": "karma_src_app_tsx",
-      "target": "src_app_cfgtype",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "karma/src/App.tsx",
-      "source_location": "L78",
-      "weight": 1.0,
-      "source": "karma_src_app_tsx",
-      "target": "src_app_eventdetail",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "karma/src/App.tsx",
-      "source_location": "L114",
-      "weight": 1.0,
-      "source": "karma_src_app_tsx",
-      "target": "src_app_getinitialroutestate",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "karma/src/App.tsx",
-      "source_location": "L156",
-      "weight": 1.0,
-      "source": "karma_src_app_tsx",
-      "target": "src_app_getmenulabel",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "karma/src/App.tsx",
-      "source_location": "L103",
-      "weight": 1.0,
-      "source": "karma_src_app_tsx",
-      "target": "src_app_menusection",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "karma/src/App.tsx",
-      "source_location": "L84",
-      "weight": 1.0,
-      "source": "karma_src_app_tsx",
-      "target": "src_app_summarydata",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "karma/src/App.tsx",
-      "source_location": "L63",
-      "weight": 1.0,
-      "source": "karma_src_app_tsx",
-      "target": "src_app_twinevent",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "karma/src/App.tsx",
-      "source_location": "L70",
-      "weight": 1.0,
-      "source": "karma_src_app_tsx",
-      "target": "src_app_twinimpact",
-      "confidence_score": 1.0
+      "target": "src_app_twinimpact"
     },
     {
       "relation": "imports_from",
@@ -3281,24 +3738,414 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "karma/src/App.tsx",
-      "source_location": "L182",
+      "source_location": "L274",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_app",
-      "target": "src_app_getinitialroutestate",
-      "confidence_score": 1.0
+      "target": "src_app_getinitialroutestate"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "karma/src/App.tsx",
-      "source_location": "L1078",
+      "source_location": "L1742",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_app",
-      "target": "src_app_getmenulabel",
+      "target": "src_app_getmenulabel"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L514",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_createattributekey",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L413",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_createdimension",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L620",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_createevent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L822",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_createeventdetail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L978",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_createfinentity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L721",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_createimpact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_createmodule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L911",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_createperson",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L212",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_createtype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L578",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_deleteattributekey",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L473",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_deletedimension",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L680",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_deleteevent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L886",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_deleteeventdetail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L372",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_deleteeventtype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L1017",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_deletefinentity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L781",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_deleteimpact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L171",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_deletemodule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L950",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_deleteperson",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L271",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_deletetype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L493",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_getattributekeys",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L392",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_getdimensions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L801",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_geteventdetails",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L599",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_getevents",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L291",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_geteventtypes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L963",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_getfinentities",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L700",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_getimpacts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_getmodules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L900",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_getpersons",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_getsummary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L191",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_gettypes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L546",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_updateattributekey",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L444",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_updatedimension",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L651",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_updateevent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L854",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_updateeventdetail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L997",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_updatefinentity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L752",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_updateimpact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L142",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_updatemodule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L930",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_updateperson",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/handlers/handlers.go",
+      "source_location": "L243",
+      "weight": 1.0,
+      "source": "handlers_handler",
+      "target": "handlers_handler_updatetype",
       "confidence_score": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "ce9ad2824b7e57693098492dd554604531576140"
+  "built_at_commit": "b0d9526813b55a083d47fb42edf35456f4602f2e"
 }

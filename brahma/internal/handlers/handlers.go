@@ -893,3 +893,134 @@ func (h *Handler) DeleteEventDetail(c *gin.Context) {
 	}
 	c.JSON(http.StatusOK, gin.H{"message": "Event detail deleted successfully"})
 }
+
+// === Person CRUD ===
+
+// GetPersons lists all persons
+func (h *Handler) GetPersons(c *gin.Context) {
+	var items []models.Person
+	if err := h.db.Order("first_name asc, last_name asc").Find(&items).Error; err != nil {
+		h.logger.Error("Failed to fetch persons", zap.Error(err))
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to fetch persons"})
+		return
+	}
+	c.JSON(http.StatusOK, items)
+}
+
+// CreatePerson creates a new person
+func (h *Handler) CreatePerson(c *gin.Context) {
+	var item models.Person
+	if err := c.ShouldBindJSON(&item); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+	if item.FirstName == "" {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "first_name is required"})
+		return
+	}
+	if err := h.db.Create(&item).Error; err != nil {
+		h.logger.Error("Failed to create person", zap.Error(err))
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to create person"})
+		return
+	}
+	c.JSON(http.StatusCreated, item)
+}
+
+// UpdatePerson updates a person
+func (h *Handler) UpdatePerson(c *gin.Context) {
+	id := c.Param("id")
+	var item models.Person
+	if err := h.db.First(&item, "person_id = ?", id).Error; err != nil {
+		c.JSON(http.StatusNotFound, gin.H{"error": "Person not found"})
+		return
+	}
+	if err := c.ShouldBindJSON(&item); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+	if err := h.db.Save(&item).Error; err != nil {
+		h.logger.Error("Failed to update person", zap.Error(err))
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to update person"})
+		return
+	}
+	c.JSON(http.StatusOK, item)
+}
+
+// DeletePerson deletes a person
+func (h *Handler) DeletePerson(c *gin.Context) {
+	id := c.Param("id")
+	if err := h.db.Delete(&models.Person{}, "person_id = ?", id).Error; err != nil {
+		h.logger.Error("Failed to delete person", zap.Error(err))
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to delete person"})
+		return
+	}
+	c.JSON(http.StatusOK, gin.H{"message": "Person deleted successfully"})
+}
+
+// === Financial Entity CRUD ===
+
+// GetFinEntities lists all financial entities, optionally filtered by type
+func (h *Handler) GetFinEntities(c *gin.Context) {
+	var items []models.FinEntity
+	query := h.db.Order("entity_name asc")
+	if eType := c.Query("type"); eType != "" {
+		query = query.Where("entity_type = ?", eType)
+	}
+	if err := query.Find(&items).Error; err != nil {
+		h.logger.Error("Failed to fetch financial entities", zap.Error(err))
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to fetch financial entities"})
+		return
+	}
+	c.JSON(http.StatusOK, items)
+}
+
+// CreateFinEntity creates a new financial entity
+func (h *Handler) CreateFinEntity(c *gin.Context) {
+	var item models.FinEntity
+	if err := c.ShouldBindJSON(&item); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+	if item.EntityName == "" || item.EntityType == "" {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "entity_name and entity_type are required"})
+		return
+	}
+	if err := h.db.Create(&item).Error; err != nil {
+		h.logger.Error("Failed to create financial entity", zap.Error(err))
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to create financial entity"})
+		return
+	}
+	c.JSON(http.StatusCreated, item)
+}
+
+// UpdateFinEntity updates an existing financial entity
+func (h *Handler) UpdateFinEntity(c *gin.Context) {
+	id := c.Param("id")
+	var item models.FinEntity
+	if err := h.db.First(&item, "fin_entity_id = ?", id).Error; err != nil {
+		c.JSON(http.StatusNotFound, gin.H{"error": "Financial entity not found"})
+		return
+	}
+	if err := c.ShouldBindJSON(&item); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+	if err := h.db.Save(&item).Error; err != nil {
+		h.logger.Error("Failed to update financial entity", zap.Error(err))
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to update financial entity"})
+		return
+	}
+	c.JSON(http.StatusOK, item)
+}
+
+// DeleteFinEntity deletes a financial entity
+func (h *Handler) DeleteFinEntity(c *gin.Context) {
+	id := c.Param("id")
+	if err := h.db.Delete(&models.FinEntity{}, "fin_entity_id = ?", id).Error; err != nil {
+		h.logger.Error("Failed to delete financial entity", zap.Error(err))
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to delete financial entity"})
+		return
+	}
+	c.JSON(http.StatusOK, gin.H{"message": "Financial entity deleted successfully"})
+}
+
