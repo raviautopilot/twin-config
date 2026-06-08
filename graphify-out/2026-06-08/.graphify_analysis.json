@@ -63,22 +63,6 @@
       "frontend_tsconfig_node_json"
     ],
     "3": [
-      "frontend_package_dependencies",
-      "frontend_package_dependencies_lucide_react",
-      "frontend_package_dependencies_react",
-      "frontend_package_dependencies_react_dom",
-      "frontend_package_json",
-      "frontend_package_name",
-      "frontend_package_private",
-      "frontend_package_scripts",
-      "frontend_package_scripts_build",
-      "frontend_package_scripts_dev",
-      "frontend_package_scripts_lint",
-      "frontend_package_scripts_preview",
-      "frontend_package_type",
-      "frontend_package_version"
-    ],
-    "4": [
       "frontend_package_devdependencies",
       "frontend_package_devdependencies_eslint",
       "frontend_package_devdependencies_eslint_js",
@@ -93,6 +77,22 @@
       "frontend_package_devdependencies_typescript_eslint",
       "frontend_package_devdependencies_vite",
       "frontend_package_devdependencies_vitejs_plugin_react"
+    ],
+    "4": [
+      "frontend_package_dependencies",
+      "frontend_package_dependencies_lucide_react",
+      "frontend_package_dependencies_react",
+      "frontend_package_dependencies_react_dom",
+      "frontend_package_json",
+      "frontend_package_name",
+      "frontend_package_private",
+      "frontend_package_scripts",
+      "frontend_package_scripts_build",
+      "frontend_package_scripts_dev",
+      "frontend_package_scripts_lint",
+      "frontend_package_scripts_preview",
+      "frontend_package_type",
+      "frontend_package_version"
     ],
     "5": [
       "concept_digital_twin_db",
@@ -131,100 +131,113 @@
       "usage_brahma"
     ],
     "8": [
+      "brahma_internal_models_financial_go",
+      "models_financialentitytype",
+      "models_financialentitytype_scan",
+      "models_financialentitytype_value",
+      "models_finentity",
+      "models_person",
+      "models_person_tablename"
+    ],
+    "9": [
+      "brahma_cmd_main_go",
+      "cmd_main_corsmiddleware",
+      "cmd_main_main",
+      "cmd_main_zaprequestlogger"
+    ],
+    "10": [
       "usage_backend",
       "usage_digital_twin",
       "usage_frontend",
       "usage_postgresql"
     ],
-    "9": [
+    "11": [
+      "docker_setup_sh",
+      "home_ubuntu_code_github_raviautopilot_twin_config_docker_setup_sh__entry",
+      "twin_config_docker_setup_build_frontend_locally"
+    ],
+    "12": [
       "frontend_tsconfig_files",
       "frontend_tsconfig_json",
       "frontend_tsconfig_references"
     ],
-    "10": [
-      "docker_setup_sh",
-      "home_ubuntu_code_github_raviautopilot_twin_config_docker_setup_sh__entry"
-    ],
-    "11": [
+    "13": [
       "index_html_root",
       "main_tsx"
     ],
-    "12": [
+    "14": [
       "readme_eslint",
       "readme_typescript"
     ],
-    "13": [
+    "15": [
       "readme_react",
       "readme_vite"
     ],
-    "14": [
+    "16": [
       "home_ubuntu_code_github_raviautopilot_twin_config_volume_wipe_sh__entry",
       "volume_wipe_sh"
     ],
-    "15": [
+    "17": [
       "frontend_vite_config_ts"
     ],
-    "16": [
+    "18": [
       "frontend_eslint_config_js"
     ],
-    "17": [
+    "19": [
       "favicon_svg"
     ],
-    "18": [
+    "20": [
       "icons_svg"
     ],
-    "19": [
+    "21": [
       "hero_png"
     ],
-    "20": [
+    "22": [
       "vite_svg"
     ],
-    "21": [
+    "23": [
       "react_svg"
     ],
-    "22": [
+    "24": [
       "swagger_summaryresponse"
     ],
-    "23": [
+    "25": [
       "brahma_docs_docs_go"
     ],
-    "24": [
+    "26": [
       "brahma_docs_swagger_json"
     ],
-    "25": [
+    "27": [
       "docs_swagger_500_schema"
     ],
-    "26": [
+    "28": [
       "docs_swagger_cfg_types_get"
     ],
-    "27": [
-      "brahma_cmd_main_go"
-    ],
-    "28": [
+    "29": [
       "brahma_internal_config_logger_go"
     ],
-    "29": [
+    "30": [
       "brahma_internal_config_config_go"
     ],
-    "30": [
+    "31": [
       "brahma_internal_models_audit_go"
     ],
-    "31": [
+    "32": [
       "brahma_internal_models_twin_go"
     ],
-    "32": [
+    "33": [
       "models_twinimpact_tablename"
     ],
-    "33": [
+    "34": [
       "brahma_internal_models_cfg_go"
     ],
-    "34": [
+    "35": [
       "models_cfgmodule_tablename"
     ],
-    "35": [
+    "36": [
       "brahma_internal_models_event_go"
     ],
-    "36": [
+    "37": [
       "brahma_internal_handlers_handlers_go"
     ]
   },
@@ -237,11 +250,11 @@
     "5": 0.24444444444444444,
     "6": 0.4,
     "7": 0.2222222222222222,
-    "8": 0.5,
-    "9": 0.6666666666666666,
-    "10": 1.0,
+    "8": 0.3333333333333333,
+    "9": 0.8333333333333334,
+    "10": 0.5,
     "11": 1.0,
-    "12": 1.0,
+    "12": 0.6666666666666666,
     "13": 1.0,
     "14": 1.0,
     "15": 1.0,
@@ -265,7 +278,8 @@
     "33": 1.0,
     "34": 1.0,
     "35": 1.0,
-    "36": 1.0
+    "36": 1.0,
+    "37": 1.0
   },
   "gods": [
     {

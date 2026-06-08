@@ -1,5 +1,6 @@
 services:
   db:
+    container_name: dev-db
     image: kaalam
     build:
       context: kaalam
@@ -14,6 +15,7 @@ services:
       - pgdata:/var/lib/postgresql/data
 
   brahma:
+    container_name: dev-brahma
     image: brahma
     build:
       context: brahma
@@ -30,10 +32,11 @@ services:
       - DB_PASSWORD=twin_pass
       - DB_NAME=digital_twin
 
-  frontend:
-    image: twin-config-frontend
+  karma:
+    container_name: dev-karma
+    image: karma
     build:
-      context: ./frontend
+      context: ./karma
       dockerfile: Dockerfile
     ports:
       - "3000:80"

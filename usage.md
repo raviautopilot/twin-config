@@ -4,7 +4,7 @@ This document provides details on how to access and use the deployed application
 
 ## Services
 
-### Frontend
+### Karma (Frontend)
 
 *   **URL**: [http://localhost:3000](http://localhost:3000)
 *   **Description**: The main web interface for the application.

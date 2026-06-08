@@ -4,50 +4,10 @@
     "ast_hash": "c06adced8e80f9a9d7d1bfbefc08df24",
     "semantic_hash": "c06adced8e80f9a9d7d1bfbefc08df24"
   },
-  "/home/ubuntu/code/github/raviautopilot/twin-config/frontend/tsconfig.node.json": {
-    "mtime": 1780843641.0107105,
-    "ast_hash": "70bdd0a673bcfc0e828080b306e7c680",
-    "semantic_hash": "70bdd0a673bcfc0e828080b306e7c680"
-  },
-  "/home/ubuntu/code/github/raviautopilot/twin-config/frontend/tsconfig.app.json": {
-    "mtime": 1780843641.0107105,
-    "ast_hash": "136630b5accce1ca50663df229534a26",
-    "semantic_hash": "136630b5accce1ca50663df229534a26"
-  },
-  "/home/ubuntu/code/github/raviautopilot/twin-config/frontend/package.json": {
-    "mtime": 1780843640.9907103,
-    "ast_hash": "5e3be431c99f16d78d61d6f385d7caff",
-    "semantic_hash": "5e3be431c99f16d78d61d6f385d7caff"
-  },
-  "/home/ubuntu/code/github/raviautopilot/twin-config/frontend/vite.config.ts": {
-    "mtime": 1780843641.0107105,
-    "ast_hash": "e71f334c92473b2f4db141aa06b730e1",
-    "semantic_hash": "e71f334c92473b2f4db141aa06b730e1"
-  },
-  "/home/ubuntu/code/github/raviautopilot/twin-config/frontend/eslint.config.js": {
-    "mtime": 1780843640.9907103,
-    "ast_hash": "0355276bc79439afe3c53e3a2470ca1e",
-    "semantic_hash": "0355276bc79439afe3c53e3a2470ca1e"
-  },
-  "/home/ubuntu/code/github/raviautopilot/twin-config/frontend/tsconfig.json": {
-    "mtime": 1780843641.0107105,
-    "ast_hash": "a3d39fa780ebff65444de257f291ce6c",
-    "semantic_hash": "a3d39fa780ebff65444de257f291ce6c"
-  },
-  "/home/ubuntu/code/github/raviautopilot/twin-config/frontend/src/App.tsx": {
-    "mtime": 1780923023.0802994,
-    "ast_hash": "52b47dc412abb4b073fabc472dd26fae",
-    "semantic_hash": "52b47dc412abb4b073fabc472dd26fae"
-  },
-  "/home/ubuntu/code/github/raviautopilot/twin-config/frontend/src/main.tsx": {
-    "mtime": 1780843641.0107105,
-    "ast_hash": "787e5a07efeb2bf6209d5937195f2f68",
-    "semantic_hash": "787e5a07efeb2bf6209d5937195f2f68"
-  },
   "/home/ubuntu/code/github/raviautopilot/twin-config/docker-setup.sh": {
-    "mtime": 1780851557.0550687,
-    "ast_hash": "e15e31ff04687f2ef7aefb5d577eed88",
-    "semantic_hash": "e15e31ff04687f2ef7aefb5d577eed88"
+    "mtime": 1780936958.5496955,
+    "ast_hash": "7e176cd93862e049d8e9e51b420bab17",
+    "semantic_hash": "7e176cd93862e049d8e9e51b420bab17"
   },
   "/home/ubuntu/code/github/raviautopilot/twin-config/kaalam/sql/init_twin.sql": {
     "mtime": 1780925597.6143844,
@@ -65,7 +25,7 @@
     "semantic_hash": "443d97d3aa82f8ee837c2970d3a5d1a0"
   },
   "/home/ubuntu/code/github/raviautopilot/twin-config/brahma/cmd/main.go": {
-    "mtime": 1780935715.963969,
+    "mtime": 1780936340.400844,
     "ast_hash": "ac332ff2d49bedabc485824389918c1b",
     "semantic_hash": "ac332ff2d49bedabc485824389918c1b"
   },
@@ -115,13 +75,53 @@
     "semantic_hash": "627f47051a4109c5c0dbc38079266341"
   },
   "/home/ubuntu/code/github/raviautopilot/twin-config/kaalam/sql/002_entity.sql": {
-    "mtime": 1780935700.7838504,
+    "mtime": 1780936340.4288445,
     "ast_hash": "2dc72f819292fdc8eeabc0c91295318a",
     "semantic_hash": "2dc72f819292fdc8eeabc0c91295318a"
   },
   "/home/ubuntu/code/github/raviautopilot/twin-config/brahma/internal/models/financial.go": {
-    "mtime": 1780935712.4079413,
+    "mtime": 1780936340.4128442,
     "ast_hash": "ddcb7d50d31168899d5b4ef34c13f015",
     "semantic_hash": "ddcb7d50d31168899d5b4ef34c13f015"
+  },
+  "/home/ubuntu/code/github/raviautopilot/twin-config/karma/tsconfig.node.json": {
+    "mtime": 1780843641.0107105,
+    "ast_hash": "70bdd0a673bcfc0e828080b306e7c680",
+    "semantic_hash": "70bdd0a673bcfc0e828080b306e7c680"
+  },
+  "/home/ubuntu/code/github/raviautopilot/twin-config/karma/tsconfig.app.json": {
+    "mtime": 1780843641.0107105,
+    "ast_hash": "136630b5accce1ca50663df229534a26",
+    "semantic_hash": "136630b5accce1ca50663df229534a26"
+  },
+  "/home/ubuntu/code/github/raviautopilot/twin-config/karma/package.json": {
+    "mtime": 1780936964.1977398,
+    "ast_hash": "79a01f0e16a6861f100d9d91c7064bbb",
+    "semantic_hash": "79a01f0e16a6861f100d9d91c7064bbb"
+  },
+  "/home/ubuntu/code/github/raviautopilot/twin-config/karma/vite.config.ts": {
+    "mtime": 1780843641.0107105,
+    "ast_hash": "e71f334c92473b2f4db141aa06b730e1",
+    "semantic_hash": "e71f334c92473b2f4db141aa06b730e1"
+  },
+  "/home/ubuntu/code/github/raviautopilot/twin-config/karma/eslint.config.js": {
+    "mtime": 1780843640.9907103,
+    "ast_hash": "0355276bc79439afe3c53e3a2470ca1e",
+    "semantic_hash": "0355276bc79439afe3c53e3a2470ca1e"
+  },
+  "/home/ubuntu/code/github/raviautopilot/twin-config/karma/tsconfig.json": {
+    "mtime": 1780843641.0107105,
+    "ast_hash": "a3d39fa780ebff65444de257f291ce6c",
+    "semantic_hash": "a3d39fa780ebff65444de257f291ce6c"
+  },
+  "/home/ubuntu/code/github/raviautopilot/twin-config/karma/src/App.tsx": {
+    "mtime": 1780923023.0802994,
+    "ast_hash": "52b47dc412abb4b073fabc472dd26fae",
+    "semantic_hash": "52b47dc412abb4b073fabc472dd26fae"
+  },
+  "/home/ubuntu/code/github/raviautopilot/twin-config/karma/src/main.tsx": {
+    "mtime": 1780843641.0107105,
+    "ast_hash": "787e5a07efeb2bf6209d5937195f2f68",
+    "semantic_hash": "787e5a07efeb2bf6209d5937195f2f68"
   }
 }

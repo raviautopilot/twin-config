@@ -1,112 +1,96 @@
 {
   "communities": {
     "0": [
-      "frontend_tsconfig_app_compileroptions",
-      "frontend_tsconfig_app_compileroptions_allowimportingtsextensions",
-      "frontend_tsconfig_app_compileroptions_erasablesyntaxonly",
-      "frontend_tsconfig_app_compileroptions_jsx",
-      "frontend_tsconfig_app_compileroptions_lib",
-      "frontend_tsconfig_app_compileroptions_module",
-      "frontend_tsconfig_app_compileroptions_moduledetection",
-      "frontend_tsconfig_app_compileroptions_moduleresolution",
-      "frontend_tsconfig_app_compileroptions_noemit",
-      "frontend_tsconfig_app_compileroptions_nofallthroughcasesinswitch",
-      "frontend_tsconfig_app_compileroptions_nounusedlocals",
-      "frontend_tsconfig_app_compileroptions_nounusedparameters",
-      "frontend_tsconfig_app_compileroptions_skiplibcheck",
-      "frontend_tsconfig_app_compileroptions_target",
-      "frontend_tsconfig_app_compileroptions_tsbuildinfofile",
-      "frontend_tsconfig_app_compileroptions_types",
-      "frontend_tsconfig_app_compileroptions_verbatimmodulesyntax",
-      "frontend_tsconfig_app_include",
-      "frontend_tsconfig_app_json"
+      "karma_tsconfig_app_compileroptions",
+      "karma_tsconfig_app_compileroptions_allowimportingtsextensions",
+      "karma_tsconfig_app_compileroptions_erasablesyntaxonly",
+      "karma_tsconfig_app_compileroptions_jsx",
+      "karma_tsconfig_app_compileroptions_lib",
+      "karma_tsconfig_app_compileroptions_module",
+      "karma_tsconfig_app_compileroptions_moduledetection",
+      "karma_tsconfig_app_compileroptions_moduleresolution",
+      "karma_tsconfig_app_compileroptions_noemit",
+      "karma_tsconfig_app_compileroptions_nofallthroughcasesinswitch",
+      "karma_tsconfig_app_compileroptions_nounusedlocals",
+      "karma_tsconfig_app_compileroptions_nounusedparameters",
+      "karma_tsconfig_app_compileroptions_skiplibcheck",
+      "karma_tsconfig_app_compileroptions_target",
+      "karma_tsconfig_app_compileroptions_tsbuildinfofile",
+      "karma_tsconfig_app_compileroptions_types",
+      "karma_tsconfig_app_compileroptions_verbatimmodulesyntax",
+      "karma_tsconfig_app_include",
+      "karma_tsconfig_app_json"
     ],
     "1": [
-      "frontend_src_app_tsx",
-      "frontend_src_main_tsx",
-      "src_app_app",
-      "src_app_associatedworkflows",
-      "src_app_cfgattributekey",
-      "src_app_cfgdimension",
-      "src_app_cfgeventtype",
-      "src_app_cfgmodule",
-      "src_app_cfgtype",
-      "src_app_contact",
-      "src_app_contactdetails",
-      "src_app_eventdetail",
-      "src_app_financialentity",
-      "src_app_getinitialroutestate",
-      "src_app_menusection",
-      "src_app_metaconfig",
-      "src_app_summarydata",
-      "src_app_twinevent",
-      "src_app_twinimpact"
+      "karma_tsconfig_node_compileroptions",
+      "karma_tsconfig_node_compileroptions_allowimportingtsextensions",
+      "karma_tsconfig_node_compileroptions_erasablesyntaxonly",
+      "karma_tsconfig_node_compileroptions_lib",
+      "karma_tsconfig_node_compileroptions_module",
+      "karma_tsconfig_node_compileroptions_moduledetection",
+      "karma_tsconfig_node_compileroptions_moduleresolution",
+      "karma_tsconfig_node_compileroptions_noemit",
+      "karma_tsconfig_node_compileroptions_nofallthroughcasesinswitch",
+      "karma_tsconfig_node_compileroptions_nounusedlocals",
+      "karma_tsconfig_node_compileroptions_nounusedparameters",
+      "karma_tsconfig_node_compileroptions_skiplibcheck",
+      "karma_tsconfig_node_compileroptions_target",
+      "karma_tsconfig_node_compileroptions_tsbuildinfofile",
+      "karma_tsconfig_node_compileroptions_types",
+      "karma_tsconfig_node_compileroptions_verbatimmodulesyntax",
+      "karma_tsconfig_node_include",
+      "karma_tsconfig_node_json"
     ],
     "2": [
-      "frontend_tsconfig_node_compileroptions",
-      "frontend_tsconfig_node_compileroptions_allowimportingtsextensions",
-      "frontend_tsconfig_node_compileroptions_erasablesyntaxonly",
-      "frontend_tsconfig_node_compileroptions_lib",
-      "frontend_tsconfig_node_compileroptions_module",
-      "frontend_tsconfig_node_compileroptions_moduledetection",
-      "frontend_tsconfig_node_compileroptions_moduleresolution",
-      "frontend_tsconfig_node_compileroptions_noemit",
-      "frontend_tsconfig_node_compileroptions_nofallthroughcasesinswitch",
-      "frontend_tsconfig_node_compileroptions_nounusedlocals",
-      "frontend_tsconfig_node_compileroptions_nounusedparameters",
-      "frontend_tsconfig_node_compileroptions_skiplibcheck",
-      "frontend_tsconfig_node_compileroptions_target",
-      "frontend_tsconfig_node_compileroptions_tsbuildinfofile",
-      "frontend_tsconfig_node_compileroptions_types",
-      "frontend_tsconfig_node_compileroptions_verbatimmodulesyntax",
-      "frontend_tsconfig_node_include",
-      "frontend_tsconfig_node_json"
-    ],
-    "3": [
-      "frontend_package_devdependencies",
-      "frontend_package_devdependencies_eslint",
-      "frontend_package_devdependencies_eslint_js",
-      "frontend_package_devdependencies_eslint_plugin_react_hooks",
-      "frontend_package_devdependencies_eslint_plugin_react_refresh",
-      "frontend_package_devdependencies_globals",
-      "frontend_package_devdependencies_tailwindcss",
-      "frontend_package_devdependencies_tailwindcss_vite",
-      "frontend_package_devdependencies_types_node",
-      "frontend_package_devdependencies_types_react",
-      "frontend_package_devdependencies_typescript",
-      "frontend_package_devdependencies_typescript_eslint",
-      "frontend_package_devdependencies_vite",
-      "frontend_package_devdependencies_vitejs_plugin_react"
-    ],
-    "4": [
-      "frontend_package_dependencies",
-      "frontend_package_dependencies_lucide_react",
-      "frontend_package_dependencies_react",
-      "frontend_package_dependencies_react_dom",
-      "frontend_package_json",
-      "frontend_package_name",
-      "frontend_package_private",
-      "frontend_package_scripts",
-      "frontend_package_scripts_build",
-      "frontend_package_scripts_dev",
-      "frontend_package_scripts_lint",
-      "frontend_package_scripts_preview",
-      "frontend_package_type",
-      "frontend_package_version"
-    ],
-    "5": [
       "concept_digital_twin_db",
       "docker_compose_backend",
       "docker_compose_brahma",
       "docker_compose_db",
       "docker_compose_digital_twin",
       "docker_compose_frontend",
+      "docker_compose_karma",
       "docker_compose_pgdata",
       "dockerfile_twin_config",
+      "karma_main",
+      "karma_src_app_tsx",
+      "karma_src_main",
       "readme_twin_config",
-      "usage_kaalam"
+      "usage_kaalam",
+      "usage_karma"
     ],
-    "6": [
+    "3": [
+      "karma_package_dependencies",
+      "karma_package_dependencies_lucide_react",
+      "karma_package_dependencies_react",
+      "karma_package_dependencies_react_dom",
+      "karma_package_json",
+      "karma_package_name",
+      "karma_package_private",
+      "karma_package_scripts",
+      "karma_package_scripts_build",
+      "karma_package_scripts_dev",
+      "karma_package_scripts_lint",
+      "karma_package_scripts_preview",
+      "karma_package_type",
+      "karma_package_version"
+    ],
+    "4": [
+      "karma_package_devdependencies",
+      "karma_package_devdependencies_eslint",
+      "karma_package_devdependencies_eslint_js",
+      "karma_package_devdependencies_eslint_plugin_react_hooks",
+      "karma_package_devdependencies_eslint_plugin_react_refresh",
+      "karma_package_devdependencies_globals",
+      "karma_package_devdependencies_tailwindcss",
+      "karma_package_devdependencies_tailwindcss_vite",
+      "karma_package_devdependencies_types_node",
+      "karma_package_devdependencies_types_react",
+      "karma_package_devdependencies_typescript",
+      "karma_package_devdependencies_typescript_eslint",
+      "karma_package_devdependencies_vite",
+      "karma_package_devdependencies_vitejs_plugin_react"
+    ],
+    "5": [
       "docs_swagger_200_description",
       "docs_swagger_cfg_modules_id_delete",
       "docs_swagger_cfg_modules_id_put",
@@ -118,7 +102,7 @@
       "docs_swagger_put_summary",
       "docs_swagger_put_tags"
     ],
-    "7": [
+    "6": [
       "swagger_api",
       "swagger_cfgattributekey",
       "swagger_cfgdimension",
@@ -130,7 +114,7 @@
       "swagger_twinimpact",
       "usage_brahma"
     ],
-    "8": [
+    "7": [
       "brahma_internal_models_financial_go",
       "models_financialentitytype",
       "models_financialentitytype_scan",
@@ -139,11 +123,17 @@
       "models_person",
       "models_person_tablename"
     ],
-    "9": [
+    "8": [
       "brahma_cmd_main_go",
       "cmd_main_corsmiddleware",
       "cmd_main_main",
       "cmd_main_zaprequestlogger"
+    ],
+    "9": [
+      "docker_setup_sh",
+      "home_ubuntu_code_github_raviautopilot_twin_config_docker_setup_sh__entry",
+      "twin_config_docker_setup_build_frontend_locally",
+      "twin_config_docker_setup_build_karma_locally"
     ],
     "10": [
       "usage_backend",
@@ -152,104 +142,99 @@
       "usage_postgresql"
     ],
     "11": [
-      "frontend_tsconfig_files",
-      "frontend_tsconfig_json",
-      "frontend_tsconfig_references"
+      "karma_tsconfig_files",
+      "karma_tsconfig_json",
+      "karma_tsconfig_references"
     ],
     "12": [
-      "docker_setup_sh",
-      "home_ubuntu_code_github_raviautopilot_twin_config_docker_setup_sh__entry"
-    ],
-    "13": [
-      "index_html_root",
-      "main_tsx"
-    ],
-    "14": [
       "readme_eslint",
       "readme_typescript"
     ],
-    "15": [
+    "13": [
       "readme_react",
       "readme_vite"
     ],
-    "16": [
+    "14": [
       "home_ubuntu_code_github_raviautopilot_twin_config_volume_wipe_sh__entry",
       "volume_wipe_sh"
     ],
-    "17": [
-      "frontend_vite_config_ts"
+    "15": [
+      "index_html_root"
     ],
-    "18": [
-      "frontend_eslint_config_js"
-    ],
-    "19": [
+    "16": [
       "favicon_svg"
     ],
-    "20": [
+    "17": [
       "icons_svg"
     ],
-    "21": [
+    "18": [
       "hero_png"
     ],
-    "22": [
+    "19": [
       "vite_svg"
     ],
-    "23": [
+    "20": [
       "react_svg"
     ],
-    "24": [
+    "21": [
       "swagger_summaryresponse"
     ],
-    "25": [
+    "22": [
       "brahma_docs_docs_go"
     ],
-    "26": [
+    "23": [
       "brahma_docs_swagger_json"
     ],
-    "27": [
+    "24": [
       "docs_swagger_500_schema"
     ],
-    "28": [
+    "25": [
       "docs_swagger_cfg_types_get"
     ],
-    "29": [
+    "26": [
       "brahma_internal_config_logger_go"
     ],
-    "30": [
+    "27": [
       "brahma_internal_config_config_go"
     ],
-    "31": [
+    "28": [
       "brahma_internal_models_audit_go"
     ],
-    "32": [
+    "29": [
       "brahma_internal_models_twin_go"
     ],
-    "33": [
+    "30": [
       "models_twinimpact_tablename"
     ],
-    "34": [
+    "31": [
       "brahma_internal_models_cfg_go"
     ],
-    "35": [
+    "32": [
       "models_cfgmodule_tablename"
     ],
-    "36": [
+    "33": [
       "brahma_internal_models_event_go"
     ],
-    "37": [
+    "34": [
       "brahma_internal_handlers_handlers_go"
+    ],
+    "35": [
+      "karma_vite_config_ts"
+    ],
+    "36": [
+      "karma_eslint_config_js"
     ]
   },
   "cohesion": {
     "0": 0.10526315789473684,
     "1": 0.1111111111111111,
-    "2": 0.1111111111111111,
+    "2": 0.1523809523809524,
     "3": 0.14285714285714285,
     "4": 0.14285714285714285,
-    "5": 0.24444444444444444,
-    "6": 0.4,
-    "7": 0.2222222222222222,
-    "8": 0.3333333333333333,
+    "5": 0.4,
+    "6": 0.2222222222222222,
+    "7": 0.3333333333333333,
+    "8": 0.8333333333333334,
     "9": 0.8333333333333334,
     "10": 0.5,
     "11": 0.6666666666666666,
@@ -277,17 +262,16 @@
     "33": 1.0,
     "34": 1.0,
     "35": 1.0,
-    "36": 1.0,
-    "37": 1.0
+    "36": 1.0
   },
   "gods": [
     {
-      "id": "frontend_tsconfig_app_compileroptions",
+      "id": "karma_tsconfig_app_compileroptions",
       "label": "compilerOptions",
       "degree": 17
     },
     {
-      "id": "frontend_tsconfig_node_compileroptions",
+      "id": "karma_tsconfig_node_compileroptions",
       "label": "compilerOptions",
       "degree": 16
     },
@@ -307,13 +291,13 @@
       "degree": 6
     },
     {
-      "id": "frontend_package_scripts",
-      "label": "scripts",
+      "id": "docs_swagger_cfg_modules_id_put",
+      "label": "put",
       "degree": 5
     },
     {
-      "id": "docs_swagger_cfg_modules_id_put",
-      "label": "put",
+      "id": "karma_package_scripts",
+      "label": "scripts",
       "degree": 5
     },
     {
@@ -322,13 +306,13 @@
       "degree": 4
     },
     {
-      "id": "docker_compose_backend",
-      "label": "Backend Service",
-      "degree": 3
+      "id": "docker_compose_brahma",
+      "label": "Brahma Container",
+      "degree": 4
     },
     {
-      "id": "swagger_cfgmodule",
-      "label": "models.CfgModule",
+      "id": "home_ubuntu_code_github_raviautopilot_twin_config_docker_setup_sh__entry",
+      "label": "docker-setup.sh script",
       "degree": 3
     }
   ],
@@ -343,6 +327,17 @@
       "confidence": "EXTRACTED",
       "relation": "semantically_similar_to",
       "why": "connects across different repos/directories; semantically similar concepts with no structural link; peripheral node `Kaalam (PostgreSQL Database)` unexpectedly reaches hub `db service`"
+    },
+    {
+      "source": "Brahma (Configuration Service)",
+      "target": "Brahma Container",
+      "source_files": [
+        "usage.md",
+        "docker-compose.yml"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
     },
     {
       "source": "Twin Config",
@@ -367,17 +362,6 @@
       "why": "connects across different repos/directories; peripheral node `Digital Twin Database` unexpectedly reaches hub `db service`"
     },
     {
-      "source": "Main Entry Point",
-      "target": "Root Div",
-      "source_files": [
-        "frontend/src/main.tsx",
-        "frontend/index.html"
-      ],
-      "confidence": "INFERRED",
-      "relation": "implements",
-      "why": "inferred connection - not explicitly stated in source; crosses file types (doc \u2194 code)"
-    },
-    {
       "source": "Brahma (Configuration Service)",
       "target": "Digital Twin Config Engine API",
       "source_files": [
@@ -390,7 +374,7 @@
     }
   ],
   "tokens": {
-    "input": 0,
-    "output": 0
+    "input": 28278,
+    "output": 1537
   }
 }
