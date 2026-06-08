@@ -5,25 +5,25 @@
 COMMAND=$1
 COMPOSE_FILE="docker-compose.yml"
 
-# You can pass an optional service name (db, brahma, frontend)
+# You can pass an optional service name (db, brahma, karma)
 SERVICE=$2
 
-build_frontend_locally() {
-    echo "Checking dependencies and compiling frontend assets locally..."
+build_karma_locally() {
+    echo "Checking dependencies and compiling karma assets locally..."
     if ! command -v npm &> /dev/null; then
-        echo "Error: Node.js/npm is not installed on the host. Please install Node.js to build the frontend locally."
+        echo "Error: Node.js/npm is not installed on the host. Please install Node.js to build karma locally."
         exit 1
     fi
-    (cd frontend && npm ci && npm run build)
+    (cd karma && npm ci && npm run build)
 }
 
 
 case "$COMMAND" in
     start)
-        if [ -z "$SERVICE" ] || [ "$SERVICE" = "frontend" ]; then
-            build_frontend_locally
+        if [ -z "$SERVICE" ] || [ "$SERVICE" = "karma" ]; then
+            build_karma_locally
         fi
-        echo "Starting the full stack (db, brahma, frontend)..."
+        echo "Starting the full stack (db, brahma, karma)..."
         docker compose -f $COMPOSE_FILE up -d $SERVICE
 
         # Generate usage.md
@@ -34,7 +34,7 @@ This document provides details on how to access and use the deployed application
 
 ## Services
 
-### Frontend
+### Karma (Frontend)
 
 *   **URL**: [http://localhost:3000](http://localhost:3000)
 *   **Description**: The main web interface for the application.
@@ -73,14 +73,14 @@ EOF
         docker compose -f $COMPOSE_FILE logs -f $SERVICE
         ;;
     build)
-        if [ -z "$SERVICE" ] || [ "$SERVICE" = "frontend" ]; then
-            build_frontend_locally
+        if [ -z "$SERVICE" ] || [ "$SERVICE" = "karma" ]; then
+            build_karma_locally
         fi
         echo "Building all services..."
         docker compose -f $COMPOSE_FILE build $SERVICE
         ;;
     *)
         echo "Usage: $0 {start|stop|status|delete|logs|build} [service_name]"
-        echo "Service names: db, brahma, frontend"
+        echo "Service names: db, brahma, karma"
         exit 1
 esac
