@@ -14,3 +14,7 @@ select * from event_details;
 select * from twin_event;
 
 select * from twin_impact;
+
+select * from person;
+
+select * from fin_entity;
