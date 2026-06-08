@@ -827,7 +827,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "react",
       "id": "readme_react"
     },
@@ -840,7 +840,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 12,
       "norm_label": "typescript",
       "id": "readme_typescript"
     },
@@ -853,7 +853,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "vite",
       "id": "readme_vite"
     },
@@ -866,7 +866,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 12,
       "norm_label": "eslint",
       "id": "readme_eslint"
     },
@@ -1530,6 +1530,15 @@
       "community": 7,
       "norm_label": "digital twin config engine api",
       "id": "swagger_api"
+    },
+    {
+      "label": "getInitialRouteState()",
+      "file_type": "code",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L114",
+      "id": "src_app_getinitialroutestate",
+      "community": 1,
+      "norm_label": "getinitialroutestate()"
     }
   ],
   "links": [
@@ -2277,7 +2286,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L114",
+      "source_location": "L156",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "frontend_src_app_tsx",
@@ -2387,6 +2396,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/App.tsx",
+      "source_location": "L114",
+      "weight": 1.0,
+      "source": "frontend_src_app_tsx",
+      "target": "src_app_getinitialroutestate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.tsx",
       "source_location": "L103",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -2443,6 +2462,17 @@
       "confidence_score": 1.0,
       "source": "frontend_src_main_tsx",
       "target": "frontend_src_app_tsx"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L157",
+      "weight": 1.0,
+      "source": "src_app_app",
+      "target": "src_app_getinitialroutestate",
+      "confidence_score": 1.0
     },
     {
       "relation": "conceptually_related_to",
@@ -2816,5 +2846,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "8a1ba1dd86e8071ccf6db26d9645c4a54991232b"
+  "built_at_commit": "c4e1a3c3c79c3740c13c6b4d214b68fdcf224232"
 }

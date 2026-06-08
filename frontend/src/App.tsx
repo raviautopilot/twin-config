@@ -111,14 +111,57 @@ type MenuSection =
   | 'twin_impact'
   | 'event_details';
 
+const getInitialRouteState = () => {
+  const path = window.location.pathname;
+  const searchParams = new URLSearchParams(window.location.search);
+  const moduleParam = searchParams.get('module');
+  
+  const entityTypesMatch = path.match(/^\/entity-types(?:\/([^/]+))?$/);
+  const modulesMatch = path.match(/^\/modules$/);
+  const eventTypesMatch = path.match(/^\/event-types$/);
+  const dimensionsMatch = path.match(/^\/dimensions$/);
+  const attributeKeysMatch = path.match(/^\/attribute-keys$/);
+  const eventsMatch = path.match(/^\/events$/);
+  const impactsMatch = path.match(/^\/event-impacts$/);
+  const eventDetailsMatch = path.match(/^\/event-details$/);
+
+  let initialMenu: MenuSection = 'dashboard';
+  let initialTypeTab = '';
+
+  if (entityTypesMatch) {
+    initialMenu = 'cfg_type';
+    const mod = moduleParam || entityTypesMatch[1] || '';
+    if (mod) {
+      initialTypeTab = mod;
+    }
+  } else if (modulesMatch) {
+    initialMenu = 'cfg_modules';
+  } else if (eventTypesMatch) {
+    initialMenu = 'cfg_event_types';
+  } else if (dimensionsMatch) {
+    initialMenu = 'cfg_dimensions';
+  } else if (attributeKeysMatch) {
+    initialMenu = 'cfg_attribute_keys';
+  } else if (eventsMatch) {
+    initialMenu = 'twin_event';
+  } else if (impactsMatch) {
+    initialMenu = 'twin_impact';
+  } else if (eventDetailsMatch) {
+    initialMenu = 'event_details';
+  }
+
+  return { initialMenu, initialTypeTab };
+};
+
 export default function App() {
-  const [activeMenu, setActiveMenu] = useState<MenuSection>('dashboard');
+  const { initialMenu, initialTypeTab } = getInitialRouteState();
+  const [activeMenu, setActiveMenu] = useState<MenuSection>(initialMenu);
   const [summary, setSummary] = useState<SummaryData | null>(null);
 
   // Database Data States
   const [modules, setModules] = useState<CfgModule[]>([]);
   const [groupedTypes, setGroupedTypes] = useState<Record<string, CfgType[]>>({});
-  const [activeTypeTab, setActiveTypeTab] = useState<string>('');
+  const [activeTypeTab, setActiveTypeTab] = useState<string>(initialTypeTab);
   const [eventTypes, setEventTypes] = useState<CfgEventType[]>([]);
   const [dimensions, setDimensions] = useState<CfgDimension[]>([]);
   const [attributeKeys, setAttributeKeys] = useState<CfgAttributeKey[]>([]);
@@ -155,6 +198,51 @@ export default function App() {
     setToast({ message, type });
     setTimeout(() => setToast(null), 4000);
   };
+
+  const navigateTo = (menu: MenuSection, params?: { module?: string }) => {
+    let path = '/';
+    if (menu === 'cfg_modules') {
+      path = '/modules';
+    } else if (menu === 'cfg_type') {
+      if (params?.module) {
+        path = `/entity-types?module=${encodeURIComponent(params.module)}`;
+      } else {
+        path = '/entity-types';
+      }
+    } else if (menu === 'cfg_event_types') {
+      path = '/event-types';
+    } else if (menu === 'cfg_dimensions') {
+      path = '/dimensions';
+    } else if (menu === 'cfg_attribute_keys') {
+      path = '/attribute-keys';
+    } else if (menu === 'twin_event') {
+      path = '/events';
+    } else if (menu === 'twin_impact') {
+      path = '/event-impacts';
+    } else if (menu === 'event_details') {
+      path = '/event-details';
+    } else if (menu === 'dashboard') {
+      path = '/';
+    }
+    
+    window.history.pushState(null, '', path);
+    setActiveMenu(menu);
+    if (menu === 'cfg_type') {
+      setActiveTypeTab(params?.module || '');
+    }
+    setSearchQuery('');
+  };
+
+  useEffect(() => {
+    const handlePopState = () => {
+      const { initialMenu, initialTypeTab } = getInitialRouteState();
+      setActiveMenu(initialMenu);
+      setActiveTypeTab(initialTypeTab);
+      setSearchQuery('');
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
 
   // Fetch Data on Load or Refresh
   useEffect(() => {
@@ -338,8 +426,8 @@ export default function App() {
     e.preventDefault();
 
     let url = '';
-    let method = modalType === 'create' ? 'POST' : 'PUT';
-    let body: any = null;
+    const method = modalType === 'create' ? 'POST' : 'PUT';
+    let body: Record<string, unknown> | null = null;
 
     try {
       if (activeMenu === 'cfg_modules') {
@@ -434,8 +522,22 @@ export default function App() {
               <tbody className="divide-y divide-slate-800">
                 {filtered.map(m => (
                   <tr key={m.module_id} className="hover:bg-slate-900/30 transition">
-                    <td className="p-4 font-mono font-bold text-teal-400">{m.module_id}</td>
-                    <td className="p-4 font-medium text-slate-200">{m.module_name}</td>
+                    <td className="p-4 font-mono font-bold">
+                      <button
+                        onClick={() => navigateTo('cfg_type', { module: m.module_id })}
+                        className="text-teal-400 hover:text-teal-300 transition duration-150 font-bold focus:outline-none cursor-pointer"
+                      >
+                        {m.module_id}
+                      </button>
+                    </td>
+                    <td className="p-4 font-medium text-slate-200">
+                      <button
+                        onClick={() => navigateTo('cfg_type', { module: m.module_id })}
+                        className="text-slate-200 hover:text-teal-400 hover:underline transition duration-150 font-medium text-left focus:outline-none cursor-pointer"
+                      >
+                        {m.module_name}
+                      </button>
+                    </td>
                     <td className="p-4 text-slate-400 max-w-xs truncate">{m.notes || '—'}</td>
                     <td className="p-4 text-right space-x-2">
                       <button onClick={() => openEditModal('cfg_modules', m)} className="p-1.5 hover:text-teal-400 transition" title="Edit">
@@ -460,7 +562,6 @@ export default function App() {
       case 'cfg_type': {
         // Filter the grouped results based on the search query
         const filteredGroups: Record<string, CfgType[]> = {};
-        let totalFilteredCount = 0;
 
         Object.entries(groupedTypes).forEach(([moduleId, moduleTypes]) => {
           const matchingTypes = moduleTypes.filter(
@@ -471,22 +572,39 @@ export default function App() {
           );
           if (matchingTypes.length > 0) {
             filteredGroups[moduleId] = matchingTypes;
-            totalFilteredCount += matchingTypes.length;
           }
         });
 
-        const groupKeys = Object.keys(filteredGroups);
+        // Resolve target module from activeTypeTab (which could be passed via query string/route)
+        const targetModule = modules.find(
+          m => m.module_id.toLowerCase() === activeTypeTab.toLowerCase() ||
+               m.module_name.toLowerCase() === activeTypeTab.toLowerCase()
+        );
+        const resolvedActiveModuleId = targetModule ? targetModule.module_id : '';
 
-        if (totalFilteredCount === 0) {
+        // Build list of modules to display as tabs
+        const groupKeys = Object.keys(filteredGroups);
+        
+        if (resolvedActiveModuleId && !groupKeys.includes(resolvedActiveModuleId)) {
+          // If we have a resolved active module, but it has 0 matching types,
+          // we still append it to groupKeys so we can render its tab and header.
+          groupKeys.push(resolvedActiveModuleId);
+        }
+
+        // Determine the active tab ID.
+        const activeTabId = groupKeys.includes(resolvedActiveModuleId)
+          ? resolvedActiveModuleId
+          : (groupKeys.includes(activeTypeTab)
+              ? activeTypeTab
+              : (groupKeys[0] || ''));
+
+        if (groupKeys.length === 0) {
           return (
             <div className="text-center p-8 text-slate-500 border border-slate-800 rounded-lg bg-slate-900/5">
               No entity templates found matching your search.
             </div>
           );
         }
-
-        // If the current active tab is not in the group keys, default to the first one
-        const activeTabId = groupKeys.includes(activeTypeTab) ? activeTypeTab : (groupKeys[0] || '');
 
         return (
           <div className="space-y-6">
@@ -495,13 +613,16 @@ export default function App() {
               {groupKeys.map(moduleId => {
                 const module = modules.find(m => m.module_id === moduleId);
                 const groupName = module ? module.module_name : moduleId;
-                const count = filteredGroups[moduleId].length;
+                const count = filteredGroups[moduleId] ? filteredGroups[moduleId].length : 0;
                 const isActive = activeTabId === moduleId;
 
                 return (
                   <button
                     key={moduleId}
-                    onClick={() => setActiveTypeTab(moduleId)}
+                    onClick={() => {
+                      setActiveTypeTab(moduleId);
+                      navigateTo('cfg_type', { module: moduleId });
+                    }}
                     className={`px-4 py-2.5 text-sm font-medium transition-all relative rounded-t-md flex items-center space-x-2 border-b-2 -mb-[1px] ${
                       isActive
                         ? 'border-teal-500 text-teal-400 bg-slate-900/40 font-semibold'
@@ -524,41 +645,47 @@ export default function App() {
             {/* Active Tab Table Content */}
             {activeTabId && (
               <div className="border border-slate-800 rounded-lg overflow-hidden bg-slate-900/10">
-                <div className="overflow-x-auto">
-                  <table className="w-full text-left border-collapse text-sm">
-                    <thead>
-                      <tr className="border-b border-slate-800 text-slate-400 font-semibold bg-slate-950/20">
-                        <th className="p-4 pl-6">Type ID</th>
-                        <th className="p-4">Config Type</th>
-                        <th className="p-4">Notes</th>
-                        <th className="p-4">Metadata Schema</th>
-                        <th className="p-4 text-right pr-6">Actions</th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-slate-800">
-                      {filteredGroups[activeTabId].map(t => (
-                        <tr key={t.type_id} className="hover:bg-slate-900/30 transition">
-                          <td className="p-4 pl-6 font-mono text-slate-400">{t.type_id}</td>
-                          <td className="p-4 font-medium text-slate-200">{t.config_type}</td>
-                          <td className="p-4 text-slate-400 max-w-xs truncate">{t.notes || '—'}</td>
-                          <td className="p-4 font-mono text-xs">
-                            <pre className="p-2 bg-slate-950 text-emerald-400 rounded max-w-xs overflow-auto max-h-24">
-                              {JSON.stringify(t.metadata_schema, null, 2)}
-                            </pre>
-                          </td>
-                          <td className="p-4 text-right pr-6 space-x-2">
-                            <button onClick={() => openEditModal('cfg_type', t)} className="p-1.5 hover:text-teal-400 transition" title="Edit">
-                              <Edit2 className="w-4 h-4" />
-                            </button>
-                            <button onClick={() => handleDelete('cfg_type', t)} className="p-1.5 hover:text-rose-400 transition" title="Delete">
-                              <Trash2 className="w-4 h-4" />
-                            </button>
-                          </td>
+                {filteredGroups[activeTabId] && filteredGroups[activeTabId].length > 0 ? (
+                  <div className="overflow-x-auto">
+                    <table className="w-full text-left border-collapse text-sm">
+                      <thead>
+                        <tr className="border-b border-slate-800 text-slate-400 font-semibold bg-slate-950/20">
+                          <th className="p-4 pl-6">Type ID</th>
+                          <th className="p-4">Config Type</th>
+                          <th className="p-4">Notes</th>
+                          <th className="p-4">Metadata Schema</th>
+                          <th className="p-4 text-right pr-6">Actions</th>
                         </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
+                      </thead>
+                      <tbody className="divide-y divide-slate-800">
+                        {filteredGroups[activeTabId].map(t => (
+                          <tr key={t.type_id} className="hover:bg-slate-900/30 transition">
+                            <td className="p-4 pl-6 font-mono text-slate-400">{t.type_id}</td>
+                            <td className="p-4 font-medium text-slate-200">{t.config_type}</td>
+                            <td className="p-4 text-slate-400 max-w-xs truncate">{t.notes || '—'}</td>
+                            <td className="p-4 font-mono text-xs">
+                              <pre className="p-2 bg-slate-950 text-emerald-400 rounded max-w-xs overflow-auto max-h-24">
+                                {JSON.stringify(t.metadata_schema, null, 2)}
+                              </pre>
+                            </td>
+                            <td className="p-4 text-right pr-6 space-x-2">
+                              <button onClick={() => openEditModal('cfg_type', t)} className="p-1.5 hover:text-teal-400 transition" title="Edit">
+                                <Edit2 className="w-4 h-4" />
+                              </button>
+                              <button onClick={() => handleDelete('cfg_type', t)} className="p-1.5 hover:text-rose-400 transition" title="Delete">
+                                <Trash2 className="w-4 h-4" />
+                              </button>
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                ) : (
+                  <div className="text-center p-12 text-slate-500 bg-slate-900/5">
+                    No entity types found for this module.
+                  </div>
+                )}
               </div>
             )}
           </div>
@@ -893,10 +1020,7 @@ export default function App() {
                     return (
                       <li key={item.id}>
                         <button
-                          onClick={() => {
-                            setActiveMenu(item.id as MenuSection);
-                            setSearchQuery('');
-                          }}
+                          onClick={() => navigateTo(item.id as MenuSection)}
                           className={`w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm transition-all duration-200 ${
                             isActive
                               ? 'bg-gradient-to-r from-teal-950 to-indigo-950 text-teal-300 font-medium border-l-2 border-teal-500'
