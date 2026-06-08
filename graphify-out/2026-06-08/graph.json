@@ -1536,9 +1536,9 @@
       "file_type": "code",
       "source_file": "frontend/src/App.tsx",
       "source_location": "L114",
+      "id": "src_app_getinitialroutestate",
       "community": 1,
-      "norm_label": "getinitialroutestate()",
-      "id": "src_app_getinitialroutestate"
+      "norm_label": "getinitialroutestate()"
     }
   ],
   "links": [
@@ -2398,9 +2398,9 @@
       "source_file": "frontend/src/App.tsx",
       "source_location": "L114",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "frontend_src_app_tsx",
-      "target": "src_app_getinitialroutestate"
+      "target": "src_app_getinitialroutestate",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2470,9 +2470,9 @@
       "source_file": "frontend/src/App.tsx",
       "source_location": "L157",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "src_app_app",
-      "target": "src_app_getinitialroutestate"
+      "target": "src_app_getinitialroutestate",
+      "confidence_score": 1.0
     },
     {
       "relation": "conceptually_related_to",
@@ -2846,5 +2846,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "b771fe923ef0b4e18faad313a9dc823e8a4dd704"
+  "built_at_commit": "c4e1a3c3c79c3740c13c6b4d214b68fdcf224232"
 }
