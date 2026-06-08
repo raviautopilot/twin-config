@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Ensure user-installed binaries are in PATH
+export PATH="$HOME/.local/bin:$PATH"
+
 # Check if graphify is installed
 if ! command -v graphify &> /dev/null
 then
