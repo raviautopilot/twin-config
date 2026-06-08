@@ -27,13 +27,22 @@ CREATE TABLE person (
 );
 
 
+CREATE TYPE financial_entity_type AS ENUM (
+    'BANK_ACCOUNT',
+    'CREDIT_CARD',
+    'DEBIT_CARD',
+    'FIXED_DEPOSIT',
+    'LOAN',
+    'OVERDRAFT'
+);
+
 -- Table: fin_entity (All-in-One Monolithic Structure)
 CREATE TABLE fin_entity (
     -- ==========================================
     -- 1. CORE SHARED FIELDS (Applies to all)
     -- ==========================================
                             fin_entity_id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-                            entity_type cfg_type NOT NULL,
+                            entity_type financial_entity_type NOT NULL,
                             entity_name VARCHAR(255) NOT NULL,              -- e.g., "Barclays Premier", "SBI Home Loan"
                             owner_person_id UUID REFERENCES person(person_id) ON DELETE SET NULL,
                             balance NUMERIC(19, 4) DEFAULT 0.0000,          -- Current balance, remaining loan principal, or card balance

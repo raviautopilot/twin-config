@@ -64,7 +64,7 @@
         "language": "bash",
         "kind": "file"
       },
-      "community": 14,
+      "community": 16,
       "norm_label": "volume-wipe.sh",
       "id": "volume_wipe_sh"
     },
@@ -77,7 +77,7 @@
         "language": "bash",
         "kind": "bash_entrypoint"
       },
-      "community": 14,
+      "community": 16,
       "norm_label": "volume-wipe.sh script",
       "id": "home_ubuntu_code_github_raviautopilot_twin_config_volume_wipe_sh__entry"
     },
@@ -445,7 +445,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L1",
-      "community": 3,
+      "community": 4,
       "norm_label": "package.json",
       "id": "frontend_package_json"
     },
@@ -454,7 +454,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L2",
-      "community": 3,
+      "community": 4,
       "norm_label": "name",
       "id": "frontend_package_name"
     },
@@ -463,7 +463,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L3",
-      "community": 3,
+      "community": 4,
       "norm_label": "private",
       "id": "frontend_package_private"
     },
@@ -472,7 +472,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L4",
-      "community": 3,
+      "community": 4,
       "norm_label": "version",
       "id": "frontend_package_version"
     },
@@ -481,7 +481,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L5",
-      "community": 3,
+      "community": 4,
       "norm_label": "type",
       "id": "frontend_package_type"
     },
@@ -490,7 +490,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L6",
-      "community": 3,
+      "community": 4,
       "norm_label": "scripts",
       "id": "frontend_package_scripts"
     },
@@ -499,7 +499,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L7",
-      "community": 3,
+      "community": 4,
       "norm_label": "dev",
       "id": "frontend_package_scripts_dev"
     },
@@ -508,7 +508,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L8",
-      "community": 3,
+      "community": 4,
       "norm_label": "build",
       "id": "frontend_package_scripts_build"
     },
@@ -517,7 +517,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L9",
-      "community": 3,
+      "community": 4,
       "norm_label": "lint",
       "id": "frontend_package_scripts_lint"
     },
@@ -526,7 +526,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L10",
-      "community": 3,
+      "community": 4,
       "norm_label": "preview",
       "id": "frontend_package_scripts_preview"
     },
@@ -535,7 +535,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L12",
-      "community": 3,
+      "community": 4,
       "norm_label": "dependencies",
       "id": "frontend_package_dependencies"
     },
@@ -544,7 +544,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L13",
-      "community": 3,
+      "community": 4,
       "norm_label": "lucide-react",
       "id": "frontend_package_dependencies_lucide_react"
     },
@@ -553,7 +553,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L14",
-      "community": 3,
+      "community": 4,
       "norm_label": "react",
       "id": "frontend_package_dependencies_react"
     },
@@ -562,7 +562,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L15",
-      "community": 3,
+      "community": 4,
       "norm_label": "react-dom",
       "id": "frontend_package_dependencies_react_dom"
     },
@@ -571,7 +571,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L17",
-      "community": 4,
+      "community": 3,
       "norm_label": "devdependencies",
       "id": "frontend_package_devdependencies"
     },
@@ -580,7 +580,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L18",
-      "community": 4,
+      "community": 3,
       "norm_label": "@eslint/js",
       "id": "frontend_package_devdependencies_eslint_js"
     },
@@ -589,7 +589,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L19",
-      "community": 4,
+      "community": 3,
       "norm_label": "@tailwindcss/vite",
       "id": "frontend_package_devdependencies_tailwindcss_vite"
     },
@@ -598,7 +598,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L20",
-      "community": 4,
+      "community": 3,
       "norm_label": "@types/node",
       "id": "frontend_package_devdependencies_types_node"
     },
@@ -607,7 +607,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L21",
-      "community": 4,
+      "community": 3,
       "norm_label": "@types/react",
       "id": "frontend_package_devdependencies_types_react"
     },
@@ -616,7 +616,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L23",
-      "community": 4,
+      "community": 3,
       "norm_label": "@vitejs/plugin-react",
       "id": "frontend_package_devdependencies_vitejs_plugin_react"
     },
@@ -625,7 +625,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L24",
-      "community": 4,
+      "community": 3,
       "norm_label": "eslint",
       "id": "frontend_package_devdependencies_eslint"
     },
@@ -634,7 +634,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L25",
-      "community": 4,
+      "community": 3,
       "norm_label": "eslint-plugin-react-hooks",
       "id": "frontend_package_devdependencies_eslint_plugin_react_hooks"
     },
@@ -643,7 +643,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L26",
-      "community": 4,
+      "community": 3,
       "norm_label": "eslint-plugin-react-refresh",
       "id": "frontend_package_devdependencies_eslint_plugin_react_refresh"
     },
@@ -652,7 +652,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L27",
-      "community": 4,
+      "community": 3,
       "norm_label": "globals",
       "id": "frontend_package_devdependencies_globals"
     },
@@ -661,7 +661,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L28",
-      "community": 4,
+      "community": 3,
       "norm_label": "tailwindcss",
       "id": "frontend_package_devdependencies_tailwindcss"
     },
@@ -670,7 +670,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L29",
-      "community": 4,
+      "community": 3,
       "norm_label": "typescript",
       "id": "frontend_package_devdependencies_typescript"
     },
@@ -679,7 +679,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L30",
-      "community": 4,
+      "community": 3,
       "norm_label": "typescript-eslint",
       "id": "frontend_package_devdependencies_typescript_eslint"
     },
@@ -688,7 +688,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L31",
-      "community": 4,
+      "community": 3,
       "norm_label": "vite",
       "id": "frontend_package_devdependencies_vite"
     },
@@ -697,7 +697,7 @@
       "file_type": "code",
       "source_file": "frontend/vite.config.ts",
       "source_location": "L1",
-      "community": 15,
+      "community": 17,
       "norm_label": "vite.config.ts",
       "id": "frontend_vite_config_ts"
     },
@@ -706,7 +706,7 @@
       "file_type": "code",
       "source_file": "frontend/eslint.config.js",
       "source_location": "L1",
-      "community": 16,
+      "community": 18,
       "norm_label": "eslint.config.js",
       "id": "frontend_eslint_config_js"
     },
@@ -715,7 +715,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.json",
       "source_location": "L1",
-      "community": 9,
+      "community": 11,
       "norm_label": "tsconfig.json",
       "id": "frontend_tsconfig_json"
     },
@@ -724,7 +724,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.json",
       "source_location": "L2",
-      "community": 9,
+      "community": 11,
       "norm_label": "files",
       "id": "frontend_tsconfig_files"
     },
@@ -733,7 +733,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.json",
       "source_location": "L3",
-      "community": 9,
+      "community": 11,
       "norm_label": "references",
       "id": "frontend_tsconfig_references"
     },
@@ -827,7 +827,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 15,
       "norm_label": "react",
       "id": "readme_react"
     },
@@ -840,7 +840,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 14,
       "norm_label": "typescript",
       "id": "readme_typescript"
     },
@@ -853,7 +853,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 15,
       "norm_label": "vite",
       "id": "readme_vite"
     },
@@ -866,7 +866,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 14,
       "norm_label": "eslint",
       "id": "readme_eslint"
     },
@@ -879,7 +879,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 13,
       "norm_label": "root div",
       "id": "index_html_root"
     },
@@ -892,7 +892,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 13,
       "norm_label": "main entry point",
       "id": "main_tsx"
     },
@@ -905,7 +905,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 19,
       "norm_label": "favicon",
       "id": "favicon_svg"
     },
@@ -918,7 +918,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 20,
       "norm_label": "icon sprite sheet",
       "id": "icons_svg"
     },
@@ -931,7 +931,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 21,
       "norm_label": "hero image",
       "id": "hero_png"
     },
@@ -944,7 +944,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 22,
       "norm_label": "vite logo",
       "id": "vite_svg"
     },
@@ -957,7 +957,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 23,
       "norm_label": "react logo",
       "id": "react_svg"
     },
@@ -970,7 +970,7 @@
         "language": "bash",
         "kind": "file"
       },
-      "community": 10,
+      "community": 12,
       "norm_label": "docker-setup.sh",
       "id": "docker_setup_sh"
     },
@@ -983,7 +983,7 @@
         "language": "bash",
         "kind": "bash_entrypoint"
       },
-      "community": 10,
+      "community": 12,
       "norm_label": "docker-setup.sh script",
       "id": "home_ubuntu_code_github_raviautopilot_twin_config_docker_setup_sh__entry"
     },
@@ -1022,7 +1022,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 10,
       "norm_label": "frontend service",
       "id": "usage_frontend"
     },
@@ -1035,7 +1035,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 10,
       "norm_label": "backend api server",
       "id": "usage_backend"
     },
@@ -1048,7 +1048,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 10,
       "norm_label": "postgresql database",
       "id": "usage_postgresql"
     },
@@ -1061,7 +1061,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 10,
       "norm_label": "digital_twin database",
       "id": "usage_digital_twin"
     },
@@ -1128,7 +1128,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
+      "community": 24,
       "norm_label": "handlers.summaryresponse",
       "id": "swagger_summaryresponse"
     },
@@ -1268,7 +1268,7 @@
       "file_type": "code",
       "source_file": "brahma/docs/docs.go",
       "source_location": "L1",
-      "community": 23,
+      "community": 25,
       "norm_label": "docs.go",
       "id": "brahma_docs_docs_go"
     },
@@ -1277,7 +1277,7 @@
       "file_type": "code",
       "source_file": "brahma/docs/swagger.json",
       "source_location": "L1",
-      "community": 24,
+      "community": 26,
       "norm_label": "swagger.json",
       "id": "brahma_docs_swagger_json"
     },
@@ -1295,7 +1295,7 @@
       "file_type": "code",
       "source_file": "brahma/docs/swagger.json",
       "source_location": "L36",
-      "community": 25,
+      "community": 27,
       "norm_label": "schema",
       "id": "docs_swagger_500_schema"
     },
@@ -1385,7 +1385,7 @@
       "file_type": "code",
       "source_file": "brahma/docs/swagger.json",
       "source_location": "L785",
-      "community": 26,
+      "community": 28,
       "norm_label": "get",
       "id": "docs_swagger_cfg_types_get"
     },
@@ -1394,7 +1394,7 @@
       "file_type": "code",
       "source_file": "brahma/cmd/main.go",
       "source_location": "L1",
-      "community": 27,
+      "community": 9,
       "norm_label": "main.go",
       "id": "brahma_cmd_main_go"
     },
@@ -1403,7 +1403,7 @@
       "file_type": "code",
       "source_file": "brahma/internal/config/logger.go",
       "source_location": "L1",
-      "community": 28,
+      "community": 29,
       "norm_label": "logger.go",
       "id": "brahma_internal_config_logger_go"
     },
@@ -1412,7 +1412,7 @@
       "file_type": "code",
       "source_file": "brahma/internal/config/config.go",
       "source_location": "L1",
-      "community": 29,
+      "community": 30,
       "norm_label": "config.go",
       "id": "brahma_internal_config_config_go"
     },
@@ -1421,7 +1421,7 @@
       "file_type": "code",
       "source_file": "brahma/internal/models/audit.go",
       "source_location": "L1",
-      "community": 30,
+      "community": 31,
       "norm_label": "audit.go",
       "id": "brahma_internal_models_audit_go"
     },
@@ -1430,7 +1430,7 @@
       "file_type": "code",
       "source_file": "brahma/internal/models/twin.go",
       "source_location": "L1",
-      "community": 31,
+      "community": 32,
       "norm_label": "twin.go",
       "id": "brahma_internal_models_twin_go"
     },
@@ -1439,7 +1439,7 @@
       "file_type": "code",
       "source_file": "brahma/internal/models/twin.go",
       "source_location": "L26",
-      "community": 32,
+      "community": 33,
       "norm_label": ".tablename()",
       "id": "models_twinimpact_tablename"
     },
@@ -1448,7 +1448,7 @@
       "file_type": "code",
       "source_file": "brahma/internal/models/cfg.go",
       "source_location": "L1",
-      "community": 33,
+      "community": 34,
       "norm_label": "cfg.go",
       "id": "brahma_internal_models_cfg_go"
     },
@@ -1457,7 +1457,7 @@
       "file_type": "code",
       "source_file": "brahma/internal/models/cfg.go",
       "source_location": "L14",
-      "community": 34,
+      "community": 35,
       "norm_label": ".tablename()",
       "id": "models_cfgmodule_tablename"
     },
@@ -1466,7 +1466,7 @@
       "file_type": "code",
       "source_file": "brahma/internal/models/event.go",
       "source_location": "L1",
-      "community": 35,
+      "community": 36,
       "norm_label": "event.go",
       "id": "brahma_internal_models_event_go"
     },
@@ -1475,7 +1475,7 @@
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L1",
-      "community": 36,
+      "community": 37,
       "norm_label": "handlers.go",
       "id": "brahma_internal_handlers_handlers_go"
     },
@@ -1539,6 +1539,96 @@
       "community": 1,
       "norm_label": "getinitialroutestate()",
       "id": "src_app_getinitialroutestate"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "brahma/cmd/main.go",
+      "source_location": "L28",
+      "id": "cmd_main_main",
+      "community": 9,
+      "norm_label": "main()"
+    },
+    {
+      "label": "CORSMiddleware()",
+      "file_type": "code",
+      "source_file": "brahma/cmd/main.go",
+      "source_location": "L186",
+      "id": "cmd_main_corsmiddleware",
+      "community": 9,
+      "norm_label": "corsmiddleware()"
+    },
+    {
+      "label": "ZapRequestLogger()",
+      "file_type": "code",
+      "source_file": "brahma/cmd/main.go",
+      "source_location": "L203",
+      "id": "cmd_main_zaprequestlogger",
+      "community": 9,
+      "norm_label": "zaprequestlogger()"
+    },
+    {
+      "label": "financial.go",
+      "file_type": "code",
+      "source_file": "brahma/internal/models/financial.go",
+      "source_location": "L1",
+      "id": "brahma_internal_models_financial_go",
+      "community": 8,
+      "norm_label": "financial.go"
+    },
+    {
+      "label": "FinancialEntityType",
+      "file_type": "code",
+      "source_file": "brahma/internal/models/financial.go",
+      "source_location": "L12",
+      "id": "models_financialentitytype",
+      "community": 8,
+      "norm_label": "financialentitytype"
+    },
+    {
+      "label": ".Scan()",
+      "file_type": "code",
+      "source_file": "brahma/internal/models/financial.go",
+      "source_location": "L24",
+      "id": "models_financialentitytype_scan",
+      "community": 8,
+      "norm_label": ".scan()"
+    },
+    {
+      "label": ".Value()",
+      "file_type": "code",
+      "source_file": "brahma/internal/models/financial.go",
+      "source_location": "L41",
+      "id": "models_financialentitytype_value",
+      "community": 8,
+      "norm_label": ".value()"
+    },
+    {
+      "label": "Person",
+      "file_type": "code",
+      "source_file": "brahma/internal/models/financial.go",
+      "source_location": "L46",
+      "id": "models_person",
+      "community": 8,
+      "norm_label": "person"
+    },
+    {
+      "label": ".TableName()",
+      "file_type": "code",
+      "source_file": "brahma/internal/models/financial.go",
+      "source_location": "L69",
+      "id": "models_person_tablename",
+      "community": 8,
+      "norm_label": ".tablename()"
+    },
+    {
+      "label": "FinEntity",
+      "file_type": "code",
+      "source_file": "brahma/internal/models/financial.go",
+      "source_location": "L74",
+      "id": "models_finentity",
+      "community": 8,
+      "norm_label": "finentity"
     }
   ],
   "links": [
@@ -2835,6 +2925,36 @@
       "target": "docs_swagger_put_responses"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/cmd/main.go",
+      "source_location": "L186",
+      "weight": 1.0,
+      "source": "brahma_cmd_main_go",
+      "target": "cmd_main_corsmiddleware",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/cmd/main.go",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "brahma_cmd_main_go",
+      "target": "cmd_main_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/cmd/main.go",
+      "source_location": "L203",
+      "weight": 1.0,
+      "source": "brahma_cmd_main_go",
+      "target": "cmd_main_zaprequestlogger",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "implements",
       "confidence": "INFERRED",
       "confidence_score": 0.9,
@@ -2843,8 +2963,101 @@
       "weight": 1.0,
       "source": "usage_brahma",
       "target": "swagger_api"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/cmd/main.go",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "cmd_main_main",
+      "target": "cmd_main_corsmiddleware",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/cmd/main.go",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "cmd_main_main",
+      "target": "cmd_main_zaprequestlogger",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/models/financial.go",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "brahma_internal_models_financial_go",
+      "target": "models_financialentitytype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/models/financial.go",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "brahma_internal_models_financial_go",
+      "target": "models_finentity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/models/financial.go",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "brahma_internal_models_financial_go",
+      "target": "models_person",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/models/financial.go",
+      "source_location": "L31",
+      "weight": 1.0,
+      "context": "call",
+      "source": "models_financialentitytype_scan",
+      "target": "models_financialentitytype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/models/financial.go",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "models_financialentitytype",
+      "target": "models_financialentitytype_value",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/models/financial.go",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "models_person",
+      "target": "models_person_tablename",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/models/financial.go",
+      "source_location": "L141",
+      "weight": 1.0,
+      "source": "models_finentity",
+      "target": "models_person_tablename",
+      "confidence_score": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "eb6ed20b24c7039e64a77c5aea355c23c8a3fdea"
+  "built_at_commit": "891fab2307e9eb876fa3363281afba1724c71a97"
 }
