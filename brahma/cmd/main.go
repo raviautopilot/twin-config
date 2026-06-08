@@ -83,6 +83,8 @@ func main() {
 		&models.TwinImpact{},
 		&models.EventDetail{},
 		&models.AuditLog{},
+		&models.Person{},
+		&models.FinEntity{},
 	)
 	if err != nil {
 		zapLogger.Fatal("Model auto-migrations failed", zap.Error(err))
