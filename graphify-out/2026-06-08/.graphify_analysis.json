@@ -1,0 +1,383 @@
+{
+  "communities": {
+    "0": [
+      "frontend_tsconfig_app_compileroptions",
+      "frontend_tsconfig_app_compileroptions_allowimportingtsextensions",
+      "frontend_tsconfig_app_compileroptions_erasablesyntaxonly",
+      "frontend_tsconfig_app_compileroptions_jsx",
+      "frontend_tsconfig_app_compileroptions_lib",
+      "frontend_tsconfig_app_compileroptions_module",
+      "frontend_tsconfig_app_compileroptions_moduledetection",
+      "frontend_tsconfig_app_compileroptions_moduleresolution",
+      "frontend_tsconfig_app_compileroptions_noemit",
+      "frontend_tsconfig_app_compileroptions_nofallthroughcasesinswitch",
+      "frontend_tsconfig_app_compileroptions_nounusedlocals",
+      "frontend_tsconfig_app_compileroptions_nounusedparameters",
+      "frontend_tsconfig_app_compileroptions_skiplibcheck",
+      "frontend_tsconfig_app_compileroptions_target",
+      "frontend_tsconfig_app_compileroptions_tsbuildinfofile",
+      "frontend_tsconfig_app_compileroptions_types",
+      "frontend_tsconfig_app_compileroptions_verbatimmodulesyntax",
+      "frontend_tsconfig_app_include",
+      "frontend_tsconfig_app_json"
+    ],
+    "1": [
+      "frontend_src_app_tsx",
+      "frontend_src_main_tsx",
+      "src_app_app",
+      "src_app_associatedworkflows",
+      "src_app_cfgattributekey",
+      "src_app_cfgdimension",
+      "src_app_cfgeventtype",
+      "src_app_cfgmodule",
+      "src_app_cfgtype",
+      "src_app_contact",
+      "src_app_contactdetails",
+      "src_app_eventdetail",
+      "src_app_financialentity",
+      "src_app_getinitialroutestate",
+      "src_app_menusection",
+      "src_app_metaconfig",
+      "src_app_summarydata",
+      "src_app_twinevent",
+      "src_app_twinimpact"
+    ],
+    "2": [
+      "frontend_tsconfig_node_compileroptions",
+      "frontend_tsconfig_node_compileroptions_allowimportingtsextensions",
+      "frontend_tsconfig_node_compileroptions_erasablesyntaxonly",
+      "frontend_tsconfig_node_compileroptions_lib",
+      "frontend_tsconfig_node_compileroptions_module",
+      "frontend_tsconfig_node_compileroptions_moduledetection",
+      "frontend_tsconfig_node_compileroptions_moduleresolution",
+      "frontend_tsconfig_node_compileroptions_noemit",
+      "frontend_tsconfig_node_compileroptions_nofallthroughcasesinswitch",
+      "frontend_tsconfig_node_compileroptions_nounusedlocals",
+      "frontend_tsconfig_node_compileroptions_nounusedparameters",
+      "frontend_tsconfig_node_compileroptions_skiplibcheck",
+      "frontend_tsconfig_node_compileroptions_target",
+      "frontend_tsconfig_node_compileroptions_tsbuildinfofile",
+      "frontend_tsconfig_node_compileroptions_types",
+      "frontend_tsconfig_node_compileroptions_verbatimmodulesyntax",
+      "frontend_tsconfig_node_include",
+      "frontend_tsconfig_node_json"
+    ],
+    "3": [
+      "frontend_package_dependencies",
+      "frontend_package_dependencies_lucide_react",
+      "frontend_package_dependencies_react",
+      "frontend_package_dependencies_react_dom",
+      "frontend_package_json",
+      "frontend_package_name",
+      "frontend_package_private",
+      "frontend_package_scripts",
+      "frontend_package_scripts_build",
+      "frontend_package_scripts_dev",
+      "frontend_package_scripts_lint",
+      "frontend_package_scripts_preview",
+      "frontend_package_type",
+      "frontend_package_version"
+    ],
+    "4": [
+      "frontend_package_devdependencies",
+      "frontend_package_devdependencies_eslint",
+      "frontend_package_devdependencies_eslint_js",
+      "frontend_package_devdependencies_eslint_plugin_react_hooks",
+      "frontend_package_devdependencies_eslint_plugin_react_refresh",
+      "frontend_package_devdependencies_globals",
+      "frontend_package_devdependencies_tailwindcss",
+      "frontend_package_devdependencies_tailwindcss_vite",
+      "frontend_package_devdependencies_types_node",
+      "frontend_package_devdependencies_types_react",
+      "frontend_package_devdependencies_typescript",
+      "frontend_package_devdependencies_typescript_eslint",
+      "frontend_package_devdependencies_vite",
+      "frontend_package_devdependencies_vitejs_plugin_react"
+    ],
+    "5": [
+      "concept_digital_twin_db",
+      "docker_compose_backend",
+      "docker_compose_brahma",
+      "docker_compose_db",
+      "docker_compose_digital_twin",
+      "docker_compose_frontend",
+      "docker_compose_pgdata",
+      "dockerfile_twin_config",
+      "readme_twin_config",
+      "usage_kaalam"
+    ],
+    "6": [
+      "docs_swagger_200_description",
+      "docs_swagger_cfg_modules_id_delete",
+      "docs_swagger_cfg_modules_id_put",
+      "docs_swagger_cfg_modules_post",
+      "docs_swagger_post_consumes",
+      "docs_swagger_post_parameters",
+      "docs_swagger_put_produces",
+      "docs_swagger_put_responses",
+      "docs_swagger_put_summary",
+      "docs_swagger_put_tags"
+    ],
+    "7": [
+      "swagger_api",
+      "swagger_cfgattributekey",
+      "swagger_cfgdimension",
+      "swagger_cfgeventtype",
+      "swagger_cfgmodule",
+      "swagger_cfgtype",
+      "swagger_eventdetail",
+      "swagger_twinevent",
+      "swagger_twinimpact",
+      "usage_brahma"
+    ],
+    "8": [
+      "usage_backend",
+      "usage_digital_twin",
+      "usage_frontend",
+      "usage_postgresql"
+    ],
+    "9": [
+      "frontend_tsconfig_files",
+      "frontend_tsconfig_json",
+      "frontend_tsconfig_references"
+    ],
+    "10": [
+      "docker_setup_sh",
+      "home_ubuntu_code_github_raviautopilot_twin_config_docker_setup_sh__entry"
+    ],
+    "11": [
+      "index_html_root",
+      "main_tsx"
+    ],
+    "12": [
+      "readme_eslint",
+      "readme_typescript"
+    ],
+    "13": [
+      "readme_react",
+      "readme_vite"
+    ],
+    "14": [
+      "home_ubuntu_code_github_raviautopilot_twin_config_volume_wipe_sh__entry",
+      "volume_wipe_sh"
+    ],
+    "15": [
+      "frontend_vite_config_ts"
+    ],
+    "16": [
+      "frontend_eslint_config_js"
+    ],
+    "17": [
+      "favicon_svg"
+    ],
+    "18": [
+      "icons_svg"
+    ],
+    "19": [
+      "hero_png"
+    ],
+    "20": [
+      "vite_svg"
+    ],
+    "21": [
+      "react_svg"
+    ],
+    "22": [
+      "swagger_summaryresponse"
+    ],
+    "23": [
+      "brahma_docs_docs_go"
+    ],
+    "24": [
+      "brahma_docs_swagger_json"
+    ],
+    "25": [
+      "docs_swagger_500_schema"
+    ],
+    "26": [
+      "docs_swagger_cfg_types_get"
+    ],
+    "27": [
+      "brahma_cmd_main_go"
+    ],
+    "28": [
+      "brahma_internal_config_logger_go"
+    ],
+    "29": [
+      "brahma_internal_config_config_go"
+    ],
+    "30": [
+      "brahma_internal_models_audit_go"
+    ],
+    "31": [
+      "brahma_internal_models_twin_go"
+    ],
+    "32": [
+      "models_twinimpact_tablename"
+    ],
+    "33": [
+      "brahma_internal_models_cfg_go"
+    ],
+    "34": [
+      "models_cfgmodule_tablename"
+    ],
+    "35": [
+      "brahma_internal_models_event_go"
+    ],
+    "36": [
+      "brahma_internal_handlers_handlers_go"
+    ]
+  },
+  "cohesion": {
+    "0": 0.10526315789473684,
+    "1": 0.1111111111111111,
+    "2": 0.1111111111111111,
+    "3": 0.14285714285714285,
+    "4": 0.14285714285714285,
+    "5": 0.24444444444444444,
+    "6": 0.4,
+    "7": 0.2222222222222222,
+    "8": 0.5,
+    "9": 0.6666666666666666,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0
+  },
+  "gods": [
+    {
+      "id": "frontend_tsconfig_app_compileroptions",
+      "label": "compilerOptions",
+      "degree": 17
+    },
+    {
+      "id": "frontend_tsconfig_node_compileroptions",
+      "label": "compilerOptions",
+      "degree": 16
+    },
+    {
+      "id": "docker_compose_db",
+      "label": "db service",
+      "degree": 8
+    },
+    {
+      "id": "docs_swagger_cfg_modules_post",
+      "label": "post",
+      "degree": 7
+    },
+    {
+      "id": "docs_swagger_cfg_modules_id_delete",
+      "label": "delete",
+      "degree": 6
+    },
+    {
+      "id": "frontend_package_scripts",
+      "label": "scripts",
+      "degree": 5
+    },
+    {
+      "id": "docs_swagger_cfg_modules_id_put",
+      "label": "put",
+      "degree": 5
+    },
+    {
+      "id": "swagger_cfgeventtype",
+      "label": "models.CfgEventType",
+      "degree": 4
+    },
+    {
+      "id": "docker_compose_backend",
+      "label": "Backend Service",
+      "degree": 3
+    },
+    {
+      "id": "swagger_cfgmodule",
+      "label": "models.CfgModule",
+      "degree": 3
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Kaalam (PostgreSQL Database)",
+      "target": "db service",
+      "source_files": [
+        "usage.md",
+        "docker-compose.yml"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "semantically_similar_to",
+      "why": "connects across different repos/directories; semantically similar concepts with no structural link; peripheral node `Kaalam (PostgreSQL Database)` unexpectedly reaches hub `db service`"
+    },
+    {
+      "source": "Twin Config",
+      "target": "db service",
+      "source_files": [
+        "README.md",
+        "docker-compose.yml"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; peripheral node `Twin Config` unexpectedly reaches hub `db service`"
+    },
+    {
+      "source": "db service",
+      "target": "Digital Twin Database",
+      "source_files": [
+        "docker-compose.yml",
+        "docker/docker-compose.yml"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "implements",
+      "why": "connects across different repos/directories; peripheral node `Digital Twin Database` unexpectedly reaches hub `db service`"
+    },
+    {
+      "source": "Main Entry Point",
+      "target": "Root Div",
+      "source_files": [
+        "frontend/src/main.tsx",
+        "frontend/index.html"
+      ],
+      "confidence": "INFERRED",
+      "relation": "implements",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc \u2194 code)"
+    },
+    {
+      "source": "Brahma (Configuration Service)",
+      "target": "Digital Twin Config Engine API",
+      "source_files": [
+        "usage.md",
+        "brahma/docs/swagger.yaml"
+      ],
+      "confidence": "INFERRED",
+      "relation": "implements",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

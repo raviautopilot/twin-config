@@ -35,7 +35,7 @@
     "semantic_hash": "a3d39fa780ebff65444de257f291ce6c"
   },
   "/home/ubuntu/code/github/raviautopilot/twin-config/frontend/src/App.tsx": {
-    "mtime": 1780923023.0802994,
+    "mtime": 1780852843.1421726,
     "ast_hash": "52b47dc412abb4b073fabc472dd26fae",
     "semantic_hash": "52b47dc412abb4b073fabc472dd26fae"
   },
@@ -108,10 +108,5 @@
     "mtime": 1780851557.0550687,
     "ast_hash": "1637bdc410a61a64d314601c91c874d3",
     "semantic_hash": "1637bdc410a61a64d314601c91c874d3"
-  },
-  "/home/ubuntu/code/github/raviautopilot/twin-config/user-documentation/query.sql": {
-    "mtime": 1780923558.094587,
-    "ast_hash": "5eaefc4512a4b8bb6ca699bf98d77ff4",
-    "semantic_hash": "5eaefc4512a4b8bb6ca699bf98d77ff4"
   }
 }
