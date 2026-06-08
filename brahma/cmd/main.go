@@ -110,6 +110,18 @@ func main() {
 	{
 		v1.GET("/summary", h.GetSummary)
 
+		// Persons Management
+		v1.GET("/persons", h.GetPersons)
+		v1.POST("/persons", h.CreatePerson)
+		v1.PUT("/persons/:id", h.UpdatePerson)
+		v1.DELETE("/persons/:id", h.DeletePerson)
+
+		// Financial Entities Management
+		v1.GET("/fin-entities", h.GetFinEntities)
+		v1.POST("/fin-entities", h.CreateFinEntity)
+		v1.PUT("/fin-entities/:id", h.UpdateFinEntity)
+		v1.DELETE("/fin-entities/:id", h.DeleteFinEntity)
+
 		// Config tables
 		cfg := v1.Group("/cfg")
 		{
