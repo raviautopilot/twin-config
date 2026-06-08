@@ -152,13 +152,14 @@
       "usage_postgresql"
     ],
     "11": [
+      "docker_setup_sh",
+      "home_ubuntu_code_github_raviautopilot_twin_config_docker_setup_sh__entry",
+      "twin_config_docker_setup_build_frontend_locally"
+    ],
+    "12": [
       "frontend_tsconfig_files",
       "frontend_tsconfig_json",
       "frontend_tsconfig_references"
-    ],
-    "12": [
-      "docker_setup_sh",
-      "home_ubuntu_code_github_raviautopilot_twin_config_docker_setup_sh__entry"
     ],
     "13": [
       "index_html_root",
@@ -252,8 +253,8 @@
     "8": 0.3333333333333333,
     "9": 0.8333333333333334,
     "10": 0.5,
-    "11": 0.6666666666666666,
-    "12": 1.0,
+    "11": 1.0,
+    "12": 0.6666666666666666,
     "13": 1.0,
     "14": 1.0,
     "15": 1.0,
