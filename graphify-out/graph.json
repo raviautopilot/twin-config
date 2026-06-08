@@ -715,7 +715,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.json",
       "source_location": "L1",
-      "community": 11,
+      "community": 12,
       "norm_label": "tsconfig.json",
       "id": "frontend_tsconfig_json"
     },
@@ -724,7 +724,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.json",
       "source_location": "L2",
-      "community": 11,
+      "community": 12,
       "norm_label": "files",
       "id": "frontend_tsconfig_files"
     },
@@ -733,7 +733,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.json",
       "source_location": "L3",
-      "community": 11,
+      "community": 12,
       "norm_label": "references",
       "id": "frontend_tsconfig_references"
     },
@@ -970,7 +970,7 @@
         "language": "bash",
         "kind": "file"
       },
-      "community": 12,
+      "community": 11,
       "norm_label": "docker-setup.sh",
       "id": "docker_setup_sh"
     },
@@ -983,7 +983,7 @@
         "language": "bash",
         "kind": "bash_entrypoint"
       },
-      "community": 12,
+      "community": 11,
       "norm_label": "docker-setup.sh script",
       "id": "home_ubuntu_code_github_raviautopilot_twin_config_docker_setup_sh__entry"
     },
@@ -1545,90 +1545,103 @@
       "file_type": "code",
       "source_file": "brahma/cmd/main.go",
       "source_location": "L28",
-      "id": "cmd_main_main",
       "community": 9,
-      "norm_label": "main()"
+      "norm_label": "main()",
+      "id": "cmd_main_main"
     },
     {
       "label": "CORSMiddleware()",
       "file_type": "code",
       "source_file": "brahma/cmd/main.go",
       "source_location": "L186",
-      "id": "cmd_main_corsmiddleware",
       "community": 9,
-      "norm_label": "corsmiddleware()"
+      "norm_label": "corsmiddleware()",
+      "id": "cmd_main_corsmiddleware"
     },
     {
       "label": "ZapRequestLogger()",
       "file_type": "code",
       "source_file": "brahma/cmd/main.go",
       "source_location": "L203",
-      "id": "cmd_main_zaprequestlogger",
       "community": 9,
-      "norm_label": "zaprequestlogger()"
+      "norm_label": "zaprequestlogger()",
+      "id": "cmd_main_zaprequestlogger"
     },
     {
       "label": "financial.go",
       "file_type": "code",
       "source_file": "brahma/internal/models/financial.go",
       "source_location": "L1",
-      "id": "brahma_internal_models_financial_go",
       "community": 8,
-      "norm_label": "financial.go"
+      "norm_label": "financial.go",
+      "id": "brahma_internal_models_financial_go"
     },
     {
       "label": "FinancialEntityType",
       "file_type": "code",
       "source_file": "brahma/internal/models/financial.go",
       "source_location": "L12",
-      "id": "models_financialentitytype",
       "community": 8,
-      "norm_label": "financialentitytype"
+      "norm_label": "financialentitytype",
+      "id": "models_financialentitytype"
     },
     {
       "label": ".Scan()",
       "file_type": "code",
       "source_file": "brahma/internal/models/financial.go",
       "source_location": "L24",
-      "id": "models_financialentitytype_scan",
       "community": 8,
-      "norm_label": ".scan()"
+      "norm_label": ".scan()",
+      "id": "models_financialentitytype_scan"
     },
     {
       "label": ".Value()",
       "file_type": "code",
       "source_file": "brahma/internal/models/financial.go",
       "source_location": "L41",
-      "id": "models_financialentitytype_value",
       "community": 8,
-      "norm_label": ".value()"
+      "norm_label": ".value()",
+      "id": "models_financialentitytype_value"
     },
     {
       "label": "Person",
       "file_type": "code",
       "source_file": "brahma/internal/models/financial.go",
       "source_location": "L46",
-      "id": "models_person",
       "community": 8,
-      "norm_label": "person"
+      "norm_label": "person",
+      "id": "models_person"
     },
     {
       "label": ".TableName()",
       "file_type": "code",
       "source_file": "brahma/internal/models/financial.go",
       "source_location": "L69",
-      "id": "models_person_tablename",
       "community": 8,
-      "norm_label": ".tablename()"
+      "norm_label": ".tablename()",
+      "id": "models_person_tablename"
     },
     {
       "label": "FinEntity",
       "file_type": "code",
       "source_file": "brahma/internal/models/financial.go",
       "source_location": "L74",
-      "id": "models_finentity",
       "community": 8,
-      "norm_label": "finentity"
+      "norm_label": "finentity",
+      "id": "models_finentity"
+    },
+    {
+      "label": "build_frontend_locally()",
+      "file_type": "code",
+      "source_file": "docker-setup.sh",
+      "source_location": "L11",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "id": "twin_config_docker_setup_build_frontend_locally",
+      "community": 11,
+      "norm_label": "build_frontend_locally()"
     }
   ],
   "links": [
@@ -2605,6 +2618,27 @@
       "target": "home_ubuntu_code_github_raviautopilot_twin_config_docker_setup_sh__entry"
     },
     {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "docker-setup.sh",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "docker_setup_sh",
+      "target": "twin_config_docker_setup_build_frontend_locally",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "docker-setup.sh",
+      "source_location": "L24",
+      "weight": 1.0,
+      "context": "call",
+      "source": "home_ubuntu_code_github_raviautopilot_twin_config_docker_setup_sh__entry",
+      "target": "twin_config_docker_setup_build_frontend_locally",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -2930,9 +2964,9 @@
       "source_file": "brahma/cmd/main.go",
       "source_location": "L186",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "brahma_cmd_main_go",
-      "target": "cmd_main_corsmiddleware",
-      "confidence_score": 1.0
+      "target": "cmd_main_corsmiddleware"
     },
     {
       "relation": "contains",
@@ -2940,9 +2974,9 @@
       "source_file": "brahma/cmd/main.go",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "brahma_cmd_main_go",
-      "target": "cmd_main_main",
-      "confidence_score": 1.0
+      "target": "cmd_main_main"
     },
     {
       "relation": "contains",
@@ -2950,9 +2984,9 @@
       "source_file": "brahma/cmd/main.go",
       "source_location": "L203",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "brahma_cmd_main_go",
-      "target": "cmd_main_zaprequestlogger",
-      "confidence_score": 1.0
+      "target": "cmd_main_zaprequestlogger"
     },
     {
       "relation": "implements",
@@ -2971,9 +3005,9 @@
       "source_file": "brahma/cmd/main.go",
       "source_location": "L103",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "cmd_main_main",
-      "target": "cmd_main_corsmiddleware",
-      "confidence_score": 1.0
+      "target": "cmd_main_corsmiddleware"
     },
     {
       "relation": "calls",
@@ -2982,9 +3016,9 @@
       "source_file": "brahma/cmd/main.go",
       "source_location": "L99",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "cmd_main_main",
-      "target": "cmd_main_zaprequestlogger",
-      "confidence_score": 1.0
+      "target": "cmd_main_zaprequestlogger"
     },
     {
       "relation": "contains",
@@ -2992,9 +3026,9 @@
       "source_file": "brahma/internal/models/financial.go",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "brahma_internal_models_financial_go",
-      "target": "models_financialentitytype",
-      "confidence_score": 1.0
+      "target": "models_financialentitytype"
     },
     {
       "relation": "contains",
@@ -3002,9 +3036,9 @@
       "source_file": "brahma/internal/models/financial.go",
       "source_location": "L74",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "brahma_internal_models_financial_go",
-      "target": "models_finentity",
-      "confidence_score": 1.0
+      "target": "models_finentity"
     },
     {
       "relation": "contains",
@@ -3012,9 +3046,19 @@
       "source_file": "brahma/internal/models/financial.go",
       "source_location": "L46",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "brahma_internal_models_financial_go",
-      "target": "models_person",
-      "confidence_score": 1.0
+      "target": "models_person"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "brahma/internal/models/financial.go",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "models_financialentitytype",
+      "target": "models_financialentitytype_value"
     },
     {
       "relation": "calls",
@@ -3023,19 +3067,9 @@
       "source_location": "L31",
       "weight": 1.0,
       "context": "call",
+      "confidence_score": 1.0,
       "source": "models_financialentitytype_scan",
-      "target": "models_financialentitytype",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "brahma/internal/models/financial.go",
-      "source_location": "L41",
-      "weight": 1.0,
-      "source": "models_financialentitytype",
-      "target": "models_financialentitytype_value",
-      "confidence_score": 1.0
+      "target": "models_financialentitytype"
     },
     {
       "relation": "method",
@@ -3043,9 +3077,9 @@
       "source_file": "brahma/internal/models/financial.go",
       "source_location": "L69",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "models_person",
-      "target": "models_person_tablename",
-      "confidence_score": 1.0
+      "target": "models_person_tablename"
     },
     {
       "relation": "method",
@@ -3053,11 +3087,11 @@
       "source_file": "brahma/internal/models/financial.go",
       "source_location": "L141",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "models_finentity",
-      "target": "models_person_tablename",
-      "confidence_score": 1.0
+      "target": "models_person_tablename"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "891fab2307e9eb876fa3363281afba1724c71a97"
+  "built_at_commit": "68d335e3faf0b7986f7bdaf0652824e581906c8a"
 }

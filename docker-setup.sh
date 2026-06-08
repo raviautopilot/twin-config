@@ -8,8 +8,21 @@ COMPOSE_FILE="docker-compose.yml"
 # You can pass an optional service name (db, brahma, frontend)
 SERVICE=$2
 
+build_frontend_locally() {
+    echo "Checking dependencies and compiling frontend assets locally..."
+    if ! command -v npm &> /dev/null; then
+        echo "Error: Node.js/npm is not installed on the host. Please install Node.js to build the frontend locally."
+        exit 1
+    fi
+    (cd frontend && npm ci && npm run build)
+}
+
+
 case "$COMMAND" in
     start)
+        if [ -z "$SERVICE" ] || [ "$SERVICE" = "frontend" ]; then
+            build_frontend_locally
+        fi
         echo "Starting the full stack (db, brahma, frontend)..."
         docker compose -f $COMPOSE_FILE up -d $SERVICE
 
@@ -60,6 +73,9 @@ EOF
         docker compose -f $COMPOSE_FILE logs -f $SERVICE
         ;;
     build)
+        if [ -z "$SERVICE" ] || [ "$SERVICE" = "frontend" ]; then
+            build_frontend_locally
+        fi
         echo "Building all services..."
         docker compose -f $COMPOSE_FILE build $SERVICE
         ;;
