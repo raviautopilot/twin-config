@@ -153,6 +153,31 @@ const getInitialRouteState = () => {
   return { initialMenu, initialTypeTab };
 };
 
+const getMenuLabel = (menu: MenuSection, singular: boolean = false): string => {
+  switch (menu) {
+    case 'dashboard':
+      return 'Dashboard Overview';
+    case 'cfg_modules':
+      return singular ? 'Module' : 'Modules';
+    case 'cfg_type':
+      return singular ? 'Entity Type' : 'Entity Types';
+    case 'cfg_event_types':
+      return singular ? 'Event Type' : 'Event Types';
+    case 'cfg_dimensions':
+      return singular ? 'Dimension' : 'Dimensions';
+    case 'cfg_attribute_keys':
+      return singular ? 'Attribute Key' : 'Attribute Keys';
+    case 'twin_event':
+      return singular ? 'Event' : 'Events Ledger';
+    case 'twin_impact':
+      return singular ? 'Event Impact' : 'Event Impacts';
+    case 'event_details':
+      return singular ? 'Event Detail' : 'Event Details';
+    default:
+      return (menu as string).replace(/_/g, ' ');
+  }
+};
+
 export default function App() {
   const { initialMenu, initialTypeTab } = getInitialRouteState();
   const [activeMenu, setActiveMenu] = useState<MenuSection>(initialMenu);
@@ -1050,7 +1075,7 @@ export default function App() {
         <header className="h-16 border-b border-slate-800 px-8 flex items-center justify-between bg-slate-900/10 backdrop-blur-md">
           <div className="flex items-center gap-3">
             <h2 className="font-semibold text-slate-200 capitalize">
-              {activeMenu === 'dashboard' ? 'Dashboard Overview' : activeMenu.replace(/_/g, ' ')}
+              {activeMenu === 'dashboard' ? 'Dashboard Overview' : getMenuLabel(activeMenu)}
             </h2>
             {loading && <RefreshCw className="w-4 h-4 text-teal-400 animate-spin" />}
           </div>
@@ -1172,7 +1197,7 @@ export default function App() {
             {/* Modal Header */}
             <div className="px-6 py-4 border-b border-slate-800 flex items-center justify-between bg-slate-950/40">
               <h3 className="font-semibold text-slate-200 text-lg">
-                {modalType === 'create' ? 'Create' : 'Edit'} {activeMenu.replace(/_/g, ' ')}
+                {modalType === 'create' ? 'Create' : 'Edit'} {getMenuLabel(activeMenu, true)}
               </h3>
               <button onClick={() => setModalOpen(false)} className="p-1 hover:bg-slate-800 rounded-lg text-slate-400 hover:text-slate-200 transition">
                 <X className="w-5 h-5" />
@@ -1234,7 +1259,7 @@ export default function App() {
                     </select>
                   </div>
                   <div>
-                    <label className="block text-xs font-mono text-slate-400 mb-1.5">Config Type</label>
+                    <label className="block text-xs font-mono text-slate-400 mb-1.5">Entity Type</label>
                     <input
                       type="text"
                       required
