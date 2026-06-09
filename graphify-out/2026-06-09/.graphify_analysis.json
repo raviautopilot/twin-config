@@ -1,0 +1,454 @@
+{
+  "communities": {
+    "0": [
+      "handlers_handler",
+      "handlers_handler_createattributekey",
+      "handlers_handler_createdimension",
+      "handlers_handler_createevent",
+      "handlers_handler_createeventdetail",
+      "handlers_handler_createfinentity",
+      "handlers_handler_createimpact",
+      "handlers_handler_createmodule",
+      "handlers_handler_createperson",
+      "handlers_handler_createtype",
+      "handlers_handler_deleteattributekey",
+      "handlers_handler_deletedimension",
+      "handlers_handler_deleteevent",
+      "handlers_handler_deleteeventdetail",
+      "handlers_handler_deleteeventtype",
+      "handlers_handler_deletefinentity",
+      "handlers_handler_deleteimpact",
+      "handlers_handler_deletemodule",
+      "handlers_handler_deleteperson",
+      "handlers_handler_deletetype",
+      "handlers_handler_getattributekeys",
+      "handlers_handler_getdimensions",
+      "handlers_handler_geteventdetails",
+      "handlers_handler_getevents",
+      "handlers_handler_geteventtypes",
+      "handlers_handler_getfinentities",
+      "handlers_handler_getimpacts",
+      "handlers_handler_getmodules",
+      "handlers_handler_getpersons",
+      "handlers_handler_getsummary",
+      "handlers_handler_gettypes",
+      "handlers_handler_updateattributekey",
+      "handlers_handler_updatedimension",
+      "handlers_handler_updateevent",
+      "handlers_handler_updateeventdetail",
+      "handlers_handler_updatefinentity",
+      "handlers_handler_updateimpact",
+      "handlers_handler_updatemodule",
+      "handlers_handler_updateperson",
+      "handlers_handler_updatetype"
+    ],
+    "1": [
+      "favicon_svg",
+      "karma_package_devdependencies",
+      "karma_package_devdependencies_eslint",
+      "karma_package_devdependencies_eslint_js",
+      "karma_package_devdependencies_eslint_plugin_react_hooks",
+      "karma_package_devdependencies_eslint_plugin_react_refresh",
+      "karma_package_devdependencies_globals",
+      "karma_package_devdependencies_tailwindcss",
+      "karma_package_devdependencies_tailwindcss_vite",
+      "karma_package_devdependencies_types_node",
+      "karma_package_devdependencies_types_react",
+      "karma_package_devdependencies_typescript",
+      "karma_package_devdependencies_typescript_eslint",
+      "karma_package_devdependencies_vite",
+      "react_svg",
+      "readme_react",
+      "readme_react_compiler",
+      "readme_vite",
+      "readme_vite_plugin_react",
+      "vite_svg"
+    ],
+    "2": [
+      "karma_tsconfig_app_compileroptions",
+      "karma_tsconfig_app_compileroptions_allowimportingtsextensions",
+      "karma_tsconfig_app_compileroptions_erasablesyntaxonly",
+      "karma_tsconfig_app_compileroptions_jsx",
+      "karma_tsconfig_app_compileroptions_lib",
+      "karma_tsconfig_app_compileroptions_module",
+      "karma_tsconfig_app_compileroptions_moduledetection",
+      "karma_tsconfig_app_compileroptions_moduleresolution",
+      "karma_tsconfig_app_compileroptions_noemit",
+      "karma_tsconfig_app_compileroptions_nofallthroughcasesinswitch",
+      "karma_tsconfig_app_compileroptions_nounusedlocals",
+      "karma_tsconfig_app_compileroptions_nounusedparameters",
+      "karma_tsconfig_app_compileroptions_skiplibcheck",
+      "karma_tsconfig_app_compileroptions_target",
+      "karma_tsconfig_app_compileroptions_tsbuildinfofile",
+      "karma_tsconfig_app_compileroptions_types",
+      "karma_tsconfig_app_compileroptions_verbatimmodulesyntax",
+      "karma_tsconfig_app_include",
+      "karma_tsconfig_app_json"
+    ],
+    "3": [
+      "karma_tsconfig_node_compileroptions",
+      "karma_tsconfig_node_compileroptions_allowimportingtsextensions",
+      "karma_tsconfig_node_compileroptions_erasablesyntaxonly",
+      "karma_tsconfig_node_compileroptions_lib",
+      "karma_tsconfig_node_compileroptions_module",
+      "karma_tsconfig_node_compileroptions_moduledetection",
+      "karma_tsconfig_node_compileroptions_moduleresolution",
+      "karma_tsconfig_node_compileroptions_noemit",
+      "karma_tsconfig_node_compileroptions_nofallthroughcasesinswitch",
+      "karma_tsconfig_node_compileroptions_nounusedlocals",
+      "karma_tsconfig_node_compileroptions_nounusedparameters",
+      "karma_tsconfig_node_compileroptions_skiplibcheck",
+      "karma_tsconfig_node_compileroptions_target",
+      "karma_tsconfig_node_compileroptions_tsbuildinfofile",
+      "karma_tsconfig_node_compileroptions_types",
+      "karma_tsconfig_node_compileroptions_verbatimmodulesyntax",
+      "karma_tsconfig_node_include",
+      "karma_tsconfig_node_json"
+    ],
+    "4": [
+      "karma_src_app_tsx",
+      "src_app_app",
+      "src_app_cfgattributekey",
+      "src_app_cfgdimension",
+      "src_app_cfgeventtype",
+      "src_app_cfgmodule",
+      "src_app_cfgtype",
+      "src_app_eventdetail",
+      "src_app_finentity",
+      "src_app_getinitialroutestate",
+      "src_app_getmenulabel",
+      "src_app_menusection",
+      "src_app_person",
+      "src_app_summarydata",
+      "src_app_twinevent",
+      "src_app_twinimpact"
+    ],
+    "5": [
+      "concept_digital_twin_db",
+      "docker_compose_backend",
+      "docker_compose_brahma",
+      "docker_compose_db",
+      "docker_compose_digital_twin",
+      "docker_compose_frontend",
+      "docker_compose_karma",
+      "docker_compose_pgdata",
+      "dockerfile_twin_config",
+      "karma_main",
+      "karma_src_main",
+      "readme_twin_config",
+      "usage_kaalam",
+      "usage_karma"
+    ],
+    "6": [
+      "karma_package_dependencies",
+      "karma_package_dependencies_lucide_react",
+      "karma_package_dependencies_react",
+      "karma_package_dependencies_react_dom",
+      "karma_package_json",
+      "karma_package_name",
+      "karma_package_private",
+      "karma_package_scripts",
+      "karma_package_scripts_build",
+      "karma_package_scripts_dev",
+      "karma_package_scripts_lint",
+      "karma_package_scripts_preview",
+      "karma_package_type",
+      "karma_package_version"
+    ],
+    "7": [
+      "docs_swagger_200_description",
+      "docs_swagger_cfg_modules_id_delete",
+      "docs_swagger_cfg_modules_id_put",
+      "docs_swagger_cfg_modules_post",
+      "docs_swagger_post_consumes",
+      "docs_swagger_post_parameters",
+      "docs_swagger_put_produces",
+      "docs_swagger_put_responses",
+      "docs_swagger_put_summary",
+      "docs_swagger_put_tags"
+    ],
+    "8": [
+      "swagger_api",
+      "swagger_cfgattributekey",
+      "swagger_cfgdimension",
+      "swagger_cfgeventtype",
+      "swagger_cfgmodule",
+      "swagger_cfgtype",
+      "swagger_eventdetail",
+      "swagger_twinevent",
+      "swagger_twinimpact",
+      "usage_brahma"
+    ],
+    "9": [
+      "brahma_cmd_main_go",
+      "brahma_internal_handlers_handlers_go",
+      "cmd_main_corsmiddleware",
+      "cmd_main_main",
+      "cmd_main_zaprequestlogger",
+      "handlers_handlers_newhandler",
+      "handlers_summaryresponse"
+    ],
+    "10": [
+      "brahma_internal_models_financial_go",
+      "models_financialentitytype",
+      "models_financialentitytype_scan",
+      "models_financialentitytype_value",
+      "models_finentity",
+      "models_person",
+      "models_person_tablename"
+    ],
+    "11": [
+      "docker_setup_sh",
+      "home_ubuntu_code_github_raviautopilot_twin_config_docker_setup_sh__entry",
+      "twin_config_docker_setup_build_frontend_locally",
+      "twin_config_docker_setup_build_karma_locally"
+    ],
+    "12": [
+      "usage_backend",
+      "usage_digital_twin",
+      "usage_frontend",
+      "usage_postgresql"
+    ],
+    "13": [
+      "karma_tsconfig_files",
+      "karma_tsconfig_json",
+      "karma_tsconfig_references"
+    ],
+    "14": [
+      "readme_eslint",
+      "readme_eslint_config",
+      "readme_typescript"
+    ],
+    "15": [
+      "home_ubuntu_code_github_raviautopilot_twin_config_volume_wipe_sh__entry",
+      "volume_wipe_sh"
+    ],
+    "16": [
+      "index_html_root"
+    ],
+    "17": [
+      "icons_svg"
+    ],
+    "18": [
+      "hero_png"
+    ],
+    "19": [
+      "swagger_summaryresponse"
+    ],
+    "20": [
+      "brahma_docs_docs_go"
+    ],
+    "21": [
+      "brahma_docs_swagger_json"
+    ],
+    "22": [
+      "docs_swagger_500_schema"
+    ],
+    "23": [
+      "docs_swagger_cfg_types_get"
+    ],
+    "24": [
+      "brahma_internal_config_logger_go"
+    ],
+    "25": [
+      "brahma_internal_config_config_go"
+    ],
+    "26": [
+      "brahma_internal_models_audit_go"
+    ],
+    "27": [
+      "brahma_internal_models_twin_go"
+    ],
+    "28": [
+      "models_twinimpact_tablename"
+    ],
+    "29": [
+      "brahma_internal_models_cfg_go"
+    ],
+    "30": [
+      "models_cfgmodule_tablename"
+    ],
+    "31": [
+      "brahma_internal_models_event_go"
+    ],
+    "32": [
+      "karma_vite_config_ts"
+    ],
+    "33": [
+      "karma_eslint_config_js"
+    ],
+    "34": [
+      "icons_svg_bluesky"
+    ],
+    "35": [
+      "icons_svg_discord"
+    ],
+    "36": [
+      "icons_svg_documentation"
+    ],
+    "37": [
+      "icons_svg_github"
+    ],
+    "38": [
+      "icons_svg_social"
+    ],
+    "39": [
+      "icons_svg_x"
+    ]
+  },
+  "cohesion": {
+    "0": 0.05,
+    "1": 0.1,
+    "2": 0.10526315789473684,
+    "3": 0.1111111111111111,
+    "4": 0.14166666666666666,
+    "5": 0.16483516483516483,
+    "6": 0.14285714285714285,
+    "7": 0.4,
+    "8": 0.2222222222222222,
+    "9": 0.38095238095238093,
+    "10": 0.3333333333333333,
+    "11": 0.8333333333333334,
+    "12": 0.5,
+    "13": 0.6666666666666666,
+    "14": 0.6666666666666666,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 1.0,
+    "39": 1.0
+  },
+  "gods": [
+    {
+      "id": "handlers_handler",
+      "label": "Handler",
+      "degree": 40
+    },
+    {
+      "id": "karma_tsconfig_app_compileroptions",
+      "label": "compilerOptions",
+      "degree": 17
+    },
+    {
+      "id": "karma_tsconfig_node_compileroptions",
+      "label": "compilerOptions",
+      "degree": 16
+    },
+    {
+      "id": "docker_compose_db",
+      "label": "db service",
+      "degree": 8
+    },
+    {
+      "id": "docs_swagger_cfg_modules_post",
+      "label": "post",
+      "degree": 7
+    },
+    {
+      "id": "docs_swagger_cfg_modules_id_delete",
+      "label": "delete",
+      "degree": 6
+    },
+    {
+      "id": "docs_swagger_cfg_modules_id_put",
+      "label": "put",
+      "degree": 5
+    },
+    {
+      "id": "karma_package_scripts",
+      "label": "scripts",
+      "degree": 5
+    },
+    {
+      "id": "swagger_cfgeventtype",
+      "label": "models.CfgEventType",
+      "degree": 4
+    },
+    {
+      "id": "docker_compose_brahma",
+      "label": "Brahma Container",
+      "degree": 4
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Kaalam (PostgreSQL Database)",
+      "target": "db service",
+      "source_files": [
+        "usage.md",
+        "docker-compose.yml"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "semantically_similar_to",
+      "why": "connects across different repos/directories; semantically similar concepts with no structural link; peripheral node `Kaalam (PostgreSQL Database)` unexpectedly reaches hub `db service`"
+    },
+    {
+      "source": "Brahma (Configuration Service)",
+      "target": "Brahma Container",
+      "source_files": [
+        "usage.md",
+        "docker-compose.yml"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "Twin Config",
+      "target": "db service",
+      "source_files": [
+        "README.md",
+        "docker-compose.yml"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; peripheral node `Twin Config` unexpectedly reaches hub `db service`"
+    },
+    {
+      "source": "db service",
+      "target": "Digital Twin Database",
+      "source_files": [
+        "docker-compose.yml",
+        "docker/docker-compose.yml"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "implements",
+      "why": "connects across different repos/directories; peripheral node `Digital Twin Database` unexpectedly reaches hub `db service`"
+    },
+    {
+      "source": "React Logo",
+      "target": "React",
+      "source_files": [
+        "frontend/src/assets/react.svg",
+        "frontend/README.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc \u2194 image)"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

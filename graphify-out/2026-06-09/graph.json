@@ -1763,396 +1763,396 @@
       "file_type": "code",
       "source_file": "karma/src/App.tsx",
       "source_location": "L32",
+      "id": "src_app_person",
       "community": 4,
-      "norm_label": "person",
-      "id": "src_app_person"
+      "norm_label": "person"
     },
     {
       "label": "FinEntity",
       "file_type": "code",
       "source_file": "karma/src/App.tsx",
       "source_location": "L54",
+      "id": "src_app_finentity",
       "community": 4,
-      "norm_label": "finentity",
-      "id": "src_app_finentity"
+      "norm_label": "finentity"
     },
     {
       "label": "Handler",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L14",
+      "id": "handlers_handler",
       "community": 0,
-      "norm_label": "handler",
-      "id": "handlers_handler"
+      "norm_label": "handler"
     },
     {
       "label": "NewHandler()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L19",
+      "id": "handlers_handlers_newhandler",
       "community": 9,
-      "norm_label": "newhandler()",
-      "id": "handlers_handlers_newhandler"
+      "norm_label": "newhandler()"
     },
     {
       "label": "SummaryResponse",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L23",
+      "id": "handlers_summaryresponse",
       "community": 9,
-      "norm_label": "summaryresponse",
-      "id": "handlers_summaryresponse"
+      "norm_label": "summaryresponse"
     },
     {
       "label": ".GetSummary()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L37",
+      "id": "handlers_handler_getsummary",
       "community": 0,
-      "norm_label": ".getsummary()",
-      "id": "handlers_handler_getsummary"
+      "norm_label": ".getsummary()"
     },
     {
       "label": ".GetModules()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L90",
+      "id": "handlers_handler_getmodules",
       "community": 0,
-      "norm_label": ".getmodules()",
-      "id": "handlers_handler_getmodules"
+      "norm_label": ".getmodules()"
     },
     {
       "label": ".CreateModule()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L111",
+      "id": "handlers_handler_createmodule",
       "community": 0,
-      "norm_label": ".createmodule()",
-      "id": "handlers_handler_createmodule"
+      "norm_label": ".createmodule()"
     },
     {
       "label": ".UpdateModule()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L142",
+      "id": "handlers_handler_updatemodule",
       "community": 0,
-      "norm_label": ".updatemodule()",
-      "id": "handlers_handler_updatemodule"
+      "norm_label": ".updatemodule()"
     },
     {
       "label": ".DeleteModule()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L171",
+      "id": "handlers_handler_deletemodule",
       "community": 0,
-      "norm_label": ".deletemodule()",
-      "id": "handlers_handler_deletemodule"
+      "norm_label": ".deletemodule()"
     },
     {
       "label": ".GetTypes()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L191",
+      "id": "handlers_handler_gettypes",
       "community": 0,
-      "norm_label": ".gettypes()",
-      "id": "handlers_handler_gettypes"
+      "norm_label": ".gettypes()"
     },
     {
       "label": ".CreateType()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L212",
+      "id": "handlers_handler_createtype",
       "community": 0,
-      "norm_label": ".createtype()",
-      "id": "handlers_handler_createtype"
+      "norm_label": ".createtype()"
     },
     {
       "label": ".UpdateType()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L243",
+      "id": "handlers_handler_updatetype",
       "community": 0,
-      "norm_label": ".updatetype()",
-      "id": "handlers_handler_updatetype"
+      "norm_label": ".updatetype()"
     },
     {
       "label": ".DeleteType()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L271",
+      "id": "handlers_handler_deletetype",
       "community": 0,
-      "norm_label": ".deletetype()",
-      "id": "handlers_handler_deletetype"
+      "norm_label": ".deletetype()"
     },
     {
       "label": ".GetEventTypes()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L291",
+      "id": "handlers_handler_geteventtypes",
       "community": 0,
-      "norm_label": ".geteventtypes()",
-      "id": "handlers_handler_geteventtypes"
+      "norm_label": ".geteventtypes()"
     },
     {
       "label": ".DeleteEventType()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L372",
+      "id": "handlers_handler_deleteeventtype",
       "community": 0,
-      "norm_label": ".deleteeventtype()",
-      "id": "handlers_handler_deleteeventtype"
+      "norm_label": ".deleteeventtype()"
     },
     {
       "label": ".GetDimensions()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L392",
+      "id": "handlers_handler_getdimensions",
       "community": 0,
-      "norm_label": ".getdimensions()",
-      "id": "handlers_handler_getdimensions"
+      "norm_label": ".getdimensions()"
     },
     {
       "label": ".CreateDimension()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L413",
+      "id": "handlers_handler_createdimension",
       "community": 0,
-      "norm_label": ".createdimension()",
-      "id": "handlers_handler_createdimension"
+      "norm_label": ".createdimension()"
     },
     {
       "label": ".UpdateDimension()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L444",
+      "id": "handlers_handler_updatedimension",
       "community": 0,
-      "norm_label": ".updatedimension()",
-      "id": "handlers_handler_updatedimension"
+      "norm_label": ".updatedimension()"
     },
     {
       "label": ".DeleteDimension()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L473",
+      "id": "handlers_handler_deletedimension",
       "community": 0,
-      "norm_label": ".deletedimension()",
-      "id": "handlers_handler_deletedimension"
+      "norm_label": ".deletedimension()"
     },
     {
       "label": ".GetAttributeKeys()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L493",
+      "id": "handlers_handler_getattributekeys",
       "community": 0,
-      "norm_label": ".getattributekeys()",
-      "id": "handlers_handler_getattributekeys"
+      "norm_label": ".getattributekeys()"
     },
     {
       "label": ".CreateAttributeKey()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L514",
+      "id": "handlers_handler_createattributekey",
       "community": 0,
-      "norm_label": ".createattributekey()",
-      "id": "handlers_handler_createattributekey"
+      "norm_label": ".createattributekey()"
     },
     {
       "label": ".UpdateAttributeKey()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L546",
+      "id": "handlers_handler_updateattributekey",
       "community": 0,
-      "norm_label": ".updateattributekey()",
-      "id": "handlers_handler_updateattributekey"
+      "norm_label": ".updateattributekey()"
     },
     {
       "label": ".DeleteAttributeKey()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L578",
+      "id": "handlers_handler_deleteattributekey",
       "community": 0,
-      "norm_label": ".deleteattributekey()",
-      "id": "handlers_handler_deleteattributekey"
+      "norm_label": ".deleteattributekey()"
     },
     {
       "label": ".GetEvents()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L599",
+      "id": "handlers_handler_getevents",
       "community": 0,
-      "norm_label": ".getevents()",
-      "id": "handlers_handler_getevents"
+      "norm_label": ".getevents()"
     },
     {
       "label": ".CreateEvent()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L620",
+      "id": "handlers_handler_createevent",
       "community": 0,
-      "norm_label": ".createevent()",
-      "id": "handlers_handler_createevent"
+      "norm_label": ".createevent()"
     },
     {
       "label": ".UpdateEvent()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L651",
+      "id": "handlers_handler_updateevent",
       "community": 0,
-      "norm_label": ".updateevent()",
-      "id": "handlers_handler_updateevent"
+      "norm_label": ".updateevent()"
     },
     {
       "label": ".DeleteEvent()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L680",
+      "id": "handlers_handler_deleteevent",
       "community": 0,
-      "norm_label": ".deleteevent()",
-      "id": "handlers_handler_deleteevent"
+      "norm_label": ".deleteevent()"
     },
     {
       "label": ".GetImpacts()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L700",
+      "id": "handlers_handler_getimpacts",
       "community": 0,
-      "norm_label": ".getimpacts()",
-      "id": "handlers_handler_getimpacts"
+      "norm_label": ".getimpacts()"
     },
     {
       "label": ".CreateImpact()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L721",
+      "id": "handlers_handler_createimpact",
       "community": 0,
-      "norm_label": ".createimpact()",
-      "id": "handlers_handler_createimpact"
+      "norm_label": ".createimpact()"
     },
     {
       "label": ".UpdateImpact()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L752",
+      "id": "handlers_handler_updateimpact",
       "community": 0,
-      "norm_label": ".updateimpact()",
-      "id": "handlers_handler_updateimpact"
+      "norm_label": ".updateimpact()"
     },
     {
       "label": ".DeleteImpact()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L781",
+      "id": "handlers_handler_deleteimpact",
       "community": 0,
-      "norm_label": ".deleteimpact()",
-      "id": "handlers_handler_deleteimpact"
+      "norm_label": ".deleteimpact()"
     },
     {
       "label": ".GetEventDetails()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L801",
+      "id": "handlers_handler_geteventdetails",
       "community": 0,
-      "norm_label": ".geteventdetails()",
-      "id": "handlers_handler_geteventdetails"
+      "norm_label": ".geteventdetails()"
     },
     {
       "label": ".CreateEventDetail()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L822",
+      "id": "handlers_handler_createeventdetail",
       "community": 0,
-      "norm_label": ".createeventdetail()",
-      "id": "handlers_handler_createeventdetail"
+      "norm_label": ".createeventdetail()"
     },
     {
       "label": ".UpdateEventDetail()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L854",
+      "id": "handlers_handler_updateeventdetail",
       "community": 0,
-      "norm_label": ".updateeventdetail()",
-      "id": "handlers_handler_updateeventdetail"
+      "norm_label": ".updateeventdetail()"
     },
     {
       "label": ".DeleteEventDetail()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L886",
+      "id": "handlers_handler_deleteeventdetail",
       "community": 0,
-      "norm_label": ".deleteeventdetail()",
-      "id": "handlers_handler_deleteeventdetail"
+      "norm_label": ".deleteeventdetail()"
     },
     {
       "label": ".GetPersons()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L900",
+      "id": "handlers_handler_getpersons",
       "community": 0,
-      "norm_label": ".getpersons()",
-      "id": "handlers_handler_getpersons"
+      "norm_label": ".getpersons()"
     },
     {
       "label": ".CreatePerson()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L911",
+      "id": "handlers_handler_createperson",
       "community": 0,
-      "norm_label": ".createperson()",
-      "id": "handlers_handler_createperson"
+      "norm_label": ".createperson()"
     },
     {
       "label": ".UpdatePerson()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L930",
+      "id": "handlers_handler_updateperson",
       "community": 0,
-      "norm_label": ".updateperson()",
-      "id": "handlers_handler_updateperson"
+      "norm_label": ".updateperson()"
     },
     {
       "label": ".DeletePerson()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L950",
+      "id": "handlers_handler_deleteperson",
       "community": 0,
-      "norm_label": ".deleteperson()",
-      "id": "handlers_handler_deleteperson"
+      "norm_label": ".deleteperson()"
     },
     {
       "label": ".GetFinEntities()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L963",
+      "id": "handlers_handler_getfinentities",
       "community": 0,
-      "norm_label": ".getfinentities()",
-      "id": "handlers_handler_getfinentities"
+      "norm_label": ".getfinentities()"
     },
     {
       "label": ".CreateFinEntity()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L978",
+      "id": "handlers_handler_createfinentity",
       "community": 0,
-      "norm_label": ".createfinentity()",
-      "id": "handlers_handler_createfinentity"
+      "norm_label": ".createfinentity()"
     },
     {
       "label": ".UpdateFinEntity()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L997",
+      "id": "handlers_handler_updatefinentity",
       "community": 0,
-      "norm_label": ".updatefinentity()",
-      "id": "handlers_handler_updatefinentity"
+      "norm_label": ".updatefinentity()"
     },
     {
       "label": ".DeleteFinEntity()",
       "file_type": "code",
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L1017",
+      "id": "handlers_handler_deletefinentity",
       "community": 0,
-      "norm_label": ".deletefinentity()",
-      "id": "handlers_handler_deletefinentity"
+      "norm_label": ".deletefinentity()"
     }
   ],
   "links": [
@@ -2744,9 +2744,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L14",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "brahma_internal_handlers_handlers_go",
-      "target": "handlers_handler"
+      "target": "handlers_handler",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2754,9 +2754,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L19",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "brahma_internal_handlers_handlers_go",
-      "target": "handlers_handlers_newhandler"
+      "target": "handlers_handlers_newhandler",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2764,9 +2764,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L23",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "brahma_internal_handlers_handlers_go",
-      "target": "handlers_summaryresponse"
+      "target": "handlers_summaryresponse",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -3546,7 +3546,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "karma/src/App.tsx",
-      "source_location": "L274",
+      "source_location": "L273",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "karma_src_app_tsx",
@@ -3556,7 +3556,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "karma/src/App.tsx",
-      "source_location": "L146",
+      "source_location": "L145",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "karma_src_app_tsx",
@@ -3566,7 +3566,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "karma/src/App.tsx",
-      "source_location": "L140",
+      "source_location": "L139",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "karma_src_app_tsx",
@@ -3576,7 +3576,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "karma/src/App.tsx",
-      "source_location": "L134",
+      "source_location": "L133",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "karma_src_app_tsx",
@@ -3586,7 +3586,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "karma/src/App.tsx",
-      "source_location": "L116",
+      "source_location": "L115",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "karma_src_app_tsx",
@@ -3596,7 +3596,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "karma/src/App.tsx",
-      "source_location": "L124",
+      "source_location": "L123",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "karma_src_app_tsx",
@@ -3606,7 +3606,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "karma/src/App.tsx",
-      "source_location": "L167",
+      "source_location": "L166",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "karma_src_app_tsx",
@@ -3616,17 +3616,17 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "karma/src/App.tsx",
-      "source_location": "L55",
+      "source_location": "L54",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "karma_src_app_tsx",
-      "target": "src_app_finentity"
+      "target": "src_app_finentity",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "karma/src/App.tsx",
-      "source_location": "L204",
+      "source_location": "L203",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "karma_src_app_tsx",
@@ -3636,7 +3636,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "karma/src/App.tsx",
-      "source_location": "L249",
+      "source_location": "L248",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "karma_src_app_tsx",
@@ -3646,7 +3646,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "karma/src/App.tsx",
-      "source_location": "L192",
+      "source_location": "L191",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "karma_src_app_tsx",
@@ -3656,17 +3656,17 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "karma/src/App.tsx",
-      "source_location": "L33",
+      "source_location": "L32",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "karma_src_app_tsx",
-      "target": "src_app_person"
+      "target": "src_app_person",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "karma/src/App.tsx",
-      "source_location": "L173",
+      "source_location": "L172",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "karma_src_app_tsx",
@@ -3676,7 +3676,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "karma/src/App.tsx",
-      "source_location": "L152",
+      "source_location": "L151",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "karma_src_app_tsx",
@@ -3686,7 +3686,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "karma/src/App.tsx",
-      "source_location": "L159",
+      "source_location": "L158",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "karma_src_app_tsx",
@@ -3738,7 +3738,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "karma/src/App.tsx",
-      "source_location": "L275",
+      "source_location": "L274",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_app_app",
@@ -3749,7 +3749,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "karma/src/App.tsx",
-      "source_location": "L1767",
+      "source_location": "L1742",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_app_app",
@@ -3761,9 +3761,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L514",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_createattributekey"
+      "target": "handlers_handler_createattributekey",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3771,9 +3771,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L413",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_createdimension"
+      "target": "handlers_handler_createdimension",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3781,9 +3781,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L620",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_createevent"
+      "target": "handlers_handler_createevent",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3791,9 +3791,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L822",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_createeventdetail"
+      "target": "handlers_handler_createeventdetail",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3801,9 +3801,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L978",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_createfinentity"
+      "target": "handlers_handler_createfinentity",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3811,9 +3811,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L721",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_createimpact"
+      "target": "handlers_handler_createimpact",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3821,9 +3821,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L111",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_createmodule"
+      "target": "handlers_handler_createmodule",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3831,9 +3831,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L911",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_createperson"
+      "target": "handlers_handler_createperson",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3841,9 +3841,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L212",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_createtype"
+      "target": "handlers_handler_createtype",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3851,9 +3851,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L578",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_deleteattributekey"
+      "target": "handlers_handler_deleteattributekey",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3861,9 +3861,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L473",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_deletedimension"
+      "target": "handlers_handler_deletedimension",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3871,9 +3871,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L680",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_deleteevent"
+      "target": "handlers_handler_deleteevent",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3881,9 +3881,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L886",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_deleteeventdetail"
+      "target": "handlers_handler_deleteeventdetail",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3891,9 +3891,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L372",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_deleteeventtype"
+      "target": "handlers_handler_deleteeventtype",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3901,9 +3901,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L1017",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_deletefinentity"
+      "target": "handlers_handler_deletefinentity",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3911,9 +3911,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L781",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_deleteimpact"
+      "target": "handlers_handler_deleteimpact",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3921,9 +3921,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L171",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_deletemodule"
+      "target": "handlers_handler_deletemodule",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3931,9 +3931,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L950",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_deleteperson"
+      "target": "handlers_handler_deleteperson",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3941,9 +3941,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L271",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_deletetype"
+      "target": "handlers_handler_deletetype",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3951,9 +3951,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L493",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_getattributekeys"
+      "target": "handlers_handler_getattributekeys",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3961,9 +3961,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L392",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_getdimensions"
+      "target": "handlers_handler_getdimensions",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3971,9 +3971,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L801",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_geteventdetails"
+      "target": "handlers_handler_geteventdetails",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3981,9 +3981,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L599",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_getevents"
+      "target": "handlers_handler_getevents",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3991,9 +3991,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L291",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_geteventtypes"
+      "target": "handlers_handler_geteventtypes",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -4001,9 +4001,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L963",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_getfinentities"
+      "target": "handlers_handler_getfinentities",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -4011,9 +4011,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L700",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_getimpacts"
+      "target": "handlers_handler_getimpacts",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -4021,9 +4021,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L90",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_getmodules"
+      "target": "handlers_handler_getmodules",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -4031,9 +4031,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L900",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_getpersons"
+      "target": "handlers_handler_getpersons",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -4041,9 +4041,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L37",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_getsummary"
+      "target": "handlers_handler_getsummary",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -4051,9 +4051,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L191",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_gettypes"
+      "target": "handlers_handler_gettypes",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -4061,9 +4061,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L546",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_updateattributekey"
+      "target": "handlers_handler_updateattributekey",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -4071,9 +4071,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L444",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_updatedimension"
+      "target": "handlers_handler_updatedimension",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -4081,9 +4081,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L651",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_updateevent"
+      "target": "handlers_handler_updateevent",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -4091,9 +4091,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L854",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_updateeventdetail"
+      "target": "handlers_handler_updateeventdetail",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -4101,9 +4101,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L997",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_updatefinentity"
+      "target": "handlers_handler_updatefinentity",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -4111,9 +4111,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L752",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_updateimpact"
+      "target": "handlers_handler_updateimpact",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -4121,9 +4121,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L142",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_updatemodule"
+      "target": "handlers_handler_updatemodule",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -4131,9 +4131,9 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L930",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_updateperson"
+      "target": "handlers_handler_updateperson",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -4141,11 +4141,11 @@
       "source_file": "brahma/internal/handlers/handlers.go",
       "source_location": "L243",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "handlers_handler",
-      "target": "handlers_handler_updatetype"
+      "target": "handlers_handler_updatetype",
+      "confidence_score": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "7d1020af8a5e5e287876a8893a9c6f0ff56f1827"
+  "built_at_commit": "b0d9526813b55a083d47fb42edf35456f4602f2e"
 }

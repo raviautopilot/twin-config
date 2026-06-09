@@ -24,7 +24,8 @@ import {
   Percent,
   Coins,
   PiggyBank,
-  User
+  User,
+  ChevronDown
 } from 'lucide-react';
 
 const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8080/api/v1';
@@ -250,7 +251,7 @@ const getMenuLabel = (menu: MenuSection, singular: boolean = false): string => {
     case 'dashboard':
       return 'Dashboard Overview';
     case 'cfg_modules':
-      return singular ? 'Module' : 'Modules';
+      return singular ? 'Module' : 'Config Management';
     case 'cfg_type':
       return singular ? 'Entity Type' : 'Entity Types';
     case 'cfg_event_types':
@@ -274,6 +275,13 @@ export default function App() {
   const { initialMenu, initialTypeTab } = getInitialRouteState();
   const [activeMenu, setActiveMenu] = useState<MenuSection>(initialMenu);
   const [summary, setSummary] = useState<SummaryData | null>(null);
+
+  // Sidebar expanded sections state
+  const [expandedGroups, setExpandedGroups] = useState<Record<string, boolean>>({
+    Overview: true,
+    Config: true,
+    'Operational Ledger': true
+  });
 
   // Database Data States
   const [modules, setModules] = useState<CfgModule[]>([]);
@@ -934,11 +942,11 @@ export default function App() {
   // Dynamic Navigation Items
   const navItems = [
     { id: 'dashboard', label: 'Dashboard', icon: Activity, group: 'Overview' },
-    { id: 'cfg_modules', label: 'Modules', icon: Layers, group: 'Configuration Engine' },
-    { id: 'cfg_type', label: 'Entity Types', icon: Sliders, group: 'Configuration Engine' },
-    { id: 'cfg_event_types', label: 'Event Types', icon: Calendar, group: 'Configuration Engine' },
-    { id: 'cfg_dimensions', label: 'Dimensions', icon: Globe, group: 'Configuration Engine' },
-    { id: 'cfg_attribute_keys', label: 'Attribute Keys', icon: Tag, group: 'Configuration Engine' },
+    { id: 'cfg_modules', label: 'Modules', icon: Layers, group: 'Config' },
+    { id: 'cfg_type', label: 'Entity Types', icon: Sliders, group: 'Config' },
+    { id: 'cfg_event_types', label: 'Event Types', icon: Calendar, group: 'Config' },
+    { id: 'cfg_dimensions', label: 'Dimensions', icon: Globe, group: 'Config' },
+    { id: 'cfg_attribute_keys', label: 'Attribute Keys', icon: Tag, group: 'Config' },
     { id: 'twin_event', label: 'Events Ledger', icon: Database, group: 'Operational Ledger' },
     { id: 'twin_impact', label: 'Event Impacts', icon: TrendingUp, group: 'Operational Ledger' },
     { id: 'event_details', label: 'Event Details', icon: FileText, group: 'Operational Ledger' },
@@ -1697,34 +1705,51 @@ export default function App() {
 
         {/* Navigation Groups */}
         <nav className="flex-1 p-4 space-y-6 overflow-y-auto">
-          {['Overview', 'Configuration Engine', 'Operational Ledger'].map(group => (
-            <div key={group} className="space-y-2">
-              <h2 className="px-3 text-xxs font-bold text-slate-500 uppercase tracking-widest font-mono">{group}</h2>
-              <ul className="space-y-1">
-                {navItems
-                  .filter(item => item.group === group)
-                  .map(item => {
-                    const Icon = item.icon;
-                    const isActive = activeMenu === item.id;
-                    return (
-                      <li key={item.id}>
-                        <button
-                          onClick={() => navigateTo(item.id as MenuSection)}
-                          className={`w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm transition-all duration-200 ${
-                            isActive
-                              ? 'bg-gradient-to-r from-teal-950 to-indigo-950 text-teal-300 font-medium border-l-2 border-teal-500'
-                              : 'text-slate-400 hover:text-slate-200 hover:bg-slate-900/50'
-                          }`}
-                        >
-                          <Icon className={`w-4 h-4 ${isActive ? 'text-teal-400' : 'text-slate-500'}`} />
-                          {item.label}
-                        </button>
-                      </li>
-                    );
-                  })}
-              </ul>
-            </div>
-          ))}
+          {['Overview', 'Config', 'Operational Ledger'].map(group => {
+            const isExpanded = expandedGroups[group] !== false;
+            return (
+              <div key={group} className="space-y-2">
+                <button
+                  onClick={() => setExpandedGroups(prev => ({ ...prev, [group]: !isExpanded }))}
+                  className="w-full flex items-center justify-between px-3 py-1.5 text-xxs font-bold text-slate-500 hover:text-slate-300 uppercase tracking-widest font-mono focus:outline-none transition-colors duration-150 cursor-pointer text-left"
+                >
+                  <span>{group}</span>
+                  <ChevronDown
+                    className={`w-3.5 h-3.5 transition-transform duration-200 text-slate-500 hover:text-slate-300 ${
+                      isExpanded ? 'rotate-0' : '-rotate-90'
+                    }`}
+                  />
+                </button>
+                <div className={`sidebar-accordion-wrapper ${isExpanded ? 'expanded' : ''}`}>
+                  <div className="sidebar-accordion-content">
+                    <ul className="space-y-1 pt-1">
+                      {navItems
+                        .filter(item => item.group === group)
+                        .map(item => {
+                          const Icon = item.icon;
+                          const isActive = activeMenu === item.id;
+                          return (
+                            <li key={item.id}>
+                              <button
+                                onClick={() => navigateTo(item.id as MenuSection)}
+                                className={`w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm transition-all duration-200 cursor-pointer ${
+                                  isActive
+                                    ? 'bg-gradient-to-r from-teal-950 to-indigo-950 text-teal-300 font-medium border-l-2 border-teal-500'
+                                    : 'text-slate-400 hover:text-slate-200 hover:bg-slate-900/50'
+                                }`}
+                              >
+                                <Icon className={`w-4 h-4 ${isActive ? 'text-teal-400' : 'text-slate-500'}`} />
+                                {item.label}
+                              </button>
+                            </li>
+                          );
+                        })}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </nav>
 
         {/* Footer */}
